@@ -1,0 +1,34 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: test
+    label: Testseite
+    type: file
+    path: content/test.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: body, label: Inhalt, type: rich-text }
+
+  - name: news
+    label: News
+    type: collection
+    path: content/news
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, team]
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: date, label: Datum, type: date, required: true }
+      - name: team
+        label: Team
+        type: select
+        options:
+          values: [Herren, Jugend, Softball, Verein]
+      - { name: image, label: Bild, type: image }
+      - { name: draft, label: Entwurf, type: boolean, default: false }
+      - { name: body, label: Inhalt, type: rich-text }
