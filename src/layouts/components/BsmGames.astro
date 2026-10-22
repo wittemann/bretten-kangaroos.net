@@ -1,0 +1,179 @@
+---
+// Bretten games from the BSM: upcoming games first, then results (newest
+// first). `team` limits them to one team (for team pages); without it the
+// list gets a team filter.
+import { formatDate, formatTime, splitGames, teams } from "@/lib/bsm";
+import type { GameWithLeague } from "@/lib/bsm";
+
+type Props = { team?: string };
+
+const { team } = Astro.props;
+const { upcoming, results } = splitGames(team);
+const showFilter = !team && teams.length > 1;
+
+const resultLabels = {
+  W: { text: "S", title: "Sieg", class: "bg-green-600" },
+  L: { text: "N", title: "Niederlage", class: "bg-red-600" },
+  T: { text: "U", title: "Unentschieden", class: "bg-gray-500" },
+};
+
+const score = (game: GameWithLeague) =>
+  game.homeRuns != null && game.awayRuns != null
+    ? `${game.homeRuns}:${game.awayRuns}`
+    : "–";
+
+// Planned games in the past never got a score in the BSM
+const stateNote = (game: GameWithLeague, isResult: boolean) => {
+  if (game.state === "played") return null;
+  if (isResult && game.state === "planned") return "kein Ergebnis";
+  return game.stateLabel;
+};
+
+const sections = [
+  {
+    title: "Nächste Spiele",
+    games: upcoming,
+    empty: "Zurzeit sind keine Spiele angesetzt.",
+    isResult: false,
+  },
+  {
+    title: "Ergebnisse",
+    games: results,
+    empty: "Noch keine Ergebnisse.",
+    isResult: true,
+  },
+];
+---
+
+<div data-bsm-games>
+  {
+    showFilter && (
+      <div
+        class="mb-12 flex flex-wrap justify-center gap-2"
+        role="group"
+        aria-label="Nach Team filtern"
+      >
+        {[{ slug: "", name: "Alle" }, ...teams].map(({ slug, name }) => (
+          <button
+            type="button"
+            class="btn btn-outline-primary aria-pressed:bg-primary px-4 py-2 text-sm aria-pressed:text-white"
+            data-filter={slug}
+            aria-pressed={slug === "" ? "true" : "false"}
+          >
+            {name}
+          </button>
+        ))}
+      </div>
+    )
+  }
+
+  <div class="space-y-16">
+    {
+      sections.map(({ title, games, empty, isResult }) => (
+        <section data-section>
+          <h2 class="h4 mb-6">{title}</h2>
+          <ul class="divide-border border-border divide-y rounded-lg border">
+            {games.map((game) => {
+              const note = stateNote(game, isResult);
+              const result = game.result && resultLabels[game.result];
+              return (
+                <li
+                  class="flex flex-wrap items-center gap-x-4 gap-y-1 px-4 py-3 text-sm"
+                  data-team={game.league.team}
+                >
+                  <div class="w-full whitespace-nowrap sm:w-44 sm:shrink-0">
+                    <span class="text-text-dark font-semibold">
+                      {formatDate(game.start)}
+                    </span>
+                    <span class="ml-2">{formatTime(game.start)}</span>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <div class="text-text-dark">
+                      <span class:list={[game.home.isUs && "font-semibold"]}>
+                        {game.home.name}
+                      </span>
+                      <span class="text-text-light mx-1">–</span>
+                      <span class:list={[game.away.isUs && "font-semibold"]}>
+                        {game.away.name}
+                      </span>
+                    </div>
+                    <div class="text-text-light text-xs">
+                      {game.league.label}
+                      {" · "}
+                      {game.isHome ? "Heimspiel" : "Auswärts"}
+                      {game.field &&
+                        !game.isHome &&
+                        ` · ${game.field.name}${game.field.city ? `, ${game.field.city}` : ""}`}
+                      {note && ` · ${note}`}
+                    </div>
+                  </div>
+                  {isResult && (
+                    <div class="flex items-center gap-2">
+                      <span class="text-text-dark font-semibold tabular-nums">
+                        {score(game)}
+                      </span>
+                      {result && (
+                        <span
+                          class:list={[
+                            "inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold text-white",
+                            result.class,
+                          ]}
+                          title={result.title}
+                        >
+                          {result.text}
+                        </span>
+                      )}
+                      {game.scoresheetUrl && (
+                        <a
+                          href={game.scoresheetUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-primary hover:text-dark text-xs"
+                        >
+                          Spielbericht
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+            <li class="px-4 py-3 text-sm" data-empty hidden={games.length > 0}>
+              {empty}
+            </li>
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  // Team filter: hides games of other teams. Without JavaScript all games
+  // show. Runs on every page load, also after navigation via the ClientRouter.
+  function init() {
+    const root = document.querySelector<HTMLElement>("[data-bsm-games]");
+    if (!root) return;
+    const buttons = root.querySelectorAll<HTMLButtonElement>("[data-filter]");
+
+    buttons.forEach((button) =>
+      button.addEventListener("click", () => {
+        const team = button.dataset.filter;
+        buttons.forEach((b) =>
+          b.setAttribute("aria-pressed", String(b === button)),
+        );
+        root.querySelectorAll<HTMLElement>("[data-section]").forEach((s) => {
+          let visible = 0;
+          s.querySelectorAll<HTMLElement>("[data-team]").forEach((row) => {
+            row.hidden = Boolean(team) && row.dataset.team !== team;
+            if (!row.hidden) visible++;
+          });
+          const empty = s.querySelector<HTMLElement>("[data-empty]");
+          if (empty) empty.hidden = visible > 0;
+        });
+      }),
+    );
+  }
+
+  document.addEventListener("astro:page-load", init);
+</script>

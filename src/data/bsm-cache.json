@@ -1,0 +1,1850 @@
+{
+  "builtAt": "2026-10-22T17:30:45.832Z",
+  "season": 2026,
+  "leagues": [
+    {
+      "leagueId": 6350,
+      "name": "Bezirksliga Herren",
+      "label": "Herren – Bezirksliga",
+      "team": "herren",
+      "fetchedAt": "2026-10-22T17:30:45.543Z",
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Heilbronn Pirates",
+          "short": "HEP",
+          "isUs": false,
+          "games": 8,
+          "wins": 8,
+          "losses": 0,
+          "pct": "1.000",
+          "gamesBehind": "0",
+          "streak": "W8",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 2,
+          "team": "SG Ladenburg Romans 2/Mannheim Tornados 2",
+          "short": "LAD2/MAT2",
+          "isUs": false,
+          "games": 8,
+          "wins": 5,
+          "losses": 3,
+          "pct": ".625",
+          "gamesBehind": "3",
+          "streak": "W2",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 3,
+          "team": "Freiberg Brewers",
+          "short": "FRB",
+          "isUs": false,
+          "games": 8,
+          "wins": 4,
+          "losses": 4,
+          "pct": ".500",
+          "gamesBehind": "4",
+          "streak": "L2",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 4,
+          "team": "Bretten Kangaroos",
+          "short": "BRK",
+          "isUs": true,
+          "games": 8,
+          "wins": 2,
+          "losses": 6,
+          "pct": ".250",
+          "gamesBehind": "6",
+          "streak": "W1",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 5,
+          "team": "SG Crailsheim Sentinels / Bad Mergentheim Warriors 2",
+          "short": "MGH2/CRA",
+          "isUs": false,
+          "games": 8,
+          "wins": 1,
+          "losses": 7,
+          "pct": ".125",
+          "gamesBehind": "7",
+          "streak": "L5",
+          "outOfCompetition": false
+        }
+      ],
+      "games": [
+        {
+          "id": 63282,
+          "number": "13.001",
+          "start": "2026-04-12T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "SG Ladenburg Romans 2/Mannheim Tornados 2",
+            "short": "LAD2/MAT2",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 32,
+          "awayRuns": 17,
+          "field": {
+            "name": "Roberto-Clemente-Field",
+            "city": "Mannheim",
+            "street": "Theodor-Heuss-Anlage 25"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63282/combined_scoresheets/Spiel-13-punkt-001.pdf"
+        },
+        {
+          "id": 63291,
+          "number": "13.010",
+          "start": "2026-06-07T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Heilbronn Pirates",
+            "short": "HEP",
+            "isUs": false
+          },
+          "homeRuns": 2,
+          "awayRuns": 21,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63291/combined_scoresheets/Spiel-13-punkt-010.pdf"
+        },
+        {
+          "id": 63292,
+          "number": "13.011",
+          "start": "2026-06-13T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "SG Ladenburg Romans 2/Mannheim Tornados 2",
+            "short": "LAD2/MAT2",
+            "isUs": false
+          },
+          "homeRuns": 14,
+          "awayRuns": 16,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63292/combined_scoresheets/Spiel-13-punkt-011.pdf"
+        },
+        {
+          "id": 63285,
+          "number": "13.004",
+          "start": "2026-06-21T15:30:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "SG Crailsheim Sentinels / Bad Mergentheim Warriors 2",
+            "short": "MGH2/CRA",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 23,
+          "awayRuns": 22,
+          "field": {
+            "name": "Deutschordensstadion Baseballplatz",
+            "city": "Bad Mergentheim",
+            "street": "Arkau 6"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63285/combined_scoresheets/Spiel-13-punkt-004.pdf"
+        },
+        {
+          "id": 63295,
+          "number": "13.014",
+          "start": "2026-07-12T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "SG Crailsheim Sentinels / Bad Mergentheim Warriors 2",
+            "short": "MGH2/CRA",
+            "isUs": false
+          },
+          "homeRuns": 19,
+          "awayRuns": 14,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63295/combined_scoresheets/Spiel-13-punkt-014.pdf"
+        },
+        {
+          "id": 63297,
+          "number": "13.016",
+          "start": "2026-07-18T15:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Freiberg Brewers",
+            "short": "FRB",
+            "isUs": false
+          },
+          "homeRuns": 3,
+          "awayRuns": 18,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63297/combined_scoresheets/Spiel-13-punkt-016.pdf"
+        },
+        {
+          "id": 63298,
+          "number": "13.017",
+          "start": "2026-07-26T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Heilbronn Pirates",
+            "short": "HEP",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 22,
+          "awayRuns": 7,
+          "field": {
+            "name": "Heilbronn Pirates Baseball Field",
+            "city": "Heilbronn",
+            "street": "Viehweide 31"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63298/combined_scoresheets/Spiel-13-punkt-017.pdf"
+        },
+        {
+          "id": 63300,
+          "number": "13.019",
+          "start": "2026-09-12T14:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Freiberg Brewers",
+            "short": "FRB",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 11,
+          "awayRuns": 21,
+          "field": {
+            "name": "Kunstrasenplatz am Wasen",
+            "city": "Freiberg",
+            "street": "Talstr."
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63300/combined_scoresheets/Spiel-13-punkt-019.pdf"
+        }
+      ]
+    },
+    {
+      "leagueId": 6366,
+      "name": "Baseball Pokal",
+      "label": "Herren – Pokal",
+      "team": "herren",
+      "fetchedAt": "2026-10-22T17:30:45.478Z",
+      "standings": null,
+      "games": [
+        {
+          "id": 62955,
+          "number": "99-008",
+          "start": "2026-05-01T15:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Aichelberg Indians",
+            "short": "AIC",
+            "isUs": false
+          },
+          "homeRuns": 0,
+          "awayRuns": 18,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/62955/combined_scoresheets/Spiel-99-008.pdf"
+        }
+      ]
+    },
+    {
+      "leagueId": 6353,
+      "name": "Jugend Verbandsliga",
+      "label": "Jugend – Verbandsliga",
+      "team": "jugend",
+      "fetchedAt": "2026-10-22T17:30:45.544Z",
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Ladenburg Romans",
+          "short": "LAD",
+          "isUs": false,
+          "games": 9,
+          "wins": 8,
+          "losses": 1,
+          "pct": ".889",
+          "gamesBehind": "0",
+          "streak": "W3",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 2,
+          "team": "Stuttgart Reds",
+          "short": "STU",
+          "isUs": false,
+          "games": 9,
+          "wins": 6,
+          "losses": 3,
+          "pct": ".667",
+          "gamesBehind": "2",
+          "streak": "L1",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 3,
+          "team": "Bretten Kangaroos",
+          "short": "BRK",
+          "isUs": true,
+          "games": 9,
+          "wins": 4,
+          "losses": 5,
+          "pct": ".444",
+          "gamesBehind": "4",
+          "streak": "W1",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 4,
+          "team": "Heidenheim Heideköpfe/ LLZ U15",
+          "short": "HDH",
+          "isUs": false,
+          "games": 9,
+          "wins": 0,
+          "losses": 9,
+          "pct": ".000",
+          "gamesBehind": "8",
+          "streak": "L9",
+          "outOfCompetition": false
+        }
+      ],
+      "games": [
+        {
+          "id": 63422,
+          "number": "21.001",
+          "start": "2026-04-18T10:30:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Heidenheim Heideköpfe/ LLZ U15",
+            "short": "HDH",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 8,
+          "awayRuns": 13,
+          "field": {
+            "name": "Rauhbuch-Sportplatz ('Menzel-Field')",
+            "city": "Heidenheim an der Brenz",
+            "street": "Richard-Wagner-Straße 56"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63422/combined_scoresheets/Spiel-21-punkt-001.pdf"
+        },
+        {
+          "id": 63432,
+          "number": "21.011",
+          "start": "2026-05-03T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Heidenheim Heideköpfe/ LLZ U15",
+            "short": "HDH",
+            "isUs": false
+          },
+          "homeRuns": 8,
+          "awayRuns": 3,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63432/combined_scoresheets/Spiel-21-punkt-011.pdf"
+        },
+        {
+          "id": 63438,
+          "number": "21.017",
+          "start": "2026-05-03T14:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Heidenheim Heideköpfe/ LLZ U15",
+            "short": "HDH",
+            "isUs": false
+          },
+          "homeRuns": 10,
+          "awayRuns": 8,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63438/combined_scoresheets/Spiel-21-punkt-017.pdf"
+        },
+        {
+          "id": 63425,
+          "number": "21.004",
+          "start": "2026-05-09T15:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Stuttgart Reds",
+            "short": "STU",
+            "isUs": false
+          },
+          "homeRuns": 1,
+          "awayRuns": 22,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63425/combined_scoresheets/Spiel-21-punkt-004.pdf"
+        },
+        {
+          "id": 63427,
+          "number": "21.006",
+          "start": "2026-05-16T14:30:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Ladenburg Romans",
+            "short": "LAD",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 16,
+          "awayRuns": 2,
+          "field": {
+            "name": "Römerstadion Ladenburg",
+            "city": "Ladenburg",
+            "street": "Römerstadion 8"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63427/combined_scoresheets/Spiel-21-punkt-006.pdf"
+        },
+        {
+          "id": 63429,
+          "number": "21.008",
+          "start": "2026-06-21T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Ladenburg Romans",
+            "short": "LAD",
+            "isUs": false
+          },
+          "homeRuns": 5,
+          "awayRuns": 24,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63429/combined_scoresheets/Spiel-21-punkt-008.pdf"
+        },
+        {
+          "id": 63436,
+          "number": "21.015",
+          "start": "2026-07-18T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Ladenburg Romans",
+            "short": "LAD",
+            "isUs": false
+          },
+          "homeRuns": 3,
+          "awayRuns": 20,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63436/combined_scoresheets/Spiel-21-punkt-015.pdf"
+        },
+        {
+          "id": 63439,
+          "number": "21.018",
+          "start": "2026-09-12T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Stuttgart Reds",
+            "short": "STU",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 16,
+          "awayRuns": 7,
+          "field": {
+            "name": "TVC-Ballpark",
+            "city": "Stuttgart",
+            "street": "Am Schnarrenberg 10"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63439/combined_scoresheets/Spiel-21-punkt-018.pdf"
+        },
+        {
+          "id": 63434,
+          "number": "21.013",
+          "start": "2026-10-17T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Stuttgart Reds",
+            "short": "STU",
+            "isUs": false
+          },
+          "homeRuns": 19,
+          "awayRuns": 14,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63434/combined_scoresheets/Spiel-21-punkt-013.pdf"
+        }
+      ]
+    },
+    {
+      "leagueId": 6358,
+      "name": "Schüler Landesliga",
+      "label": "Schüler – Landesliga",
+      "team": "schueler",
+      "fetchedAt": "2026-10-22T17:30:45.653Z",
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Bretten Kangaroos",
+          "short": "BRK",
+          "isUs": true,
+          "games": 24,
+          "wins": 19,
+          "losses": 5,
+          "pct": ".792",
+          "gamesBehind": "0",
+          "streak": "L2",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 2,
+          "team": "Remchingen Racoons",
+          "short": "REM",
+          "isUs": false,
+          "games": 24,
+          "wins": 19,
+          "losses": 5,
+          "pct": ".792",
+          "gamesBehind": "0",
+          "streak": "W14",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 3,
+          "team": "Stuttgart Reds 2",
+          "short": "STU2",
+          "isUs": false,
+          "games": 22,
+          "wins": 13,
+          "losses": 9,
+          "pct": ".591",
+          "gamesBehind": "5",
+          "streak": "W2",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 4,
+          "team": "Aalen Strikers (a.K.)",
+          "short": "AAL",
+          "isUs": false,
+          "games": 22,
+          "wins": 7,
+          "losses": 15,
+          "pct": ".318",
+          "gamesBehind": "11",
+          "streak": "L6",
+          "outOfCompetition": true
+        },
+        {
+          "rank": 5,
+          "team": "SG Ravensburg Leprechauns/Green Sox Göppingen",
+          "short": "RAL/GOP",
+          "isUs": false,
+          "games": 24,
+          "wins": 0,
+          "losses": 24,
+          "pct": ".000",
+          "gamesBehind": "19",
+          "streak": "L24",
+          "outOfCompetition": false
+        }
+      ],
+      "games": [
+        {
+          "id": 63601,
+          "number": "26.002-1",
+          "start": "2026-04-18T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Aalen Strikers (a.K.)",
+            "short": "AAL",
+            "isUs": false
+          },
+          "homeRuns": 16,
+          "awayRuns": 0,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63601/combined_scoresheets/Spiel-26-punkt-002-1.pdf"
+        },
+        {
+          "id": 63602,
+          "number": "26.002-2",
+          "start": "2026-04-18T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Aalen Strikers (a.K.)",
+            "short": "AAL",
+            "isUs": false
+          },
+          "homeRuns": 17,
+          "awayRuns": 1,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63602/combined_scoresheets/Spiel-26-punkt-002-2.pdf"
+        },
+        {
+          "id": 63605,
+          "number": "26.004-1",
+          "start": "2026-04-25T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Remchingen Racoons",
+            "short": "REM",
+            "isUs": false
+          },
+          "homeRuns": 13,
+          "awayRuns": 3,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63605/combined_scoresheets/Spiel-26-punkt-004-1.pdf"
+        },
+        {
+          "id": 63606,
+          "number": "26.004-2",
+          "start": "2026-04-25T12:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Remchingen Racoons",
+            "short": "REM",
+            "isUs": false
+          },
+          "homeRuns": 8,
+          "awayRuns": 3,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63606/combined_scoresheets/Spiel-26-punkt-004-2.pdf"
+        },
+        {
+          "id": 63607,
+          "number": "26.005-1",
+          "start": "2026-05-03T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Remchingen Racoons",
+            "short": "REM",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 7,
+          "awayRuns": 18,
+          "field": {
+            "name": "Sportplatz an der Jahnhalle",
+            "city": "Remchingen",
+            "street": "Jahnstraße 6"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63607/combined_scoresheets/Spiel-26-punkt-005-1.pdf"
+        },
+        {
+          "id": 63608,
+          "number": "26.005-2",
+          "start": "2026-05-03T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Remchingen Racoons",
+            "short": "REM",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 5,
+          "awayRuns": 8,
+          "field": {
+            "name": "Sportplatz an der Jahnhalle",
+            "city": "Remchingen",
+            "street": "Jahnstraße 6"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63608/combined_scoresheets/Spiel-26-punkt-005-2.pdf"
+        },
+        {
+          "id": 63613,
+          "number": "26.008-1",
+          "start": "2026-05-10T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "SG Ravensburg Leprechauns/Green Sox Göppingen",
+            "short": "RAL/GOP",
+            "isUs": false
+          },
+          "homeRuns": 10,
+          "awayRuns": 0,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63613/combined_scoresheets/Spiel-26-punkt-008-1.pdf"
+        },
+        {
+          "id": 63614,
+          "number": "26.008-2",
+          "start": "2026-05-10T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "SG Ravensburg Leprechauns/Green Sox Göppingen",
+            "short": "RAL/GOP",
+            "isUs": false
+          },
+          "homeRuns": 13,
+          "awayRuns": 2,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63614/combined_scoresheets/Spiel-26-punkt-008-2.pdf"
+        },
+        {
+          "id": 63623,
+          "number": "26.013-1",
+          "start": "2026-06-20T09:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Remchingen Racoons",
+            "short": "REM",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 14,
+          "awayRuns": 4,
+          "field": {
+            "name": "Sportplatz an der Jahnhalle",
+            "city": "Remchingen",
+            "street": "Jahnstraße 6"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63623/combined_scoresheets/Spiel-26-punkt-013-1.pdf"
+        },
+        {
+          "id": 63624,
+          "number": "26.013-2",
+          "start": "2026-06-20T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Remchingen Racoons",
+            "short": "REM",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 3,
+          "awayRuns": 12,
+          "field": {
+            "name": "Sportplatz an der Jahnhalle",
+            "city": "Remchingen",
+            "street": "Jahnstraße 6"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63624/combined_scoresheets/Spiel-26-punkt-013-2.pdf"
+        },
+        {
+          "id": 63637,
+          "number": "26.020-1",
+          "start": "2026-07-12T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Stuttgart Reds 2",
+            "short": "STU2",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 9,
+          "awayRuns": 6,
+          "field": {
+            "name": "TVC-Ballpark",
+            "city": "Stuttgart",
+            "street": "Am Schnarrenberg 10"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63637/combined_scoresheets/Spiel-26-punkt-020-1.pdf"
+        },
+        {
+          "id": 63638,
+          "number": "26.020-2",
+          "start": "2026-07-12T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Stuttgart Reds 2",
+            "short": "STU2",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 14,
+          "awayRuns": 8,
+          "field": {
+            "name": "TVC-Ballpark",
+            "city": "Stuttgart",
+            "street": "Am Schnarrenberg 10"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63638/combined_scoresheets/Spiel-26-punkt-020-2.pdf"
+        },
+        {
+          "id": 63643,
+          "number": "26.023-1",
+          "start": "2026-07-25T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Aalen Strikers (a.K.)",
+            "short": "AAL",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 0,
+          "awayRuns": 10,
+          "field": {
+            "name": "Aalener Sportallianz - Rohrwang",
+            "city": "Aalen",
+            "street": "Stadionweg 11"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63643/combined_scoresheets/Spiel-26-punkt-023-1.pdf"
+        },
+        {
+          "id": 63644,
+          "number": "26.023-2",
+          "start": "2026-07-25T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Aalen Strikers (a.K.)",
+            "short": "AAL",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 1,
+          "awayRuns": 12,
+          "field": {
+            "name": "Aalener Sportallianz - Rohrwang",
+            "city": "Aalen",
+            "street": "Stadionweg 11"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63644/combined_scoresheets/Spiel-26-punkt-023-2.pdf"
+        },
+        {
+          "id": 63647,
+          "number": "26.025-1",
+          "start": "2026-08-01T11:00:00+02:00",
+          "state": "no_show",
+          "stateLabel": "Nichtantreten gem. BuSpO Art. 11.2.04",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "SG Ravensburg Leprechauns/Green Sox Göppingen",
+            "short": "RAL/GOP",
+            "isUs": false
+          },
+          "homeRuns": 5,
+          "awayRuns": 0,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": null,
+          "scoresheetUrl": null
+        },
+        {
+          "id": 63648,
+          "number": "26.025-2",
+          "start": "2026-08-01T13:00:00+02:00",
+          "state": "no_show",
+          "stateLabel": "Nichtantreten gem. BuSpO Art. 11.2.04",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "SG Ravensburg Leprechauns/Green Sox Göppingen",
+            "short": "RAL/GOP",
+            "isUs": false
+          },
+          "homeRuns": 5,
+          "awayRuns": 0,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": null,
+          "scoresheetUrl": null
+        },
+        {
+          "id": 63651,
+          "number": "26.027-1",
+          "start": "2026-09-19T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Stuttgart Reds 2",
+            "short": "STU2",
+            "isUs": false
+          },
+          "homeRuns": 11,
+          "awayRuns": 1,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63651/combined_scoresheets/Spiel-26-punkt-027-1.pdf"
+        },
+        {
+          "id": 63652,
+          "number": "26.027-2",
+          "start": "2026-09-19T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Stuttgart Reds 2",
+            "short": "STU2",
+            "isUs": false
+          },
+          "homeRuns": 11,
+          "awayRuns": 1,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63652/combined_scoresheets/Spiel-26-punkt-027-2.pdf"
+        },
+        {
+          "id": 63657,
+          "number": "26.030-1",
+          "start": "2026-09-27T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Aalen Strikers (a.K.)",
+            "short": "AAL",
+            "isUs": false
+          },
+          "homeRuns": 11,
+          "awayRuns": 1,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63657/combined_scoresheets/Spiel-26-punkt-030-1.pdf"
+        },
+        {
+          "id": 63658,
+          "number": "26.030-2",
+          "start": "2026-09-27T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Aalen Strikers (a.K.)",
+            "short": "AAL",
+            "isUs": false
+          },
+          "homeRuns": 11,
+          "awayRuns": 1,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63658/combined_scoresheets/Spiel-26-punkt-030-2.pdf"
+        },
+        {
+          "id": 63641,
+          "number": "26.022-1",
+          "start": "2026-10-04T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "SG Ravensburg Leprechauns/Green Sox Göppingen",
+            "short": "RAL/GOP",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 3,
+          "awayRuns": 13,
+          "field": {
+            "name": "Nato Wiese",
+            "city": "Göppingen",
+            "street": "John-F.-Kennedy Str. 28"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63641/combined_scoresheets/Spiel-26-punkt-022-1.pdf"
+        },
+        {
+          "id": 63642,
+          "number": "26.022-2",
+          "start": "2026-10-04T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "SG Ravensburg Leprechauns/Green Sox Göppingen",
+            "short": "RAL/GOP",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 0,
+          "awayRuns": 16,
+          "field": {
+            "name": "Nato Wiese",
+            "city": "Göppingen",
+            "street": "John-F.-Kennedy Str. 28"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "W",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63642/combined_scoresheets/Spiel-26-punkt-022-2.pdf"
+        },
+        {
+          "id": 63617,
+          "number": "26.010-1",
+          "start": "2026-10-10T11:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Stuttgart Reds 2",
+            "short": "STU2",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 6,
+          "awayRuns": 3,
+          "field": {
+            "name": "TVC-Ballpark",
+            "city": "Stuttgart",
+            "street": "Am Schnarrenberg 10"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63617/combined_scoresheets/Spiel-26-punkt-010-1.pdf"
+        },
+        {
+          "id": 63618,
+          "number": "26.010-2",
+          "start": "2026-10-10T13:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Stuttgart Reds 2",
+            "short": "STU2",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 11,
+          "awayRuns": 6,
+          "field": {
+            "name": "TVC-Ballpark",
+            "city": "Stuttgart",
+            "street": "Am Schnarrenberg 10"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63618/combined_scoresheets/Spiel-26-punkt-010-2.pdf"
+        }
+      ]
+    },
+    {
+      "leagueId": 6343,
+      "name": "T-Ball",
+      "label": "T-Ball",
+      "team": "t-ball",
+      "fetchedAt": "2026-10-22T17:30:45.832Z",
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Herrenberg Wanderers",
+          "short": "HER2",
+          "isUs": false,
+          "games": 9,
+          "wins": 8,
+          "losses": 1,
+          "pct": ".889",
+          "gamesBehind": "0",
+          "streak": "W2",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 2,
+          "team": "Stuttgart Reds",
+          "short": "STU",
+          "isUs": false,
+          "games": 11,
+          "wins": 9,
+          "losses": 2,
+          "pct": ".818",
+          "gamesBehind": "0",
+          "streak": "W1",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 3,
+          "team": "Karlsruhe Cougars",
+          "short": "KAR",
+          "isUs": false,
+          "games": 9,
+          "wins": 7,
+          "losses": 2,
+          "pct": ".778",
+          "gamesBehind": "1",
+          "streak": "W6",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 4,
+          "team": "Heidelberg Hedgehogs",
+          "short": "HEH",
+          "isUs": false,
+          "games": 9,
+          "wins": 7,
+          "losses": 2,
+          "pct": ".778",
+          "gamesBehind": "1",
+          "streak": "W3",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 5,
+          "team": "Ladenburg Romans",
+          "short": "LAD",
+          "isUs": false,
+          "games": 8,
+          "wins": 6,
+          "losses": 2,
+          "pct": ".750",
+          "gamesBehind": "1.5",
+          "streak": "L1",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 6,
+          "team": "Gammertingen Royals",
+          "short": "GAM",
+          "isUs": false,
+          "games": 6,
+          "wins": 3,
+          "losses": 3,
+          "pct": ".500",
+          "gamesBehind": "3.5",
+          "streak": "L1",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 7,
+          "team": "Green Sox Göppingen",
+          "short": "GOP",
+          "isUs": false,
+          "games": 8,
+          "wins": 3,
+          "losses": 5,
+          "pct": ".375",
+          "gamesBehind": "4.5",
+          "streak": "W1",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 8,
+          "team": "Schriesheim Raubritter",
+          "short": "SRR",
+          "isUs": false,
+          "games": 26,
+          "wins": 10,
+          "losses": 21,
+          "pct": ".323",
+          "gamesBehind": "9",
+          "streak": "L9",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 9,
+          "team": "Nagold Mohawks",
+          "short": "NAG",
+          "isUs": false,
+          "games": 14,
+          "wins": 4.5,
+          "losses": 9.5,
+          "pct": ".321",
+          "gamesBehind": "6",
+          "streak": "L3",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 10,
+          "team": "Falcons Ulm",
+          "short": "ULM",
+          "isUs": false,
+          "games": 6,
+          "wins": 0.5,
+          "losses": 5.5,
+          "pct": ".083",
+          "gamesBehind": "6",
+          "streak": "L4",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 11,
+          "team": "Ravensburg Leprechauns",
+          "short": "RAL",
+          "isUs": false,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "pct": ".000",
+          "gamesBehind": "3.5",
+          "streak": "",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 12,
+          "team": "Heidenheim Heideköpfe U8",
+          "short": "HDH",
+          "isUs": false,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "pct": ".000",
+          "gamesBehind": "3.5",
+          "streak": "",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 13,
+          "team": "Tübingen Hawks",
+          "short": "TUB",
+          "isUs": false,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "pct": ".000",
+          "gamesBehind": "3.5",
+          "streak": "",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 14,
+          "team": "SG Aalen Strikers/Heubach Hunters",
+          "short": "AAL/HEU",
+          "isUs": false,
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "pct": ".000",
+          "gamesBehind": "4",
+          "streak": "L1",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 15,
+          "team": "Remchingen Racoons",
+          "short": "REM",
+          "isUs": false,
+          "games": 2,
+          "wins": 0,
+          "losses": 2,
+          "pct": ".000",
+          "gamesBehind": "4.5",
+          "streak": "L2",
+          "outOfCompetition": false
+        },
+        {
+          "rank": 16,
+          "team": "Bretten Kangaroos",
+          "short": "BRK",
+          "isUs": true,
+          "games": 2,
+          "wins": 0,
+          "losses": 2,
+          "pct": ".000",
+          "gamesBehind": "4.5",
+          "streak": "L2",
+          "outOfCompetition": false
+        }
+      ],
+      "games": [
+        {
+          "id": 65324,
+          "number": "29.082",
+          "start": "2026-07-19T09:30:00+02:00",
+          "state": "planned",
+          "stateLabel": "geplant",
+          "home": {
+            "name": "Remchingen Racoons",
+            "short": "REM",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": null,
+          "awayRuns": null,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": null,
+          "scoresheetUrl": null
+        },
+        {
+          "id": 65328,
+          "number": "29.086",
+          "start": "2026-07-19T11:00:00+02:00",
+          "state": "planned",
+          "stateLabel": "geplant",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Schriesheim Raubritter",
+            "short": "SRR",
+            "isUs": false
+          },
+          "homeRuns": null,
+          "awayRuns": null,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": null,
+          "scoresheetUrl": null
+        },
+        {
+          "id": 65332,
+          "number": "29.090",
+          "start": "2026-07-19T12:30:00+02:00",
+          "state": "planned",
+          "stateLabel": "geplant",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Stuttgart Reds",
+            "short": "STU",
+            "isUs": false
+          },
+          "homeRuns": null,
+          "awayRuns": null,
+          "field": {
+            "name": "Kangaroos Ballpark",
+            "city": "Bretten",
+            "street": "Häringsäcker 1"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": null,
+          "scoresheetUrl": null
+        },
+        {
+          "id": 65885,
+          "number": "29.122",
+          "start": "2026-10-03T10:00:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Heidelberg Hedgehogs",
+            "short": "HEH",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": 16,
+          "awayRuns": 5,
+          "field": {
+            "name": "Cougars Ballpark - Schüler/Softball-Feld (Feld 3)",
+            "city": "Karlsruhe",
+            "street": "Erzbergerstr. 131"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": "L",
+          "scoresheetUrl": null
+        },
+        {
+          "id": 65889,
+          "number": "29.126",
+          "start": "2026-10-03T11:50:00+02:00",
+          "state": "played",
+          "stateLabel": "gespielt",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Green Sox Göppingen",
+            "short": "GOP",
+            "isUs": false
+          },
+          "homeRuns": 10,
+          "awayRuns": 22,
+          "field": {
+            "name": "Cougars Ballpark - Schüler/Softball-Feld (Feld 3)",
+            "city": "Karlsruhe",
+            "street": "Erzbergerstr. 131"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": "L",
+          "scoresheetUrl": null
+        },
+        {
+          "id": 65905,
+          "number": "29.132",
+          "start": "2026-10-10T11:00:00+02:00",
+          "state": "planned",
+          "stateLabel": "geplant",
+          "home": {
+            "name": "Remchingen Racoons",
+            "short": "REM",
+            "isUs": false
+          },
+          "away": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "homeRuns": null,
+          "awayRuns": null,
+          "field": {
+            "name": "Sportplatz an der Jahnhalle",
+            "city": "Remchingen",
+            "street": "Jahnstraße 6"
+          },
+          "isUs": true,
+          "isHome": false,
+          "result": null,
+          "scoresheetUrl": null
+        },
+        {
+          "id": 65908,
+          "number": "29.135",
+          "start": "2026-10-10T12:30:00+02:00",
+          "state": "planned",
+          "stateLabel": "geplant",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Schriesheim Raubritter",
+            "short": "SRR",
+            "isUs": false
+          },
+          "homeRuns": null,
+          "awayRuns": null,
+          "field": {
+            "name": "Sportplatz an der Jahnhalle",
+            "city": "Remchingen",
+            "street": "Jahnstraße 6"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": null,
+          "scoresheetUrl": null
+        },
+        {
+          "id": 65910,
+          "number": "29.137",
+          "start": "2026-10-10T13:30:00+02:00",
+          "state": "planned",
+          "stateLabel": "geplant",
+          "home": {
+            "name": "Bretten Kangaroos",
+            "short": "BRK",
+            "isUs": true
+          },
+          "away": {
+            "name": "Green Sox Göppingen",
+            "short": "GOP",
+            "isUs": false
+          },
+          "homeRuns": null,
+          "awayRuns": null,
+          "field": {
+            "name": "Sportplatz an der Jahnhalle",
+            "city": "Remchingen",
+            "street": "Jahnstraße 6"
+          },
+          "isUs": true,
+          "isHome": true,
+          "result": null,
+          "scoresheetUrl": null
+        }
+      ]
+    }
+  ]
+}

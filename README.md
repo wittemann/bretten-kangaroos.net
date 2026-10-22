@@ -63,6 +63,21 @@ wird so nicht überschrieben.
 `public/.htaccess` sorgt für HTTPS-Weiterleitung, die 404-Seite, Caching (`/_astro/` ein Jahr, Bilder
 einen Monat, HTML immer frisch) und sperrt Dateien mit Punkt am Anfang.
 
+## Spielplan und Tabellen (BSM)
+
+`/spielplan` und `/tabellen` zeigen Spiele und Tabellen aus dem BSM (Baseball Softball Manager).
+`npm run build` ruft vorher `scripts/fetch-bsm.mjs` auf; das Skript holt die Daten der Ligen aus
+`src/data/bsm-leagues.json` und schreibt `src/data/bsm-cache.json`, das die Seiten lesen. Ist der BSM
+nicht erreichbar, bleiben die alten Daten stehen, der Build bricht nie deswegen ab. Der Deploy-Workflow
+committet die Datei zurück, wenn sich Ergebnisse geändert haben.
+
+```bash
+npm run bsm
+```
+
+holt die Daten von Hand (`npm run dev` tut das nicht). Ligen bekommen jede Saison neue IDs – dann
+`bsm-leagues.json` anpassen, wie in `docs/bsm-api.md` beschrieben.
+
 ## Turnier-Anmeldung (PHP)
 
 Das Formular auf der Startseite (`src/layouts/components/TournamentSignup.astro`) schickt an

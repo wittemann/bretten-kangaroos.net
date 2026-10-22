@@ -48,8 +48,8 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] Create an SFTP user in IONOS and store `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_PASSWORD`, `DEPLOY_PATH`, `DEPLOY_KNOWN_HOSTS` as GitHub repo secrets (→ WP3)
 - [ ] Set up a test subdomain (e.g. `neu.bretten-kangaroos.net`) pointing at the `DEPLOY_PATH` folder and run the first deploy (→ WP3)
 - [ ] Upload `private/signup-config.php` + `private/.htaccess` next to the web root once by hand (→ WP8)
-- [ ] Provide the BSM API key only if WP4 finds out the JSON API needs one (I have one) (→ WP4)
-- [ ] Confirm which leagues/teams show up on the standings and games pages (→ WP4)
+- [x] Provide the BSM API key only if WP4 finds out the JSON API needs one → not needed (→ WP4)
+- [x] Confirm which leagues/teams show up on the standings and games pages → the teams in the current site's menu (→ WP4, see `bsm-api.md`)
 - [x] Find out what the old website runs on → WordPress, full access, local backup (→ WP7)
 - [ ] Point Claude to the local backup (path) or put a WordPress export (WXR XML via Tools → Export) next to it (→ WP1, WP7)
 - [x] Decide how much moves over → everything (all pages and the complete news archive) (→ WP7)
@@ -92,11 +92,13 @@ Needs: WP2, deploy route + SFTP secrets from my tasks. Comes early so every late
 ### WP4 – BSM integration (custom pages)
 Needs: WP2, league/team confirmation from my tasks.
 
-- [ ] Find out whether the plain BSM JSON API works without a key (assumption: yes; a key is available if not) — **Sonnet**
-- [ ] Explore the BSM API and design the data fetch (endpoints, IDs, data model) — **Opus**
-- [ ] Fetch at build time; if BSM can't be reached, keep the last data and don't break the build — **Opus**
-- [ ] Standings page per team/league — **Sonnet**
-- [ ] Schedule & results (games) page — **Sonnet**
+- [x] Find out whether the plain BSM JSON API works without a key (assumption: yes; a key is available if not) — **Sonnet**
+- [x] Explore the BSM API and design the data fetch (endpoints, IDs, data model) — **Opus**
+- [x] Fetch at build time; if BSM can't be reached, keep the last data and don't break the build — **Opus**
+- [x] Standings page per team/league — **Sonnet**
+- [x] Schedule & results (games) page — **Sonnet**
+
+- [ ] Once a year: new league IDs into `src/data/bsm-leagues.json` (see `bsm-api.md`) — **Haiku**
 
 ### WP5 – Sponsors
 Needs: WP1 (sponsor fields), WP2. Can run in parallel with WP4.

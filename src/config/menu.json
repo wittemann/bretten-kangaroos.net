@@ -9,6 +9,14 @@
       "url": "/news"
     },
     {
+      "name": "Spielplan",
+      "url": "/spielplan"
+    },
+    {
+      "name": "Tabellen",
+      "url": "/tabellen"
+    },
+    {
       "name": "Sponsoren",
       "url": "/sponsoren"
     },

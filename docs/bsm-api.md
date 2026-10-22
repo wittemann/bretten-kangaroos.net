@@ -52,8 +52,10 @@ logo `https://bsm.baseball-softball.de/system/clubs/logos/000/000/398/thumb/Olds
 | 6366 | Baseball Pokal (`PH`) | 23914 | 46519 | 1 | 12. of 22 |
 
 Notes:
-- Which of these show on the site is still Martin's call (todo: "Confirm which leagues/teams show up"). The Pokal probably
-  only wants a games list, not a table. T-Ball has tournament days whose last games are still `planned` without a score.
+- **Decision (Martin, 22.10.):** show the teams from the current site's menu – Herren, Jugend, Schüler, T-Ball.
+  The Pokal goes with Herren as games only, no table. Softball Schüler (6346) is left out: the old site has no page for it
+  (its "Softball" page is the adult slow-pitch team, which plays no BSM league). BKIL is club-internal, not in BSM.
+  T-Ball has tournament days whose last games are still `planned` without a score.
 - In every league Bretten has exactly one team; the team is identified in match data by club ID 398 in
   `home_league_entry.team.clubs[]` / `away_league_entry.team.clubs[]` (works for SGs with several clubs too).
 - League `6349` (Landesliga Herren) only showed up because another team played at the Kangaroos Ballpark – no Bretten team.
@@ -186,7 +188,6 @@ Config, committed and edited once per season (could later move into Pages CMS / 
     { "leagueId": 6350, "team": "herren",  "label": "Herren – Bezirksliga",       "standings": true },
     { "leagueId": 6353, "team": "jugend",  "label": "Jugend – Verbandsliga",      "standings": true },
     { "leagueId": 6358, "team": "schueler","label": "Schüler – Landesliga",       "standings": true },
-    { "leagueId": 6346, "team": "softball-schueler", "label": "Softball Schüler", "standings": true },
     { "leagueId": 6343, "team": "tball",   "label": "T-Ball",                     "standings": true },
     { "leagueId": 6366, "team": "herren",  "label": "Baseball Pokal",             "standings": false }
   ]
@@ -211,14 +212,13 @@ type LeagueData = {
   team: string;                 // team page slug from config
   fetchedAt: string;            // when this league was last fetched successfully
   standings: StandingRow[] | null;
-  games: Game[];                // all league games, sorted by time
+  games: Game[];                // Bretten games only, sorted by time (keeps the committed cache ~50 KB)
 };
 
 type StandingRow = {
   rank: number;                 // "1." → 1
   team: string;                 // team_name
   short: string;
-  logo: string | null;          // first club's logo_url
   isUs: boolean;                // clubs contain 398
   games: number; wins: number; losses: number;
   pct: string;                  // ".792" – keep the baseball formatting
@@ -242,12 +242,15 @@ type Game = {
   scoresheetUrl: string | null;
 };
 
-type GameTeam = { name: string; short: string; logo: string | null; isUs: boolean };
+type GameTeam = { name: string; short: string; isUs: boolean };
 ```
 
-Pages (WP4 page work, not done here):
+Logos are left out on purpose: showing them would mean hotlinking images from the BSM server, which sends
+visitors' IP addresses to a third party.
+
+Pages (built: `/tabellen`, `/spielplan`, components `BsmStandings.astro` / `BsmGames.astro`, helpers in `src/lib/bsm.ts`):
 - **Standings page:** one table per league with `standings: true`, Bretten row highlighted, "Stand: {fetchedAt}" below.
-- **Games page:** Bretten games only (`isUs`), grouped "Nächste Spiele" (`start` ≥ now, not played) and "Ergebnisse"
+- **Games page:** Bretten games only (`isUs`), grouped "Nächste Spiele" (`planned`, today or later) and "Ergebnisse"
   (played, newest first), filter by team; home games marked; link to score sheet when present.
 - Team pages from WP1 can reuse both, filtered by `team`.
 - "Now" is the build time – fine because of the hourly weekend rebuilds (WP6).
@@ -311,8 +314,6 @@ the 16 MB season dump in the build.
 
 ## Open points
 
-- Martin: confirm which of the six leagues appear and how they are labelled (todo "My tasks").
-- Decide whether `bsm-cache.json` is committed by the Action (recommended) – affects WP3/WP6 workflow permissions.
 - BSM has no documented API contract/stability promise for the keyless endpoints; if they start answering 403 the
   fallback keeps the site up and the key can be added as a GitHub secret (`BSM_API_KEY`, sent as `api_key=` query
   parameter) without changing the design.

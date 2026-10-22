@@ -1,0 +1,36 @@
+{
+  "clubId": 398,
+  "season": 2026,
+  "leagues": [
+    {
+      "leagueId": 6350,
+      "team": "herren",
+      "label": "Herren – Bezirksliga",
+      "standings": true
+    },
+    {
+      "leagueId": 6366,
+      "team": "herren",
+      "label": "Herren – Pokal",
+      "standings": false
+    },
+    {
+      "leagueId": 6353,
+      "team": "jugend",
+      "label": "Jugend – Verbandsliga",
+      "standings": true
+    },
+    {
+      "leagueId": 6358,
+      "team": "schueler",
+      "label": "Schüler – Landesliga",
+      "standings": true
+    },
+    {
+      "leagueId": 6343,
+      "team": "t-ball",
+      "label": "T-Ball",
+      "standings": true
+    }
+  ]
+}
