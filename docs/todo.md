@@ -71,7 +71,7 @@ Needs: the WordPress backup (path) from my tasks.
       on what could go or be merged — **Opus**
 - [ ] → my review of the sitemap
 - [ ] Design the content structure: pages, news, teams, sponsors, plus what BSM data needs per team (league IDs) — **Opus**
-- [ ] Extend `.pages.yml` to match (incl. sponsors: name, logo, link, order) — **Sonnet**
+- [ ] Extend `.pages.yml` to match (incl. sponsors: name, logo, link, order; team files; all teams in the news team select; optional "Zahlen" list) — **Sonnet**
 - [ ] Short how-to for writers (create news, upload images, drafts) — **Haiku**
 
 ### WP2 – Astro + Bookworm theme
@@ -80,8 +80,9 @@ Needs: WP1.
 - [ ] Set up Astro with the Bookworm theme in the repo — **Sonnet**
 - [ ] Content collections that read `content/`, images from `public/images` — **Sonnet**
 - [ ] Hide news with `draft: true` in the build — **Haiku**
-- [ ] Work out the Kangaroos look with **Claude Design** (colours, logo, navigation, layouts of the pages from WP1) — together with me
-- [ ] Apply the design from Claude Design to the Bookworm theme — **Sonnet**
+- [x] Work out the Kangaroos look with **Claude Design** (colours, logo, navigation, layouts of the pages from WP1) — together with me → [`design.md`](design.md)
+- [ ] Apply the design from [`design.md`](design.md) to the Bookworm theme (colours, fonts, header/menus, footer, page templates) — **Sonnet**
+- [ ] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet**
 
 ### WP3 – Deployment pipeline
 Needs: WP2, deploy route + SFTP secrets from my tasks. Comes early so every later package is live right away.
@@ -98,6 +99,7 @@ Needs: WP2, league/team confirmation from my tasks.
 - [x] Standings page per team/league — **Sonnet**
 - [x] Schedule & results (games) page — **Sonnet**
 
+- [ ] Calendar: "In meinen Kalender" per game (.ics + Google link) and subscription feeds per team / all teams, generated at build time (see `design.md`) — **Sonnet**
 - [ ] Once a year: new league IDs into `src/data/bsm-leagues.json` (see `bsm-api.md`) — **Haiku**
 
 ### WP5 – Sponsors
