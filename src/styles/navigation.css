@@ -1,49 +1,51 @@
-/* navbar items */
-.navbar {
-  @apply relative flex max-w-[1260px] flex-wrap items-center justify-between;
+/* site header (docs/design.md: Clubhaus – green with a faint pinstripe) */
+.site-header {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(255 255 255 / 0.045) 0 2px,
+    transparent 2px 14px
+  );
 }
 
-.navbar-brand img {
-  @apply h-auto max-w-[170px] sm:h-auto sm:max-w-full;
+.container-wide {
+  @apply mx-auto w-full max-w-[1200px] px-4 md:px-8;
 }
 
-.navbar-nav {
-  @apply text-center md:text-left;
+.header-link {
+  @apply inline-flex min-h-11 cursor-pointer items-center rounded-[4px] px-3 font-heading text-intro font-semibold uppercase tracking-wide text-white transition hover:bg-white/10;
 }
 
-.nav-item {
-  @apply mx-1;
+.header-link[aria-current="page"] {
+  @apply underline decoration-2 underline-offset-8;
+  text-decoration-color: var(--color-leaf);
 }
 
-.nav-link {
-  @apply p-3 text-lg font-semibold text-dark transition hover:text-primary md:p-4;
+.verein-menu {
+  @apply absolute right-0 top-full z-50 mt-1 w-[420px] rounded-[6px] border border-line bg-white p-3 text-ink shadow-xl;
 }
 
-.nav-dropdown-list {
-  @apply z-10 rounded-lg bg-white px-6 py-3 shadow transition;
+.verein-menu[hidden] {
+  display: none;
 }
 
-.nav-dropdown-item {
-  @apply mb-1;
+.verein-item {
+  @apply flex min-h-11 flex-col rounded-[4px] px-3 py-2 transition hover:bg-chalk;
 }
 
-.nav-dropdown-link {
-  @apply block min-w-[150px] py-1 text-[17px] font-semibold text-dark transition hover:text-primary;
+/* phone menu */
+.mobile-menu {
+  @apply fixed inset-0 z-50 overflow-y-auto bg-forest text-white;
 }
 
-/* search style */
-.search-modal {
-  @apply invisible absolute top-0 left-0 right-0 z-10 h-10 bg-white opacity-0 transition md:h-full;
+.mobile-menu[hidden] {
+  display: none;
 }
 
-.search-modal .form-input {
-  @apply h-full w-full border-0 text-lg;
+.mobile-link {
+  @apply flex min-h-12 items-center font-heading text-[24px] font-semibold uppercase tracking-wide text-white;
 }
 
-.search-modal .search-close {
-  @apply absolute top-1/2 right-2 -translate-y-1/2 p-3 text-h4;
-}
-
-.search-modal.open {
-  @apply visible opacity-100;
+/* footer */
+.footer-link {
+  @apply inline-flex min-h-11 items-center text-white/85 transition hover:text-white hover:underline;
 }

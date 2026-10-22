@@ -8,11 +8,26 @@
   @apply max-w-[1000px]! px-4! md:px-8! mx-auto;
 }
 
-/* page heading */
+/* page title band: one shared style on every subpage (Kreide, 56px / 40px) */
+.page-title-band {
+  @apply border-b border-line bg-chalk py-10 md:py-14;
+}
+
+.page-title-band h1,
+.page-heading {
+  @apply text-title-sm md:text-title;
+}
+
+/* small uppercase rust label */
+.label {
+  @apply font-heading text-label font-semibold uppercase tracking-widest text-rust;
+}
+
+/* page heading (legacy, kept for existing templates) */
 .page-heading {
   @apply mb-20 text-center font-bold leading-10;
   &:after {
-    @apply mx-auto mt-4 block h-1 w-10 rounded-full bg-primary content-[''];
+    @apply mx-auto mt-4 block h-1 w-10 rounded-full bg-rust content-[''];
   }
 }
 
@@ -41,7 +56,7 @@
   li {
     @apply inline-block;
     a {
-      @apply block h-11 w-11 rounded-lg border border-light bg-transparent text-center text-white transition hover:border-primary hover:bg-primary;
+      @apply block h-11 w-11 rounded-lg border border-white/40 bg-transparent text-center text-white transition hover:border-white hover:bg-white/10;
       svg {
         @apply m-auto h-11 text-base;
       }

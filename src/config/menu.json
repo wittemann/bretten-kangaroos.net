@@ -1,29 +1,34 @@
 {
   "main": [
+    { "name": "Aktuelles", "url": "/news" },
+    { "name": "Teams", "url": "/teams" },
+    { "name": "Spielplan", "url": "/spielplan" },
+    { "name": "Tabellen", "url": "/tabellen" },
     {
-      "name": "Start",
-      "url": "/"
-    },
-    {
-      "name": "Aktuelles",
-      "url": "/news"
-    },
-    {
-      "name": "Spielplan",
-      "url": "/spielplan"
-    },
-    {
-      "name": "Tabellen",
-      "url": "/tabellen"
-    },
-    {
-      "name": "Sponsoren",
-      "url": "/sponsoren"
-    },
-    {
-      "name": "Testseite",
-      "url": "/test"
+      "name": "Verein",
+      "url": "/verein",
+      "hasChildren": true,
+      "children": [
+        { "name": "Ballpark", "url": "/ballpark", "description": "So findet ihr uns und das Spielfeld" },
+        { "name": "Vereinsgeschichte", "url": "/vereinsgeschichte", "description": "Seit 1992 am Ball" },
+        { "name": "Förderverein", "url": "/foerderverein", "description": "Den Baseballsport in Bretten unterstützen" },
+        { "name": "Intra League (BKIL)", "url": "/bkil", "description": "Unsere vereinsinterne Liga" },
+        { "name": "Sponsoren", "url": "/sponsoren", "description": "Danke an alle, die uns unterstützen" },
+        { "name": "Downloads", "url": "/downloads", "description": "Formulare und Dokumente" },
+        { "name": "Kontakt", "url": "/kontakt", "description": "Ansprechpartner und Anfahrt" }
+      ]
     }
   ],
-  "footer": []
+  "cta": { "name": "Probetraining", "url": "/probetraining" },
+  "address": {
+    "name": "Kangaroos Ballpark",
+    "street": "Häringsäcker 1",
+    "city": "75015 Bretten",
+    "url": "/ballpark",
+    "label": "Anfahrt"
+  },
+  "footer": [
+    { "name": "Impressum", "url": "/impressum" },
+    { "name": "Datenschutz", "url": "/datenschutz" }
+  ]
 }

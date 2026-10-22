@@ -5,33 +5,65 @@ import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import social from "@/config/social.json";
 import { markdownify } from "@/lib/utils/textConverter";
+
+const verein = menu.main.find((item) => item.hasChildren);
+const vereinLinks = (verein?.children ?? []).filter((link) => link.url !== "/kontakt");
 ---
 
-<footer class="section bg-dark">
-  <div class="container text-center">
-    {/* sponsor strip */}
-    <a href="/sponsoren" class="mb-6 inline-block text-white/75 hover:text-white transition-all">
-      Unsere Sponsoren
-    </a>
-    <Sponsors size="small" className="mb-12" />
-    {/* footer menu */}
-    <ul class="mb-8 space-x-4">
-      {
-        menu.footer.map((menu) => (
-          <li class="inline-block">
-            <a
-              href={menu.url}
-              class="p-4 text-white/75 hover:text-white transition-all"
-            >
-              {menu.name}
-            </a>
+<footer class="site-footer bg-forest text-white/85">
+  {/* sponsor strip */}
+  <section class="bg-chalk py-10" aria-labelledby="footer-sponsors">
+    <div class="container-wide text-center">
+      <a id="footer-sponsors" href="/sponsoren" class="label mb-5 inline-block hover:underline">Unsere Sponsoren</a>
+      <Sponsors size="small" />
+    </div>
+  </section>
+
+  <div class="container-wide grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <p class="mb-3 font-heading text-intro font-semibold uppercase tracking-wide text-white">{config.site.title}</p>
+      <address class="not-italic leading-relaxed">
+        {menu.address.name}<br />
+        {menu.address.street}<br />
+        {menu.address.city}
+      </address>
+      <a href={menu.address.url} class="mt-3 inline-flex min-h-11 items-center font-semibold text-white underline underline-offset-4">
+        {menu.address.label}
+      </a>
+    </div>
+    <nav aria-label="Verein">
+      <p class="mb-3 font-heading text-intro font-semibold uppercase tracking-wide text-white">Verein</p>
+      <ul>
+        {vereinLinks.map((link) => (
+          <li>
+            <a href={link.url} class="footer-link">{link.name}</a>
           </li>
-        ))
-      }
-    </ul>
-    {/* social icons */}
-    <Social source={social.main} className="social-icons mb-8" />
-    {/* copyright */}
-    <p set:html={markdownify(config.params.copyright)} class="text-white/75" />
+        ))}
+      </ul>
+    </nav>
+    <div>
+      <p class="mb-3 font-heading text-intro font-semibold uppercase tracking-wide text-white">Kontakt</p>
+      <ul>
+        <li><a href="/kontakt" class="footer-link">Ansprechpartner</a></li>
+        <li><a href="/probetraining" class="footer-link">Probetraining</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mb-3 font-heading text-intro font-semibold uppercase tracking-wide text-white">Folgt uns</p>
+      <Social source={social.main} className="social-icons" />
+    </div>
+  </div>
+
+  <div class="border-t border-white/15">
+    <div class="container-wide flex flex-col items-center justify-between gap-2 py-4 text-[15px] md:flex-row">
+      <p set:html={markdownify(config.params.copyright)} />
+      <ul class="flex gap-2">
+        {menu.footer.map((link) => (
+          <li>
+            <a href={link.url} class="footer-link">{link.name}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
   </div>
 </footer>

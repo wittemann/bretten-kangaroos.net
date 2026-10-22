@@ -1,89 +1,175 @@
 ---
-import Logo from "@/components/Logo.astro";
+import config from "@/config/config.json";
 import menu from "@/config/menu.json";
+import { teamNames, teamSlugs } from "@/lib/teams";
 
-export interface ChildNavigationLink {
-  name: string;
-  url: string;
-}
-
-export interface NavigationLink {
-  name: string;
-  url: string;
-  hasChildren?: boolean;
-  children?: ChildNavigationLink[];
-}
-
-const { main }: { main: NavigationLink[] } = menu;
+const { main, cta, address } = menu;
+const verein = main.find((item) => item.hasChildren)!;
+const mainLinks = main.filter((item) => !item.hasChildren);
+const topLinks = mainLinks.filter((item) => item.url !== "/teams");
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+const isActive = (url: string) => pathname === url || pathname.startsWith(`${url}/`);
 ---
 
-<header class="header pt-6">
-  <nav class="navbar container">
-    <!-- logo -->
-    <div class="order-0">
-      <Logo />
-    </div>
-    <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      id="show-button"
-      for="nav-toggle"
-      class="order-2 flex cursor-pointer items-center text-black md:order-1 md:hidden"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
-        <title>Menü öffnen</title>
-        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
-      </svg>
-    </label>
-    <label
-      id="hide-button"
-      for="nav-toggle"
-      class="order-2 hidden cursor-pointer items-center text-black md:order-1"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
-        <title>Menü schließen</title>
-        <polygon
-          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-          transform="rotate(45 10 10)"></polygon>
-      </svg>
-    </label>
-    <!-- /navbar toggler -->
+<header class="site-header sticky top-0 z-40 bg-forest text-white">
+  <nav class="container-wide flex h-[72px] items-center justify-between gap-6" aria-label="Hauptmenü">
+    <a href="/" class="flex items-center gap-3" aria-label={`${config.site.title} – Startseite`}>
+      <span class="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
+        <img src="/images/crest.png" alt="" width="48" height="48" class="h-10 w-10 object-contain" />
+      </span>
+      <span class="font-heading text-[22px] font-bold uppercase leading-none tracking-wide">
+        Bretten<br />Kangaroos
+      </span>
+    </a>
 
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto"
-    >
-      {
-        main.map((menu) => (
-          <>
-            {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative cursor-pointer">
-                <span class="nav-link inline-flex items-center">
-                  {menu.name}
-                  <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </span>
-                <ul class="nav-dropdown-list hidden group-hover:block md:invisible md:absolute md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100">
-                  {menu.children?.map((child) => (
-                    <li class="nav-dropdown-item">
-                      <a href={child.url} class="nav-dropdown-link">
-                        {child.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ) : (
-              <li class="nav-item">
-                <a href={menu.url} class="nav-link block">
-                  {menu.name}
+    <!-- desktop -->
+    <ul class="hidden items-center gap-1 lg:flex">
+      {mainLinks.map((item) => (
+        <li>
+          <a href={item.url} class="header-link" aria-current={isActive(item.url) ? "page" : undefined}>
+            {item.name}
+          </a>
+        </li>
+      ))}
+      <li class="relative" data-dropdown>
+        <button type="button" class="header-link" aria-expanded="false" aria-controls="verein-menu" data-dropdown-toggle>
+          {verein.name}
+          <svg class="ml-1 h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M5.3 7.3 10 12l4.7-4.7 1.4 1.4L10 14.8 3.9 8.7z" />
+          </svg>
+        </button>
+        <div id="verein-menu" class="verein-menu" hidden>
+          <ul>
+            {verein.children?.map((child) => (
+              <li>
+                <a href={child.url} class="verein-item">
+                  <span class="font-heading text-intro font-semibold uppercase tracking-wide text-forest">{child.name}</span>
+                  <span class="text-[15px] leading-snug text-text-light">{child.description}</span>
                 </a>
               </li>
-            )}
-          </>
-        ))
-      }
+            ))}
+          </ul>
+          <div class="mt-3 flex items-center justify-between gap-4 rounded-[6px] bg-chalk p-4">
+            <address class="not-italic leading-snug text-ink">
+              <span class="label block">{address.name}</span>
+              {address.street}<br />{address.city}
+            </address>
+            <a href={address.url} class="btn btn-outline-primary">{address.label}</a>
+          </div>
+        </div>
+      </li>
+      <li class="ml-3">
+        <a href={cta.url} class="btn btn-primary">{cta.name}</a>
+      </li>
     </ul>
+
+    <!-- phone menu button -->
+    <button
+      type="button"
+      class="flex h-11 w-11 items-center justify-center rounded-[4px] lg:hidden"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Menü öffnen"
+      data-menu-open
+    >
+      <svg class="h-7 w-7 fill-current" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0v-2z" />
+      </svg>
+    </button>
   </nav>
+
+  <!-- phone: full-screen menu -->
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <div class="flex h-[72px] items-center justify-between px-4">
+      <span class="font-heading text-[22px] font-bold uppercase tracking-wide">Menü</span>
+      <button type="button" class="flex h-11 w-11 items-center justify-center" aria-label="Menü schließen" data-menu-close>
+        <svg class="h-7 w-7 fill-current" viewBox="0 0 20 20" aria-hidden="true">
+          <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon>
+        </svg>
+      </button>
+    </div>
+    <div class="px-4 pb-10">
+      <a href={cta.url} class="btn btn-primary w-full">{cta.name}</a>
+      <ul class="mt-4 border-t border-white/20">
+        {topLinks.map((item) => (
+          <li class="border-b border-white/20">
+            <a href={item.url} class="mobile-link">{item.name}</a>
+          </li>
+        ))}
+      </ul>
+      <p class="label mt-6 mb-3 !text-leaf">Teams</p>
+      <ul class="grid grid-cols-2 gap-2">
+        {teamSlugs.map((slug) => (
+          <li>
+            <a href={`/teams/${slug}`} class="flex min-h-14 items-center rounded-[6px] bg-white/10 px-4 font-heading text-intro font-semibold uppercase tracking-wide">
+              {teamNames[slug]}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a href="/teams" class="flex min-h-14 items-center rounded-[6px] border border-white/30 px-4 font-heading text-intro font-semibold uppercase tracking-wide">Alle Teams</a>
+        </li>
+      </ul>
+      <p class="label mt-6 mb-1 !text-leaf">{verein.name}</p>
+      <ul>
+        {verein.children?.map((child) => (
+          <li class="border-b border-white/20">
+            <a href={child.url} class="mobile-link !text-[19px]">{child.name}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
 </header>
+
+<script>
+  const setup = () => {
+    // Verein dropdown (hover for mouse, click/keys for touch and keyboard)
+    document.querySelectorAll<HTMLElement>("[data-dropdown]").forEach((root) => {
+      const toggle = root.querySelector<HTMLButtonElement>("[data-dropdown-toggle]")!;
+      const panel = root.querySelector<HTMLElement>("#verein-menu")!;
+      let timer: number | undefined;
+      const set = (open: boolean) => {
+        toggle.setAttribute("aria-expanded", String(open));
+        panel.hidden = !open;
+      };
+      toggle.addEventListener("click", () => set(!!panel.hidden));
+      root.addEventListener("mouseenter", () => {
+        clearTimeout(timer);
+        set(true);
+      });
+      root.addEventListener("mouseleave", () => {
+        timer = window.setTimeout(() => set(false), 120);
+      });
+      root.addEventListener("focusout", (event) => {
+        if (!root.contains(event.relatedTarget as Node)) set(false);
+      });
+      root.addEventListener("keydown", (event) => {
+        if ((event as KeyboardEvent).key === "Escape") {
+          set(false);
+          toggle.focus();
+        }
+      });
+    });
+
+    // phone menu
+    const menu = document.getElementById("mobile-menu")!;
+    const opener = document.querySelector<HTMLButtonElement>("[data-menu-open]")!;
+    const closer = document.querySelector<HTMLButtonElement>("[data-menu-close]")!;
+    const setMenu = (open: boolean) => {
+      menu.hidden = !open;
+      opener.setAttribute("aria-expanded", String(open));
+      document.documentElement.classList.toggle("overflow-hidden", open);
+      (open ? closer : opener).focus();
+    };
+    opener.addEventListener("click", () => setMenu(true));
+    closer.addEventListener("click", () => setMenu(false));
+    menu.addEventListener("keydown", (event) => {
+      if ((event as KeyboardEvent).key === "Escape") setMenu(false);
+    });
+    window.matchMedia("(min-width: 1024px)").addEventListener("change", (event) => {
+      if (event.matches && !menu.hidden) setMenu(false);
+    });
+  };
+  document.addEventListener("astro:page-load", setup);
+</script>

@@ -87,6 +87,8 @@ Needs: WP1.
 - [ ] Hide news with `draft: true` in the build — **Haiku**
 - [x] Work out the Kangaroos look with **Claude Design** (colours, logo, navigation, layouts of the pages from WP1) — together with me → [`design.md`](design.md)
 - [ ] Apply the design from [`design.md`](design.md) to the Bookworm theme (colours, fonts, header/menus, footer, page templates) — **Sonnet**
+  - [x] Part 1: brand tokens (`theme.json`, type scale, Barlow/Barlow Condensed via Astro Font API), header (pinstripe, Verein dropdown, phone full-screen menu), footer, shared `.page-title-band` style
+  - [ ] Real crest at `public/images/crest.png` (placeholder in use), page templates, calendar feeds
 - [ ] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet**
 
 ### WP3 – Deployment pipeline

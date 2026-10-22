@@ -56,6 +56,13 @@ const calculateFontSizes = (base, scale) => {
     sizes[`h${i}-sm`] = `${currentSize * 0.8}rem`;
     currentSize *= scale;
   }
+  // fixed brand type scale (docs/design.md)
+  sizes.title = "3.5rem";
+  sizes["title-sm"] = "2.5rem";
+  sizes.section = "2rem";
+  sizes.tile = "1.5rem";
+  sizes.intro = "1.25rem";
+  sizes.label = "0.9375rem";
   sizes.base = `${base}px`;
   sizes["base-sm"] = `${base * 0.8}px`;
   return sizes;

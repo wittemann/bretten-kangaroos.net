@@ -1,5 +1,6 @@
 html {
   @apply text-base;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -12,27 +13,27 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-primary font-bold leading-tight text-dark;
+  @apply font-heading font-bold uppercase leading-tight tracking-wide text-dark;
 }
 
 h1,
 .h1 {
-  @apply text-h1-sm md:text-h1;
+  @apply text-title-sm md:text-title;
 }
 
 h2,
 .h2 {
-  @apply text-h2-sm md:text-h2;
+  @apply text-section;
 }
 
 h3,
 .h3 {
-  @apply text-h3-sm md:text-h3;
+  @apply text-tile;
 }
 
 h4,
 .h4 {
-  @apply text-h4;
+  @apply text-intro;
 }
 
 h5,
