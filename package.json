@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/fetch-bsm.mjs && astro build",
+    "build": "astro build",
     "bsm": "node scripts/fetch-bsm.mjs",
     "preview": "astro preview",
     "format": "prettier -w .",

@@ -66,16 +66,17 @@ einen Monat, HTML immer frisch) und sperrt Dateien mit Punkt am Anfang.
 ## Spielplan und Tabellen (BSM)
 
 `/spielplan` und `/tabellen` zeigen Spiele und Tabellen aus dem BSM (Baseball Softball Manager).
-`npm run build` ruft vorher `scripts/fetch-bsm.mjs` auf; das Skript holt die Daten der Ligen aus
+`scripts/fetch-bsm.mjs` (`npm run bsm`) holt die Daten der Ligen aus
 `src/data/bsm-leagues.json` und schreibt `src/data/bsm-cache.json`, das die Seiten lesen. Ist der BSM
 nicht erreichbar, bleiben die alten Daten stehen, der Build bricht nie deswegen ab. Der Deploy-Workflow
-committet die Datei zurück, wenn sich Ergebnisse geändert haben.
+führt das Skript vor jedem Build aus und committet die Datei zurück, wenn sich Ergebnisse geändert haben.
+`npm run build` holt bewusst keine Daten, damit die Datei lokal unverändert bleibt.
 
 ```bash
 npm run bsm
 ```
 
-holt die Daten von Hand (`npm run dev` tut das nicht). Ligen bekommen jede Saison neue IDs – dann
+holt die Daten von Hand (`npm run dev` und `npm run build` tun das nicht). Ligen bekommen jede Saison neue IDs – dann
 `bsm-leagues.json` anpassen, wie in `docs/bsm-api.md` beschrieben.
 
 ## Turnier-Anmeldung (PHP)
