@@ -1,4 +1,12 @@
 import { humanize } from "@/lib/utils/textConverter";
+
+// Headings shown on the website, so German.
+const labels: Record<string, string> = {
+  tip: "Tipp",
+  info: "Info",
+  note: "Hinweis",
+  warning: "Achtung",
+};
 import React from "react";
 
 function Notice({
@@ -75,7 +83,7 @@ function Notice({
             />
           </svg>
         )}
-        <p className="my-0 ml-1.5">{humanize(type)}</p>
+        <p className="my-0 ml-1.5">{labels[type] ?? humanize(type)}</p>
       </div>
       <div className="notice-body">{children}</div>
     </div>

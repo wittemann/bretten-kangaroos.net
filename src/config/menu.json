@@ -1,11 +1,11 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Start",
       "url": "/"
     },
     {
-      "name": "News",
+      "name": "Aktuelles",
       "url": "/news"
     },
     {
