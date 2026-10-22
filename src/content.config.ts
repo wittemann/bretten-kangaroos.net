@@ -29,8 +29,22 @@ const pagesCollection = defineCollection({
   }),
 });
 
+// Sponsors (.pages.yml: sponsors), shown on /sponsoren and in the footer
+const sponsorsCollection = defineCollection({
+  loader: glob({ pattern: "*.md", base: "content/sponsors" }),
+  schema: z.object({
+    name: z.string(),
+    logo: z.string(),
+    // Pages CMS saves an empty string when the field is cleared
+    link: z.string().url().or(z.literal("")).optional(),
+    order: z.number().default(100),
+    draft: z.boolean().default(false),
+  }),
+});
+
 // Export collections
 export const collections = {
   news: newsCollection,
   pages: pagesCollection,
+  sponsors: sponsorsCollection,
 };

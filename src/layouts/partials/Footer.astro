@@ -1,5 +1,6 @@
 ---
 import Social from "@/components/Social.astro";
+import Sponsors from "@/components/Sponsors.astro";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import social from "@/config/social.json";
@@ -8,6 +9,11 @@ import { markdownify } from "@/lib/utils/textConverter";
 
 <footer class="section bg-dark">
   <div class="container text-center">
+    {/* sponsor strip */}
+    <a href="/sponsoren" class="mb-6 inline-block text-white/75 hover:text-white transition-all">
+      Unsere Sponsoren
+    </a>
+    <Sponsors size="small" className="mb-12" />
     {/* footer menu */}
     <ul class="mb-8 space-x-4">
       {

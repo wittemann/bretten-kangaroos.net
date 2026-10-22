@@ -9,6 +9,10 @@
       "url": "/news"
     },
     {
+      "name": "Sponsoren",
+      "url": "/sponsoren"
+    },
+    {
       "name": "Testseite",
       "url": "/test"
     }

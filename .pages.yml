@@ -32,3 +32,20 @@ content:
       - { name: image, label: Bild, type: image }
       - { name: draft, label: Entwurf, type: boolean, default: false }
       - { name: body, label: Inhalt, type: rich-text }
+
+  - name: sponsors
+    label: Sponsoren
+    type: collection
+    path: content/sponsors
+    filename: "{primary}.md"
+    view:
+      fields: [name, order]
+      primary: name
+      sort: order
+      order: asc
+    fields:
+      - { name: name, label: Name, type: string, required: true }
+      - { name: logo, label: Logo, type: image, required: true }
+      - { name: link, label: Webseite, type: string, pattern: { regex: "^https?://", message: "Bitte eine vollständige Adresse mit https:// angeben" } }
+      - { name: order, label: Reihenfolge, type: number, default: 100, description: "Kleinere Zahl = weiter vorne" }
+      - { name: draft, label: Ausblenden, type: boolean, default: false }

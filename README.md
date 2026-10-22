@@ -7,6 +7,7 @@ Astro-Website mit dem [Bookworm-Light-Theme](https://github.com/themefisher/book
 - `.pages.yml` – Konfiguration für Pages CMS
 - `content/` – Inhalte (Markdown + Front Matter), bleibt hier, damit Pages CMS sie findet
   - `content/news/` – News (`/news`, `/news/<datei>`); Einträge mit `draft: true` werden nicht gebaut
+  - `content/sponsors/` – Sponsoren (Name, Logo, Link, Reihenfolge) für `/sponsoren` und den Footer
   - `content/*.md` – Einzelseiten (`content/test.md` → `/test`)
 - `public/images/` – hochgeladene Bilder, ausgeliefert unter `/images/…`
 - `src/content.config.ts` – Content Collections; Felder müssen zu `.pages.yml` passen

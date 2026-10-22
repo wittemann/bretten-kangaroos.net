@@ -99,8 +99,8 @@ Needs: WP2, league/team confirmation from my tasks.
 ### WP5 – Sponsors
 Needs: WP1 (sponsor fields), WP2. Can run in parallel with WP4.
 
-- [ ] Sponsor page and sponsor strip (footer/homepage) built from `content/sponsors/` — **Sonnet**
-- [ ] Take over the sponsors (logos, links, order) from the current WordPress site — **Haiku**
+- [x] Sponsor page (`/sponsoren`) and sponsor strip in the footer built from `content/sponsors/` — **Sonnet**
+- [x] Take over the sponsors (logos, links, order) from the sidebar of the current WordPress site — **Haiku**
 
 ### WP6 – Scheduled weekend deploys
 Needs: WP3 + WP4.

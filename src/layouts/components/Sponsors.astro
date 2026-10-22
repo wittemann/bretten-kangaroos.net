@@ -1,0 +1,69 @@
+---
+// Sponsor logos from content/sponsors, sorted by `order`.
+// "large" is the grid on /sponsoren, "small" the strip in the footer.
+import { getSinglePage } from "@/lib/contentParser.astro";
+
+type Props = {
+  size?: "large" | "small";
+  className?: string;
+};
+
+const { size = "large", className } = Astro.props;
+
+const sponsors = (await getSinglePage("sponsors")).sort(
+  (a, b) =>
+    a.data.order - b.data.order || a.data.name.localeCompare(b.data.name, "de"),
+);
+
+const tileClass =
+  size === "large"
+    ? "h-40 w-full p-6 sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]"
+    : "h-20 w-40 p-3";
+---
+
+{
+  sponsors.length > 0 && (
+    <ul
+      class:list={[
+        "flex flex-wrap justify-center",
+        size === "large" ? "gap-8" : "gap-4",
+        className,
+      ]}
+    >
+      {sponsors.map(({ data }) => {
+        const logo = (
+          <img
+            src={data.logo}
+            alt={data.name}
+            loading="lazy"
+            decoding="async"
+            class="max-h-full max-w-full object-contain"
+          />
+        );
+        return (
+          <li
+            class:list={[
+              "flex items-center justify-center rounded-lg bg-white",
+              size === "large" && "border border-border",
+              tileClass,
+            ]}
+          >
+            {data.link ? (
+              <a
+                href={data.link}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                title={data.name}
+                class="flex h-full w-full items-center justify-center"
+              >
+                {logo}
+              </a>
+            ) : (
+              logo
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  )
+}
