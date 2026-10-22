@@ -1,15 +1,14 @@
 <?php
 /**
- * Turnier-Anmeldung: nimmt das Formular von der Startseite entgegen und
- * schickt die Anmeldung als Text-Mail über SMTP (PHPMailer) an das
- * Turnier-Postfach. Es wird nichts gespeichert außer gehashten IPs für das
- * Rate-Limit.
+ * Tournament sign-up: receives the form from the homepage and sends the
+ * sign-up as a plain-text mail via SMTP (PHPMailer) to the tournament
+ * mailbox. Nothing is stored except hashed IPs for the rate limit.
  *
- *   GET  /anmeldung.php?token  → JSON {"token": "..."} (signierter Zeitstempel)
- *   POST /anmeldung.php        → 303-Redirect auf /?anmeldung=<status>#anmeldung
+ *   GET  /signup.php?token  → JSON {"token": "..."} (signed timestamp)
+ *   POST /signup.php        → 303 redirect to /?signup=<status>#signup
  *
- * Konfiguration, vendor/ und Rate-Limit-Dateien liegen außerhalb des
- * Web-Roots im Verzeichnis „private“ (siehe README, Abschnitt Deployment).
+ * Config, vendor/ and rate-limit files live outside the web root in the
+ * "private" directory (see README, section Deployment).
  */
 
 declare(strict_types=1);
@@ -17,36 +16,36 @@ declare(strict_types=1);
 use PHPMailer\PHPMailer\Exception as MailException;
 use PHPMailer\PHPMailer\PHPMailer;
 
-// Fehlermeldungen nie an Besucher ausgeben (würden Server-Pfade verraten), nur ins Log.
+// Never show errors to visitors (they would reveal server paths), only log them.
 ini_set('display_errors', '0');
 ini_set('log_errors', '1');
 
-// Standard: Ordner „private“ neben dem Web-Root. Lokal per Umgebungsvariable überschreibbar.
+// Default: "private" directory next to the web root. Overridable via env var for local testing.
 $privateDir = getenv('KANGAROOS_PRIVATE_DIR') ?: dirname(__DIR__) . '/private';
 
-header_remove('X-Powered-By'); // PHP-Version nicht verraten
+header_remove('X-Powered-By'); // don't reveal the PHP version
 header('X-Content-Type-Options: nosniff');
 header('Cache-Control: no-store');
 
-// Schutz gegen ein falsches Deployment: liegt „private“ im Web-Root, wären Konfiguration
-// und Rate-Limit-Dateien womöglich von außen erreichbar – dann lieber gar nichts tun.
+// Guard against a broken deployment: if "private" sits inside the web root, config and
+// rate-limit files might be reachable from outside – better to do nothing at all.
 $realPrivate = realpath($privateDir);
 $realDocRoot = realpath((string) ($_SERVER['DOCUMENT_ROOT'] ?? ''));
 if ($realPrivate !== false && $realDocRoot !== false && str_starts_with($realPrivate . '/', rtrim($realDocRoot, '/') . '/')) {
-    error_log('anmeldung.php: private-Verzeichnis liegt im Web-Root – Abbruch: ' . $realPrivate);
-    respond('fehler');
+    error_log('signup.php: private directory is inside the web root, aborting: ' . $realPrivate);
+    respond('error');
 }
 
-$configFile = $privateDir . '/anmeldung-config.php';
+$configFile = $privateDir . '/signup-config.php';
 if (!is_file($configFile)) {
-    error_log('anmeldung.php: Konfiguration fehlt: ' . $configFile);
-    respond('fehler');
+    error_log('signup.php: config missing: ' . $configFile);
+    respond('error');
 }
 $config = require $configFile;
 
 if (!is_string($config['hmac_secret'] ?? null) || strlen($config['hmac_secret']) < 32) {
-    error_log('anmeldung.php: hmac_secret fehlt oder ist zu kurz (mind. 32 Zeichen)');
-    respond('fehler');
+    error_log('signup.php: hmac_secret missing or too short (min. 32 characters)');
+    respond('error');
 }
 
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
@@ -61,7 +60,7 @@ if ($method !== 'POST') {
     respond(null);
 }
 
-// Jeder POST zählt für das Rate-Limit, auch abgewiesene – so bremst es auch Bots.
+// Every POST counts towards the rate limit, rejected ones too – that slows down bots as well.
 if (!rateLimitAllows(
     $privateDir . '/ratelimit',
     'ip-' . hash_hmac('sha256', clientKey(), $config['hmac_secret']),
@@ -71,7 +70,7 @@ if (!rateLimitAllows(
     respond('limit');
 }
 
-// Honeypot: Menschen sehen das Feld nicht. Bots bekommen „ok“, damit sie nichts lernen.
+// Honeypot: humans don't see the field. Bots get "ok" so they learn nothing.
 $honeypot = $_POST['website'] ?? '';
 if (!is_string($honeypot) || trim($honeypot) !== '') {
     respond('ok');
@@ -80,20 +79,20 @@ if (!is_string($honeypot) || trim($honeypot) !== '') {
 $token = $_POST['token'] ?? '';
 $tokenAge = tokenAge(is_string($token) ? $token : '', $config['hmac_secret']);
 if ($tokenAge === null || $tokenAge > (int) ($config['max_form_age'] ?? 86400)) {
-    respond('abgelaufen');
+    respond('expired');
 }
 if ($tokenAge < (int) ($config['min_fill_seconds'] ?? 5)) {
-    respond('zu-schnell');
+    respond('too-fast');
 }
 
 $team = singleLine($_POST['team'] ?? '', 100);
 $name = singleLine($_POST['name'] ?? '', 100);
 $email = singleLine($_POST['email'] ?? '', 254);
-$phone = singleLine($_POST['telefon'] ?? '', 40);
-$players = filter_var($_POST['spieler'] ?? '', FILTER_VALIDATE_INT, [
+$phone = singleLine($_POST['phone'] ?? '', 40);
+$players = filter_var($_POST['players'] ?? '', FILTER_VALIDATE_INT, [
     'options' => ['min_range' => 1, 'max_range' => 99],
 ]);
-$comment = multiLine($_POST['kommentar'] ?? '', 2000);
+$comment = multiLine($_POST['comment'] ?? '', 2000);
 
 if (
     $team === null || $team === '' ||
@@ -103,18 +102,18 @@ if (
     $players === false ||
     $comment === null
 ) {
-    respond('ungueltig');
+    respond('invalid');
 }
 
-// Obergrenze für alle Absender zusammen: bremst Mail-Fluten von vielen IPs (Botnetz),
-// damit das Postfach und der Ruf des IONOS-Absenders keinen Schaden nehmen.
+// Cap across all senders: slows down mail floods from many IPs (botnet) so the
+// mailbox and the reputation of the IONOS sender don't suffer.
 if (!rateLimitAllows(
     $privateDir . '/ratelimit',
     'global',
     (int) ($config['global_limit_max'] ?? 30),
     (int) ($config['global_limit_window'] ?? 3600),
 )) {
-    error_log('anmeldung.php: globales Limit erreicht, Anmeldung abgewiesen');
+    error_log('signup.php: global limit reached, sign-up rejected');
     respond('limit');
 }
 
@@ -134,7 +133,8 @@ try {
     $mail->CharSet = PHPMailer::CHARSET_UTF8;
     $mail->isHTML(false);
 
-    // Absender ist immer das eigene Postfach; die Adresse aus dem Formular nur als Reply-To.
+    // Sender is always our own mailbox; the address from the form is only used as Reply-To.
+    // The mail text is German because the club reads it.
     $mail->setFrom($config['from_address'], $config['from_name'] ?? 'Turnier-Anmeldung');
     foreach ((array) $config['to_addresses'] as $to) {
         $mail->addAddress($to);
@@ -160,40 +160,40 @@ try {
 
     $mail->send();
 } catch (MailException $e) {
-    // Nur die PHPMailer-Meldung loggen, keine Formulardaten.
-    error_log('anmeldung.php: Versand fehlgeschlagen: ' . $mail->ErrorInfo);
-    respond('fehler');
+    // Log only the PHPMailer message, never form data.
+    error_log('signup.php: sending failed: ' . $mail->ErrorInfo);
+    respond('error');
 }
 
 respond('ok');
 
 // ---------------------------------------------------------------------------
 
-/** Leitet zurück auf die Startseite; der Status wird dort von der Komponente angezeigt. */
+/** Redirects back to the homepage; the component there shows the status. */
 function respond(?string $status): never
 {
     $target = '/';
     if ($status !== null) {
-        $target .= '?anmeldung=' . rawurlencode($status) . '#anmeldung';
+        $target .= '?signup=' . rawurlencode($status) . '#signup';
     }
     header('Location: ' . $target, true, 303);
     exit;
 }
 
-/** Token = Zeitstempel + HMAC darüber. Ohne Secret nicht fälschbar. */
+/** Token = timestamp + HMAC over it. Can't be forged without the secret. */
 function createToken(string $secret): string
 {
     $ts = (string) time();
-    return $ts . '.' . hash_hmac('sha256', 'anmeldung|' . $ts, $secret);
+    return $ts . '.' . hash_hmac('sha256', 'signup|' . $ts, $secret);
 }
 
-/** Alter des Tokens in Sekunden, oder null wenn ungültig/gefälscht/aus der Zukunft. */
+/** Token age in seconds, or null if malformed/forged/from the future. */
 function tokenAge(string $token, string $secret): ?int
 {
     if (!preg_match('/^(\d{1,12})\.([0-9a-f]{64})$/', $token, $m)) {
         return null;
     }
-    $expected = hash_hmac('sha256', 'anmeldung|' . $m[1], $secret);
+    $expected = hash_hmac('sha256', 'signup|' . $m[1], $secret);
     if (!hash_equals($expected, $m[2])) {
         return null;
     }
@@ -202,9 +202,9 @@ function tokenAge(string $token, string $secret): ?int
 }
 
 /**
- * IP des Besuchers für das Rate-Limit. IPv6-Anschlüsse bekommen meist ein
- * ganzes /64-Netz – darum zählt bei IPv6 das Netz, sonst könnte ein Angreifer
- * einfach die Adresse wechseln.
+ * Visitor IP for the rate limit. IPv6 connections usually get a whole /64
+ * network – so for IPv6 the network counts, otherwise an attacker could just
+ * switch addresses.
  */
 function clientKey(): string
 {
@@ -219,14 +219,13 @@ function clientKey(): string
 }
 
 /**
- * Einfaches Rate-Limit: eine Datei pro Schlüssel mit den Zeitstempeln der
- * letzten Anfragen. Für IPs ist der Schlüssel ein HMAC, die IP selbst wird
- * nicht gespeichert.
+ * Simple rate limit: one file per key holding the timestamps of recent
+ * requests. For IPs the key is an HMAC, the IP itself is never stored.
  */
 function rateLimitAllows(string $dir, string $key, int $max, int $window): bool
 {
     if (!is_dir($dir) && !mkdir($dir, 0700, true) && !is_dir($dir)) {
-        error_log('anmeldung.php: Rate-Limit-Verzeichnis nicht anlegbar: ' . $dir);
+        error_log('signup.php: cannot create rate-limit directory: ' . $dir);
         return false;
     }
 
@@ -235,7 +234,7 @@ function rateLimitAllows(string $dir, string $key, int $max, int $window): bool
 
     $fh = fopen($file, 'c+');
     if ($fh === false || !flock($fh, LOCK_EX)) {
-        error_log('anmeldung.php: Rate-Limit-Datei nicht lesbar: ' . $file);
+        error_log('signup.php: cannot read rate-limit file: ' . $file);
         return false;
     }
     $hits = json_decode(stream_get_contents($fh) ?: '[]', true);
@@ -253,7 +252,7 @@ function rateLimitAllows(string $dir, string $key, int $max, int $window): bool
     flock($fh, LOCK_UN);
     fclose($fh);
 
-    // Gelegentlich alte Dateien wegräumen.
+    // Clean up old files now and then.
     if (random_int(1, 50) === 1) {
         foreach (glob($dir . '/ip-*.json') ?: [] as $old) {
             if (filemtime($old) < $now - $window) {
@@ -265,7 +264,7 @@ function rateLimitAllows(string $dir, string $key, int $max, int $window): bool
     return $allowed;
 }
 
-/** Einzeiliger Text: getrimmt, ohne Steuerzeichen (also auch ohne CR/LF), mit Längenlimit. */
+/** Single-line text: trimmed, no control characters (so no CR/LF either), length-limited. */
 function singleLine(mixed $value, int $maxLength): ?string
 {
     if (!is_string($value) || !mb_check_encoding($value, 'UTF-8')) {
@@ -275,7 +274,7 @@ function singleLine(mixed $value, int $maxLength): ?string
     return mb_strlen($value) <= $maxLength ? $value : null;
 }
 
-/** Mehrzeiliger Text: Zeilenumbrüche bleiben, andere Steuerzeichen fliegen raus. */
+/** Multi-line text: line breaks stay, other control characters are removed. */
 function multiLine(mixed $value, int $maxLength): ?string
 {
     if (!is_string($value) || !mb_check_encoding($value, 'UTF-8')) {

@@ -17,8 +17,8 @@ npm-debug.log*
 # ignore .astro directory
 .astro
 
-# Turnier-Anmeldung: PHP-Abhängigkeiten und echte Konfiguration nie ins Git
+# Tournament sign-up: PHP dependencies and the real config never go into Git
 server/vendor/
 server/config.php
 private/
-anmeldung-config.php
+signup-config.php

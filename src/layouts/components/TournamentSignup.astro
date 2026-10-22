@@ -1,21 +1,21 @@
 ---
-// Anmeldeformular für das Turnier. Das Formular geht an /anmeldung.php
-// (public/anmeldung.php), das per SMTP eine Mail schickt und hierher
-// zurückleitet (?anmeldung=<status>#anmeldung).
+// Tournament sign-up form. The form posts to /signup.php
+// (public/signup.php), which sends a mail via SMTP and redirects back here
+// (?signup=<status>#signup). Visitor-facing texts are German.
 const messages: Record<string, { type: string; text: string }> = {
   ok: {
     type: "tip",
     text: "Danke für eure Anmeldung! Wir haben sie erhalten und melden uns bei euch.",
   },
-  ungueltig: {
+  invalid: {
     type: "warning",
     text: "Bitte prüft eure Angaben – Teamname, Ansprechpartner, eine gültige E-Mail-Adresse und die Anzahl der Spieler sind Pflicht.",
   },
-  "zu-schnell": {
+  "too-fast": {
     type: "warning",
     text: "Das ging etwas zu schnell. Bitte schickt das Formular in ein paar Sekunden noch einmal ab.",
   },
-  abgelaufen: {
+  expired: {
     type: "warning",
     text: "Das Formular war zu lange offen oder unvollständig geladen. Bitte schickt es noch einmal ab.",
   },
@@ -23,14 +23,14 @@ const messages: Record<string, { type: string; text: string }> = {
     type: "warning",
     text: "Es kamen zu viele Anmeldungen von eurem Anschluss. Bitte versucht es später noch einmal oder schreibt uns direkt eine E-Mail.",
   },
-  fehler: {
+  error: {
     type: "warning",
     text: "Die Anmeldung konnte gerade nicht verschickt werden. Bitte versucht es später noch einmal oder schreibt uns direkt eine E-Mail.",
   },
 };
 ---
 
-<section id="anmeldung" class="section">
+<section id="signup" class="section">
   <div class="container">
     <div class="mx-auto max-w-[700px]">
       <h2 class="h3 mb-4">Anmeldung zum Turnier</h2>
@@ -39,7 +39,7 @@ const messages: Record<string, { type: string; text: string }> = {
         nur für die Organisation des Turniers verwendet.
       </p>
 
-      <div id="anmeldung-meldung" aria-live="polite">
+      <div id="signup-status" aria-live="polite">
         {
           Object.entries(messages).map(([status, { type, text }]) => (
             <div class={`notice ${type}`} data-status={status} hidden>
@@ -50,36 +50,36 @@ const messages: Record<string, { type: string; text: string }> = {
       </div>
 
       <form
-        id="anmeldung-form"
+        id="signup-form"
         class="form-inputs"
-        action="/anmeldung.php"
+        action="/signup.php"
         method="post"
         data-astro-reload
       >
         <input type="hidden" name="token" value="" />
 
-        <label for="anm-team" class="block">Teamname *</label>
-        <input id="anm-team" name="team" type="text" class="form-input w-full" required maxlength="100" autocomplete="organization" />
+        <label for="signup-team" class="block">Teamname *</label>
+        <input id="signup-team" name="team" type="text" class="form-input w-full" required maxlength="100" autocomplete="organization" />
 
-        <label for="anm-name" class="block">Ansprechpartner *</label>
-        <input id="anm-name" name="name" type="text" class="form-input w-full" required maxlength="100" autocomplete="name" />
+        <label for="signup-name" class="block">Ansprechpartner *</label>
+        <input id="signup-name" name="name" type="text" class="form-input w-full" required maxlength="100" autocomplete="name" />
 
-        <label for="anm-email" class="block">E-Mail *</label>
-        <input id="anm-email" name="email" type="email" class="form-input w-full" required maxlength="254" autocomplete="email" />
+        <label for="signup-email" class="block">E-Mail *</label>
+        <input id="signup-email" name="email" type="email" class="form-input w-full" required maxlength="254" autocomplete="email" />
 
-        <label for="anm-telefon" class="block">Telefon</label>
-        <input id="anm-telefon" name="telefon" type="tel" class="form-input w-full" maxlength="40" pattern="[0-9+()\/ .\-]{3,40}" autocomplete="tel" />
+        <label for="signup-phone" class="block">Telefon</label>
+        <input id="signup-phone" name="phone" type="tel" class="form-input w-full" maxlength="40" pattern="[0-9+()\/ .\-]{3,40}" autocomplete="tel" />
 
-        <label for="anm-spieler" class="block">Anzahl Spieler *</label>
-        <input id="anm-spieler" name="spieler" type="number" class="form-input w-full" required min="1" max="99" step="1" />
+        <label for="signup-players" class="block">Anzahl Spieler *</label>
+        <input id="signup-players" name="players" type="number" class="form-input w-full" required min="1" max="99" step="1" />
 
-        <label for="anm-kommentar" class="block">Kommentar</label>
-        <textarea id="anm-kommentar" name="kommentar" class="form-textarea w-full" rows="5" maxlength="2000"></textarea>
+        <label for="signup-comment" class="block">Kommentar</label>
+        <textarea id="signup-comment" name="comment" class="form-textarea w-full" rows="5" maxlength="2000"></textarea>
 
-        <!-- Honeypot: für Menschen unsichtbar, Bots füllen es aus. -->
+        <!-- Honeypot: invisible to humans, bots fill it in. -->
         <div class="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
-          <label for="anm-website">Website (bitte leer lassen)</label>
-          <input id="anm-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          <label for="signup-website">Website (bitte leer lassen)</label>
+          <input id="signup-website" name="website" type="text" tabindex="-1" autocomplete="off" />
         </div>
 
         <button type="submit" class="btn btn-primary">Team anmelden</button>
@@ -89,25 +89,25 @@ const messages: Record<string, { type: string; text: string }> = {
 </section>
 
 <script>
-  // Status aus der Weiterleitung anzeigen und Formular-Token holen. Eingaben
-  // werden nur im sessionStorage des Browsers zwischengespeichert, damit sie
-  // nach einer Fehlermeldung nicht neu getippt werden müssen.
-  // Läuft bei jedem Seitenaufruf, auch nach Navigation über den ClientRouter.
-  const STORAGE_KEY = "turnier-anmeldung";
-  const fields = ["team", "name", "email", "telefon", "spieler", "kommentar"];
+  // Show the status from the redirect and fetch the form token. Inputs are
+  // only kept in the browser's sessionStorage so they don't have to be typed
+  // again after an error message.
+  // Runs on every page load, also after navigation via the ClientRouter.
+  const STORAGE_KEY = "tournament-signup";
+  const fields = ["team", "name", "email", "phone", "players", "comment"];
 
   function init() {
-    const form = document.getElementById("anmeldung-form") as HTMLFormElement | null;
+    const form = document.getElementById("signup-form") as HTMLFormElement | null;
     if (!form) return;
 
     const params = new URLSearchParams(location.search);
-    const status = params.get("anmeldung");
+    const status = params.get("signup");
     if (status) {
       const box = document.querySelector<HTMLElement>(
-        `#anmeldung-meldung [data-status="${CSS.escape(status)}"]`,
+        `#signup-status [data-status="${CSS.escape(status)}"]`,
       );
       if (box) box.hidden = false;
-      // Status aus der Adresszeile entfernen, damit er beim Neuladen nicht wieder erscheint.
+      // Remove the status from the address bar so it doesn't reappear on reload.
       history.replaceState(history.state, "", location.pathname + location.hash);
     }
 
@@ -122,12 +122,12 @@ const messages: Record<string, { type: string; text: string }> = {
         }
       }
     } catch {
-      // sessionStorage nicht verfügbar – dann eben ohne Wiederherstellen.
+      // sessionStorage not available – then just don't restore.
     }
 
     const tokenInput = form.elements.namedItem("token") as HTMLInputElement;
     const loadToken = async () => {
-      const res = await fetch("/anmeldung.php?token", { cache: "no-store" });
+      const res = await fetch("/signup.php?token", { cache: "no-store" });
       tokenInput.value = (await res.json()).token;
     };
     const tokenReady = loadToken().catch(() => {});
@@ -140,7 +140,7 @@ const messages: Record<string, { type: string; text: string }> = {
         }
         sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
       } catch {
-        // ignorieren
+        // ignore
       }
       if (!tokenInput.value) {
         event.preventDefault();

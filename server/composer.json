@@ -1,6 +1,6 @@
 {
-    "name": "bretten-kangaroos/anmeldung",
-    "description": "PHP-Abhängigkeiten für public/anmeldung.php (Turnier-Anmeldung)",
+    "name": "bretten-kangaroos/signup",
+    "description": "PHP dependencies for public/signup.php (tournament sign-up)",
     "type": "project",
     "license": "proprietary",
     "require": {
