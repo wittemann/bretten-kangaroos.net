@@ -1,0 +1,27 @@
+{
+  "site": {
+    "title": "Bretten Kangaroos",
+    "base_url": "https://bretten-kangaroos.net",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "",
+    "logo_width": "200",
+    "logo_height": "34",
+    "logo_text": "Bretten Kangaroos"
+  },
+
+  "settings": {
+    "pagination": 5
+  },
+
+  "metadata": {
+    "meta_author": "Bretten Kangaroos",
+    "meta_image": "/images/image-placeholder.png",
+    "meta_description": "Baseball und Softball in Bretten"
+  },
+
+  "params": {
+    "copyright": "© 2026 Bretten Kangaroos"
+  }
+}
