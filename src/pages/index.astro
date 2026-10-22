@@ -3,6 +3,7 @@ import Posts from "@/components/Posts.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import Pagination from "@/layouts/components/Pagination.astro";
+import TurnierAnmeldung from "@/layouts/components/TurnierAnmeldung.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 
@@ -19,4 +20,5 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
       <Pagination section="news" currentPage={1} totalPages={totalPages} />
     </div>
   </section>
+  <TurnierAnmeldung />
 </Base>

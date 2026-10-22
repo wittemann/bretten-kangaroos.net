@@ -1,0 +1,155 @@
+---
+// Anmeldeformular für das Turnier. Das Formular geht an /anmeldung.php
+// (public/anmeldung.php), das per SMTP eine Mail schickt und hierher
+// zurückleitet (?anmeldung=<status>#anmeldung).
+const messages: Record<string, { type: string; text: string }> = {
+  ok: {
+    type: "tip",
+    text: "Danke für eure Anmeldung! Wir haben sie erhalten und melden uns bei euch.",
+  },
+  ungueltig: {
+    type: "warning",
+    text: "Bitte prüft eure Angaben – Teamname, Ansprechpartner, eine gültige E-Mail-Adresse und die Anzahl der Spieler sind Pflicht.",
+  },
+  "zu-schnell": {
+    type: "warning",
+    text: "Das ging etwas zu schnell. Bitte schickt das Formular in ein paar Sekunden noch einmal ab.",
+  },
+  abgelaufen: {
+    type: "warning",
+    text: "Das Formular war zu lange offen oder unvollständig geladen. Bitte schickt es noch einmal ab.",
+  },
+  limit: {
+    type: "warning",
+    text: "Es kamen zu viele Anmeldungen von eurem Anschluss. Bitte versucht es später noch einmal oder schreibt uns direkt eine E-Mail.",
+  },
+  fehler: {
+    type: "warning",
+    text: "Die Anmeldung konnte gerade nicht verschickt werden. Bitte versucht es später noch einmal oder schreibt uns direkt eine E-Mail.",
+  },
+};
+---
+
+<section id="anmeldung" class="section">
+  <div class="container">
+    <div class="mx-auto max-w-[700px]">
+      <h2 class="h3 mb-4">Anmeldung zum Turnier</h2>
+      <p class="mb-8">
+        Meldet euer Team hier an. Die Angaben gehen per E-Mail an uns und werden
+        nur für die Organisation des Turniers verwendet.
+      </p>
+
+      <div id="anmeldung-meldung" aria-live="polite">
+        {
+          Object.entries(messages).map(([status, { type, text }]) => (
+            <div class={`notice ${type}`} data-status={status} hidden>
+              <p class="my-0">{text}</p>
+            </div>
+          ))
+        }
+      </div>
+
+      <form
+        id="anmeldung-form"
+        class="form-inputs"
+        action="/anmeldung.php"
+        method="post"
+        data-astro-reload
+      >
+        <input type="hidden" name="token" value="" />
+
+        <label for="anm-team" class="block">Teamname *</label>
+        <input id="anm-team" name="team" type="text" class="form-input w-full" required maxlength="100" autocomplete="organization" />
+
+        <label for="anm-name" class="block">Ansprechpartner *</label>
+        <input id="anm-name" name="name" type="text" class="form-input w-full" required maxlength="100" autocomplete="name" />
+
+        <label for="anm-email" class="block">E-Mail *</label>
+        <input id="anm-email" name="email" type="email" class="form-input w-full" required maxlength="254" autocomplete="email" />
+
+        <label for="anm-telefon" class="block">Telefon</label>
+        <input id="anm-telefon" name="telefon" type="tel" class="form-input w-full" maxlength="40" pattern="[0-9+()\/ .\-]{3,40}" autocomplete="tel" />
+
+        <label for="anm-spieler" class="block">Anzahl Spieler *</label>
+        <input id="anm-spieler" name="spieler" type="number" class="form-input w-full" required min="1" max="99" step="1" />
+
+        <label for="anm-kommentar" class="block">Kommentar</label>
+        <textarea id="anm-kommentar" name="kommentar" class="form-textarea w-full" rows="5" maxlength="2000"></textarea>
+
+        <!-- Honeypot: für Menschen unsichtbar, Bots füllen es aus. -->
+        <div class="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
+          <label for="anm-website">Website (bitte leer lassen)</label>
+          <input id="anm-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Team anmelden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Status aus der Weiterleitung anzeigen und Formular-Token holen. Eingaben
+  // werden nur im sessionStorage des Browsers zwischengespeichert, damit sie
+  // nach einer Fehlermeldung nicht neu getippt werden müssen.
+  // Läuft bei jedem Seitenaufruf, auch nach Navigation über den ClientRouter.
+  const STORAGE_KEY = "turnier-anmeldung";
+  const fields = ["team", "name", "email", "telefon", "spieler", "kommentar"];
+
+  function init() {
+    const form = document.getElementById("anmeldung-form") as HTMLFormElement | null;
+    if (!form) return;
+
+    const params = new URLSearchParams(location.search);
+    const status = params.get("anmeldung");
+    if (status) {
+      const box = document.querySelector<HTMLElement>(
+        `#anmeldung-meldung [data-status="${CSS.escape(status)}"]`,
+      );
+      if (box) box.hidden = false;
+      // Status aus der Adresszeile entfernen, damit er beim Neuladen nicht wieder erscheint.
+      history.replaceState(history.state, "", location.pathname + location.hash);
+    }
+
+    try {
+      if (status === "ok") {
+        sessionStorage.removeItem(STORAGE_KEY);
+      } else if (status) {
+        const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "{}");
+        for (const f of fields) {
+          const el = form.elements.namedItem(f) as HTMLInputElement | null;
+          if (el && typeof saved[f] === "string") el.value = saved[f];
+        }
+      }
+    } catch {
+      // sessionStorage nicht verfügbar – dann eben ohne Wiederherstellen.
+    }
+
+    const tokenInput = form.elements.namedItem("token") as HTMLInputElement;
+    const loadToken = async () => {
+      const res = await fetch("/anmeldung.php?token", { cache: "no-store" });
+      tokenInput.value = (await res.json()).token;
+    };
+    const tokenReady = loadToken().catch(() => {});
+
+    form.addEventListener("submit", async (event) => {
+      try {
+        const data: Record<string, string> = {};
+        for (const f of fields) {
+          data[f] = (form.elements.namedItem(f) as HTMLInputElement).value;
+        }
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      } catch {
+        // ignorieren
+      }
+      if (!tokenInput.value) {
+        event.preventDefault();
+        await tokenReady;
+        if (!tokenInput.value) await loadToken().catch(() => {});
+        form.submit();
+      }
+    });
+  }
+
+  document.addEventListener("astro:page-load", init);
+</script>

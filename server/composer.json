@@ -1,0 +1,16 @@
+{
+    "name": "bretten-kangaroos/anmeldung",
+    "description": "PHP-Abhängigkeiten für public/anmeldung.php (Turnier-Anmeldung)",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.3",
+        "phpmailer/phpmailer": "7.1.1"
+    },
+    "config": {
+        "platform": {
+            "php": "8.3.0"
+        },
+        "sort-packages": true
+    }
+}
