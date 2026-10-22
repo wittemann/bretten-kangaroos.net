@@ -17,11 +17,25 @@ declare(strict_types=1);
 use PHPMailer\PHPMailer\Exception as MailException;
 use PHPMailer\PHPMailer\PHPMailer;
 
+// Fehlermeldungen nie an Besucher ausgeben (würden Server-Pfade verraten), nur ins Log.
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+
 // Standard: Ordner „private“ neben dem Web-Root. Lokal per Umgebungsvariable überschreibbar.
 $privateDir = getenv('KANGAROOS_PRIVATE_DIR') ?: dirname(__DIR__) . '/private';
 
+header_remove('X-Powered-By'); // PHP-Version nicht verraten
 header('X-Content-Type-Options: nosniff');
 header('Cache-Control: no-store');
+
+// Schutz gegen ein falsches Deployment: liegt „private“ im Web-Root, wären Konfiguration
+// und Rate-Limit-Dateien womöglich von außen erreichbar – dann lieber gar nichts tun.
+$realPrivate = realpath($privateDir);
+$realDocRoot = realpath((string) ($_SERVER['DOCUMENT_ROOT'] ?? ''));
+if ($realPrivate !== false && $realDocRoot !== false && str_starts_with($realPrivate . '/', rtrim($realDocRoot, '/') . '/')) {
+    error_log('anmeldung.php: private-Verzeichnis liegt im Web-Root – Abbruch: ' . $realPrivate);
+    respond('fehler');
+}
 
 $configFile = $privateDir . '/anmeldung-config.php';
 if (!is_file($configFile)) {
@@ -48,16 +62,23 @@ if ($method !== 'POST') {
 }
 
 // Jeder POST zählt für das Rate-Limit, auch abgewiesene – so bremst es auch Bots.
-if (!rateLimitAllows($privateDir . '/ratelimit', $config)) {
+if (!rateLimitAllows(
+    $privateDir . '/ratelimit',
+    'ip-' . hash_hmac('sha256', clientKey(), $config['hmac_secret']),
+    (int) ($config['rate_limit_max'] ?? 5),
+    (int) ($config['rate_limit_window'] ?? 3600),
+)) {
     respond('limit');
 }
 
 // Honeypot: Menschen sehen das Feld nicht. Bots bekommen „ok“, damit sie nichts lernen.
-if (trim((string) ($_POST['website'] ?? '')) !== '') {
+$honeypot = $_POST['website'] ?? '';
+if (!is_string($honeypot) || trim($honeypot) !== '') {
     respond('ok');
 }
 
-$tokenAge = tokenAge((string) ($_POST['token'] ?? ''), $config['hmac_secret']);
+$token = $_POST['token'] ?? '';
+$tokenAge = tokenAge(is_string($token) ? $token : '', $config['hmac_secret']);
 if ($tokenAge === null || $tokenAge > (int) ($config['max_form_age'] ?? 86400)) {
     respond('abgelaufen');
 }
@@ -83,6 +104,18 @@ if (
     $comment === null
 ) {
     respond('ungueltig');
+}
+
+// Obergrenze für alle Absender zusammen: bremst Mail-Fluten von vielen IPs (Botnetz),
+// damit das Postfach und der Ruf des IONOS-Absenders keinen Schaden nehmen.
+if (!rateLimitAllows(
+    $privateDir . '/ratelimit',
+    'global',
+    (int) ($config['global_limit_max'] ?? 30),
+    (int) ($config['global_limit_window'] ?? 3600),
+)) {
+    error_log('anmeldung.php: globales Limit erreicht, Anmeldung abgewiesen');
+    respond('limit');
 }
 
 require $privateDir . '/vendor/autoload.php';
@@ -169,21 +202,35 @@ function tokenAge(string $token, string $secret): ?int
 }
 
 /**
- * Einfaches Rate-Limit pro IP: eine Datei pro (gehashter) IP mit den
- * Zeitstempeln der letzten Anfragen. Gespeichert wird nur ein HMAC der IP.
+ * IP des Besuchers für das Rate-Limit. IPv6-Anschlüsse bekommen meist ein
+ * ganzes /64-Netz – darum zählt bei IPv6 das Netz, sonst könnte ein Angreifer
+ * einfach die Adresse wechseln.
  */
-function rateLimitAllows(string $dir, array $config): bool
+function clientKey(): string
 {
-    $max = (int) ($config['rate_limit_max'] ?? 5);
-    $window = (int) ($config['rate_limit_window'] ?? 3600);
+    $ip = (string) ($_SERVER['REMOTE_ADDR'] ?? 'unknown');
+    if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6)) {
+        $bin = inet_pton($ip);
+        if ($bin !== false && !str_starts_with($bin, "\0\0\0\0\0\0\0\0\0\0\xff\xff")) {
+            return bin2hex(substr($bin, 0, 8)) . '::/64';
+        }
+    }
+    return $ip;
+}
 
+/**
+ * Einfaches Rate-Limit: eine Datei pro Schlüssel mit den Zeitstempeln der
+ * letzten Anfragen. Für IPs ist der Schlüssel ein HMAC, die IP selbst wird
+ * nicht gespeichert.
+ */
+function rateLimitAllows(string $dir, string $key, int $max, int $window): bool
+{
     if (!is_dir($dir) && !mkdir($dir, 0700, true) && !is_dir($dir)) {
         error_log('anmeldung.php: Rate-Limit-Verzeichnis nicht anlegbar: ' . $dir);
         return false;
     }
 
-    $ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
-    $file = $dir . '/' . hash_hmac('sha256', $ip, $config['hmac_secret']) . '.json';
+    $file = $dir . '/' . $key . '.json';
     $now = time();
 
     $fh = fopen($file, 'c+');
@@ -208,7 +255,7 @@ function rateLimitAllows(string $dir, array $config): bool
 
     // Gelegentlich alte Dateien wegräumen.
     if (random_int(1, 50) === 1) {
-        foreach (glob($dir . '/*.json') ?: [] as $old) {
+        foreach (glob($dir . '/ip-*.json') ?: [] as $old) {
             if (filemtime($old) < $now - $window) {
                 @unlink($old);
             }

@@ -42,7 +42,9 @@ Das Formular auf der Startseite (`src/layouts/components/TurnierAnmeldung.astro`
 `public/anmeldung.php`. Das Skript prüft die Eingaben und verschickt eine Text-Mail per SMTP über das
 eigene IONOS-Postfach (PHPMailer). Es wird keine Liste der Teams gespeichert; auf dem Server liegen nur
 Rate-Limit-Dateien mit gehashten IP-Adressen und Zeitstempeln (älter als das Zeitfenster werden sie
-gelöscht). Voraussetzung auf dem Server: PHP 8.3+.
+gelöscht). Voraussetzung auf dem Server: **PHP 8.3.36+ bzw. 8.4.27+** (ältere Versionen haben die kritischen
+Lücken CVE-2026-109618/-109619 „PHP2Shell“, die jedes erreichbare PHP-Skript angreifbar machen – im
+IONOS-Kundenbereich prüfen).
 
 - `public/anmeldung.php` – Endpunkt, landet beim Build unverändert in `dist/`
 - `server/composer.json`, `server/composer.lock` – PHPMailer (gepinnte Version)
@@ -52,7 +54,9 @@ gelöscht). Voraussetzung auf dem Server: PHP 8.3+.
 Schutzmaßnahmen: Honeypot-Feld, Mindest-Ausfüllzeit über einen HMAC-signierten Zeitstempel
 (`anmeldung.php?token`, vom Formular per JavaScript geholt), Rate-Limit pro IP, E-Mail-Prüfung mit
 `filter_var`, die Adresse aus dem Formular nur als Reply-To, Steuerzeichen/Zeilenumbrüche in einzeiligen
-Feldern werden entfernt.
+Feldern werden entfernt, zusätzlich eine Obergrenze für alle Mails zusammen (gegen Botnetze), IPv6 wird pro
+/64-Netz gezählt, PHP-Fehlermeldungen gehen nie an Besucher, und das Skript bricht ab, wenn `private/`
+versehentlich im Web-Root liegt.
 
 ### Deployment auf IONOS
 
@@ -73,6 +77,8 @@ Liegt es woanders, muss der Pfad in `anmeldung.php` angepasst werden.
 1. **Einmalig von Hand:** `server/config.example.php` nach `private/anmeldung-config.php` kopieren,
    SMTP-Passwort des Turnier-Postfachs und ein zufälliges `hmac_secret` eintragen
    (`php -r 'echo bin2hex(random_bytes(32)), "\n";'`), per SFTP hochladen, Rechte `600`.
+   Zusätzlich eine `private/.htaccess` mit `Require all denied` anlegen – als zweite Sicherung, falls der
+   Ordner doch einmal im Web-Root landet.
 2. **Bei jedem Deploy (GitHub Action, WP3):**
    - `npm ci && npm run build` → `dist/` in den Web-Root
    - `composer install --no-dev --optimize-autoloader --working-dir=server` → `server/vendor/` nach

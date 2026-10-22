@@ -26,4 +26,6 @@ return [
     'max_form_age'      => 86400,   // Formular-Token gilt so lange (Sekunden)
     'rate_limit_max'    => 5,       // Anfragen pro IP …
     'rate_limit_window' => 3600,    // … in diesem Zeitfenster (Sekunden)
+    'global_limit_max'    => 30,    // Mails insgesamt (alle Absender zusammen) …
+    'global_limit_window' => 3600,  // … in diesem Zeitfenster (Sekunden)
 ];
