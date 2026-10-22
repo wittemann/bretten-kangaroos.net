@@ -37,6 +37,32 @@ npm run preview
 
 Abhängigkeiten sind auf exakte Versionen gepinnt (`.npmrc`: `save-exact`, `package-lock.json`).
 
+## Deployment
+
+`.github/workflows/deploy.yml` baut die Seite und lädt sie per SFTP (`lftp mirror`) auf den
+IONOS-Webspace:
+
+- bei jedem Push auf `main` – also auch nach jedem Speichern in Pages CMS
+- samstags und sonntags stündlich von 6 bis 20 Uhr (deutsche Zeit), damit die BSM-Ergebnisse aktuell bleiben
+- von Hand über GitHub → Actions → Deploy → „Run workflow“
+
+Repo-Secrets (GitHub → Settings → Secrets and variables → Actions):
+
+| Secret | Inhalt |
+|---|---|
+| `DEPLOY_HOST` | SFTP-Server von IONOS |
+| `DEPLOY_USER` / `DEPLOY_PASSWORD` | SFTP-Zugang |
+| `DEPLOY_PATH` | Web-Root der neuen Seite, z. B. `/neu-website` (nicht `/`, weil `private/` daneben liegt) |
+| `DEPLOY_KNOWN_HOSTS` | Ausgabe von `ssh-keyscan <host>` – damit nur der echte Server das Passwort bekommt |
+
+Der Web-Root wird jedes Mal exakt auf `dist/` gespiegelt, überzählige Dateien werden gelöscht. Als
+Schutz legt der Deploy eine Datei `.kangaroos-deploy` ab und bricht ab, wenn der Zielordner nicht leer
+ist und diese Datei fehlt – ein falscher `DEPLOY_PATH` (z. B. der Ordner der alten WordPress-Seite)
+wird so nicht überschrieben.
+
+`public/.htaccess` sorgt für HTTPS-Weiterleitung, die 404-Seite, Caching (`/_astro/` ein Jahr, Bilder
+einen Monat, HTML immer frisch) und sperrt Dateien mit Punkt am Anfang.
+
 ## Turnier-Anmeldung (PHP)
 
 Das Formular auf der Startseite (`src/layouts/components/TournamentSignup.astro`) schickt an
@@ -80,12 +106,9 @@ Liegt es woanders, muss der Pfad in `signup.php` angepasst werden.
    (`php -r 'echo bin2hex(random_bytes(32)), "\n";'`), per SFTP hochladen, Rechte `600`.
    Zusätzlich eine `private/.htaccess` mit `Require all denied` anlegen – als zweite Sicherung, falls der
    Ordner doch einmal im Web-Root landet.
-2. **Bei jedem Deploy (GitHub Action, WP3):**
-   - `npm ci && npm run build` → `dist/` in den Web-Root
-   - `composer install --no-dev --optimize-autoloader --working-dir=server` → `server/vendor/` nach
-     `private/vendor/`
-   - `private/signup-config.php` und `private/ratelimit/` beim Sync **ausschließen** (bei rsync mit
-     `--delete` z. B. nur `private/vendor/` als Ziel verwenden, nie `private/` selbst).
+2. **Bei jedem Deploy** (GitHub Action, siehe [Deployment](#deployment)): `dist/` in den Web-Root,
+   `server/vendor/` nach `private/vendor/`. `private/signup-config.php` und `private/ratelimit/` werden
+   nie angefasst.
 3. PHPMailer ein- bis zweimal im Jahr aktualisieren: `composer update --working-dir=server`, committen,
    deployen.
 

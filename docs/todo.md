@@ -21,7 +21,7 @@ Markdown in GitHub  →  edited by non-technical writers in Pages CMS  →  buil
 - **Content:** Markdown files + front matter in this repo, Pages CMS as the editor
 - **Build:** Astro, with the **Bookworm** theme as the one to try first
 - **Hosting:** IONOS, static files
-- **Deploy route:** GitHub Action builds and uploads via SFTP (or rsync over SSH if the IONOS package allows SSH), no IONOS Deploy Now
+- **Deploy route:** GitHub Action builds and uploads via SFTP with password (`lftp mirror`; the deploy user has no SSH), no IONOS Deploy Now
 - **Old website:** WordPress, full access, recent backup available locally; **everything moves over** (all pages, complete news archive)
 - **Standings & games:** loaded from the BSM (Baseball Softball Manager) at build time and rendered on custom pages
 - **Fresh stats:** automatic rebuild + deploy **every hour from 6:00 to 20:00 (German time) on Saturdays and Sundays** so BSM results stay up to date
@@ -45,7 +45,9 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [ ] Review the proposed sitemap: what still makes sense, what goes, what's missing (→ WP1)
 - [ ] Decide who writes content, make sure they have GitHub accounts and invite them to Pages CMS (→ WP1, go-live)
 - [x] Decide the deploy route → GitHub Action via SFTP/SSH (→ WP3)
-- [ ] Create an SFTP user in IONOS (check whether SSH is included too) and store host, user, password/key as GitHub repo secrets (→ WP3)
+- [x] Create an SFTP user in IONOS and store `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_PASSWORD`, `DEPLOY_PATH`, `DEPLOY_KNOWN_HOSTS` as GitHub repo secrets (→ WP3)
+- [ ] Set up a test subdomain (e.g. `neu.bretten-kangaroos.net`) pointing at the `DEPLOY_PATH` folder and run the first deploy (→ WP3)
+- [ ] Upload `private/signup-config.php` + `private/.htaccess` next to the web root once by hand (→ WP8)
 - [ ] Provide the BSM API key only if WP4 finds out the JSON API needs one (I have one) (→ WP4)
 - [ ] Confirm which leagues/teams show up on the standings and games pages (→ WP4)
 - [x] Find out what the old website runs on → WordPress, full access, local backup (→ WP7)
@@ -84,8 +86,8 @@ Needs: WP1.
 ### WP3 – Deployment pipeline
 Needs: WP2, deploy route + SFTP secrets from my tasks. Comes early so every later package is live right away.
 
-- [ ] GitHub Action: build + upload to IONOS via SFTP (rsync over SSH if available) on every push to `main` (i.e. after every save in Pages CMS) — **Sonnet**
-- [ ] `.htaccess` basics on IONOS (HTTPS redirect, caching, 404 page) — **Haiku**
+- [x] GitHub Action (`.github/workflows/deploy.yml`): build + upload to IONOS via SFTP on every push to `main` (i.e. after every save in Pages CMS) — **Sonnet**
+- [x] `.htaccess` basics on IONOS (HTTPS redirect, caching, 404 page) — **Haiku**
 
 ### WP4 – BSM integration (custom pages)
 Needs: WP2, league/team confirmation from my tasks.
@@ -105,7 +107,7 @@ Needs: WP1 (sponsor fields), WP2. Can run in parallel with WP4.
 ### WP6 – Scheduled weekend deploys
 Needs: WP3 + WP4.
 
-- [ ] Add a schedule to the deploy Action: every hour from 6:00 to 20:00 German time on Saturday and Sunday.
+- [x] Add a schedule to the deploy Action: every hour from 6:00 to 20:00 German time on Saturday and Sunday.
       GitHub cron runs in UTC and German time shifts between UTC+1/+2, so e.g. `cron: "0 4-19 * * 6,0"` plus a first step
       that skips the run when the Europe/Berlin hour is outside 6–20 — **Haiku**
 
@@ -127,7 +129,7 @@ Needs: WP2 + WP3, mailbox + PHP version from my tasks. Sends mail only, no list 
   - honeypot field, minimum time to fill the form, rate limit per IP
   - SMTP password in a config file outside the web root / not in Git
   - send plain-text mails or escape everything with `htmlspecialchars()`
-- [ ] Make sure the deploy (WP3) uploads the PHP script but never the SMTP config — **Sonnet**
+- [x] Make sure the deploy (WP3) uploads the PHP script but never the SMTP config — **Sonnet**
 - [ ] Reminder: update PHPMailer once or twice a year — **Haiku**
 
 ### WP9 – Go-live

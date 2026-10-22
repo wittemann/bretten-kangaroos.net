@@ -1,0 +1,111 @@
+# Build the site and upload it to IONOS via SFTP (WP3), plus hourly
+# rebuilds on weekends so BSM results stay fresh (WP6).
+#
+# Secrets: DEPLOY_HOST, DEPLOY_USER, DEPLOY_PASSWORD, DEPLOY_KNOWN_HOSTS
+# (output of `ssh-keyscan <host>`), DEPLOY_PATH (web root of the new site).
+# The sign-up form's private/ directory sits next to the web root, see README.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # GitHub cron runs in UTC; 4–19 UTC covers 6–20 Europe/Berlin in summer
+    # and winter. The first step drops runs outside that window.
+    - cron: "0 4-19 * * 6,0"
+
+# One deploy at a time; a newer run waits instead of uploading in parallel
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Skip scheduled runs outside 6–20 German time
+        id: window
+        run: |
+          hour=$(TZ=Europe/Berlin date +%-H)
+          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$hour" -lt 6 ] || [ "$hour" -gt 20 ]; }; then
+            echo "Berlin hour $hour is outside 6–20, skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.window.outputs.skip != 'true'
+        uses: actions/checkout@v4
+
+      - if: steps.window.outputs.skip != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build site
+        if: steps.window.outputs.skip != 'true'
+        run: |
+          npm ci
+          npm run build
+
+      - name: Install PHPMailer
+        if: steps.window.outputs.skip != 'true'
+        run: composer install --no-dev --optimize-autoloader --no-interaction --working-dir=server
+
+      - name: Upload via SFTP
+        if: steps.window.outputs.skip != 'true'
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          LFTP_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+          web_root="${DEPLOY_PATH%/}"
+          if [ -z "$web_root" ]; then
+            echo "DEPLOY_PATH must be a folder below the SFTP home, not '/', because private/ sits next to it." >&2
+            exit 1
+          fi
+          private_dir="$(dirname "$web_root")/private"
+
+          # Marker so the --delete mirror only ever runs on a folder this
+          # workflow owns. A wrong DEPLOY_PATH (e.g. the old WordPress site)
+          # aborts the deploy instead of wiping it.
+          marker=".kangaroos-deploy"
+          touch "dist/$marker"
+
+          lftp_run() {
+            lftp --env-password -u "$DEPLOY_USER" "sftp://$DEPLOY_HOST" -e "
+              set cmd:fail-exit yes;
+              set net:max-retries 3;
+              set net:timeout 30;
+              set sftp:connect-program 'ssh -a -x -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$HOME/.ssh/known_hosts';
+              $1
+              bye"
+          }
+
+          raw=$(lftp_run "mkdir -p -f '$web_root'; cls -a '$web_root/';")
+          listing=$(printf '%s\n' "$raw" | sed 's#/$##; s#.*/##' | grep -vxE '\.{0,2}' || true)
+          if [ -n "$listing" ] && ! printf '%s\n' "$listing" | grep -qxF "$marker"; then
+            echo "Target $web_root is not empty and has no $marker file – refusing to overwrite it." >&2
+            echo "Point DEPLOY_PATH at an empty folder (first deploy) or the folder of a previous deploy." >&2
+            exit 1
+          fi
+
+          # Web root: exact copy of dist/. private/ only gets vendor/ –
+          # signup-config.php and ratelimit/ are never touched.
+          lftp_run "
+            mirror --reverse --delete --no-perms --parallel=4 --verbose=1 dist/ '$web_root/';
+            mkdir -p -f '$private_dir/vendor';
+            mirror --reverse --delete --no-perms --parallel=4 --verbose=1 server/vendor/ '$private_dir/vendor/';
+          "
