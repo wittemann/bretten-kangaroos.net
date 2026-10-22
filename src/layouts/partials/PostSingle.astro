@@ -1,0 +1,59 @@
+---
+import dateFormat from "@/lib/utils/dateFormat";
+import { markdownify } from "@/lib/utils/textConverter";
+import { Image } from "astro:assets";
+import { render, type CollectionEntry } from "astro:content";
+import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi";
+
+type Props = {
+  post: CollectionEntry<"news">;
+};
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, team, image, date } = post.data;
+---
+
+<section class="section">
+  <div class="container">
+    <article class="row justify-center">
+      <div class="md:col-10 text-center">
+        <h1 set:html={markdownify(title)} class="h2" />
+        <ul class="mt-4 flex flex-wrap items-center justify-center text-text">
+          <li class="mx-3 flex items-center flex-wrap font-medium">
+            <BiCalendarEdit className="mr-1 h-5 w-5 text-gray-600" />
+            {dateFormat(date)}
+          </li>
+          {
+            team && (
+              <li class="mx-3 flex items-center flex-wrap font-medium">
+                <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-gray-600" />
+                {team}
+              </li>
+            )
+          }
+        </ul>
+      </div>
+
+      <div class="col-12 mt-8 mb-2">
+        {
+          image && (
+            <Image
+              src={image}
+              height={500}
+              width={1000}
+              alt={title}
+              class="rounded-lg"
+            />
+          )
+        }
+      </div>
+
+      <div class="md:col-10">
+        <div class="content mb-16 text-left">
+          <Content />
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

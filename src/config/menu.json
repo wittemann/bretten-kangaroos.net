@@ -1,0 +1,17 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "News",
+      "url": "/news"
+    },
+    {
+      "name": "Testseite",
+      "url": "/test"
+    }
+  ],
+  "footer": []
+}
