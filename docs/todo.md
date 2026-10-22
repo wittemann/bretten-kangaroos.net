@@ -26,8 +26,8 @@ Markdown in GitHub  →  edited by non-technical writers in Pages CMS  →  buil
 - **Standings & games:** loaded from the BSM (Baseball Softball Manager) at build time and rendered on custom pages
 - **Fresh stats:** automatic rebuild + deploy **every hour from 6:00 to 20:00 (German time) on Saturdays and Sundays** so BSM results stay up to date
 - **Design:** the Kangaroos look (colours, logo, page layouts) is worked out with Claude Design, then applied to the Bookworm theme
-- **Tournament sign-up form (on the homepage, required for go-live, sends mail only – no list of signed-up teams):** small PHP script on IONOS that sends mail via SMTP from its own mailbox
-  (e.g. `turnier@…`) with PHPMailer, no external form service (data stays on IONOS, no DSGVO agreement with a third party, free)
+- **Tournament sign-up form (on its own page `/xmas-ball`, teaser on the homepage, required for go-live, sends mail only – no list of signed-up teams):** small PHP script on IONOS that sends mail via SMTP from its own mailbox
+  (`xmasball@bretten-kangaroos.net`) with PHPMailer, no external form service (data stays on IONOS, no DSGVO agreement with a third party, free)
 
 ## Model hints
 
@@ -42,23 +42,27 @@ Markdown in GitHub  →  edited by non-technical writers in Pages CMS  →  buil
 Things only I can do. The work package each one unblocks is in brackets.
 
 - [x] Sitemap → start from the structure of the current WordPress site, Claude proposes it in WP1 (→ WP1)
-- [ ] Review the proposed sitemap: what still makes sense, what goes, what's missing (→ WP1)
+- [x] Review the proposed sitemap: what still makes sense, what goes, what's missing (→ WP1)
 - [ ] Decide who writes content, make sure they have GitHub accounts and invite them to Pages CMS (→ WP1, go-live)
 - [x] Decide the deploy route → GitHub Action via SFTP/SSH (→ WP3)
 - [x] Create an SFTP user in IONOS and store `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_PASSWORD`, `DEPLOY_PATH`, `DEPLOY_KNOWN_HOSTS` as GitHub repo secrets (→ WP3)
-- [ ] Set up a test subdomain (e.g. `neu.bretten-kangaroos.net`) pointing at the `DEPLOY_PATH` folder and run the first deploy (→ WP3)
+- [x] Set up a test subdomain (`neu.bretten-kangaroos.net`) pointing at the `DEPLOY_PATH` folder and run the first deploy (→ WP3)
 - [ ] Upload `private/signup-config.php` + `private/.htaccess` next to the web root once by hand (→ WP8)
 - [x] Provide the BSM API key only if WP4 finds out the JSON API needs one → not needed (→ WP4)
 - [x] Confirm which leagues/teams show up on the standings and games pages → the teams in the current site's menu (→ WP4, see `bsm-api.md`)
 - [x] Find out what the old website runs on → WordPress, full access, local backup (→ WP7)
-- [ ] Point Claude to the local backup (path) or put a WordPress export (WXR XML via Tools → Export) next to it (→ WP1, WP7)
+- [x] Point Claude to the local backup → `/Volumes/Backup/Martin/Ionos FTP/2026-10-16/bretten-kangaroos.WordPress.2026-10-16.xml`,
+      used for the structure only (→ WP1)
+- [ ] Take a fresh WordPress export (Tools → Export → All content) for the migration – the 2026-10-16 export is **not**
+      up to date and must not be used for WP7 (→ WP7)
 - [x] Decide how much moves over → everything (all pages and the complete news archive) (→ WP7)
 - [x] Sponsor list → same as on the current WordPress site, taken over in WP5/WP7 (→ WP5)
 - [x] Impressum and privacy policy → copied from the current WordPress site (→ WP9)
 - [ ] Review the privacy policy before go-live: the new site no longer uses WordPress plugins/cookies, but adds
       BSM data, hosting via IONOS only and the PHP sign-up form – the text has to match. Legal responsibility stays with the club (→ WP9)
 - [ ] Plan the domain/DNS switch from the old site to the new one (→ WP9)
-- [ ] For the tournament form: create the `turnier@…` mailbox, set PHP 8.3+ in the IONOS control panel (→ WP8)
+- [x] For the tournament form: create the `xmasball@bretten-kangaroos.net` mailbox (→ WP8)
+- [ ] For the tournament form: set PHP 8.3+ in the IONOS control panel (→ WP8)
 
 ---
 
@@ -67,11 +71,12 @@ Things only I can do. The work package each one unblocks is in brackets.
 ### WP1 – Content model & CMS structure
 Needs: the WordPress backup (path) from my tasks.
 
-- [ ] Read the menu/page structure of the current WordPress site and propose a sitemap, with suggestions
-      on what could go or be merged — **Opus**
-- [ ] → my review of the sitemap
-- [ ] Design the content structure: pages, news, teams, sponsors, plus what BSM data needs per team (league IDs) — **Opus**
-- [ ] Extend `.pages.yml` to match (incl. sponsors: name, logo, link, order; team files; all teams in the news team select; optional "Zahlen" list) — **Sonnet**
+- [x] Read the menu/page structure of the current WordPress site and propose a sitemap, with suggestions
+      on what could go or be merged — **Opus** → sitemap in [`design.md`](design.md) checked against the old site,
+      inventory, redirects and category mapping in [`wordpress-inventory.md`](wordpress-inventory.md)
+- [x] → my review of the sitemap
+- [x] Design the content structure: pages, news, teams, sponsors, plus what BSM data needs per team (league IDs) — **Opus**
+- [x] Extend `.pages.yml` to match (incl. sponsors: name, logo, link, order; team files; all teams in the news team select; optional `old_team` text; optional "Zahlen" list) — **Sonnet**
 - [ ] Short how-to for writers (create news, upload images, drafts) — **Haiku**
 
 ### WP2 – Astro + Bookworm theme
@@ -127,7 +132,7 @@ Needs: WP1 + WP2, access to the old site from my tasks.
 ### WP8 – Tournament sign-up form (required for go-live)
 Needs: WP2 + WP3, mailbox + PHP version from my tasks. Sends mail only, no list of signed-up teams.
 
-- [ ] Form on the homepage + PHP script with these protections — **Opus** (security-relevant):
+- [ ] Form on `/xmas-ball` + PHP script with these protections — **Opus** (security-relevant):
   - PHPMailer over SMTP, not `mail()`
   - validate the email with `filter_var(..., FILTER_VALIDATE_EMAIL)`, use user input only as Reply-To
   - honeypot field, minimum time to fill the form, rate limit per IP

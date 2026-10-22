@@ -1,7 +1,6 @@
 ---
 title: Saisonabschluss
 date: 2026-10-16
-team: Verein
 draft: false
 ---
 

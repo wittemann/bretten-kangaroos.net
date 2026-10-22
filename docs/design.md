@@ -38,7 +38,7 @@ Directions "Anzeigetafel" and "Kreide & Rasen" were dropped.
 - Filter/switcher rows (Spielplan, Aktuelles, team pages) always sit **below** the page title.
 - Footer: sponsor strip, address, Verein links, Kontakt, Instagram/Facebook, Impressum/Datenschutz.
 
-## Sitemap (current draft, see todo WP1)
+## Sitemap
 
 ```
 /                       Startseite
@@ -47,6 +47,7 @@ Directions "Anzeigetafel" and "Kreide & Rasen" were dropped.
 /teams/<team>           herren, jugend, schueler, t-ball, softball
 /spielplan, /tabellen   BSM data
 /probetraining          all training times, generated from the team files
+/xmas-ball              tournament infos + sign-up form, only while a tournament is on
 /ballpark, /vereinsgeschichte, /foerderverein, /bkil, /sponsoren, /downloads, /kontakt
 /impressum, /datenschutz
 ```
@@ -60,17 +61,20 @@ etc., the long Förderverein slug → `/foerderverein`, `/YYYY/MM/DD/<slug>/` �
 |---|---|---|
 | Startseite | `content/home.md` (hero text, tournament teaser) | `index.astro` – results, news, teams, sponsors pulled in |
 | Aktuelles / Beitrag | `content/news/*.md` | `news/index.astro`, `news/[slug].astro` |
-| Team pages | `content/teams/<team>.md`: ages, league, image, badge, training (season/time/place), coaches, email + body | `teams/[slug].astro` |
+| Team pages | `content/teams/<team>.md`: ages, league, image, badge, training (season/days/time/place), coaches, email + body. BSM league IDs stay in `src/data/bsm-leagues.json` (same team slugs) | `teams/[slug].astro` |
 | Teams, Probetraining | – (built from the team files) | `teams/index.astro`, `probetraining.astro` |
 | Spielplan, Tabellen | – (BSM cache) | already built |
 | Sponsoren | `content/sponsors/*.md` | already built |
-| Text pages | `content/<page>.md` | `[regular].astro`; `## 1992 – Title` headings render as a year column (Vereinsgeschichte) |
-| Kontakt | contacts as a front matter list | own layout |
+| Text pages | `content/pages/<page>.md` (optional "Dateien" list for downloads, PDFs in `public/files`) | `[regular].astro`; `## 1992 – Title` headings render as a year column (Vereinsgeschichte) |
+| Kontakt | `content/kontakt.md`, contacts as a front matter list | own layout |
+| Xmas-Ball | `content/xmas-ball.md`, `active` switches the page and the homepage teaser on | own layout with the sign-up form |
 
 News details:
 - Quotes (`>`) render as the green quote box.
 - An optional "Zahlen" list field (number + label) renders the stats box after the image – no shortcodes in the body.
 - The team select in `.pages.yml` must offer all teams (Schüler and T-Ball are missing today).
+- Posts of teams that no longer exist have no `team` (they show under "Alle") but an optional `old_team` label, see
+  [`wordpress-inventory.md`](wordpress-inventory.md).
 
 ## Spielplan in season + calendar
 

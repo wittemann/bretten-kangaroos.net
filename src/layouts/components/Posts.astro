@@ -1,4 +1,5 @@
 ---
+import { postTeamLabel } from "@/lib/teams";
 import dateFormat from "@/lib/utils/dateFormat";
 import { plainify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
@@ -39,10 +40,10 @@ const { className, posts, fluid } = Astro.props;
             <BiCalendarEdit className="mr-1 h-5 w-5 text-gray-600" />
             {dateFormat(post.data.date)}
           </li>
-          {post.data.team && (
+          {postTeamLabel(post.data) && (
             <li class="mr-5 flex items-center flex-wrap font-medium">
               <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-gray-600" />
-              {post.data.team}
+              {postTeamLabel(post.data)}
             </li>
           )}
         </ul>

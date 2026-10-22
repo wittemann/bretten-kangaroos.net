@@ -12,12 +12,12 @@ return [
     'smtp_host'   => 'smtp.ionos.de',
     'smtp_port'   => 587,
     'smtp_secure' => 'tls',          // 'tls' (STARTTLS, port 587) or 'ssl' (port 465); '' only for local testing
-    'smtp_user'   => 'turnier@bretten-kangaroos.net',
+    'smtp_user'   => 'xmasball@bretten-kangaroos.net',
     'smtp_pass'   => 'ENTER-PASSWORD-HERE',
 
-    'from_address' => 'turnier@bretten-kangaroos.net',
+    'from_address' => 'xmasball@bretten-kangaroos.net',
     'from_name'    => 'Bretten Kangaroos – Turnier-Anmeldung', // shown to the recipient, so German
-    'to_addresses' => ['turnier@bretten-kangaroos.net'],
+    'to_addresses' => ['xmasball@bretten-kangaroos.net'],
 
     // At least 32 random characters, e.g.:  php -r 'echo bin2hex(random_bytes(32)), "\n";'
     'hmac_secret' => 'ENTER-RANDOM-VALUE-HERE',

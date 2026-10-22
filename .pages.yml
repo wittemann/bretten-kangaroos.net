@@ -1,18 +1,31 @@
+# Pages CMS configuration. Labels and descriptions are German (shown to the writers).
+# Every entry here has a matching collection in src/content.config.ts – keep the fields in sync.
+# The team slugs (herren, jugend, ...) are also listed in src/lib/teams.ts.
+
 media:
-  input: public/images
-  output: /images
+  - name: images
+    input: public/images
+    output: /images
+    categories: [image]
+  - name: files
+    input: public/files
+    output: /files
+    categories: [document, spreadsheet, compressed]
 
 content:
-  - name: test
-    label: Testseite
+  - name: home
+    label: Startseite
     type: file
-    path: content/test.md
+    path: content/home.md
     fields:
-      - { name: title, label: Titel, type: string, required: true }
-      - { name: body, label: Inhalt, type: rich-text }
+      - { name: title, label: Titel (Browser-Tab), type: string, required: true }
+      - { name: hero_title, label: Überschrift, type: string, required: true }
+      - { name: hero_text, label: Einleitung, type: text }
+      - { name: hero_image, label: Titelbild, type: image, options: { media: images } }
+      - { name: body, label: Weiterer Text, type: rich-text, description: "Optional, erscheint unter den Ergebnissen" }
 
   - name: news
-    label: News
+    label: Aktuelles
     type: collection
     path: content/news
     filename: "{year}-{month}-{day}-{primary}.md"
@@ -27,11 +40,138 @@ content:
       - name: team
         label: Team
         type: select
+        description: "Leer lassen bei Vereins-News – sie erscheinen dann nur unter „Alle“"
         options:
-          values: [Herren, Jugend, Softball, Verein]
-      - { name: image, label: Bild, type: image }
-      - { name: draft, label: Entwurf, type: boolean, default: false }
+          values:
+            - { name: herren, label: Herren }
+            - { name: jugend, label: Jugend }
+            - { name: schueler, label: Schüler }
+            - { name: t-ball, label: T-Ball }
+            - { name: softball, label: Softball }
+      - name: old_team
+        label: Früheres Team
+        type: string
+        description: "Nur für alte Beiträge von Teams, die es nicht mehr gibt (z. B. Herren 2, Damen)"
+      - { name: image, label: Bild, type: image, options: { media: images } }
+      - name: stats
+        label: Zahlen
+        type: object
+        description: "Optionaler Kasten unter dem Bild, z. B. „12 – Siege“"
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{value} {label}"
+        fields:
+          - { name: value, label: Zahl, type: string, required: true }
+          - { name: label, label: Beschriftung, type: string, required: true }
+      - { name: draft, label: Entwurf, type: boolean, default: false, description: "Entwürfe erscheinen nicht auf der Webseite" }
       - { name: body, label: Inhalt, type: rich-text }
+
+  - name: teams
+    label: Teams
+    type: collection
+    path: content/teams
+    filename: "{primary}.md"
+    operations: { create: false, delete: false, rename: false }
+    view:
+      fields: [title, order]
+      primary: title
+      sort: order
+      order: asc
+    fields:
+      - { name: title, label: Name, type: string, required: true }
+      - { name: order, label: Reihenfolge, type: number, default: 100, description: "Kleinere Zahl = weiter vorne" }
+      - { name: ages, label: Alter, type: string, description: "z. B. „ab 16 Jahren“ oder „Jahrgänge 2014–2017“" }
+      - { name: league, label: Liga, type: string, description: "Nur zur Anzeige. Tabellen und Spielplan kommen automatisch aus dem BSM." }
+      - { name: badge, label: Hinweis, type: string, description: "Kurzer Hinweis auf der Teamkachel, z. B. „Anfänger willkommen“" }
+      - { name: image, label: Teamfoto, type: image, options: { media: images } }
+      - name: training
+        label: Training
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{season}: {days} {time}"
+        fields:
+          - { name: season, label: Saison, type: string, description: "z. B. „Sommer (März–Oktober)“" }
+          - { name: days, label: Tage, type: string, required: true, description: "z. B. „Mittwoch & Freitag“" }
+          - { name: time, label: Uhrzeit, type: string, required: true, description: "z. B. „19:00–21:00“" }
+          - { name: place, label: Ort, type: string, required: true, description: "z. B. „Ballpark“ oder „Halle Im Grüner“" }
+      - name: coaches
+        label: Trainer
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - { name: name, label: Name, type: string, required: true }
+          - { name: role, label: Aufgabe, type: string, description: "z. B. „Headcoach“" }
+      - { name: email, label: Kontakt-E-Mail, type: string, pattern: { regex: "^$|^[^@\\s]+@[^@\\s]+$", message: "Bitte eine gültige E-Mail-Adresse angeben" } }
+      - { name: body, label: Text, type: rich-text }
+
+  - name: xmas_ball
+    label: Xmas-Ball
+    type: file
+    path: content/xmas-ball.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - name: active
+        label: Turnier anzeigen
+        type: boolean
+        default: false
+        description: "Wenn an: Seite /xmas-ball mit Anmeldeformular und Hinweis auf der Startseite sind sichtbar"
+      - { name: date, label: Datum, type: date }
+      - { name: place, label: Ort, type: string }
+      - { name: teaser, label: Kurztext für die Startseite, type: text }
+      - { name: image, label: Bild, type: image, options: { media: images } }
+      - { name: body, label: Infos, type: rich-text }
+
+  - name: pages
+    label: Seiten
+    type: collection
+    path: content/pages
+    filename: "{primary}.md"
+    view:
+      fields: [title]
+      primary: title
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Kurzbeschreibung, type: text, description: "Für Suchmaschinen und das Verein-Menü (eine Zeile)" }
+      - { name: image, label: Bild, type: image, options: { media: images } }
+      - name: files
+        label: Dateien
+        type: object
+        description: "Downloads unter dem Text, z. B. Beitrittserklärung als PDF"
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: Bezeichnung, type: string, required: true }
+          - { name: file, label: Datei, type: file, required: true, options: { media: files } }
+      - { name: draft, label: Ausblenden, type: boolean, default: false }
+      - { name: body, label: Inhalt, type: rich-text, description: "Überschriften wie „## 1992 – Gründung“ werden als Jahreszahlen-Spalte dargestellt" }
+
+  - name: kontakt
+    label: Kontakt
+    type: file
+    path: content/kontakt.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - name: contacts
+        label: Ansprechpartner
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{role}: {name}"
+        fields:
+          - { name: role, label: Aufgabe, type: string, required: true, description: "z. B. „Abteilungsleitung“" }
+          - { name: name, label: Name, type: string, required: true }
+          - { name: email, label: E-Mail, type: string }
+          - { name: phone, label: Telefon, type: string }
+      - { name: body, label: Weiterer Text, type: rich-text }
 
   - name: sponsors
     label: Sponsoren
@@ -45,7 +185,7 @@ content:
       order: asc
     fields:
       - { name: name, label: Name, type: string, required: true }
-      - { name: logo, label: Logo, type: image, required: true }
+      - { name: logo, label: Logo, type: image, required: true, options: { media: images } }
       - { name: link, label: Webseite, type: string, pattern: { regex: "^https?://", message: "Bitte eine vollständige Adresse mit https:// angeben" } }
       - { name: order, label: Reihenfolge, type: number, default: 100, description: "Kleinere Zahl = weiter vorne" }
       - { name: draft, label: Ausblenden, type: boolean, default: false }
