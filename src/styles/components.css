@@ -215,3 +215,26 @@ footer p a {
 .pill[aria-current="page"] {
   @apply border-forest bg-forest text-white;
 }
+
+/* year column (Vereinsgeschichte): "## 1992 – Title" headings */
+.content-years h2.year-heading {
+  @apply relative mb-2 mt-10 !text-tile;
+}
+
+@media (min-width: 768px) {
+  .content-years > * {
+    margin-left: 7rem;
+  }
+
+  .content-years h2.year-heading::before {
+    content: attr(data-year);
+    @apply absolute -left-28 top-0 font-heading text-section font-bold leading-none text-rust;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-years h2.year-heading::before {
+    content: attr(data-year);
+    @apply mb-1 block font-heading text-label font-semibold uppercase tracking-widest text-rust;
+  }
+}

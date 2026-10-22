@@ -44,6 +44,22 @@ const fontsConfig = Object.entries(theme.fonts.font_family)
     };
   });
 
+// "## 1992 – Title" headings become year headings (rendered as a year column, e.g. Vereinsgeschichte)
+function rehypeYearHeadings() {
+  const walk = (node) => {
+    if (node.type === "element" && node.tagName === "h2") {
+      const first = node.children?.[0];
+      const match = first?.type === "text" && first.value.match(/^(\d{4}) [–-] (.*)$/s);
+      if (match) {
+        first.value = match[2];
+        node.properties = { ...node.properties, className: ["year-heading"], "data-year": match[1] };
+      }
+    }
+    node.children?.forEach(walk);
+  };
+  return (tree) => walk(tree);
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: config.site.base_url,
@@ -70,6 +86,7 @@ export default defineConfig({
   ],
   markdown: {
     processor: unified(),
+    rehypePlugins: [rehypeYearHeadings],
     shikiConfig: { theme: "one-dark-pro", wrap: true },
   },
 });

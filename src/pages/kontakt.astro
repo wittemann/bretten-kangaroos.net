@@ -1,0 +1,48 @@
+---
+import Base from "@/layouts/Base.astro";
+import TitleBand from "@/components/TitleBand.astro";
+import menu from "@/config/menu.json";
+import { getEntry } from "astro:content";
+
+const kontakt = (await getEntry("kontakt", "kontakt"))!;
+const { title, contacts } = kontakt.data;
+const { address } = menu;
+---
+
+<Base title={title} description="Ansprechpartner und Anfahrt der Bretten Kangaroos.">
+  <TitleBand title={title} />
+  <section class="py-12 md:py-16">
+    <div class="container-wide grid gap-10 lg:grid-cols-[2fr_1fr]">
+      <div>
+        <h2 class="mb-6">Ansprechpartner</h2>
+        <ul class="divide-y divide-line border-y border-line">
+          {
+            contacts.map((contact) => (
+              <li class="flex flex-col gap-1 py-4 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p class="label">{contact.role}</p>
+                  <p class="text-intro text-ink">{contact.name}</p>
+                </div>
+                <div class="sm:text-right">
+                  {contact.email && (
+                    <a href={`mailto:${contact.email}`} class="inline-flex min-h-11 items-center font-semibold text-primary underline underline-offset-4">
+                      {contact.email}
+                    </a>
+                  )}
+                  {contact.phone && <p>{contact.phone}</p>}
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="rounded-[6px] bg-chalk p-6">
+        <h2 class="mb-4 !text-tile">Anfahrt</h2>
+        <address class="not-italic leading-relaxed text-ink">
+          {address.name}<br />{address.street}<br />{address.city}
+        </address>
+        <a href="/ballpark" class="btn btn-outline-primary mt-5">Zum Ballpark</a>
+      </div>
+    </div>
+  </section>
+</Base>

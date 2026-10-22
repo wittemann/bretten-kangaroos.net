@@ -1,7 +1,7 @@
 ---
 import Base from "@/layouts/Base.astro";
+import TitleBand from "@/components/TitleBand.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
-import { markdownify } from "@/lib/utils/textConverter";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -17,8 +17,10 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { title, meta_title, description, image } = page.data;
+const { title, meta_title, description, image, files } = page.data;
 const { Content } = await render(page);
+// pages with "## 1992 – Title" headings get the year column
+const hasYears = /^## \d{4} [–-] /m.test(page.body ?? "");
 ---
 
 <Base
@@ -27,12 +29,30 @@ const { Content } = await render(page);
   description={description}
   image={image}
 >
-  <section class="section">
-    <div class="container">
-      <h1 set:html={markdownify(title)} class="h2 page-heading" />
-      <div class="content">
+  <TitleBand title={title} />
+  <section class="py-12 md:py-16">
+    <div class="container-wide">
+      <div class:list={["content max-w-3xl", hasYears && "content-years"]}>
         <Content />
       </div>
+      {
+        files.length > 0 && (
+          <ul class="mt-8 max-w-3xl divide-y divide-line border-y border-line">
+            {files.map((file) => (
+              <li>
+                <a
+                  href={file.file}
+                  download
+                  class="flex min-h-14 items-center justify-between gap-4 py-3 font-heading text-intro font-semibold uppercase tracking-wide text-forest hover:text-primary"
+                >
+                  <span>{file.title}</span>
+                  <span class="label">PDF</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
     </div>
   </section>
 </Base>
