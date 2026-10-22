@@ -89,7 +89,7 @@ Needs: WP1.
 - [ ] Apply the design from [`design.md`](design.md) to the Bookworm theme (colours, fonts, header/menus, footer, page templates) — **Sonnet**
   - [x] Part 1: brand tokens (`theme.json`, type scale, Barlow/Barlow Condensed via Astro Font API), header (pinstripe, Verein dropdown, phone full-screen menu), footer, shared `.page-title-band` style
   - [ ] Real crest at `public/images/crest.png` (placeholder in use), page templates, calendar feeds
-- [ ] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet**
+- [x] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet** (`/teams`, `/teams/<slug>` with switcher, `/probetraining`; team files are still empty stubs, so texts/times need filling in Pages CMS)
 
 ### WP3 – Deployment pipeline
 Needs: WP2, deploy route + SFTP secrets from my tasks. Comes early so every later package is live right away.

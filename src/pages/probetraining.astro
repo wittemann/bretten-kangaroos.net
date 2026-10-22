@@ -1,0 +1,49 @@
+---
+import Base from "@/layouts/Base.astro";
+import TitleBand from "@/components/TitleBand.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+
+const teams = (await getSinglePage("teams"))
+  .filter((team) => team.data.training.length > 0)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base
+  title="Probetraining"
+  description="Probetraining bei den Bretten Kangaroos – alle Trainingszeiten im Überblick."
+>
+  <TitleBand title="Probetraining" />
+  <section class="py-12 md:py-16">
+    <div class="container-wide">
+      <p class="mb-10 max-w-2xl text-intro">
+        Du willst Baseball oder Softball ausprobieren? Komm einfach zu einem
+        Training deines Alters vorbei.
+      </p>
+      {
+        teams.length === 0 ? (
+          <p>Die Trainingszeiten folgen in Kürze. Schreib uns über die <a href="/kontakt" class="text-primary underline underline-offset-4">Kontaktseite</a>.</p>
+        ) : (
+          <ul class="grid gap-4 md:grid-cols-2">
+            {teams.map((team) => (
+              <li class="rounded-[6px] border border-line p-6">
+                <h2 class="!text-tile">
+                  <a href={`/teams/${team.id}`} class="hover:underline">{team.data.title}</a>
+                </h2>
+                {team.data.ages && <p class="label mt-1">{team.data.ages}</p>}
+                <ul class="mt-4 space-y-3">
+                  {team.data.training.map((slot) => (
+                    <li>
+                      {slot.season && <p class="label">{slot.season}</p>}
+                      <p class="font-semibold text-ink">{slot.days}, {slot.time}</p>
+                      <p>{slot.place}</p>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </section>
+</Base>

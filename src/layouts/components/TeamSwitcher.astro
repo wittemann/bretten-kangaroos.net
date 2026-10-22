@@ -1,0 +1,23 @@
+---
+// Pill links to all team pages; the current team is filled green.
+import { getSinglePage } from "@/lib/contentParser.astro";
+
+const { current } = Astro.props;
+const teams = (await getSinglePage("teams")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<nav aria-label="Teams" class="flex flex-wrap gap-2">
+  {
+    teams.map((team) => (
+      <a
+        href={`/teams/${team.id}`}
+        aria-current={team.id === current ? "page" : undefined}
+        class="pill"
+      >
+        {team.data.title}
+      </a>
+    ))
+  }
+</nav>

@@ -206,3 +206,12 @@
 footer p a {
   @apply transition-all duration-200 hover:text-white;
 }
+
+/* filter / switcher pill */
+.pill {
+  @apply inline-flex min-h-11 items-center rounded-full border border-line bg-white px-5 font-heading text-intro font-semibold uppercase tracking-wide text-ink transition hover:border-forest;
+}
+
+.pill[aria-current="page"] {
+  @apply border-forest bg-forest text-white;
+}
