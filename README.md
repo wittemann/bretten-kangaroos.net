@@ -2,7 +2,7 @@
 
 Astro-Website mit dem [Bookworm-Light-Theme](https://github.com/themefisher/bookworm-light-astro)
 (übernommen von Commit `b94f01e`, Lizenz in `LICENSE-bookworm-theme`). Inhalte werden in
-[Pages CMS](https://pagescms.org) gepflegt.
+[Pages CMS](https://pagescms.org) gepflegt. Anleitung für Redakteure: [`docs/anleitung-redaktion.md`](docs/anleitung-redaktion.md).
 
 - `.pages.yml` – Konfiguration für Pages CMS
 - `content/` – Inhalte (Markdown + Front Matter), bleibt hier, damit Pages CMS sie findet

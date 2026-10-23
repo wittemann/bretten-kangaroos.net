@@ -81,7 +81,7 @@ Needs: the WordPress backup (path) from my tasks.
 - [x] → my review of the sitemap
 - [x] Design the content structure: pages, news, teams, sponsors, plus what BSM data needs per team (league IDs) — **Opus**
 - [x] Extend `.pages.yml` to match (incl. sponsors: name, logo, link, order; team files; all teams in the news team select; optional `old_team` text; optional "Zahlen" list) — **Sonnet**
-- [ ] Short how-to for writers (create news, upload images, drafts) — **Haiku**
+- [x] Short how-to for writers (create news, upload images, drafts) — **Haiku** → [`anleitung-redaktion.md`](anleitung-redaktion.md)
 
 ### WP2 – Astro + Bookworm theme
 Needs: WP1.
