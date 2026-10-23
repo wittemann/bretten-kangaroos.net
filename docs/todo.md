@@ -156,6 +156,6 @@ Needs: WP2 + WP3, mailbox + PHP version from my tasks. Sends mail only, no list 
 Needs: everything above, privacy policy review + DNS plan from my tasks.
 
 - [ ] Add the Impressum and privacy policy pages, texts copied from the current WordPress site — **Haiku**
-- [ ] Mark the privacy policy passages that no longer fit the new site (WordPress plugins, cookies, ...) for my review — **Sonnet**
+- [x] Mark the privacy policy passages that no longer fit the new site (WordPress plugins, cookies, ...) for my review — **Sonnet** → [`datenschutz-review.md`](datenschutz-review.md)
 - [ ] Remove the test content (`content/test.md`, sample news) — **Haiku**
 - [ ] Final check: links, images, mobile view, BSM pages, sign-up form (test submission), deploy schedule — **Sonnet**
