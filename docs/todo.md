@@ -48,8 +48,8 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] Create an SFTP user in IONOS and store `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_PASSWORD`, `DEPLOY_PATH`, `DEPLOY_KNOWN_HOSTS` as GitHub repo secrets (→ WP3)
 - [x] Set up a test subdomain (`neu.bretten-kangaroos.net`) pointing at the `DEPLOY_PATH` folder and run the first deploy (→ WP3)
 - [x] Upload `private/signup-config.php` + `private/.htaccess` next to the web root once by hand (→ WP8)
-- [ ] After testing the sign-up form: set `to_addresses` in the uploaded `private/signup-config.php` back to
-      `xmasball@bretten-kangaroos.net` (currently my personal address for testing) (→ WP8, before go-live)
+- [x] After testing the sign-up form: set `to_addresses` in the uploaded `private/signup-config.php` back to
+      `xmasball@bretten-kangaroos.net` (→ WP8, before go-live)
 - [x] Provide the BSM API key only if WP4 finds out the JSON API needs one → not needed (→ WP4)
 - [x] Confirm which leagues/teams show up on the standings and games pages → the teams in the current site's menu (→ WP4, see `bsm-api.md`)
 - [x] Find out what the old website runs on → WordPress, full access, local backup (→ WP7)
