@@ -1,7 +1,14 @@
 ---
-// Tournament sign-up form. The form posts to /signup.php
+// Tournament sign-up form on /xmas-ball. The form posts to /signup.php
 // (public/signup.php), which sends a mail via SMTP and redirects back here
 // (?signup=<status>#signup). Visitor-facing texts are German.
+interface Props {
+  // category names from content/xmas-ball.md, 0–2 teams each
+  categories: string[];
+}
+const { categories } = Astro.props;
+const teamCounts = [0, 1, 2];
+
 const messages: Record<string, { type: string; text: string }> = {
   ok: {
     type: "tip",
@@ -9,7 +16,7 @@ const messages: Record<string, { type: string; text: string }> = {
   },
   invalid: {
     type: "warning",
-    text: "Bitte prüft eure Angaben – Teamname, Ansprechpartner, eine gültige E-Mail-Adresse und die Anzahl der Spieler sind Pflicht.",
+    text: "Bitte prüft eure Angaben – Team/Verein, Vor- und Nachname, eine gültige E-Mail-Adresse und mindestens eine Mannschaft sind Pflicht.",
   },
   "too-fast": {
     type: "warning",
@@ -30,13 +37,14 @@ const messages: Record<string, { type: string; text: string }> = {
 };
 ---
 
-<section id="signup" class="section">
+<section id="signup" class="section bg-chalk">
   <div class="container">
     <div class="mx-auto max-w-[700px]">
       <h2 class="h3 mb-4">Anmeldung zum Turnier</h2>
       <p class="mb-8">
-        Meldet euer Team hier an. Die Angaben gehen per E-Mail an uns und werden
-        nur für die Organisation des Turniers verwendet.
+        Meldet eure Mannschaften hier an. Die Angaben gehen per E-Mail an uns und werden
+        nur für die Organisation des Turniers verwendet. Mehr dazu in der{" "}
+        <a href="/datenschutz" class="underline underline-offset-4">Datenschutzerklärung</a>.
       </p>
 
       <div id="signup-status" aria-live="polite">
@@ -58,23 +66,44 @@ const messages: Record<string, { type: string; text: string }> = {
       >
         <input type="hidden" name="token" value="" />
 
-        <label for="signup-team" class="block">Teamname *</label>
+        <label for="signup-team" class="block">Team / Verein *</label>
         <input id="signup-team" name="team" type="text" class="form-input w-full" required maxlength="100" autocomplete="organization" />
-
-        <label for="signup-name" class="block">Ansprechpartner *</label>
-        <input id="signup-name" name="name" type="text" class="form-input w-full" required maxlength="100" autocomplete="name" />
 
         <label for="signup-email" class="block">E-Mail *</label>
         <input id="signup-email" name="email" type="email" class="form-input w-full" required maxlength="254" autocomplete="email" />
 
-        <label for="signup-phone" class="block">Telefon</label>
-        <input id="signup-phone" name="phone" type="tel" class="form-input w-full" maxlength="40" pattern="[0-9+()\/ .\-]{3,40}" autocomplete="tel" />
+        <div class="grid gap-x-4 sm:grid-cols-2">
+          <div>
+            <label for="signup-first-name" class="block">Ansprechpartner: Vorname *</label>
+            <input id="signup-first-name" name="first_name" type="text" class="form-input w-full" required maxlength="60" autocomplete="given-name" />
+          </div>
+          <div>
+            <label for="signup-last-name" class="block">Nachname *</label>
+            <input id="signup-last-name" name="last_name" type="text" class="form-input w-full" required maxlength="60" autocomplete="family-name" />
+          </div>
+        </div>
 
-        <label for="signup-players" class="block">Anzahl Spieler *</label>
-        <input id="signup-players" name="players" type="number" class="form-input w-full" required min="1" max="99" step="1" />
-
-        <label for="signup-comment" class="block">Kommentar</label>
-        <textarea id="signup-comment" name="comment" class="form-textarea w-full" rows="5" maxlength="2000"></textarea>
+        {
+          categories.map((category) => (
+            <fieldset>
+              <legend class="font-semibold">Mannschaften {category} *</legend>
+              <div class="flex flex-wrap gap-x-6">
+                {teamCounts.map((count) => (
+                  <label class="inline-flex items-center gap-2 !leading-normal">
+                    <input
+                      type="radio"
+                      class="form-radio !mb-0 text-primary"
+                      name={`teams[${category}]`}
+                      value={count}
+                      checked={count === 0}
+                    />
+                    {count}× {category}
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          ))
+        }
 
         <!-- Honeypot: invisible to humans, bots fill it in. -->
         <div class="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
@@ -82,7 +111,7 @@ const messages: Record<string, { type: string; text: string }> = {
           <input id="signup-website" name="website" type="text" tabindex="-1" autocomplete="off" />
         </div>
 
-        <button type="submit" class="btn btn-primary">Team anmelden</button>
+        <button type="submit" class="btn btn-primary">Absenden</button>
       </form>
     </div>
   </div>
@@ -94,7 +123,6 @@ const messages: Record<string, { type: string; text: string }> = {
   // again after an error message.
   // Runs on every page load, also after navigation via the ClientRouter.
   const STORAGE_KEY = "tournament-signup";
-  const fields = ["team", "name", "email", "phone", "players", "comment"];
 
   function init() {
     const form = document.getElementById("signup-form") as HTMLFormElement | null;
@@ -111,21 +139,29 @@ const messages: Record<string, { type: string; text: string }> = {
       history.replaceState(history.state, "", location.pathname + location.hash);
     }
 
+    const tokenInput = form.elements.namedItem("token") as HTMLInputElement;
+    // Everything the visitor types or picks; token and honeypot stay out.
+    const fieldsToKeep = () =>
+      Array.from(form.elements).filter(
+        (el): el is HTMLInputElement =>
+          el instanceof HTMLInputElement && !!el.name && el !== tokenInput && el.name !== "website",
+      );
+
     try {
       if (status === "ok") {
         sessionStorage.removeItem(STORAGE_KEY);
       } else if (status) {
         const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "{}");
-        for (const f of fields) {
-          const el = form.elements.namedItem(f) as HTMLInputElement | null;
-          if (el && typeof saved[f] === "string") el.value = saved[f];
+        for (const el of fieldsToKeep()) {
+          if (typeof saved[el.name] !== "string") continue;
+          if (el.type === "radio") el.checked = el.value === saved[el.name];
+          else el.value = saved[el.name];
         }
       }
     } catch {
       // sessionStorage not available – then just don't restore.
     }
 
-    const tokenInput = form.elements.namedItem("token") as HTMLInputElement;
     const loadToken = async () => {
       const res = await fetch("/signup.php?token", { cache: "no-store" });
       tokenInput.value = (await res.json()).token;
@@ -135,8 +171,8 @@ const messages: Record<string, { type: string; text: string }> = {
     form.addEventListener("submit", async (event) => {
       try {
         const data: Record<string, string> = {};
-        for (const f of fields) {
-          data[f] = (form.elements.namedItem(f) as HTMLInputElement).value;
+        for (const el of fieldsToKeep()) {
+          if (el.type !== "radio" || el.checked) data[el.name] = el.value;
         }
         sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
       } catch {

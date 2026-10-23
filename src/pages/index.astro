@@ -3,7 +3,7 @@ import Posts from "@/components/Posts.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import Pagination from "@/layouts/components/Pagination.astro";
-import TournamentSignup from "@/layouts/components/TournamentSignup.astro";
+import XmasBallTeaser from "@/layouts/components/XmasBallTeaser.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 
@@ -14,11 +14,11 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 ---
 
 <Base>
+  <XmasBallTeaser />
   <section class="section">
     <div class="container">
       <Posts posts={currentPosts} className="mb-16" />
       <Pagination section="news" currentPage={1} totalPages={totalPages} />
     </div>
   </section>
-  <TournamentSignup />
 </Base>

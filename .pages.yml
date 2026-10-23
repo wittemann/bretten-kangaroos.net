@@ -123,7 +123,20 @@ content:
         description: "Wenn an: Seite /xmas-ball mit Anmeldeformular und Hinweis auf der Startseite sind sichtbar"
       - { name: date, label: Datum, type: date }
       - { name: place, label: Ort, type: string }
+      - { name: deadline, label: Anmeldeschluss, type: date }
       - { name: teaser, label: Kurztext für die Startseite, type: text }
+      - name: categories
+        label: Kategorien
+        type: object
+        description: "Tabelle auf der Seite; im Anmeldeformular kann je Kategorie 0–2 Mannschaften gewählt werden"
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - { name: name, label: Kategorie, type: string, required: true, description: "z. B. „T-Ball“" }
+          - { name: years, label: Jahrgang, type: string, description: "z. B. „2018 und jünger“" }
+          - { name: fee, label: Startgebühr, type: string, description: "z. B. „50 €, bei drei Mannschaften 40 €“" }
       - { name: image, label: Bild, type: image, options: { media: images } }
       - { name: body, label: Infos, type: rich-text }
 

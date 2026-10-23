@@ -72,8 +72,20 @@ const xmasBallCollection = defineCollection({
     active: z.boolean().default(false),
     date: z.preprocess((d) => d || undefined, z.coerce.date().optional()),
     place: optionalString,
+    deadline: z.preprocess((d) => d || undefined, z.coerce.date().optional()),
     teaser: optionalString,
     image: optionalString,
+    // also the sign-up options; public/signup.php accepts any category name
+    categories: z
+      .array(
+        z.object({
+          name: z.string().max(40),
+          years: optionalString,
+          fee: optionalString,
+        }),
+      )
+      .max(10)
+      .default([]),
   }),
 });
 

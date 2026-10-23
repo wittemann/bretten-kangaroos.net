@@ -1,0 +1,39 @@
+---
+// Homepage teaser for the Xmas-Ball, shown only while content/xmas-ball.md
+// has "active: true". Links to /xmas-ball with the infos and the sign-up form.
+import { getEntry } from "astro:content";
+
+const xmasBall = await getEntry("xmasBall", "xmas-ball");
+const data = xmasBall?.data;
+
+// Dates come from YYYY-MM-DD, i.e. midnight UTC
+const longDate = new Intl.DateTimeFormat("de-DE", {
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+---
+
+{
+  data?.active && (
+    <section class="section bg-forest text-white">
+      <div class="container">
+        <div class="mx-auto flex max-w-[900px] flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="label mb-2 !text-white/70">Hallenturnier</p>
+            <h2 class="mb-3 !text-white">{data.title}</h2>
+            {(data.date || data.place) && (
+              <p class="mb-3 font-semibold">
+                {[data.date && longDate.format(data.date), data.place].filter(Boolean).join(" · ")}
+              </p>
+            )}
+            {data.teaser && <p class="my-0 text-white/90">{data.teaser}</p>}
+          </div>
+          <a href="/xmas-ball" class="btn btn-primary shrink-0">Infos & Anmeldung</a>
+        </div>
+      </div>
+    </section>
+  )
+}

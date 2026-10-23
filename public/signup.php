@@ -1,11 +1,11 @@
 <?php
 /**
- * Tournament sign-up: receives the form from the homepage and sends the
+ * Tournament sign-up: receives the form from /xmas-ball and sends the
  * sign-up as a plain-text mail via SMTP (PHPMailer) to the tournament
  * mailbox. Nothing is stored except hashed IPs for the rate limit.
  *
  *   GET  /signup.php?token  → JSON {"token": "..."} (signed timestamp)
- *   POST /signup.php        → 303 redirect to /?signup=<status>#signup
+ *   POST /signup.php        → 303 redirect to /xmas-ball?signup=<status>#signup
  *
  * Config, vendor/ and rate-limit files live outside the web root in the
  * "private" directory (see README, section Deployment).
@@ -86,24 +86,21 @@ if ($tokenAge < (int) ($config['min_fill_seconds'] ?? 5)) {
 }
 
 $team = singleLine($_POST['team'] ?? '', 100);
-$name = singleLine($_POST['name'] ?? '', 100);
+$firstName = singleLine($_POST['first_name'] ?? '', 60);
+$lastName = singleLine($_POST['last_name'] ?? '', 60);
 $email = singleLine($_POST['email'] ?? '', 254);
-$phone = singleLine($_POST['phone'] ?? '', 40);
-$players = filter_var($_POST['players'] ?? '', FILTER_VALIDATE_INT, [
-    'options' => ['min_range' => 1, 'max_range' => 99],
-]);
-$comment = multiLine($_POST['comment'] ?? '', 2000);
+$teams = teamCounts($_POST['teams'] ?? null);
 
 if (
     $team === null || $team === '' ||
-    $name === null || $name === '' ||
+    $firstName === null || $firstName === '' ||
+    $lastName === null || $lastName === '' ||
     $email === null || filter_var($email, FILTER_VALIDATE_EMAIL) === false ||
-    $phone === null || ($phone !== '' && !preg_match('/^[0-9+()\/ .-]{3,40}$/', $phone)) ||
-    $players === false ||
-    $comment === null
+    $teams === null || array_sum($teams) === 0
 ) {
     respond('invalid');
 }
+$name = $firstName . ' ' . $lastName;
 
 // Cap across all senders: slows down mail floods from many IPs (botnet) so the
 // mailbox and the reputation of the IONOS sender don't suffer.
@@ -142,17 +139,19 @@ try {
     $mail->addReplyTo($email, $name);
 
     $mail->Subject = 'Turnier-Anmeldung: ' . $team;
+    $teamLines = [];
+    foreach ($teams as $category => $count) {
+        $teamLines[] = '  ' . $category . ': ' . $count;
+    }
     $mail->Body = implode("\n", [
         'Neue Anmeldung über das Formular auf der Website.',
         '',
-        'Team:            ' . $team,
+        'Team / Verein:   ' . $team,
         'Ansprechpartner: ' . $name,
         'E-Mail:          ' . $email,
-        'Telefon:         ' . ($phone !== '' ? $phone : '–'),
-        'Anzahl Spieler:  ' . $players,
         '',
-        'Kommentar:',
-        $comment !== '' ? $comment : '–',
+        'Mannschaften:',
+        ...$teamLines,
         '',
         '-- ',
         'Mit „Antworten“ geht die Mail direkt an ' . $email . '.',
@@ -169,10 +168,10 @@ respond('ok');
 
 // ---------------------------------------------------------------------------
 
-/** Redirects back to the homepage; the component there shows the status. */
+/** Redirects back to the tournament page; the form there shows the status. */
 function respond(?string $status): never
 {
-    $target = '/';
+    $target = '/xmas-ball';
     if ($status !== null) {
         $target .= '?signup=' . rawurlencode($status) . '#signup';
     }
@@ -274,13 +273,26 @@ function singleLine(mixed $value, int $maxLength): ?string
     return mb_strlen($value) <= $maxLength ? $value : null;
 }
 
-/** Multi-line text: line breaks stay, other control characters are removed. */
-function multiLine(mixed $value, int $maxLength): ?string
+/**
+ * Number of teams per category, from teams[<category>] = 0–2. The categories
+ * come from content/xmas-ball.md and change from year to year, so any name is
+ * accepted – limited in length and number, it only ends up in a plain-text mail.
+ */
+function teamCounts(mixed $value): ?array
 {
-    if (!is_string($value) || !mb_check_encoding($value, 'UTF-8')) {
+    if (!is_array($value) || $value === [] || count($value) > 10) {
         return null;
     }
-    $value = str_replace(["\r\n", "\r"], "\n", $value);
-    $value = trim(preg_replace('/[^\P{Cc}\n\t]+/u', '', $value));
-    return mb_strlen($value) <= $maxLength ? $value : null;
+    $counts = [];
+    foreach ($value as $category => $count) {
+        $category = singleLine((string) $category, 40);
+        $count = is_string($count)
+            ? filter_var($count, FILTER_VALIDATE_INT, ['options' => ['min_range' => 0, 'max_range' => 2]])
+            : false;
+        if ($category === null || $category === '' || $count === false) {
+            return null;
+        }
+        $counts[$category] = $count;
+    }
+    return $counts;
 }

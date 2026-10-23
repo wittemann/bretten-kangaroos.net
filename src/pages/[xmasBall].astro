@@ -1,0 +1,94 @@
+---
+// /xmas-ball – tournament infos and sign-up form. Only built while
+// content/xmas-ball.md has "active: true" (a dynamic route, so the page can
+// be left out entirely).
+import Base from "@/layouts/Base.astro";
+import TitleBand from "@/components/TitleBand.astro";
+import TournamentSignup from "@/layouts/components/TournamentSignup.astro";
+import { getEntry, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const xmasBall = await getEntry("xmasBall", "xmas-ball");
+  return xmasBall?.data.active ? [{ params: { xmasBall: "xmas-ball" } }] : [];
+}
+
+const xmasBall = (await getEntry("xmasBall", "xmas-ball"))!;
+const { title, date, place, deadline, teaser, image, categories } = xmasBall.data;
+const { Content } = await render(xmasBall);
+
+// Dates come from YYYY-MM-DD, i.e. midnight UTC
+const longDate = new Intl.DateTimeFormat("de-DE", {
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+const shortDate = new Intl.DateTimeFormat("de-DE", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
+const facts = [
+  date && { label: "Datum", value: longDate.format(date) },
+  place && { label: "Ort", value: place },
+  deadline && { label: "Anmeldeschluss", value: shortDate.format(deadline) },
+].filter((fact) => !!fact);
+---
+
+<Base title={title} description={teaser} image={image}>
+  <TitleBand title={title} label="Hallenturnier">
+    <a href="#signup" class="btn btn-primary mt-6">Jetzt anmelden</a>
+  </TitleBand>
+  <section class="py-12 md:py-16">
+    <div class="container-wide max-w-3xl">
+      {
+        facts.length > 0 && (
+          <dl class="mb-10 grid gap-4 rounded-[6px] bg-chalk p-6 sm:grid-cols-3">
+            {facts.map((fact) => (
+              <div>
+                <dt class="label">{fact.label}</dt>
+                <dd class="text-intro text-ink">{fact.value}</dd>
+              </div>
+            ))}
+          </dl>
+        )
+      }
+
+      {
+        categories.length > 0 && (
+          <>
+            <h2 class="mb-4">Altersklassen</h2>
+            <div class="mb-10 overflow-x-auto">
+              <table class="w-full border-y border-line text-left">
+                <thead>
+                  <tr class="label">
+                    <th class="py-3 pr-4 font-normal">Kategorie</th>
+                    <th class="py-3 pr-4 font-normal">Jahrgang</th>
+                    <th class="py-3 font-normal">Startgebühr</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {categories.map((category) => (
+                    <tr class="border-t border-line">
+                      <td class="py-3 pr-4 font-semibold text-ink">{category.name}</td>
+                      <td class="py-3 pr-4">{category.years}</td>
+                      <td class="py-3">{category.fee}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )
+      }
+
+      <div class="content">
+        <Content />
+      </div>
+    </div>
+  </section>
+  <TournamentSignup categories={categories.map((category) => category.name)} />
+</Base>

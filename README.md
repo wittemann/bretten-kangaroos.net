@@ -81,8 +81,10 @@ holt die Daten von Hand (`npm run dev` und `npm run build` tun das nicht). Ligen
 
 ## Turnier-Anmeldung (PHP)
 
-Das Formular auf der Startseite (`src/layouts/components/TournamentSignup.astro`) schickt an
-`public/signup.php`. Das Skript prüft die Eingaben und verschickt eine Text-Mail per SMTP über das
+Das Formular auf `/xmas-ball` (`src/layouts/components/TournamentSignup.astro`) schickt an
+`public/signup.php`. Die Seite und der Hinweis auf der Startseite gibt es nur, solange in
+`content/xmas-ball.md` `active: true` steht; die Kategorien dort (z. B. T-Ball, Schüler, Jugend) sind
+zugleich die Auswahl im Formular (je 0–2 Mannschaften). Das Skript prüft die Eingaben und verschickt eine Text-Mail per SMTP über das
 eigene IONOS-Postfach (PHPMailer). Es wird keine Liste der Teams gespeichert; auf dem Server liegen nur
 Rate-Limit-Dateien mit gehashten IP-Adressen und Zeitstempeln (älter als das Zeitfenster werden sie
 gelöscht). Voraussetzung auf dem Server: **PHP 8.3.36+ bzw. 8.4.27+** (ältere Versionen haben die kritischen
@@ -148,4 +150,4 @@ mailpit
 npm run build && KANGAROOS_PRIVATE_DIR=/tmp/kangaroos-private php -S 127.0.0.1:8080 -t dist
 ```
 
-Formular auf http://127.0.0.1:8080/#signup, Mails auf http://127.0.0.1:8025.
+Formular auf http://127.0.0.1:8080/xmas-ball/#signup (in `content/xmas-ball.md` muss `active: true` stehen), Mails auf http://127.0.0.1:8025.
