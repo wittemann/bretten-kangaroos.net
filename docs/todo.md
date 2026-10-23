@@ -47,7 +47,9 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] Decide the deploy route → GitHub Action via SFTP/SSH (→ WP3)
 - [x] Create an SFTP user in IONOS and store `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_PASSWORD`, `DEPLOY_PATH`, `DEPLOY_KNOWN_HOSTS` as GitHub repo secrets (→ WP3)
 - [x] Set up a test subdomain (`neu.bretten-kangaroos.net`) pointing at the `DEPLOY_PATH` folder and run the first deploy (→ WP3)
-- [ ] Upload `private/signup-config.php` + `private/.htaccess` next to the web root once by hand (→ WP8)
+- [x] Upload `private/signup-config.php` + `private/.htaccess` next to the web root once by hand (→ WP8)
+- [ ] After testing the sign-up form: set `to_addresses` in the uploaded `private/signup-config.php` back to
+      `xmasball@bretten-kangaroos.net` (currently my personal address for testing) (→ WP8, before go-live)
 - [x] Provide the BSM API key only if WP4 finds out the JSON API needs one → not needed (→ WP4)
 - [x] Confirm which leagues/teams show up on the standings and games pages → the teams in the current site's menu (→ WP4, see `bsm-api.md`)
 - [x] Find out what the old website runs on → WordPress, full access, local backup (→ WP7)
@@ -55,6 +57,7 @@ Things only I can do. The work package each one unblocks is in brackets.
       used for the structure only (→ WP1)
 - [ ] Take a fresh WordPress export (Tools → Export → All content) for the migration – the 2026-10-16 export is **not**
       up to date and must not be used for WP7 (→ WP7)
+- [ ] Right before the DNS switch: stop editing WordPress, take a final export, let Claude re-run the migration (→ WP7, WP9)
 - [x] Decide how much moves over → everything (all pages and the complete news archive) (→ WP7)
 - [x] Sponsor list → same as on the current WordPress site, taken over in WP5/WP7 (→ WP5)
 - [x] Impressum and privacy policy → copied from the current WordPress site (→ WP9)
@@ -62,7 +65,7 @@ Things only I can do. The work package each one unblocks is in brackets.
       BSM data, hosting via IONOS only and the PHP sign-up form – the text has to match. Legal responsibility stays with the club (→ WP9)
 - [ ] Plan the domain/DNS switch from the old site to the new one (→ WP9)
 - [x] For the tournament form: create the `xmasball@bretten-kangaroos.net` mailbox (→ WP8)
-- [ ] For the tournament form: set PHP 8.3+ in the IONOS control panel (→ WP8)
+- [x] For the tournament form: set PHP 8.3+ in the IONOS control panel → runs on 8.4 (→ WP8)
 
 ---
 
@@ -89,7 +92,8 @@ Needs: WP1.
 - [ ] Apply the design from [`design.md`](design.md) to the Bookworm theme (colours, fonts, header/menus, footer, page templates) — **Sonnet**
   - [x] Part 1: brand tokens (`theme.json`, type scale, Barlow/Barlow Condensed via Astro Font API), header (pinstripe, Verein dropdown, phone full-screen menu), footer, shared `.page-title-band` style
   - [x] Part 3: text pages (`[regular].astro` with title band, year column, file list), Kontakt page; content of Ballpark, Vereinsgeschichte, Förderverein, BKIL, Downloads, Kontakt, Impressum, Datenschutz copied from the old site (PDFs in `public/files`)
-  - [ ] Real crest at `public/images/crest.png` (placeholder in use), home/news templates, Spielplan restyle, calendar feeds
+  - [x] Real crest at `public/images/crest.png`
+  - [ ] Home/news templates, Spielplan restyle, calendar feeds
 - [x] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet** (`/teams`, `/teams/<slug>` with switcher, `/probetraining`; team files are still empty stubs, so texts/times need filling in Pages CMS)
 
 ### WP3 – Deployment pipeline
@@ -130,6 +134,8 @@ Needs: WP1 + WP2, access to the old site from my tasks.
 - [ ] Conversion WordPress → Markdown + front matter matching `.pages.yml` (WXR export or DB dump; check existing tools like
       `wordpress-export-to-markdown` before writing our own; map categories to `team`, clean up shortcodes/page-builder HTML) — **Opus**
 - [ ] Run the conversion, copy media from `wp-content/uploads` into `public/images`, fix links — **Haiku**
+- [ ] Keep the conversion re-runnable: a final run on a fresh export right before the DNS switch only adds/updates
+      migrated files and never overwrites content created or edited in Pages CMS since — **Opus**
 - [ ] Redirects from old WordPress permalinks via `.htaccess` — **Sonnet**
 
 ### WP8 – Tournament sign-up form (required for go-live)
