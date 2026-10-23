@@ -65,6 +65,11 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [ ] Review the privacy policy before go-live: the new site no longer uses WordPress plugins/cookies, but adds
       BSM data, hosting via IONOS only and the PHP sign-up form – the text has to match. Legal responsibility stays with the club (→ WP9)
 - [ ] Plan the domain/DNS switch from the old site to the new one (→ WP9)
+- [ ] Privacy policy, decisions from [`datenschutz-review.md`](datenschutz-review.md) (→ WP9):
+      responsible party (person or club, same as Impressum); IONOS data-processing agreement signed; storage
+      period of IONOS logs and of the sign-up mails; which outdated passages go (Google Fonts, analysis tools,
+      consent/cookie wording, "Kunden"); add sections for logs and sign-up form; privacy notice with link at the form
+- [ ] Writers: get GitHub accounts, invite them to Pages CMS, hand out [`anleitung-redaktion.md`](anleitung-redaktion.md) (→ WP1)
 - [x] For the tournament form: create the `xmasball@bretten-kangaroos.net` mailbox (→ WP8)
 - [x] For the tournament form: set PHP 8.3+ in the IONOS control panel → runs on 8.4 (→ WP8)
 
