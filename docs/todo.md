@@ -142,7 +142,7 @@ Needs: WP1 + WP2, access to the old site from my tasks.
 ### WP8 – Tournament sign-up form (required for go-live)
 Needs: WP2 + WP3, mailbox + PHP version from my tasks. Sends mail only, no list of signed-up teams.
 
-- [ ] Form on `/xmas-ball` + PHP script with these protections — **Opus** (security-relevant):
+- [x] Form on `/xmas-ball` + PHP script with these protections — **Opus** (security-relevant), tested live 2026-10-23:
   - PHPMailer over SMTP, not `mail()`
   - validate the email with `filter_var(..., FILTER_VALIDATE_EMAIL)`, use user input only as Reply-To
   - honeypot field, minimum time to fill the form, rate limit per IP
