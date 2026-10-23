@@ -55,8 +55,9 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] Find out what the old website runs on → WordPress, full access, local backup (→ WP7)
 - [x] Point Claude to the local backup → `/Volumes/Backup/Martin/Ionos FTP/2026-10-16/bretten-kangaroos.WordPress.2026-10-16.xml`,
       used for the structure only (→ WP1)
-- [ ] Take a fresh WordPress export (Tools → Export → All content) for the migration – the 2026-10-16 export is **not**
-      up to date and must not be used for WP7 (→ WP7)
+- [x] Take a fresh WordPress export (Tools → Export → All content) for the migration →
+      `~/Downloads/bretten-kangaroos.WordPress.2026-10-23.xml` (531 posts, 14 pages, 792 media; 8 stray control
+      characters make it invalid XML, the converter has to strip them) (→ WP7)
 - [ ] Right before the DNS switch: stop editing WordPress, take a final export, let Claude re-run the migration (→ WP7, WP9)
 - [x] Decide how much moves over → everything (all pages and the complete news archive) (→ WP7)
 - [x] Sponsor list → same as on the current WordPress site, taken over in WP5/WP7 (→ WP5)
