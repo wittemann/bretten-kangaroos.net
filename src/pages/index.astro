@@ -1,24 +1,129 @@
 ---
-import Posts from "@/components/Posts.astro";
-import config from "@/config/config.json";
+// Startseite (docs/design.md, board "Home-Clubhaus"): hero, latest BSM
+// results, news, Xmas-Ball teaser and the teams. Sponsors come with the footer.
 import Base from "@/layouts/Base.astro";
-import Pagination from "@/layouts/components/Pagination.astro";
+import LatestResults from "@/layouts/components/LatestResults.astro";
 import XmasBallTeaser from "@/layouts/components/XmasBallTeaser.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
+import { postTeamLabel } from "@/lib/teams";
 import { sortByDate } from "@/lib/utils/sortFunctions";
+import { plainify } from "@/lib/utils/textConverter";
+import { getEntry } from "astro:content";
 
-const posts = await getSinglePage("news");
-const sortedPosts = sortByDate(posts);
-const totalPages = Math.ceil(posts.length / config.settings.pagination);
-const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+const home = (await getEntry("home", "home"))!;
+const { title, hero_title, hero_text, hero_image } = home.data;
+
+const [featured, ...morePosts] = sortByDate(await getSinglePage("news")).slice(0, 4);
+const teams = (await getSinglePage("teams")).sort((a, b) => a.data.order - b.data.order);
+
+const longDate = new Intl.DateTimeFormat("de-DE", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+const postMeta = (post: NonNullable<typeof featured>) =>
+  [longDate.format(post.data.date), postTeamLabel(post.data) ?? "Verein"].join(" · ");
 ---
 
-<Base>
-  <XmasBallTeaser />
-  <section class="section">
-    <div class="container">
-      <Posts posts={currentPosts} className="mb-16" />
-      <Pagination section="news" currentPage={1} totalPages={totalPages} />
+<Base meta_title={title}>
+  <section class="relative bg-forest text-white">
+    {
+      hero_image && (
+        <img
+          src={hero_image}
+          alt=""
+          class="absolute inset-0 h-full w-full object-cover object-[60%_40%] md:object-[center_40%]"
+          fetchpriority="high"
+        />
+      )
+    }
+    <div class="relative bg-[rgba(18,32,16,0.62)]">
+      <div class="container-wide flex flex-col gap-4 pb-28 pt-14 md:gap-6 md:pb-36 md:pt-28">
+        <p class="my-0 font-heading text-label font-semibold uppercase tracking-[0.18em] text-[#B9D49E]">
+          Kangaroos Ballpark · Bretten
+        </p>
+        <h1 class="max-w-3xl text-[2.875rem] leading-[0.95] !text-white md:text-[5.25rem]">{hero_title}</h1>
+        {hero_text && <p class="my-0 max-w-xl text-intro text-[#E4EADF]">{hero_text}</p>}
+        <div class="mt-2 flex flex-col gap-3 sm:flex-row">
+          <a href="/probetraining" class="btn btn-primary">Probetraining</a>
+          <a href="/spielplan" class="btn border-2 !border-white text-white hover:bg-white hover:text-forest">Spielplan</a>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <LatestResults />
+
+  {
+    featured && (
+      <section class="container-wide pt-16 md:pt-24" aria-labelledby="home-news">
+        <div class="mb-6 flex flex-wrap items-baseline justify-between gap-2 md:mb-8">
+          <h2 id="home-news" class="md:text-[2.5rem]">Aktuelles</h2>
+          <a href="/news" class="font-semibold text-primary hover:underline">Alle Beiträge →</a>
+        </div>
+        <div class="flex flex-wrap gap-7">
+          <a href={`/news/${featured.id}`} class="group flex flex-[2_1_460px] flex-col gap-3">
+            {featured.data.image && (
+              <img
+                src={featured.data.image}
+                alt=""
+                class="h-[220px] w-full rounded-[6px] object-cover md:h-[340px]"
+                loading="lazy"
+              />
+            )}
+            <span class="text-sm">{postMeta(featured)}</span>
+            <h3 class="text-[1.625rem] leading-[1.05] group-hover:text-primary md:text-[2rem]">{featured.data.title}</h3>
+            <p class="my-0 line-clamp-3">{plainify(featured.body ?? "")}</p>
+          </a>
+          {morePosts.length > 0 && (
+            <ul class="flex flex-[1_1_300px] flex-col divide-y divide-line">
+              {morePosts.map((post) => (
+                <li class="py-5 first:pt-0">
+                  <a href={`/news/${post.id}`} class="group flex flex-col gap-2">
+                    <span class="text-sm">{postMeta(post)}</span>
+                    <h3 class="leading-[1.1] group-hover:text-primary">{post.data.title}</h3>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </section>
+    )
+  }
+
+  <XmasBallTeaser />
+
+  <section class="container-wide pb-20 pt-8 md:pt-12" aria-labelledby="home-teams">
+    <h2 id="home-teams" class="mb-6 md:mb-8 md:text-[2.5rem]">Unsere Teams</h2>
+    <ul class="grid grid-cols-2 gap-px overflow-hidden rounded-[6px] border border-line bg-line md:grid-cols-3">
+      {
+        teams.map((team) => {
+          const slot = team.data.training[0];
+          return (
+            <li class="bg-white">
+              <a href={`/teams/${team.id}`} class="group flex h-full flex-col gap-1 p-4 md:p-6">
+                <span class="font-heading text-[1.375rem] font-bold uppercase text-ink group-hover:text-primary md:text-[1.75rem]">
+                  {team.data.title}
+                </span>
+                {team.data.ages && <span class="text-sm md:text-[0.9375rem]">{team.data.ages}</span>}
+                {slot && (
+                  <span class="hidden text-[0.9375rem] md:block">
+                    {slot.days}, {slot.time}
+                  </span>
+                )}
+              </a>
+            </li>
+          );
+        })
+      }
+      <li class="bg-forest">
+        <a href="/probetraining" class="flex h-full flex-col justify-between gap-1 p-4 text-white md:p-6">
+          <span class="font-heading text-[1.375rem] font-bold uppercase leading-[1.05] md:text-[1.75rem]">Welches Team passt?</span>
+          <span class="text-sm text-[#DCE6D4] md:text-[0.9375rem]">Alle Trainingszeiten →</span>
+        </a>
+      </li>
+    </ul>
   </section>
 </Base>

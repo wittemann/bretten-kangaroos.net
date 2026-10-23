@@ -7,32 +7,36 @@ const xmasBall = await getEntry("xmasBall", "xmas-ball");
 const data = xmasBall?.data;
 
 // Dates come from YYYY-MM-DD, i.e. midnight UTC
-const longDate = new Intl.DateTimeFormat("de-DE", {
-  weekday: "long",
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-  timeZone: "UTC",
-});
+const format = (options: Intl.DateTimeFormatOptions) =>
+  new Intl.DateTimeFormat("de-DE", { ...options, timeZone: "UTC" });
+const longDate = format({ weekday: "long", day: "numeric", month: "long", year: "numeric" });
+const month = format({ month: "short" });
+const day = format({ day: "numeric" });
 ---
 
 {
   data?.active && (
-    <section class="section bg-forest text-white">
-      <div class="container">
-        <div class="mx-auto flex max-w-[900px] flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div>
-            <p class="label mb-2 !text-white/70">Hallenturnier</p>
-            <h2 class="mb-3 !text-white">{data.title}</h2>
+    <section class="container-wide py-8 md:py-12" aria-labelledby="xmas-ball-teaser">
+      <div class="flex flex-col gap-6 rounded-[6px] bg-chalk p-6 md:flex-row md:items-center md:justify-between md:p-10">
+        <div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7">
+          {data.date && (
+            <div class="flex h-[72px] w-[72px] shrink-0 flex-col items-center justify-center rounded-[6px] bg-forest font-heading leading-none text-white md:h-[104px] md:w-[104px]" aria-hidden="true">
+              <span class="text-sm font-semibold uppercase tracking-widest md:text-base">{month.format(data.date).replace(".", "")}</span>
+              <span class="text-4xl font-bold md:text-[52px]">{day.format(data.date)}</span>
+            </div>
+          )}
+          <div class="max-w-xl">
+            <p class="label mb-1">Hallenturnier</p>
+            <h2 id="xmas-ball-teaser" class="mb-2">{data.title}</h2>
             {(data.date || data.place) && (
-              <p class="mb-3 font-semibold">
+              <p class="my-0 font-semibold text-ink">
                 {[data.date && longDate.format(data.date), data.place].filter(Boolean).join(" · ")}
               </p>
             )}
-            {data.teaser && <p class="my-0 text-white/90">{data.teaser}</p>}
+            {data.teaser && <p class="mb-0 mt-2">{data.teaser}</p>}
           </div>
-          <a href="/xmas-ball" class="btn btn-primary shrink-0">Infos & Anmeldung</a>
         </div>
+        <a href="/xmas-ball" class="btn btn-primary shrink-0">Team anmelden</a>
       </div>
     </section>
   )

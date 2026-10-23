@@ -93,7 +93,8 @@ Needs: WP1.
   - [x] Part 1: brand tokens (`theme.json`, type scale, Barlow/Barlow Condensed via Astro Font API), header (pinstripe, Verein dropdown, phone full-screen menu), footer, shared `.page-title-band` style
   - [x] Part 3: text pages (`[regular].astro` with title band, year column, file list), Kontakt page; content of Ballpark, Vereinsgeschichte, Förderverein, BKIL, Downloads, Kontakt, Impressum, Datenschutz copied from the old site (PDFs in `public/files`)
   - [x] Real crest at `public/images/crest.png`
-  - [ ] Home/news templates, Spielplan restyle, calendar feeds
+  - [x] Startseite: hero with ballpark photo, last results from BSM, news, Xmas-Ball teaser, team tiles
+  - [ ] News templates, Spielplan restyle, calendar feeds
 - [x] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet** (`/teams`, `/teams/<slug>` with switcher, `/probetraining`; team files are still empty stubs, so texts/times need filling in Pages CMS)
 
 ### WP3 – Deployment pipeline

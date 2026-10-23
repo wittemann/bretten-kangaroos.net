@@ -1,0 +1,53 @@
+---
+// Last three played games from the BSM as score cards (homepage).
+// Renders nothing while there are no results yet.
+import { formatDate, splitGames, teamName } from "@/lib/bsm";
+
+const games = splitGames()
+  .results.filter((game) => game.state === "played" && game.homeRuns != null && game.awayRuns != null)
+  .slice(0, 3);
+
+const outcome = {
+  W: { text: "Sieg", class: "text-jersey" },
+  L: { text: "Niederlage", class: "text-rust-dark" },
+  T: { text: "Unentschieden", class: "text-text" },
+};
+---
+
+{
+  games.length > 0 && (
+    <section class="container-wide relative -mt-16 md:-mt-20" aria-labelledby="latest-results">
+      <div class="rounded-[6px] bg-white p-5 shadow-[0_10px_30px_rgba(20,30,18,0.14)] md:px-7 md:py-6">
+        <div class="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 id="latest-results" class="!text-tile">Letzte Ergebnisse</h2>
+          <a href="/spielplan" class="font-semibold text-primary hover:underline">Alle Spiele und Tabellen →</a>
+        </div>
+        <ul class="grid gap-4 md:grid-cols-3">
+          {games.map((game) => (
+            <li class="flex flex-col gap-2 rounded-[6px] border border-line px-4 py-3">
+              <div class="flex justify-between gap-2 text-sm">
+                <span>
+                  {formatDate(game.start).replace(/\d{4}$/, "")} · {teamName(game.league)}
+                </span>
+                {game.result && (
+                  <span class:list={["font-semibold", outcome[game.result].class]}>
+                    {outcome[game.result].text}
+                  </span>
+                )}
+              </div>
+              {[
+                { team: game.away, runs: game.awayRuns },
+                { team: game.home, runs: game.homeRuns },
+              ].map(({ team, runs }) => (
+                <div class:list={["flex items-center justify-between gap-3", team.isUs ? "font-semibold text-ink" : "text-text"]}>
+                  <span>{team.name}</span>
+                  <span class="font-heading text-tile font-bold">{runs}</span>
+                </div>
+              ))}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}
