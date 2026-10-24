@@ -1,15 +1,19 @@
 ---
 import Base from "@/layouts/Base.astro";
 import BsmGames from "@/layouts/components/BsmGames.astro";
+import BsmTeamFilter from "@/layouts/components/BsmTeamFilter.astro";
+import TitleBand from "@/components/TitleBand.astro";
 ---
 
 <Base
   title="Spielplan & Ergebnisse"
   description="Die nächsten Spiele und die Ergebnisse der Teams der Bretten Kangaroos."
 >
-  <section class="section">
-    <div class="container">
-      <h1 class="h2 page-heading">Spielplan & Ergebnisse</h1>
+  <TitleBand title="Spielplan & Ergebnisse">
+    <BsmTeamFilter />
+  </TitleBand>
+  <section class="py-12 md:py-16">
+    <div class="container-wide">
       <BsmGames />
     </div>
   </section>

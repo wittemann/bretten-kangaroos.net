@@ -10,25 +10,20 @@
 
 /* page title band: one shared style on every subpage (Kreide, 56px / 40px) */
 .page-title-band {
-  @apply border-b border-line bg-chalk py-10 md:py-14;
+  @apply border-b border-line bg-chalk pb-8 pt-10 md:pt-12;
 }
 
-.page-title-band h1,
-.page-heading {
+.page-intro {
+  @apply mt-3.5 max-w-[640px] text-intro text-[#3A3F38];
+}
+
+.page-title-band h1 {
   @apply text-title-sm md:text-title;
 }
 
 /* small uppercase rust label */
 .label {
   @apply font-heading text-label font-semibold uppercase tracking-widest text-rust;
-}
-
-/* page heading (legacy, kept for existing templates) */
-.page-heading {
-  @apply mb-20 text-center font-bold leading-10;
-  &:after {
-    @apply mx-auto mt-4 block h-1 w-10 rounded-full bg-rust content-[''];
-  }
 }
 
 /* image cover */
@@ -217,10 +212,11 @@ footer p a {
 
 /* filter / switcher pill */
 .pill {
-  @apply inline-flex min-h-11 items-center rounded-full border border-line bg-white px-5 font-heading text-intro font-semibold uppercase tracking-wide text-ink transition hover:border-forest;
+  @apply inline-flex min-h-11 cursor-pointer items-center rounded-full border-2 border-[#C9C9C2] bg-white px-[18px] font-primary text-base font-semibold text-ink transition hover:border-forest;
 }
 
-.pill[aria-current="page"] {
+.pill[aria-current="page"],
+.pill[aria-pressed="true"] {
   @apply border-forest bg-forest text-white;
 }
 

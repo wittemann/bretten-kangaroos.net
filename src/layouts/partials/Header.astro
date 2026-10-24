@@ -129,16 +129,26 @@ const isActive = (url: string) => pathname === url || pathname.startsWith(`${url
       const toggle = root.querySelector<HTMLButtonElement>("[data-dropdown-toggle]")!;
       const panel = root.querySelector<HTMLElement>("#verein-menu")!;
       let timer: number | undefined;
+      // set when hover opened the panel, so the click that usually follows keeps it open
+      let openedByHover = false;
       const set = (open: boolean) => {
         toggle.setAttribute("aria-expanded", String(open));
         panel.hidden = !open;
       };
-      toggle.addEventListener("click", () => set(!!panel.hidden));
+      toggle.addEventListener("click", () => {
+        if (openedByHover) {
+          openedByHover = false;
+          return;
+        }
+        set(!!panel.hidden);
+      });
       root.addEventListener("mouseenter", () => {
         clearTimeout(timer);
+        if (panel.hidden) openedByHover = true;
         set(true);
       });
       root.addEventListener("mouseleave", () => {
+        openedByHover = false;
         timer = window.setTimeout(() => set(false), 120);
       });
       root.addEventListener("focusout", (event) => {

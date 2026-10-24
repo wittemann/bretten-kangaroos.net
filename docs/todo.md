@@ -107,8 +107,9 @@ Needs: WP1.
 - [ ] **Match the design boards** — compared every board in [`design/`](design/) with the built pages on 2026-10-24.
       Colours, fonts, header and footer fit everywhere; the page layouts were built from Bookworm defaults instead of
       the boards. Before each item: open the board, build to it — **Sonnet**
-  - [ ] All subpages: one shared title band like the boards – left-aligned title, intro text inside the band, filter/switcher
-        pills inside the band. `/spielplan` and `/tabellen` still use Bookworm's centred title with the underline and square filter buttons
+  - [x] All subpages: one shared title band like the boards – left-aligned title, intro text inside the band (`intro` prop of
+        `TitleBand`), filter/switcher pills inside the band in the board style; `/spielplan`, `/tabellen`, `/sponsoren` moved over,
+        team pages show "ages · league" under the title. Text pages (`[regular].astro`) have no intro yet – needs a front matter field
   - [ ] Teams overview (`Teams.dc.html`): list rows instead of cards – team + ages · league, badge (e.g. "Meister 2026"),
         "Training" with summer/winter times, "Coach(es)" with names, "Zur Teamseite →"; below a green Probetraining box and an "Außerdem: Intra League (BKIL)" box
   - [ ] Team page (`Team-Schueler.dc.html`): ages · league line under the title, badge top right (e.g. "Landesliga-Meister 2026"),
@@ -134,7 +135,7 @@ Needs: WP1.
         "1992 – seit über 30 Jahren" box linking to Vereinsgeschichte. Today: plain text page
   - [ ] Vereinsgeschichte (`Vereinsgeschichte.dc.html`): close already – add the intro in the title band and the photo box under 1992
   - [ ] Verein dropdown (`Menu-Desktop.dc.html`): wide panel, links in two columns with descriptions, address box with crest and "Anfahrt →" on the right.
-        Today one column. Bug: on desktop hover opens it and the click right after closes it again, so clicking "Verein" with a mouse seems to do nothing
+        Today one column. ~~Bug: hover opened it and the click right after closed it again~~ fixed 2026-10-24
   - [ ] Phone menu (`Menu-Handy.dc.html`): crest + name in the menu header instead of "Menü", ages under the team tiles, Verein links in normal text, Instagram/Facebook at the end
   - [ ] Startseite (`Home-Clubhaus*.dc.html`): fits; small things – four team tiles per row on desktop, compact one-line results on the phone
 - [x] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet** (`/teams`, `/teams/<slug>` with switcher, `/probetraining`; team files are still empty stubs, so texts/times need filling in Pages CMS)

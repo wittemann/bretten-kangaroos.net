@@ -34,7 +34,7 @@ const longDate = new Intl.DateTimeFormat("de-DE", {
 ---
 
 <Base title={title} description={`${title} der Bretten Kangaroos`}>
-  <TitleBand title={title} label="Teams">
+  <TitleBand title={title} intro={[ages, league].filter(Boolean).join(" · ")}>
     <div class="mt-6"><TeamSwitcher current={team.id} /></div>
   </TitleBand>
 

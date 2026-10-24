@@ -1,0 +1,46 @@
+---
+// Team filter pills for the Spielplan title band. Hides the games of other
+// teams in the BsmGames list on the same page; without JavaScript all games show.
+import { teams } from "@/lib/bsm";
+---
+
+{
+  teams.length > 1 && (
+    <div class="mt-6 flex flex-wrap gap-2" role="group" aria-label="Nach Team filtern" data-bsm-filter>
+      {[{ slug: "", name: "Alle" }, ...teams].map(({ slug, name }) => (
+        <button type="button" class="pill" data-filter={slug} aria-pressed={slug === "" ? "true" : "false"}>
+          {name}
+        </button>
+      ))}
+    </div>
+  )
+}
+
+<script>
+  // Runs on every page load, also after navigation via the ClientRouter.
+  function init() {
+    const root = document.querySelector<HTMLElement>("[data-bsm-games]");
+    const buttons = document.querySelectorAll<HTMLButtonElement>("[data-bsm-filter] [data-filter]");
+    if (!root) return;
+
+    buttons.forEach((button) =>
+      button.addEventListener("click", () => {
+        const team = button.dataset.filter;
+        buttons.forEach((b) =>
+          b.setAttribute("aria-pressed", String(b === button)),
+        );
+        root.querySelectorAll<HTMLElement>("[data-section]").forEach((s) => {
+          let visible = 0;
+          s.querySelectorAll<HTMLElement>("[data-team]").forEach((row) => {
+            row.hidden = Boolean(team) && row.dataset.team !== team;
+            if (!row.hidden) visible++;
+          });
+          const empty = s.querySelector<HTMLElement>("[data-empty]");
+          if (empty) empty.hidden = visible > 0;
+        });
+      }),
+    );
+  }
+
+  document.addEventListener("astro:page-load", init);
+</script>

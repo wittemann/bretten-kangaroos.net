@@ -12,13 +12,12 @@ const teams = (await getSinglePage("teams"))
   title="Probetraining"
   description="Probetraining bei den Bretten Kangaroos – alle Trainingszeiten im Überblick."
 >
-  <TitleBand title="Probetraining" />
+  <TitleBand
+    title="Probetraining"
+    intro="Du willst Baseball oder Softball ausprobieren? Komm einfach zu einem Training deines Alters vorbei."
+  />
   <section class="py-12 md:py-16">
     <div class="container-wide">
-      <p class="mb-10 max-w-2xl text-intro">
-        Du willst Baseball oder Softball ausprobieren? Komm einfach zu einem
-        Training deines Alters vorbei.
-      </p>
       {
         teams.length === 0 ? (
           <p>Die Trainingszeiten folgen in Kürze. Schreib uns über die <a href="/kontakt" class="text-primary underline underline-offset-4">Kontaktseite</a>.</p>

@@ -1,15 +1,14 @@
 ---
 // Bretten games from the BSM: upcoming games first, then results (newest
-// first). `team` limits them to one team (for team pages); without it the
-// list gets a team filter.
-import { formatDate, formatTime, splitGames, teams } from "@/lib/bsm";
+// first). `team` limits them to one team (for team pages); the Spielplan page
+// adds BsmTeamFilter in its title band.
+import { formatDate, formatTime, splitGames } from "@/lib/bsm";
 import type { GameWithLeague } from "@/lib/bsm";
 
 type Props = { team?: string };
 
 const { team } = Astro.props;
 const { upcoming, results } = splitGames(team);
-const showFilter = !team && teams.length > 1;
 
 const resultLabels = {
   W: { text: "S", title: "Sieg", class: "bg-green-600" },
@@ -46,27 +45,6 @@ const sections = [
 ---
 
 <div data-bsm-games>
-  {
-    showFilter && (
-      <div
-        class="mb-12 flex flex-wrap justify-center gap-2"
-        role="group"
-        aria-label="Nach Team filtern"
-      >
-        {[{ slug: "", name: "Alle" }, ...teams].map(({ slug, name }) => (
-          <button
-            type="button"
-            class="btn btn-outline-primary aria-pressed:bg-primary px-4 py-2 text-sm aria-pressed:text-white"
-            data-filter={slug}
-            aria-pressed={slug === "" ? "true" : "false"}
-          >
-            {name}
-          </button>
-        ))}
-      </div>
-    )
-  }
-
   <div class="space-y-16">
     {
       sections.map(({ title, games, empty, isResult }) => (
@@ -147,33 +125,3 @@ const sections = [
     }
   </div>
 </div>
-
-<script>
-  // Team filter: hides games of other teams. Without JavaScript all games
-  // show. Runs on every page load, also after navigation via the ClientRouter.
-  function init() {
-    const root = document.querySelector<HTMLElement>("[data-bsm-games]");
-    if (!root) return;
-    const buttons = root.querySelectorAll<HTMLButtonElement>("[data-filter]");
-
-    buttons.forEach((button) =>
-      button.addEventListener("click", () => {
-        const team = button.dataset.filter;
-        buttons.forEach((b) =>
-          b.setAttribute("aria-pressed", String(b === button)),
-        );
-        root.querySelectorAll<HTMLElement>("[data-section]").forEach((s) => {
-          let visible = 0;
-          s.querySelectorAll<HTMLElement>("[data-team]").forEach((row) => {
-            row.hidden = Boolean(team) && row.dataset.team !== team;
-            if (!row.hidden) visible++;
-          });
-          const empty = s.querySelector<HTMLElement>("[data-empty]");
-          if (empty) empty.hidden = visible > 0;
-        });
-      }),
-    );
-  }
-
-  document.addEventListener("astro:page-load", init);
-</script>

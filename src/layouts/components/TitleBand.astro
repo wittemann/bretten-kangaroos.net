@@ -1,12 +1,14 @@
 ---
 // Shared page title band (Kreide, 56px / 40px on phones), same on every subpage.
-const { title, label } = Astro.props;
+// `intro` sits under the title; the slot takes filter/switcher pills.
+const { title, label, intro } = Astro.props;
 ---
 
 <div class="page-title-band">
   <div class="container-wide">
     {label && <p class="label mb-2">{label}</p>}
     <h1>{title}</h1>
+    {intro && <p class="page-intro">{intro}</p>}
     <slot />
   </div>
 </div>

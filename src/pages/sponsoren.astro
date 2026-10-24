@@ -1,19 +1,19 @@
 ---
 import Base from "@/layouts/Base.astro";
 import Sponsors from "@/layouts/components/Sponsors.astro";
+import TitleBand from "@/components/TitleBand.astro";
 ---
 
 <Base
   title="Sponsoren"
   description="Die Sponsoren der Bretten Kangaroos – vielen Dank für eure Unterstützung!"
 >
-  <section class="section">
-    <div class="container">
-      <h1 class="h2 page-heading">Unsere Sponsoren</h1>
-      <p class="mb-12 text-center">
-        Ohne die Unterstützung unserer Sponsoren wäre Baseball und Softball in
-        Bretten nicht möglich. Vielen Dank!
-      </p>
+  <TitleBand
+    title="Unsere Sponsoren"
+    intro="Ohne die Unterstützung unserer Sponsoren wäre Baseball und Softball in Bretten nicht möglich. Vielen Dank!"
+  />
+  <section class="py-12 md:py-16">
+    <div class="container-wide">
       <Sponsors size="large" />
     </div>
   </section>
