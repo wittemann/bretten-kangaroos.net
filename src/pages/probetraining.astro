@@ -6,6 +6,27 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 const teams = (await getSinglePage("teams"))
   .filter((team) => team.data.training.length > 0)
   .sort((a, b) => a.data.order - b.data.order);
+
+// Winter training runs November to February, summer March to October.
+// The build picks the season of its date, the script below the one of today.
+const seasons = [
+  { key: "winter", button: "Winter · Halle", text: "Gerade läuft das Wintertraining (ca. November bis Februar)." },
+  { key: "sommer", button: "Sommer · Ballpark", text: "Gerade läuft das Sommertraining (ca. März bis Oktober)." },
+] as const;
+type Season = (typeof seasons)[number]["key"];
+
+const seasonOf = (month: number): Season => (month >= 2 && month <= 9 ? "sommer" : "winter");
+const buildSeason = seasonOf(new Date().getMonth());
+
+// A slot without season counts for both; the season name starts the free text field
+const slotsFor = (training: (typeof teams)[number]["data"]["training"], season: Season) =>
+  training.filter((slot) => !slot.season || slot.season.toLowerCase().startsWith(season));
+
+const steps = [
+  { title: "Team finden", text: "Die Teams sind nach Alter eingeteilt – siehe Tabelle unten." },
+  { title: "Kurz Bescheid geben", text: "Am besten vorher eine Mail an den Coach des Teams." },
+  { title: "Vorbeikommen", text: "Zur Trainingszeit am Ballpark oder in der Halle." },
+];
 ---
 
 <Base
@@ -14,35 +35,140 @@ const teams = (await getSinglePage("teams"))
 >
   <TitleBand
     title="Probetraining"
-    intro="Du willst Baseball oder Softball ausprobieren? Komm einfach zu einem Training deines Alters vorbei."
-  />
-  <section class="py-12 md:py-16">
-    <div class="container-wide">
+    intro="Lust auf Baseball oder Softball? In jedem Team ist ein Probetraining jederzeit möglich."
+  >
+    <ol class="mt-7 grid gap-4 sm:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
       {
-        teams.length === 0 ? (
-          <p>Die Trainingszeiten folgen in Kürze. Schreib uns über die <a href="/kontakt" class="text-primary underline underline-offset-4">Kontaktseite</a>.</p>
-        ) : (
-          <ul class="grid gap-4 md:grid-cols-2">
-            {teams.map((team) => (
-              <li class="rounded-[6px] border border-line p-6">
-                <h2 class="!text-tile">
-                  <a href={`/teams/${team.id}`} class="hover:underline">{team.data.title}</a>
-                </h2>
-                {team.data.ages && <p class="label mt-1">{team.data.ages}</p>}
-                <ul class="mt-4 space-y-3">
-                  {team.data.training.map((slot) => (
-                    <li>
-                      {slot.season && <p class="label">{slot.season}</p>}
-                      <p class="font-semibold text-ink">{slot.days}, {slot.time}</p>
-                      <p>{slot.place}</p>
-                    </li>
-                  ))}
-                </ul>
-              </li>
+        steps.map((step, i) => (
+          <li class="flex items-start gap-3.5 rounded-[6px] border border-line bg-white p-5">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-forest font-heading text-[22px] font-bold text-white">
+              {i + 1}
+            </span>
+            <span class="flex flex-col">
+              <strong class="text-ink">{step.title}</strong>
+              <span class="text-[15px]">{step.text}</span>
+            </span>
+          </li>
+        ))
+      }
+    </ol>
+  </TitleBand>
+
+  <section class="container-wide flex flex-col gap-[18px] pb-8 pt-12" data-training>
+    <div class="flex flex-wrap items-center justify-between gap-3.5">
+      <h2 class="!text-[32px]">Trainingszeiten</h2>
+      {
+        teams.length > 0 && (
+          <div class="inline-flex rounded-full bg-[#F0F0EB] p-1" role="group" aria-label="Jahreszeit">
+            {seasons.map((season) => (
+              <button
+                type="button"
+                class="min-h-11 cursor-pointer rounded-full px-5 font-semibold text-ink aria-pressed:bg-forest aria-pressed:text-white"
+                data-season={season.key}
+                aria-pressed={season.key === buildSeason ? "true" : "false"}
+              >
+                {season.button}
+              </button>
             ))}
-          </ul>
+          </div>
         )
       }
     </div>
+    {
+      teams.length === 0 ? (
+        <p>
+          Die Trainingszeiten folgen in Kürze. Schreib uns über die{" "}
+          <a href="/kontakt" class="text-primary underline underline-offset-4">Kontaktseite</a>.
+        </p>
+      ) : (
+        <>
+          {seasons.map((season) => (
+            <p class="text-[15px]" data-season-panel={season.key} hidden={season.key !== buildSeason}>
+              {season.text} Die Seite schaltet automatisch um.
+            </p>
+          ))}
+          <div class="overflow-x-auto rounded-[6px] border border-line">
+            <table class="w-full min-w-[720px] border-collapse text-base">
+              <thead>
+                <tr class="bg-[#F7F6F1] text-left text-ink">
+                  <th class="px-4 py-3 font-semibold">Team</th>
+                  <th class="px-4 py-3 font-semibold">Alter</th>
+                  <th class="px-4 py-3 font-semibold">Wann</th>
+                  <th class="px-4 py-3 font-semibold">Wo</th>
+                  <th class="px-4 py-3 font-semibold">Kontakt</th>
+                </tr>
+              </thead>
+              {seasons.map((season) => (
+                <tbody data-season-panel={season.key} hidden={season.key !== buildSeason}>
+                  {teams.map((team) => {
+                    const { title, ages, training, email } = team.data;
+                    const slots = slotsFor(training, season.key);
+                    // Teams that train in one season only show that training greyed out
+                    const other = seasons.find((s) => s.key !== season.key)!;
+                    const otherSlots = slots.length === 0 ? slotsFor(training, other.key) : [];
+                    return (
+                      <tr class:list={["border-t border-line", slots.length === 0 ? "text-text" : "text-ink"]}>
+                        <td class="px-4 py-3.5">
+                          <a href={`/teams/${team.id}`} class="font-semibold text-primary hover:underline">{title}</a>
+                        </td>
+                        <td class="px-4 py-3.5">{ages}</td>
+                        {slots.length > 0 ? (
+                          <>
+                            <td class="px-4 py-3.5">
+                              {slots.map((slot) => <span class="block">{slot.days}, {slot.time}</span>)}
+                            </td>
+                            <td class="px-4 py-3.5">
+                              {slots.map((slot) => <span class="block">{slot.place}</span>)}
+                            </td>
+                          </>
+                        ) : (
+                          <td class="px-4 py-3.5" colspan="2">
+                            {otherSlots.length > 0
+                              ? `nur im ${other.key === "sommer" ? "Sommer" : "Winter"}: ${otherSlots
+                                  .map((slot) => `${slot.days}, ${slot.time}, ${slot.place}`)
+                                  .join("; ")}`
+                              : "kein Training"}
+                          </td>
+                        )}
+                        <td class="px-4 py-3.5">
+                          {email && <a href={`mailto:${email}?subject=${encodeURIComponent(`Probetraining ${title}`)}`} class="text-primary hover:underline">{email}</a>}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              ))}
+            </table>
+          </div>
+        </>
+      )
+    }
+  </section>
+
+  <section class="container-wide pb-20 pt-6">
+    <div class="flex flex-wrap items-center justify-between gap-7 rounded-[6px] border border-line p-7">
+      <div class="flex max-w-[560px] flex-col gap-1">
+        <h2 class="!text-[26px]">Noch Fragen?</h2>
+        <p>Allgemeine Fragen zum Verein beantwortet die Abteilungsleitung.</p>
+      </div>
+      <a href="/kontakt" class="btn btn-outline-primary">Kontakt</a>
+    </div>
   </section>
 </Base>
+
+<script>
+  // Show the season of today; the buttons switch by hand
+  const root = document.querySelector<HTMLElement>("[data-training]");
+  if (root) {
+    const buttons = root.querySelectorAll<HTMLButtonElement>("[data-season]");
+    const show = (season: string) => {
+      buttons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.season === season)));
+      root.querySelectorAll<HTMLElement>("[data-season-panel]").forEach((panel) => {
+        panel.hidden = panel.dataset.seasonPanel !== season;
+      });
+    };
+    const month = new Date().getMonth();
+    show(month >= 2 && month <= 9 ? "sommer" : "winter");
+    buttons.forEach((b) => b.addEventListener("click", () => show(b.dataset.season!)));
+  }
+</script>

@@ -119,9 +119,10 @@ Needs: WP1.
         and roles, "Aus dem Team"; sidebar: green "Lust mitzuspielen?" box with button, mini standings ("Tabelle") with the own row
         highlighted, "Letzte Spiele" with S/N scores and "Alle Spiele der <Team> →". Done 2026-10-24; photo and badge show once a
         team file has `image` / `badge` (none has yet, see my tasks)
-  - [ ] Probetraining (`Probetraining.dc.html`): three steps "Team finden · Kurz Bescheid geben · Vorbeikommen" in the title band,
+  - [x] Probetraining (`Probetraining.dc.html`): three steps "Team finden · Kurz Bescheid geben · Vorbeikommen" in the title band,
         one table (Team, Alter, Wann, Wo, Kontakt) with a Winter/Sommer switch that picks the current season by itself, "Noch Fragen?" box with Kontakt button.
-        Today: one card per team
+        Done 2026-10-24: winter = November to February; a slot counts for the season its `season` field starts with ("Sommer …"/"Winter …"),
+        a slot without season for both; teams without training in a season show the other one greyed ("nur im Sommer: …")
   - [x] Spielplan offseason (`Spielplan-Clubhaus.dc.html`): two columns – games left, standings of the selected team right with
         "Alle Tabellen →"; results grouped by month, "Sieg"/"Niederlage" as a text chip instead of the S/N dot, "Spielbericht" link.
         Today one long list of the whole season – show the latest results with "Alle Ergebnisse der Saison →" like `Spielplan-Saison.dc.html`
