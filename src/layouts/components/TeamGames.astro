@@ -1,0 +1,52 @@
+---
+// Last played games of one team for the team page sidebar: opponent
+// ("vs" at home, "@" away), date and our score first, S/N/U in colour.
+import { splitGames } from "@/lib/bsm";
+
+const { team, title } = Astro.props;
+const games = splitGames(team)
+  .results.filter((game) => game.state === "played" && game.homeRuns != null && game.awayRuns != null)
+  .slice(0, 4);
+
+const outcome = {
+  W: { text: "S", class: "text-jersey" },
+  L: { text: "N", class: "text-rust-dark" },
+  T: { text: "U", class: "text-text" },
+};
+const shortDate = new Intl.DateTimeFormat("de-DE", {
+  timeZone: "Europe/Berlin",
+  weekday: "short",
+  day: "2-digit",
+  month: "2-digit",
+});
+---
+
+{
+  games.length > 0 && (
+    <section aria-labelledby="team-games">
+      <h2 id="team-games" class="mb-3 text-[26px]">Letzte Spiele</h2>
+      <ul class="border-t border-line">
+        {games.map((game) => {
+          const opponent = game.isHome ? game.away : game.home;
+          const ours = game.isHome ? game.homeRuns : game.awayRuns;
+          const theirs = game.isHome ? game.awayRuns : game.homeRuns;
+          const result = game.result && outcome[game.result];
+          return (
+            <li class="flex items-center justify-between gap-3 border-b border-line py-3">
+              <span class="leading-snug text-ink">
+                {game.isHome ? "vs" : "@"} {opponent.name}
+                <span class="block text-[13px] text-text">{shortDate.format(new Date(game.start)).replace(",", "")}</span>
+              </span>
+              <span class:list={["whitespace-nowrap font-heading text-[22px] font-bold", result?.class]}>
+                {result?.text} {ours}:{theirs}
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+      <a href="/spielplan" class="mt-3 inline-flex min-h-11 items-center font-semibold text-primary hover:underline">
+        Alle Spiele der {title} →
+      </a>
+    </section>
+  )
+}

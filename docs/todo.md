@@ -72,6 +72,8 @@ Things only I can do. The work package each one unblocks is in brackets.
       responsible party (person or club, same as Impressum); IONOS data-processing agreement signed; storage
       period of IONOS logs and of the sign-up mails; which outdated passages go (Google Fonts, analysis tools,
       consent/cookie wording, "Kunden"); add sections for logs and sign-up form; privacy notice with link at the form
+- [ ] Team photos and badges: upload a photo per team and set `badge` (e.g. "Landesliga-Meister 2026") in Pages CMS – the
+      team pages show them under the title (→ WP2)
 - [ ] Writers: get GitHub accounts, invite them to Pages CMS, hand out [`anleitung-redaktion.md`](anleitung-redaktion.md) (→ WP1)
 - [x] For the tournament form: create the `xmasball@bretten-kangaroos.net` mailbox (→ WP8)
 - [x] For the tournament form: set PHP 8.3+ in the IONOS control panel → runs on 8.4 (→ WP8)
@@ -110,12 +112,13 @@ Needs: WP1.
   - [x] All subpages: one shared title band like the boards – left-aligned title, intro text inside the band (`intro` prop of
         `TitleBand`), filter/switcher pills inside the band in the board style; `/spielplan`, `/tabellen`, `/sponsoren` moved over,
         team pages show "ages · league" under the title. Text pages (`[regular].astro`) have no intro yet – needs a front matter field
-  - [ ] Teams overview (`Teams.dc.html`): list rows instead of cards – team + ages · league, badge (e.g. "Meister 2026"),
+  - [x] Teams overview (`Teams.dc.html`): list rows instead of cards – team + ages · league, badge (e.g. "Meister 2026"),
         "Training" with summer/winter times, "Coach(es)" with names, "Zur Teamseite →"; below a green Probetraining box and an "Außerdem: Intra League (BKIL)" box
-  - [ ] Team page (`Team-Schueler.dc.html`): ages · league line under the title, badge top right (e.g. "Landesliga-Meister 2026"),
+  - [x] Team page (`Team-Schueler.dc.html`): ages · league line under the title, badge top right (e.g. "Landesliga-Meister 2026"),
         team photo under the title band; main column: text, training as summer/winter cards, coaches as cards with initials
         and roles, "Aus dem Team"; sidebar: green "Lust mitzuspielen?" box with button, mini standings ("Tabelle") with the own row
-        highlighted, "Letzte Spiele" with S/N scores and "Alle Spiele der <Team> →". Today the sidebar only has Alter/Liga, Training, Trainer & Kontakt
+        highlighted, "Letzte Spiele" with S/N scores and "Alle Spiele der <Team> →". Done 2026-10-24; photo and badge show once a
+        team file has `image` / `badge` (none has yet, see my tasks)
   - [ ] Probetraining (`Probetraining.dc.html`): three steps "Team finden · Kurz Bescheid geben · Vorbeikommen" in the title band,
         one table (Team, Alter, Wann, Wo, Kontakt) with a Winter/Sommer switch that picks the current season by itself, "Noch Fragen?" box with Kontakt button.
         Today: one card per team

@@ -1,0 +1,38 @@
+---
+// Small standings table for a team page sidebar (Pl., Team, S, N), own row
+// highlighted. Uses the first league of the team that has a table.
+import { standingsFor } from "@/lib/bsm";
+
+const { team } = Astro.props;
+const league = standingsFor(team).find((l) => l.standings?.length);
+---
+
+{
+  league && (
+    <section aria-labelledby="team-table">
+      <h2 id="team-table" class="mb-3 text-[26px]">Tabelle</h2>
+      <div class="overflow-x-auto rounded-[6px] border border-line">
+        <table class="w-full border-collapse text-[15px]">
+          <thead>
+            <tr class="bg-chalk text-left text-ink">
+              <th class="px-3 py-2 font-semibold">Pl.</th>
+              <th class="px-3 py-2 font-semibold">Team</th>
+              <th class="px-2 py-2 text-right font-semibold">S</th>
+              <th class="px-3 py-2 text-right font-semibold">N</th>
+            </tr>
+          </thead>
+          <tbody>
+            {league.standings!.map((row) => (
+              <tr class:list={["border-t border-line", row.isUs ? "bg-[#EEF4E8] font-semibold text-ink" : "text-text"]}>
+                <td class="px-3 py-2">{row.rank ? `${row.rank}.` : ""}</td>
+                <td class="px-3 py-2">{row.team}</td>
+                <td class="px-2 py-2 text-right tabular-nums">{row.wins}</td>
+                <td class="px-3 py-2 text-right tabular-nums">{row.losses}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )
+}

@@ -210,6 +210,11 @@ footer p a {
   @apply transition-all duration-200 hover:text-white;
 }
 
+/* team page: the first paragraph of the team text reads as the intro */
+.team-intro > p:first-child {
+  @apply text-intro leading-relaxed text-ink;
+}
+
 /* filter / switcher pill */
 .pill {
   @apply inline-flex min-h-11 cursor-pointer items-center rounded-full border-2 border-[#C9C9C2] bg-white px-[18px] font-primary text-base font-semibold text-ink transition hover:border-forest;

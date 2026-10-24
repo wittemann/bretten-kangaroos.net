@@ -1,7 +1,10 @@
 ---
+// Team page after the "Teamseite – Schüler" board (docs/design/Team-Schueler.dc.html)
 import Base from "@/layouts/Base.astro";
+import TeamGames from "@/components/TeamGames.astro";
 import TeamSwitcher from "@/components/TeamSwitcher.astro";
-import TitleBand from "@/components/TitleBand.astro";
+import TeamTable from "@/components/TeamTable.astro";
+import { standingsFor } from "@/lib/bsm";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import { render } from "astro:content";
@@ -16,10 +19,19 @@ const { title, ages, league, image, badge, training, coaches, email } =
   team.data;
 const { Content } = await render(team);
 const hasBody = Boolean(team.body?.trim());
-const facts = [
-  ages && { label: "Alter", value: ages },
-  league && { label: "Liga", value: league },
-].filter(Boolean) as { label: string; value: string }[];
+
+// The badge box shows the team's place and record from the BSM table, if there is one
+const ownRow = standingsFor(team.id)
+  .flatMap((l) => l.standings ?? [])
+  .find((row) => row.isUs);
+
+const initials = (name: string) =>
+  name
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
 
 // "Aus dem Team": the latest posts tagged with this team
 const teamPosts = sortByDate(
@@ -34,98 +46,130 @@ const longDate = new Intl.DateTimeFormat("de-DE", {
 ---
 
 <Base title={title} description={`${title} der Bretten Kangaroos`}>
-  <TitleBand title={title} intro={[ages, league].filter(Boolean).join(" · ")}>
-    <div class="mt-6"><TeamSwitcher current={team.id} /></div>
-  </TitleBand>
-
-  <section class="py-12 md:py-16">
-    <div class="container-wide grid gap-10 lg:grid-cols-[1fr_340px]">
-      <div>
-        {image && <img src={image} alt={`Team ${title}`} class="mb-8 w-full rounded-[6px]" />}
-        {hasBody && <div class="content"><Content /></div>}
+  <div class:list={["page-title-band", image && "!pb-0"]}>
+    <div class="container-wide flex flex-col gap-6">
+      <div class="flex flex-wrap items-end justify-between gap-5">
+        <div>
+          <h1>{title}</h1>
+          {(ages || league) && <p class="mt-2 text-[18px]">{[ages, league].filter(Boolean).join(" · ")}</p>}
+        </div>
         {
-          !hasBody && !image && (
-            <p class="text-intro">Mehr Infos zum Team folgen in Kürze.</p>
-          )
-        }
-        {
-          teamPosts.length > 0 && (
-            <section class="mt-12" aria-labelledby="team-news">
-              <div class="mb-4 flex flex-wrap items-baseline justify-between gap-2">
-                <h2 id="team-news">Aus dem Team</h2>
-                <a href={`/news/team/${team.id}`} class="font-semibold text-primary hover:underline">
-                  Alle {title}-Beiträge →
-                </a>
-              </div>
-              <ul class="divide-y divide-line border-y border-line">
-                {teamPosts.map((post) => (
-                  <li>
-                    <a href={`/news/${post.id}`} class="group flex flex-col gap-1 py-4">
-                      <span class="text-sm">{longDate.format(post.data.date)}</span>
-                      <span class="font-semibold leading-snug text-ink group-hover:text-primary">{post.data.title}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
+          badge && (
+            <div class="flex items-center gap-3 rounded-[6px] bg-forest py-2.5 pl-2.5 pr-4 text-white">
+              {ownRow?.rank && (
+                <span class="flex h-11 w-11 items-center justify-center rounded-full bg-rust font-heading text-[22px] font-bold">
+                  {ownRow.rank}.
+                </span>
+              )}
+              <span class="flex flex-col leading-tight">
+                <strong class="font-heading text-[20px] uppercase tracking-wide">{badge}</strong>
+                {ownRow && <span class="text-sm text-[#C7D8B8]">{ownRow.wins} Siege, {ownRow.losses} Niederlagen</span>}
+              </span>
+            </div>
           )
         }
       </div>
-
-      <aside class="space-y-8">
-        {
-          (facts.length > 0 || badge) && (
-            <div class="rounded-[6px] border border-line p-6">
-              {badge && <p class="label mb-3">{badge}</p>}
-              <dl class="space-y-2">
-                {facts.map((fact) => (
-                  <div>
-                    <dt class="label">{fact.label}</dt>
-                    <dd class="text-ink">{fact.value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          )
-        }
-        {
-          training.length > 0 && (
-            <div class="rounded-[6px] border border-line p-6">
-              <h2 class="mb-4 !text-tile">Training</h2>
-              <ul class="space-y-4">
-                {training.map((slot) => (
-                  <li>
-                    {slot.season && <p class="label">{slot.season}</p>}
-                    <p class="font-semibold text-ink">{slot.days}, {slot.time}</p>
-                    <p>{slot.place}</p>
-                  </li>
-                ))}
-              </ul>
-              <a href="/probetraining" class="btn btn-primary mt-6 w-full">Probetraining</a>
-            </div>
-          )
-        }
-        {
-          (coaches.length > 0 || email) && (
-            <div class="rounded-[6px] border border-line p-6">
-              <h2 class="mb-4 !text-tile">Trainer &amp; Kontakt</h2>
-              <ul class="space-y-1">
-                {coaches.map((coach) => (
-                  <li class="text-ink">
-                    {coach.name}
-                    {coach.role && <span class="text-text-light"> · {coach.role}</span>}
-                  </li>
-                ))}
-              </ul>
-              {email && (
-                <a href={`mailto:${email}`} class="mt-3 inline-flex min-h-11 items-center font-semibold text-primary underline underline-offset-4">
-                  {email}
-                </a>
-              )}
-            </div>
-          )
-        }
-      </aside>
+      <TeamSwitcher current={team.id} />
+      {
+        image && (
+          <img src={image} alt={`Das Team ${title} der Bretten Kangaroos`} class="h-[240px] w-full rounded-t-[6px] object-cover md:h-[420px]" />
+        )
+      }
     </div>
-  </section>
+  </div>
+
+  <div class="container-wide flex flex-wrap gap-14 pb-18 pt-14">
+    <div class="flex min-w-0 flex-[3_1_560px] flex-col gap-12">
+      {
+        hasBody ? (
+          <div class="content team-intro"><Content /></div>
+        ) : (
+          <p class="text-intro">Mehr Infos zum Team folgen in Kürze.</p>
+        )
+      }
+
+      {
+        training.length > 0 && (
+          <section aria-labelledby="team-training">
+            <h2 id="team-training" class="mb-4">Training</h2>
+            <ul class="grid gap-4 sm:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
+              {training.map((slot) => (
+                <li class="flex flex-col gap-1.5 rounded-[6px] border border-line p-5">
+                  {slot.season && <span class="label !text-sm">{slot.season}</span>}
+                  <strong class="text-[20px] text-ink">{slot.days}, {slot.time}</strong>
+                  <span>{slot.place}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+
+      {
+        (coaches.length > 0 || email) && (
+          <section aria-labelledby="team-coaches">
+            <h2 id="team-coaches" class="mb-4">Coaches</h2>
+            {coaches.length > 0 && (
+              <ul class="grid gap-4 sm:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
+                {coaches.map((coach) => (
+                  <li class="flex items-center gap-4">
+                    <span class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-full bg-[#E3EFDC] font-heading text-[26px] font-bold text-forest" aria-hidden="true">
+                      {initials(coach.name)}
+                    </span>
+                    <span class="flex flex-col leading-snug">
+                      <strong class="text-[18px] text-ink">{coach.name}</strong>
+                      {coach.role && <span class="text-sm">{coach.role}</span>}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {email && (
+              <p class="mt-4 text-[15px]">
+                Fragen an die Coaches: <a href={`mailto:${email}`} class="text-primary underline underline-offset-4">{email}</a>
+              </p>
+            )}
+          </section>
+        )
+      }
+
+      {
+        teamPosts.length > 0 && (
+          <section aria-labelledby="team-news">
+            <div class="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+              <h2 id="team-news">Aus dem Team</h2>
+              <a href={`/news/team/${team.id}`} class="font-semibold text-primary hover:underline">
+                Alle {title}-Beiträge →
+              </a>
+            </div>
+            <ul class="divide-y divide-line border-y border-line">
+              {teamPosts.map((post) => (
+                <li>
+                  <a href={`/news/${post.id}`} class="group flex flex-col gap-1 py-4">
+                    <span class="text-sm">{longDate.format(post.data.date)}</span>
+                    <strong class="text-[19px] leading-snug text-ink group-hover:text-primary">{post.data.title}</strong>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+    </div>
+
+    <aside class="flex min-w-0 flex-[2_1_340px] flex-col gap-10">
+      <div class="flex flex-col gap-3 rounded-[6px] bg-forest p-6 text-white">
+        <h2 class="text-[28px] leading-none !text-white">Lust mitzuspielen?</h2>
+        <p class="text-[#DCE6D4]">Komm einfach zu einem der Trainings vorbei oder schreib den Coaches vorher kurz.</p>
+        <a
+          href={email ? `mailto:${email}?subject=${encodeURIComponent(`Probetraining ${title}`)}` : "/probetraining"}
+          class="btn btn-primary self-start"
+        >
+          Probetraining anfragen
+        </a>
+      </div>
+      <TeamTable team={team.id} />
+      <TeamGames team={team.id} title={title} />
+    </aside>
+  </div>
 </Base>
