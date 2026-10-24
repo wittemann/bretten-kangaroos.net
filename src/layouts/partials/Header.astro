@@ -1,6 +1,8 @@
 ---
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
+import social from "@/config/social.json";
+import { getCollection } from "astro:content";
 import { teamNames, teamSlugs } from "@/lib/teams";
 
 const { main, cta, address } = menu;
@@ -9,6 +11,12 @@ const mainLinks = main.filter((item) => !item.hasChildren);
 const topLinks = mainLinks.filter((item) => item.url !== "/teams");
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
 const isActive = (url: string) => pathname === url || pathname.startsWith(`${url}/`);
+// Ages under the team tiles of the phone menu, from the team files
+const teamAges = Object.fromEntries((await getCollection("teams")).map((team) => [team.id, team.data.ages]));
+const socialLinks = [
+  { name: "Instagram", url: social.main.instagram },
+  { name: "Facebook", url: social.main.facebook },
+].filter((link) => link.url);
 ---
 
 <header class="site-header sticky top-0 z-40 bg-forest text-white">
@@ -39,22 +47,23 @@ const isActive = (url: string) => pathname === url || pathname.startsWith(`${url
           </svg>
         </button>
         <div id="verein-menu" class="verein-menu" hidden>
-          <ul>
+          <ul class="grid flex-1 grid-cols-2 content-start gap-0.5 p-3.5">
             {verein.children?.map((child) => (
               <li>
-                <a href={child.url} class="verein-item">
-                  <span class="font-heading text-intro font-semibold uppercase tracking-wide text-forest">{child.name}</span>
-                  <span class="text-[15px] leading-snug text-text-light">{child.description}</span>
+                <a href={child.url} class="verein-item" aria-current={isActive(child.url) ? "page" : undefined}>
+                  <strong class="text-[17px] font-semibold text-ink">{child.name}</strong>
+                  <span class="text-sm text-text-light">{child.description}</span>
                 </a>
               </li>
             ))}
           </ul>
-          <div class="mt-3 flex items-center justify-between gap-4 rounded-[6px] bg-chalk p-4">
-            <address class="not-italic leading-snug text-ink">
-              <span class="label block">{address.name}</span>
-              {address.street}<br />{address.city}
+          <div class="flex w-[180px] shrink-0 flex-col gap-2.5 bg-chalk px-[18px] py-[22px] text-sm leading-normal">
+            <img src="/images/crest.png" alt="" width="72" height="72" class="h-[72px] w-[72px] object-contain" />
+            <address class="flex flex-col gap-2.5 not-italic">
+              <strong class="text-[15px] text-ink">{address.name}</strong>
+              <span class="text-text-light">{address.street}<br />{address.city}</span>
             </address>
-            <a href={address.url} class="btn btn-outline-primary">{address.label}</a>
+            <a href={address.url} class="font-semibold text-primary hover:underline">{address.label} →</a>
           </div>
         </div>
       </li>
@@ -80,44 +89,63 @@ const isActive = (url: string) => pathname === url || pathname.startsWith(`${url
 
   <!-- phone: full-screen menu -->
   <div id="mobile-menu" class="mobile-menu" hidden>
-    <div class="flex h-[72px] items-center justify-between px-4">
-      <span class="font-heading text-[22px] font-bold uppercase tracking-wide">Menü</span>
-      <button type="button" class="flex h-11 w-11 items-center justify-center" aria-label="Menü schließen" data-menu-close>
-        <svg class="h-7 w-7 fill-current" viewBox="0 0 20 20" aria-hidden="true">
-          <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon>
+    <div class="flex items-center justify-between gap-3 border-b border-white/15 px-4 py-2.5">
+      <a href="/" class="flex items-center gap-2.5" aria-label={`${config.site.title} – Startseite`}>
+        <span class="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
+          <img src="/images/crest.png" alt="" width="44" height="44" class="h-10 w-10 object-contain" />
+        </span>
+        <span class="font-heading text-[20px] font-bold uppercase tracking-wide">Bretten Kangaroos</span>
+      </a>
+      <button type="button" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-[4px] border border-white/35" aria-label="Menü schließen" data-menu-close>
+        <svg class="h-[22px] w-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" />
         </svg>
       </button>
     </div>
-    <div class="px-4 pb-10">
-      <a href={cta.url} class="btn btn-primary w-full">{cta.name}</a>
-      <ul class="mt-4 border-t border-white/20">
-        {topLinks.map((item) => (
-          <li class="border-b border-white/20">
-            <a href={item.url} class="mobile-link">{item.name}</a>
-          </li>
-        ))}
-      </ul>
-      <p class="label mt-6 mb-3 !text-leaf">Teams</p>
-      <ul class="grid grid-cols-2 gap-2">
-        {teamSlugs.map((slug) => (
-          <li>
-            <a href={`/teams/${slug}`} class="flex min-h-14 items-center rounded-[6px] bg-white/10 px-4 font-heading text-intro font-semibold uppercase tracking-wide">
-              {teamNames[slug]}
-            </a>
-          </li>
-        ))}
-        <li>
-          <a href="/teams" class="flex min-h-14 items-center rounded-[6px] border border-white/30 px-4 font-heading text-intro font-semibold uppercase tracking-wide">Alle Teams</a>
-        </li>
-      </ul>
-      <p class="label mt-6 mb-1 !text-leaf">{verein.name}</p>
+    <div class="flex flex-col gap-[22px] px-4 pb-8 pt-5">
+      <a href={cta.url} class="btn btn-primary min-h-[52px] w-full text-[20px]">{cta.name}</a>
       <ul>
-        {verein.children?.map((child) => (
-          <li class="border-b border-white/20">
-            <a href={child.url} class="mobile-link !text-[19px]">{child.name}</a>
+        {topLinks.map((item) => (
+          <li class="border-b border-white/15">
+            <a href={item.url} class="mobile-link" aria-current={isActive(item.url) ? "page" : undefined}>{item.name}</a>
           </li>
         ))}
       </ul>
+      <div>
+        <a href="/teams" class="label mb-2 inline-flex min-h-8 items-center !text-leaf">Teams</a>
+        <ul class="grid grid-cols-2 gap-2">
+          {teamSlugs.map((slug) => (
+            <li>
+              <a href={`/teams/${slug}`} class="flex min-h-14 flex-col justify-center rounded-[4px] bg-white/[0.08] px-3 py-2 leading-tight">
+                <strong class="text-[17px] font-semibold">{teamNames[slug]}</strong>
+                {teamAges[slug] && <span class="text-[13px] text-[#C7D8B8]">{teamAges[slug]}</span>}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a href="/teams" class="flex min-h-14 items-center rounded-[4px] border border-white/30 px-3 text-[17px] font-semibold">Alle Teams</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="label mb-1 !text-leaf">{verein.name}</p>
+        <ul>
+          {verein.children?.map((child) => (
+            <li class="border-b border-white/10 last:border-b-0">
+              <a href={child.url} class="flex min-h-11 items-center text-[18px] text-white">{child.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {socialLinks.length > 0 && (
+        <ul class="flex gap-5 text-[15px]">
+          {socialLinks.map((link) => (
+            <li>
+              <a href={link.url} target="_blank" rel="noopener" class="inline-flex min-h-11 items-center text-[#C7D8B8] underline underline-offset-4 hover:text-white">{link.name}</a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   </div>
 </header>

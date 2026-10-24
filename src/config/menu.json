@@ -9,13 +9,13 @@
       "url": "/verein",
       "hasChildren": true,
       "children": [
-        { "name": "Ballpark", "url": "/ballpark", "description": "So findet ihr uns und das Spielfeld" },
-        { "name": "Vereinsgeschichte", "url": "/vereinsgeschichte", "description": "Seit 1992 am Ball" },
-        { "name": "Förderverein", "url": "/foerderverein", "description": "Den Baseballsport in Bretten unterstützen" },
+        { "name": "Ballpark", "url": "/ballpark", "description": "Unser Platz und Anfahrt" },
+        { "name": "Vereinsgeschichte", "url": "/vereinsgeschichte", "description": "Seit 1992 in Bretten" },
+        { "name": "Förderverein", "url": "/foerderverein", "description": "Bretten Kangaroos e.V." },
         { "name": "Intra League (BKIL)", "url": "/bkil", "description": "Unsere vereinsinterne Liga" },
-        { "name": "Sponsoren", "url": "/sponsoren", "description": "Danke an alle, die uns unterstützen" },
-        { "name": "Downloads", "url": "/downloads", "description": "Formulare und Dokumente" },
-        { "name": "Kontakt", "url": "/kontakt", "description": "Ansprechpartner und Anfahrt" }
+        { "name": "Sponsoren", "url": "/sponsoren", "description": "Wer uns unterstützt" },
+        { "name": "Downloads", "url": "/downloads", "description": "Beitrittserklärung, Abteilungsordnung" },
+        { "name": "Kontakt", "url": "/kontakt", "description": "Abteilungsleitung, Kasse, Presse" }
       ]
     }
   ],

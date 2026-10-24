@@ -21,7 +21,19 @@
 }
 
 .verein-menu {
-  @apply absolute right-0 top-full z-50 mt-1 w-[420px] rounded-[6px] border border-line bg-white p-3 text-ink shadow-xl;
+  /* hangs from the bottom of the 72px header: the button ends about 13px above it */
+  @apply absolute right-0 top-[calc(100%+13px)] z-50 flex w-[600px] rounded-b-[6px] bg-white font-primary normal-case tracking-normal text-ink;
+  box-shadow: 0 18px 40px rgba(20, 30, 18, 0.22);
+}
+
+/* bridges the gap to the button, so hovering down doesn't close the panel */
+.verein-menu::before {
+  content: "";
+  @apply absolute inset-x-0 bottom-full h-[13px];
+}
+
+.verein-menu > :last-child {
+  @apply rounded-br-[6px];
 }
 
 .verein-menu[hidden] {
@@ -29,7 +41,11 @@
 }
 
 .verein-item {
-  @apply flex min-h-11 flex-col rounded-[4px] px-3 py-2 transition hover:bg-chalk;
+  @apply flex min-h-11 flex-col rounded-[4px] px-3.5 py-3 leading-snug transition hover:bg-[#F0F5EC];
+}
+
+.verein-item[aria-current="page"] {
+  @apply bg-[#F0F5EC];
 }
 
 /* phone menu */
@@ -42,7 +58,11 @@
 }
 
 .mobile-link {
-  @apply flex min-h-12 items-center font-heading text-[24px] font-semibold uppercase tracking-wide text-white;
+  @apply flex min-h-[52px] items-center font-heading text-[28px] font-bold uppercase tracking-wide text-white;
+}
+
+.mobile-link[aria-current="page"] {
+  @apply text-leaf;
 }
 
 /* footer */

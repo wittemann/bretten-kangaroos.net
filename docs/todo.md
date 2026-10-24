@@ -103,13 +103,13 @@ Needs: WP1.
 - [x] Content collections that read `content/`, images from `public/images` — **Sonnet** (`src/content.config.ts`)
 - [x] Hide news with `draft: true` in the build — **Haiku** (`src/lib/contentParser.astro`)
 - [x] Work out the Kangaroos look with **Claude Design** (colours, logo, navigation, layouts of the pages from WP1) — together with me → [`design.md`](design.md)
-- [ ] Apply the design from [`design.md`](design.md) to the Bookworm theme (colours, fonts, header/menus, footer, page templates) — **Sonnet**
+- [x] Apply the design from [`design.md`](design.md) to the Bookworm theme (colours, fonts, header/menus, footer, page templates) — **Sonnet**
   - [x] Part 1: brand tokens (`theme.json`, type scale, Barlow/Barlow Condensed via Astro Font API), header (pinstripe, Verein dropdown, phone full-screen menu), footer, shared `.page-title-band` style
   - [x] Part 3: text pages (`[regular].astro` with title band, year column, file list), Kontakt page; content of Ballpark, Vereinsgeschichte, Förderverein, BKIL, Downloads, Kontakt, Impressum, Datenschutz copied from the old site (PDFs in `public/files`)
   - [x] Real crest at `public/images/crest.png`
   - [x] Startseite: hero with ballpark photo, last results from BSM, news, Xmas-Ball teaser, team tiles
   - [x] News templates, Spielplan restyle, calendar feeds (detailed in "Match the design boards" below)
-- [ ] **Match the design boards** — compared every board in [`design/`](design/) with the built pages on 2026-10-24.
+- [x] **Match the design boards** — compared every board in [`design/`](design/) with the built pages on 2026-10-24.
       Colours, fonts, header and footer fit everywhere; the page layouts were built from Bookworm defaults instead of
       the boards. Before each item: open the board, build to it — **Sonnet**
   - [x] All subpages: one shared title band like the boards – left-aligned title, intro text inside the band (`intro` prop of
@@ -152,9 +152,11 @@ Needs: WP1.
         page `vereinsgeschichte.astro` and content file `content/vereinsgeschichte.md` (Pages CMS "Vereinsgeschichte") with six
         chapters, year titles from the board, the full year texts kept; a milestone card jumps to its year and opens the chapter.
         Years without a photo show no grey placeholder like the board – only 2015 has one so far (see photo task above)
-  - [ ] Verein dropdown (`Menu-Desktop.dc.html`): wide panel, links in two columns with descriptions, address box with crest and "Anfahrt →" on the right.
-        Today one column. ~~Bug: hover opened it and the click right after closed it again~~ fixed 2026-10-24
-  - [ ] Phone menu (`Menu-Handy.dc.html`): crest + name in the menu header instead of "Menü", ages under the team tiles, Verein links in normal text, Instagram/Facebook at the end
+  - [x] Verein dropdown (`Menu-Desktop.dc.html`): wide panel, links in two columns with descriptions, address box with crest and "Anfahrt →" on the right.
+        ~~Bug: hover opened it and the click right after closed it again~~ fixed 2026-10-24. Done 2026-10-24: panel hangs from the
+        header bottom, descriptions taken over from the board (`src/config/menu.json`)
+  - [x] Phone menu (`Menu-Handy.dc.html`): crest + name in the menu header instead of "Menü", ages under the team tiles, Verein links in normal text, Instagram/Facebook at the end.
+        Done 2026-10-24: ages come from the team files (`ages`); the "Alle Teams" tile stays next to the five teams
   - [x] Startseite (`Home-Clubhaus*.dc.html`): fits. The small differences (four team tiles per row on desktop, compact one-line
         results on the phone) stay as they are – decided 2026-10-24
 - [x] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet** (`/teams`, `/teams/<slug>` with switcher, `/probetraining`; team files are still empty stubs, so texts/times need filling in Pages CMS)
