@@ -1,5 +1,5 @@
 ---
-import Posts from "@/components/Posts.astro";
+import NewsList from "@/components/NewsList.astro";
 import NewsFilter from "@/components/NewsFilter.astro";
 import TitleBand from "@/components/TitleBand.astro";
 import config from "@/config/config.json";
@@ -18,9 +18,9 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
   <TitleBand title="Aktuelles">
     <NewsFilter />
   </TitleBand>
-  <section class="section">
-    <div class="container">
-      <Posts posts={currentPosts} className="mb-16" />
+  <section class="pb-18 pt-12">
+    <div class="container-wide flex flex-col gap-10">
+      <NewsList posts={currentPosts} leads />
       <Pagination section="news" currentPage={1} totalPages={totalPages} />
     </div>
   </section>

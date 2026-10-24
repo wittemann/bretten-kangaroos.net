@@ -1,69 +1,139 @@
 ---
+// News post after the board (docs/design/News-Artikel.dc.html): back link,
+// team chip, date, author, title and the first paragraph as intro above the
+// image, then the text, "Zahlen" box, team link, share links, more posts.
 import { postTeamLabel } from "@/lib/teams";
-import dateFormat from "@/lib/utils/dateFormat";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 import { render, type CollectionEntry } from "astro:content";
-import { BiCalendarEdit, BiCategoryAlt, BiUser } from "react-icons/bi";
 
 type Props = {
   post: CollectionEntry<"news">;
+  morePosts: CollectionEntry<"news">[];
 };
 
-const { post } = Astro.props;
+const { post, morePosts } = Astro.props;
 const { Content } = await render(post);
-const { title, image, date, author } = post.data;
-const team = postTeamLabel(post.data);
+const { title, image, date, author, team, stats } = post.data;
+const teamLabel = postTeamLabel(post.data);
+
+// The first block becomes the intro when it is a plain text paragraph (not an
+// image, heading, quote, list or bold-only sub-heading); the text then hides it.
+const firstBlock = (post.body ?? "").trim().split(/\n\s*\n/)[0] ?? "";
+const lead = /^(!\[|#|<|>|[-*+] |\d+\. |\||\*\*[^*]+\*\*\s*$)/.test(firstBlock) ? "" : firstBlock;
+
+const longDate = new Intl.DateTimeFormat("de-DE", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(`${title} ${pageUrl}`)}`;
 ---
 
-<section class="section">
-  <div class="container">
-    <article class="row justify-center">
-      <div class="md:col-10 text-center">
-        <h1 set:html={markdownify(title)} class="h2" />
-        <ul class="mt-4 flex flex-wrap items-center justify-center text-text">
-          <li class="mx-3 flex items-center flex-wrap font-medium">
-            <BiCalendarEdit className="mr-1 h-5 w-5 text-gray-600" />
-            {dateFormat(date)}
-          </li>
-          {
-            author && (
-              <li class="mx-3 flex items-center flex-wrap font-medium">
-                <BiUser className="mr-1 h-[18px] w-[18px] text-gray-600" />
-                {author}
-              </li>
-            )
-          }
-          {
-            team && (
-              <li class="mx-3 flex items-center flex-wrap font-medium">
-                <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-gray-600" />
-                {team}
-              </li>
-            )
-          }
+<article>
+  <div class="mx-auto flex max-w-[760px] flex-col gap-4 px-4 pb-8 pt-12 md:px-6">
+    <a href="/news" class="self-start text-[15px] font-semibold text-primary hover:underline">← Aktuelles</a>
+    <div class="flex flex-wrap items-center gap-x-3.5 gap-y-2 text-[15px]">
+      {
+        teamLabel &&
+          (team ? (
+            <a href={`/teams/${team}`} class="inline-flex min-h-[30px] items-center rounded-full bg-[#E3EFDC] px-3 font-semibold text-[#1A5E2E] hover:bg-[#D3E6C8]">
+              {teamLabel}
+            </a>
+          ) : (
+            <span class="inline-flex min-h-[30px] items-center rounded-full bg-chalk px-3 font-semibold text-ink">{teamLabel}</span>
+          ))
+      }
+      <span>{longDate.format(date)}</span>
+      {author && <span aria-hidden="true">·</span>}
+      {author && <span>von {author}</span>}
+    </div>
+    <h1 class="text-title-sm leading-none md:text-title">{title}</h1>
+    {lead && <p class="text-[21px] leading-relaxed text-[#3A3F38]" set:html={markdownify(lead)} />}
+  </div>
+
+  {
+    image && (
+      <figure class="mx-auto max-w-[1040px] px-4 md:px-6">
+        <Image src={image} alt="" width={1040} height={585} class="block h-auto w-full rounded-[6px]" />
+      </figure>
+    )
+  }
+
+  <div class:list={["mx-auto max-w-[760px] px-4 pb-6 md:px-6", image ? "pt-10" : "pt-0"]}>
+    {
+      stats.length > 0 && (
+        <dl class="mb-8 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-px overflow-hidden rounded-[6px] border border-line bg-line">
+          {stats.map((stat) => (
+            <div class="flex flex-col items-center bg-chalk p-4 leading-tight">
+              <dd class="font-heading text-[44px] font-bold text-ink">{stat.value}</dd>
+              <dt class="order-last text-sm">{stat.label}</dt>
+            </div>
+          ))}
+        </dl>
+      )
+    }
+    <div class:list={["content post-body", lead && "has-lead"]}>
+      <Content />
+    </div>
+
+    <div class="mt-10 flex flex-wrap justify-between gap-3 border-t border-line pt-5 text-[15px]">
+      {
+        team ? (
+          <a href={`/teams/${team}`} class="font-semibold text-primary hover:underline">Zur Teamseite der {teamLabel} →</a>
+        ) : (
+          <a href="/news" class="font-semibold text-primary hover:underline">Alle Beiträge →</a>
+        )
+      }
+      <span>
+        Weitersagen:{" "}
+        <a href={whatsappUrl} class="text-primary underline underline-offset-4" target="_blank" rel="noopener">WhatsApp</a>
+        {" · "}
+        <button type="button" class="cursor-pointer text-primary underline underline-offset-4" data-copy-link={pageUrl}>Link kopieren</button>
+      </span>
+    </div>
+  </div>
+</article>
+
+{
+  morePosts.length > 0 && (
+    <section class="mt-14 border-t border-line bg-chalk" aria-labelledby="more-posts">
+      <div class="container-wide flex flex-col gap-5 pb-16 pt-12">
+        <h2 id="more-posts" class="text-[30px]">Weitere Beiträge</h2>
+        <ul class="grid gap-6 md:grid-cols-3">
+          {morePosts.map((other) => (
+            <li>
+              <a href={`/news/${other.id}`} class="group flex h-full flex-col gap-1.5 rounded-[6px] border border-line bg-white p-5 transition hover:border-forest">
+                <span class="text-sm">
+                  {longDate.format(other.data.date)}
+                  {postTeamLabel(other.data) && ` · ${postTeamLabel(other.data)}`}
+                </span>
+                <strong class="text-[19px] leading-snug text-ink group-hover:text-primary">{other.data.title}</strong>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
+    </section>
+  )
+}
 
-      <div class="col-12 mt-8 mb-2">
-        {
-          image && (
-            <Image
-              src={image}
-              height={500}
-              width={1000}
-              alt={title}
-              class="rounded-lg"
-            />
-          )
+<script>
+  // "Link kopieren": copies the post URL and confirms it on the button
+  function init() {
+    document.querySelectorAll<HTMLButtonElement>("[data-copy-link]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(button.dataset.copyLink!);
+          button.textContent = "Link kopiert";
+        } catch {
+          window.prompt("Link zum Kopieren:", button.dataset.copyLink);
         }
-      </div>
+      });
+    });
+  }
 
-      <div class="md:col-10">
-        <div class="content mb-16 text-left">
-          <Content />
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
+  document.addEventListener("astro:page-load", init);
+</script>

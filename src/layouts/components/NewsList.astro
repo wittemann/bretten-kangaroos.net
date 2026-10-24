@@ -1,0 +1,88 @@
+---
+// Post list for Aktuelles after the board (docs/design/Aktuelles.dc.html): with
+// `leads`, the first two posts are big with photo, the rest compact rows with
+// date + team on the left and title + one-line teaser on the right.
+import { postTeamLabel } from "@/lib/teams";
+import dateFormat from "@/lib/utils/dateFormat";
+import { plainify } from "@/lib/utils/textConverter";
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  posts: CollectionEntry<"news">[];
+  leads?: boolean;
+};
+
+const { posts, leads = false } = Astro.props;
+const leadPosts = leads ? posts.slice(0, 2) : [];
+const rowPosts = leads ? posts.slice(2) : posts;
+
+const longDate = new Intl.DateTimeFormat("de-DE", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+const teaser = (post: CollectionEntry<"news">) => {
+  const text = plainify(post.body ?? "").replace(/\s+/g, " ").trim();
+  return text.length > 220 ? `${text.slice(0, 220).replace(/\s\S*$/, "")} …` : text;
+};
+---
+
+<div class="flex flex-col gap-10">
+  {
+    leadPosts.length > 0 && (
+      <div class="grid gap-7 md:grid-cols-2">
+        {leadPosts.map((post) => (
+          <a href={`/news/${post.id}`} class="group flex flex-col gap-3">
+            {post.data.image ? (
+              <Image
+                src={post.data.image}
+                alt=""
+                width={720}
+                height={400}
+                class="h-[220px] w-full rounded-[6px] object-cover md:h-[300px]"
+              />
+            ) : (
+              <span class="flex h-[220px] items-center justify-center rounded-[6px] bg-chalk md:h-[300px]" aria-hidden="true">
+                <img src="/images/crest.png" alt="" class="h-32 w-auto opacity-80 md:h-40" />
+              </span>
+            )}
+            <span class="text-sm">
+              {postTeamLabel(post.data) && <strong class="text-[#1A5E2E]">{postTeamLabel(post.data)}</strong>}
+              {postTeamLabel(post.data) && " · "}
+              {longDate.format(post.data.date)}
+            </span>
+            <h2 class="text-[26px] leading-[1.05] group-hover:text-primary md:text-[30px]">{post.data.title}</h2>
+          </a>
+        ))}
+      </div>
+    )
+  }
+
+  {
+    rowPosts.length > 0 && (
+      <ul class="border-b border-line">
+        {rowPosts.map((post) => (
+          <li>
+            <a
+              href={`/news/${post.id}`}
+              class="group grid gap-x-6 gap-y-1 border-t border-line py-5 sm:grid-cols-[120px_minmax(0,1fr)]"
+            >
+              <span class="text-sm leading-snug">
+                {dateFormat(post.data.date)}
+                {postTeamLabel(post.data) && (
+                  <strong class="text-[#1A5E2E] sm:block"><span class="sm:hidden"> · </span>{postTeamLabel(post.data)}</strong>
+                )}
+              </span>
+              <span class="flex min-w-0 flex-col gap-1">
+                <strong class="text-[20px] leading-snug text-ink group-hover:text-primary">{post.data.title}</strong>
+                <span class="line-clamp-2">{teaser(post)}</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</div>

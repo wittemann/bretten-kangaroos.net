@@ -127,12 +127,13 @@ Needs: WP1.
         Today one long list of the whole season – show the latest results with "Alle Ergebnisse der Saison →" like `Spielplan-Saison.dc.html`
   - [ ] Spielplan in season (`Spielplan-Saison.dc.html`): days as green bars ("Heimspieltag am Ballpark"), large start time,
         "In meinen Kalender" per game, "Spielplan abonnieren" button in the title band and the green subscription box – together with the calendar feeds (WP4)
-  - [ ] Aktuelles (`Aktuelles.dc.html`): two lead posts with photo side by side, then a compact list (date + team left, title + one-line teaser right),
-        numbered pagination. Today: Bookworm card grid with big gaps
-  - [ ] News post (`News-Artikel.dc.html`): "← Aktuelles" back link, team chip + date + author, large left-aligned title, intro paragraph,
+  - [x] Aktuelles (`Aktuelles.dc.html`): two lead posts with photo side by side, then a compact list (date + team left, title + one-line teaser right),
+        numbered pagination, 10 posts per page. Done 2026-10-24
+  - [x] News post (`News-Artikel.dc.html`): "← Aktuelles" back link, team chip + date + author, large left-aligned title, intro paragraph,
         then the image with caption; body headings in the section style (today they render as small bold text), green quote box,
         "Zahlen" box, footer with "Zur Teamseite der <Team> →" and share links (WhatsApp, Link kopieren), "Weitere Beiträge" with three posts.
-        Today: Bookworm single post with centred title and the image above it
+        Done 2026-10-24: the first paragraph is the intro; bold-only paragraphs of the old posts render as headings.
+        Image captions are not built – there is no caption field yet
   - [ ] Ballpark (`Ballpark.dc.html`): title band over the ballpark photo with the address, text plus a facts grid (Kunstrasen, Flutlicht,
         Dugouts, Tribünen, Verkaufshaus, DBV-tauglich), "Anfahrt" box with a map image (no embedded Google Maps) and "In Karten-App öffnen",
         "1992 – seit über 30 Jahren" box linking to Vereinsgeschichte. Today: plain text page

@@ -60,6 +60,22 @@ function rehypeYearHeadings() {
   return (tree) => walk(tree);
 }
 
+// A paragraph that is only bold text ("**Title**", how the old WordPress posts mark
+// their sub-headings) becomes an h2, so it gets the section heading style
+function rehypeBoldHeadings() {
+  const isBlank = (child) => child.type === "text" && !child.value.trim();
+  const walk = (node) => {
+    node.children?.forEach((child, i) => {
+      if (child.type !== "element" || child.tagName !== "p") return walk(child);
+      const content = child.children.filter((c) => !isBlank(c));
+      if (content.length === 1 && content[0].type === "element" && content[0].tagName === "strong") {
+        node.children[i] = { ...child, tagName: "h2", children: content[0].children };
+      }
+    });
+  };
+  return (tree) => walk(tree);
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: config.site.base_url,
@@ -86,7 +102,7 @@ export default defineConfig({
   ],
   markdown: {
     processor: unified(),
-    rehypePlugins: [rehypeYearHeadings],
+    rehypePlugins: [rehypeBoldHeadings, rehypeYearHeadings],
     shikiConfig: { theme: "one-dark-pro", wrap: true },
   },
 });

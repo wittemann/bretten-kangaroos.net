@@ -1,12 +1,13 @@
 ---
+// Numbered page links after the Aktuelles board: first, last and the pages
+// around the current one, "← Neuere" / "Ältere →" at the ends.
 const { section, currentPage, totalPages } = Astro.props;
 
-const indexPageLink = currentPage === 2;
-const hasPrevPage = currentPage > 1;
-const hasNextPage = totalPages > currentPage;
+const pageHref = (page: number) =>
+  page === 1 ? `${section ? "/" + section : "/"}` : `${section ? "/" + section : ""}/page/${page}`;
 
-// First, last and the pages around the current one; "gap" marks skipped pages.
-// Neighbours of the current page are hidden on phones to keep the row narrow.
+// "gap" marks skipped pages. Neighbours of the current page are hidden on
+// phones to keep the row narrow.
 const shown = [...new Set([1, currentPage - 1, currentPage, currentPage + 1, totalPages])]
   .filter((page) => page >= 1 && page <= totalPages)
   .sort((a, b) => a - b);
@@ -17,120 +18,28 @@ shown.forEach((page, i) => {
 });
 const isNeighbour = (page: number) =>
   Math.abs(page - currentPage) === 1 && page !== 1 && page !== totalPages;
+
+const box = "inline-flex h-11 min-w-11 items-center justify-center rounded-[4px] font-semibold";
+const link = `${box} border border-[#C9C9C2] text-ink transition hover:border-forest`;
 ---
 
 {
   totalPages > 1 && (
-    <nav class="mb-4 flex justify-center space-x-2 text-center" aria-label="Seitennavigation">
-      {/* previous */}
-      {hasPrevPage ? (
-        <a
-          href={
-            indexPageLink
-              ? `${section ? "/" + section : "/"}`
-              : `${section ? "/" + section : ""}/page/${currentPage - 1}`
-          }
-          class="border border-primary hover:bg-primary hover:text-white rounded-md h-10 w-10 leading-[36px] font-semibold text-dark flex items-center justify-center transition duration-200"
-        >
-          <span class="sr-only">Vorherige Seite</span>
-          <svg
-            class="h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
-      ) : (
-        <span class="border border-gray-400 opacity-40 rounded-md h-10 w-10 leading-[36px] font-semibold text-dark flex items-center justify-center pointer-events-none">
-          <span class="sr-only">Vorherige Seite</span>
-          <svg
-            class="h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
+    <nav class="flex flex-wrap justify-center gap-2" aria-label="Seiten">
+      {currentPage > 1 && (
+        <a href={pageHref(currentPage - 1)} class={`${link} px-4`}>← Neuere</a>
       )}
-
-      {/* page index */}
-      {pageList.map((pagination) =>
-        pagination === "gap" ? (
-          <span class="h-10 w-6 leading-10 font-semibold text-dark" aria-hidden="true">
-            …
-          </span>
-        ) : pagination === currentPage ? (
-          <span
-            aria-current="page"
-            class={`border border-primary bg-primary rounded-md h-10 w-10 leading-[35px] font-semibold text-white`}
-          >
-            {pagination}
-          </span>
+      {pageList.map((page) =>
+        page === "gap" ? (
+          <span class={`${box} text-text`} aria-hidden="true">…</span>
+        ) : page === currentPage ? (
+          <span aria-current="page" class={`${box} bg-forest text-white`}>{page}</span>
         ) : (
-          <a
-            href={
-              pagination === 1
-                ? `${section ? "/" + section : "/"}`
-                : `${section ? "/" + section : ""}/page/${pagination}`
-            }
-            class={`${isNeighbour(pagination) ? "hidden sm:flex" : "flex"} border border-primary hover:bg-primary hover:text-white rounded-md h-10 w-10 leading-[36px] font-semibold text-dark items-center justify-center transition duration-200`}
-          >
-            {pagination}
-          </a>
-        )
+          <a href={pageHref(page)} class:list={[link, isNeighbour(page) && "max-sm:hidden"]}>{page}</a>
+        ),
       )}
-
-      {/* next page */}
-      {hasNextPage ? (
-        <a
-          href={`${section ? "/" + section : ""}/page/${currentPage + 1}`}
-          class="border border-primary hover:bg-primary hover:text-white rounded-md h-10 w-10 leading-[36px] font-semibold text-dark flex items-center justify-center transition duration-200"
-        >
-          <span class="sr-only">Nächste Seite</span>
-          <svg
-            class="h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
-      ) : (
-        <span class="border border-gray-400 opacity-40 rounded-md h-10 w-10 leading-[36px] font-semibold text-dark flex items-center justify-center pointer-events-none">
-          <span class="sr-only">Nächste Seite</span>
-          <svg
-            class="h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
+      {currentPage < totalPages && (
+        <a href={pageHref(currentPage + 1)} class={`${link} px-4`}>Ältere →</a>
       )}
     </nav>
   )

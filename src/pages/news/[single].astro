@@ -1,24 +1,23 @@
 ---
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
 import PostSingle from "@/partials/PostSingle.astro";
 
 export async function getStaticPaths() {
-  const posts = await getSinglePage("news");
+  const posts = sortByDate(await getSinglePage("news"));
 
-  const paths = posts.map((post) => ({
-    params: {
-      single: post.id,
-    },
-    props: { post },
+  // "Weitere Beiträge": the three newest other posts
+  return posts.map((post) => ({
+    params: { single: post.id },
+    props: { post, morePosts: posts.filter((other) => other.id !== post.id).slice(0, 3) },
   }));
-  return paths;
 }
 
-const { post } = Astro.props;
+const { post, morePosts } = Astro.props;
 const { title, image } = post.data;
 ---
 
 <Base title={title} image={image}>
-  <PostSingle post={post} />
+  <PostSingle post={post} morePosts={morePosts} />
 </Base>
