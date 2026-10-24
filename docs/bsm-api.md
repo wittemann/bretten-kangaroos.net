@@ -245,8 +245,23 @@ type Game = {
 type GameTeam = { name: string; short: string; isUs: boolean };
 ```
 
-Logos are left out on purpose: showing them would mean hotlinking images from the BSM server, which sends
-visitors' IP addresses to a third party.
+Not hotlinked: showing logos straight from the BSM server would send visitors' IP addresses to a third party.
+
+### Additions (2026-10-24): logos and form
+
+- **Logos:** `fetch-bsm.mjs` downloads the `logo_url` of every club in a table row (two for an SG), shrinks it to a
+  64×64 WebP in `public/images/bsm-logos/<clubId>.webp` and lists it in `logos` of the cache
+  (`{ "<clubId>": { file, source } }`). A logo is downloaded again only when its BSM URL changes (it carries a timestamp);
+  a failed download keeps the old file. Our own row shows `public/images/crest.png`. The deploy Action commits the logo
+  folder together with the cache.
+- **Form** is computed from all games of the league (the table only has the streak), per league entry: the last five
+  results (`W`/`L`/`T`, oldest first) of all rated games (`played`, `forfeit`, `no_show`, `manually_valued`), so it
+  agrees with BSM's W/L and streak. Checked 2026-10-24: wins/losses counted this way equal the BSM tables except ties,
+  which BSM counts as half a win.
+- Each row also carries `clubIds`. `StandingRow` gains `form` and `clubIds`.
+- Runs scored/allowed and the run difference were tried and left out (Martin, 24.10.: not relevant).
+- `/tabellen` shows the logo and the Form (from md) – on the phone it stays Pl., Team, S, N, Quote.
+  The small table on team pages shows the logo too.
 
 Pages (built: `/tabellen`, `/spielplan`, components `BsmStandings.astro` / `BsmGames.astro`, helpers in `src/lib/bsm.ts`):
 - **Standings page:** one table per league with `standings: true`, Bretten row highlighted, "Stand: {fetchedAt}" below.

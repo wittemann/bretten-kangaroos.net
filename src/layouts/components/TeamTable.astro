@@ -1,7 +1,7 @@
 ---
 // Small standings table for a team page sidebar (Pl., Team, S, N), own row
 // highlighted. Uses the first league of the team that has a table.
-import { standingsFor } from "@/lib/bsm";
+import { rowLogos, standingsFor } from "@/lib/bsm";
 
 const { team, title = "Tabelle" } = Astro.props;
 const league = standingsFor(team).find((l) => l.standings?.length);
@@ -25,7 +25,14 @@ const league = standingsFor(team).find((l) => l.standings?.length);
             {league.standings!.map((row) => (
               <tr class:list={["border-t border-line", row.isUs ? "bg-[#EEF4E8] font-semibold text-ink" : "text-text"]}>
                 <td class="px-3 py-2">{row.rank ? `${row.rank}.` : ""}</td>
-                <td class="px-3 py-2">{row.team}</td>
+                <td class="px-3 py-2">
+                  <span class="flex items-center gap-2">
+                    {rowLogos(row).slice(0, 1).map((src) => (
+                      <img src={src} alt="" width="20" height="20" loading="lazy" class="size-5 shrink-0 object-contain" />
+                    ))}
+                    <span class="leading-snug">{row.team}</span>
+                  </span>
+                </td>
                 <td class="px-2 py-2 text-right tabular-nums">{row.wins}</td>
                 <td class="px-3 py-2 text-right tabular-nums">{row.losses}</td>
               </tr>

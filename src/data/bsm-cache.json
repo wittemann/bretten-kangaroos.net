@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-22T17:30:45.832Z",
+  "builtAt": "2026-10-24T18:53:44.100Z",
   "season": 2026,
   "leagues": [
     {
@@ -7,7 +7,7 @@
       "name": "Bezirksliga Herren",
       "label": "Herren – Bezirksliga",
       "team": "herren",
-      "fetchedAt": "2026-10-22T17:30:45.543Z",
+      "fetchedAt": "2026-10-24T18:53:43.870Z",
       "standings": [
         {
           "rank": 1,
@@ -20,7 +20,17 @@
           "pct": "1.000",
           "gamesBehind": "0",
           "streak": "W8",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "clubIds": [
+            410
+          ]
         },
         {
           "rank": 2,
@@ -33,7 +43,18 @@
           "pct": ".625",
           "gamesBehind": "3",
           "streak": "W2",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "clubIds": [
+            416,
+            419
+          ]
         },
         {
           "rank": 3,
@@ -46,7 +67,17 @@
           "pct": ".500",
           "gamesBehind": "4",
           "streak": "L2",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            402
+          ]
         },
         {
           "rank": 4,
@@ -59,7 +90,17 @@
           "pct": ".250",
           "gamesBehind": "6",
           "streak": "W1",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "clubIds": [
+            398
+          ]
         },
         {
           "rank": 5,
@@ -72,7 +113,18 @@
           "pct": ".125",
           "gamesBehind": "7",
           "streak": "L5",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            397,
+            837
+          ]
         }
       ],
       "games": [
@@ -307,7 +359,7 @@
       "name": "Baseball Pokal",
       "label": "Herren – Pokal",
       "team": "herren",
-      "fetchedAt": "2026-10-22T17:30:45.478Z",
+      "fetchedAt": "2026-10-24T18:53:43.753Z",
       "standings": null,
       "games": [
         {
@@ -345,7 +397,7 @@
       "name": "Jugend Verbandsliga",
       "label": "Jugend – Verbandsliga",
       "team": "jugend",
-      "fetchedAt": "2026-10-22T17:30:45.544Z",
+      "fetchedAt": "2026-10-24T18:53:43.902Z",
       "standings": [
         {
           "rank": 1,
@@ -358,7 +410,17 @@
           "pct": ".889",
           "gamesBehind": "0",
           "streak": "W3",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "W"
+          ],
+          "clubIds": [
+            416
+          ]
         },
         {
           "rank": 2,
@@ -371,7 +433,17 @@
           "pct": ".667",
           "gamesBehind": "2",
           "streak": "L1",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "clubIds": [
+            436
+          ]
         },
         {
           "rank": 3,
@@ -384,7 +456,17 @@
           "pct": ".444",
           "gamesBehind": "4",
           "streak": "W1",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "clubIds": [
+            398
+          ]
         },
         {
           "rank": 4,
@@ -397,7 +479,17 @@
           "pct": ".000",
           "gamesBehind": "8",
           "streak": "L9",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            408
+          ]
         }
       ],
       "games": [
@@ -660,7 +752,7 @@
       "name": "Schüler Landesliga",
       "label": "Schüler – Landesliga",
       "team": "schueler",
-      "fetchedAt": "2026-10-22T17:30:45.653Z",
+      "fetchedAt": "2026-10-24T18:53:43.919Z",
       "standings": [
         {
           "rank": 1,
@@ -673,7 +765,17 @@
           "pct": ".792",
           "gamesBehind": "0",
           "streak": "L2",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            398
+          ]
         },
         {
           "rank": 2,
@@ -686,7 +788,17 @@
           "pct": ".792",
           "gamesBehind": "0",
           "streak": "W14",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "clubIds": [
+            842
+          ]
         },
         {
           "rank": 3,
@@ -699,7 +811,17 @@
           "pct": ".591",
           "gamesBehind": "5",
           "streak": "W2",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "clubIds": [
+            436
+          ]
         },
         {
           "rank": 4,
@@ -712,7 +834,17 @@
           "pct": ".318",
           "gamesBehind": "11",
           "streak": "L6",
-          "outOfCompetition": true
+          "outOfCompetition": true,
+          "form": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            395
+          ]
         },
         {
           "rank": 5,
@@ -725,7 +857,18 @@
           "pct": ".000",
           "gamesBehind": "19",
           "streak": "L24",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            619,
+            406
+          ]
         }
       ],
       "games": [
@@ -1408,7 +1551,7 @@
       "name": "T-Ball",
       "label": "T-Ball",
       "team": "t-ball",
-      "fetchedAt": "2026-10-22T17:30:45.832Z",
+      "fetchedAt": "2026-10-24T18:53:44.100Z",
       "standings": [
         {
           "rank": 1,
@@ -1421,7 +1564,17 @@
           "pct": ".889",
           "gamesBehind": "0",
           "streak": "W2",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "clubIds": [
+            411
+          ]
         },
         {
           "rank": 2,
@@ -1434,7 +1587,17 @@
           "pct": ".818",
           "gamesBehind": "0",
           "streak": "W1",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "clubIds": [
+            436
+          ]
         },
         {
           "rank": 3,
@@ -1447,7 +1610,17 @@
           "pct": ".778",
           "gamesBehind": "1",
           "streak": "W6",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "clubIds": [
+            414
+          ]
         },
         {
           "rank": 4,
@@ -1460,7 +1633,17 @@
           "pct": ".778",
           "gamesBehind": "1",
           "streak": "W3",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "W"
+          ],
+          "clubIds": [
+            407
+          ]
         },
         {
           "rank": 5,
@@ -1473,7 +1656,17 @@
           "pct": ".750",
           "gamesBehind": "1.5",
           "streak": "L1",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "clubIds": [
+            416
+          ]
         },
         {
           "rank": 6,
@@ -1486,7 +1679,17 @@
           "pct": ".500",
           "gamesBehind": "3.5",
           "streak": "L1",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "clubIds": [
+            404
+          ]
         },
         {
           "rank": 7,
@@ -1499,7 +1702,17 @@
           "pct": ".375",
           "gamesBehind": "4.5",
           "streak": "W1",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "clubIds": [
+            406
+          ]
         },
         {
           "rank": 8,
@@ -1512,7 +1725,17 @@
           "pct": ".323",
           "gamesBehind": "9",
           "streak": "L9",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            435
+          ]
         },
         {
           "rank": 9,
@@ -1525,7 +1748,17 @@
           "pct": ".321",
           "gamesBehind": "6",
           "streak": "L3",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            421
+          ]
         },
         {
           "rank": 10,
@@ -1538,7 +1771,17 @@
           "pct": ".083",
           "gamesBehind": "6",
           "streak": "L4",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "T",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            540
+          ]
         },
         {
           "rank": 11,
@@ -1551,7 +1794,11 @@
           "pct": ".000",
           "gamesBehind": "3.5",
           "streak": "",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [],
+          "clubIds": [
+            619
+          ]
         },
         {
           "rank": 12,
@@ -1564,7 +1811,11 @@
           "pct": ".000",
           "gamesBehind": "3.5",
           "streak": "",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [],
+          "clubIds": [
+            408
+          ]
         },
         {
           "rank": 13,
@@ -1577,7 +1828,11 @@
           "pct": ".000",
           "gamesBehind": "3.5",
           "streak": "",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [],
+          "clubIds": [
+            437
+          ]
         },
         {
           "rank": 14,
@@ -1590,7 +1845,14 @@
           "pct": ".000",
           "gamesBehind": "4",
           "streak": "L1",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L"
+          ],
+          "clubIds": [
+            395,
+            413
+          ]
         },
         {
           "rank": 15,
@@ -1603,7 +1865,14 @@
           "pct": ".000",
           "gamesBehind": "4.5",
           "streak": "L2",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            842
+          ]
         },
         {
           "rank": 16,
@@ -1616,7 +1885,14 @@
           "pct": ".000",
           "gamesBehind": "4.5",
           "streak": "L2",
-          "outOfCompetition": false
+          "outOfCompetition": false,
+          "form": [
+            "L",
+            "L"
+          ],
+          "clubIds": [
+            398
+          ]
         }
       ],
       "games": [
@@ -1846,5 +2122,95 @@
         }
       ]
     }
-  ]
+  ],
+  "logos": {
+    "395": {
+      "file": "/images/bsm-logos/395.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/395/thumb/asa_logo-baseball-4c-pos.jpeg?1587225046"
+    },
+    "397": {
+      "file": "/images/bsm-logos/397.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/397/thumb/Bad-Mergentheim-Logo.png?1587225047"
+    },
+    "398": {
+      "file": "/images/bsm-logos/398.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/398/thumb/Oldschool_Vector_MIX_002_transpar.png?1713003060"
+    },
+    "402": {
+      "file": "/images/bsm-logos/402.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/402/thumb/brewers-logo.png?1587225047"
+    },
+    "404": {
+      "file": "/images/bsm-logos/404.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/404/thumb/RoyalsLogoFinal.png?1709819032"
+    },
+    "406": {
+      "file": "/images/bsm-logos/406.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/406/thumb/Greensox_1991_Logo_.png?1587225049"
+    },
+    "407": {
+      "file": "/images/bsm-logos/407.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/407/thumb/hedgehogs_logo_rot_schwarz_3D.png?1587225049"
+    },
+    "408": {
+      "file": "/images/bsm-logos/408.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/408/thumb/Heidekopf_Logo2018_clipped_rev_1.png?1773132925"
+    },
+    "410": {
+      "file": "/images/bsm-logos/410.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/410/thumb/Bild1_klein.png?1728045771"
+    },
+    "411": {
+      "file": "/images/bsm-logos/411.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/411/thumb/Wanderers-Logo.jpg?1587225051"
+    },
+    "413": {
+      "file": "/images/bsm-logos/413.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/413/thumb/Hunters_Emblem_f_200x156.png?1612947467"
+    },
+    "414": {
+      "file": "/images/bsm-logos/414.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/414/thumb/Cougars-Favicon-Blue-Transparent-640px.png?1587225051"
+    },
+    "416": {
+      "file": "/images/bsm-logos/416.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/416/thumb/Logo400x400.png?1713448561"
+    },
+    "419": {
+      "file": "/images/bsm-logos/419.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/419/thumb/tornadosrundbbsb723cm.jpg?1587225052"
+    },
+    "421": {
+      "file": "/images/bsm-logos/421.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/421/thumb/Mohawks_official_400.png?1587225053"
+    },
+    "435": {
+      "file": "/images/bsm-logos/435.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/435/thumb/Logo_bsm.jpg?1740661932"
+    },
+    "436": {
+      "file": "/images/bsm-logos/436.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/436/thumb/Stuttgart_Reds.png?1772970751"
+    },
+    "437": {
+      "file": "/images/bsm-logos/437.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/437/thumb/20150301_Logo_Hawks_CMYK.png?1587225063"
+    },
+    "540": {
+      "file": "/images/bsm-logos/540.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/540/thumb/Logo.jpg?1725647417"
+    },
+    "619": {
+      "file": "/images/bsm-logos/619.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/619/thumb/Leprechauns_Logo.png?1587225085"
+    },
+    "837": {
+      "file": "/images/bsm-logos/837.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/837/thumb/index.jpg?1676890086"
+    },
+    "842": {
+      "file": "/images/bsm-logos/842.webp",
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/842/thumb/RACOONS_LOGO_PURPEL_klein.png?1764143666"
+    }
+  }
 }

@@ -15,6 +15,10 @@ export type StandingRow = {
   gamesBehind: string;
   streak: string;
   outOfCompetition: boolean;
+  // From the league's games: last five rated results, oldest first.
+  // Missing in caches from before.
+  form?: ("W" | "L" | "T")[];
+  clubIds?: number[];
 };
 
 export type GameTeam = { name: string; short: string; isUs: boolean };
@@ -51,6 +55,15 @@ export type GameWithLeague = Game & { league: LeagueData };
 const TIME_ZONE = "Europe/Berlin";
 
 export const leagues = (cache.leagues ?? []) as LeagueData[];
+
+const logos = ((cache as { logos?: Record<string, { file: string }> }).logos ??
+  {}) as Record<string, { file: string }>;
+
+// Self-hosted logos of a table row (two for an SG); our own row uses the crest
+export const rowLogos = (row: StandingRow) =>
+  row.isUs
+    ? ["/images/crest.png"]
+    : (row.clubIds ?? []).flatMap((id) => logos[id]?.file ?? []);
 
 // "Herren – Bezirksliga" → "Herren"
 export const teamName = (league: LeagueData) => league.label.split(" – ")[0];

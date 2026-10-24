@@ -1,108 +1,101 @@
 ---
 // League tables from the BSM, one per league with standings. `team` limits
-// them to one team (for team pages).
-import { formatDateTime, standingsFor } from "@/lib/bsm";
+// them to one team (for team pages). The form comes from the league's games
+// (scripts/fetch-bsm.mjs), logos are self-hosted copies.
+import { formatDateTime, rowLogos, standingsFor } from "@/lib/bsm";
 
 type Props = { team?: string };
 
 const { team } = Astro.props;
 const tables = standingsFor(team);
+
+const outcome = {
+  W: { text: "S", label: "Sieg", class: "bg-[#E3EFDC] text-[#1A5E2E]" },
+  L: { text: "N", label: "Niederlage", class: "bg-[#F5E4D6] text-[#7A3309]" },
+  T: { text: "U", label: "Unentschieden", class: "bg-chalk text-ink" },
+};
+
+const cell = "px-2 py-2.5 sm:px-3";
+const num = `${cell} text-right tabular-nums`;
 ---
 
-<div class="space-y-16">
+<div class="space-y-14">
   {
     tables.map((league) => (
       <section>
-        <h2 class="h4 mb-6">{league.label}</h2>
+        <h2 class="mb-4 text-[26px]">{league.label}</h2>
         {league.standings?.length ? (
-          <div class="border-border overflow-x-auto rounded-lg border">
-            <table class="w-full text-left text-sm">
-              <thead class="bg-light text-text-dark">
-                <tr>
-                  <th class="px-2 py-3 text-right font-semibold sm:px-3">
-                    Platz
-                  </th>
-                  <th class="px-2 py-3 font-semibold sm:px-3">Team</th>
-                  <th
-                    class="hidden px-2 py-3 text-right font-semibold sm:table-cell sm:px-3"
-                    title="Spiele"
-                  >
-                    Sp.
-                  </th>
-                  <th
-                    class="px-2 py-3 text-right font-semibold sm:px-3"
-                    title="Siege"
-                  >
-                    S
-                  </th>
-                  <th
-                    class="px-2 py-3 text-right font-semibold sm:px-3"
-                    title="Niederlagen"
-                  >
-                    N
-                  </th>
-                  <th
-                    class="px-2 py-3 text-right font-semibold sm:px-3"
-                    title="Siegquote"
-                  >
-                    Quote
-                  </th>
-                  <th
-                    class="hidden px-2 py-3 text-right font-semibold sm:table-cell sm:px-3"
-                    title="Spiele Rückstand"
-                  >
-                    GB
-                  </th>
-                  <th
-                    class="hidden px-2 py-3 text-right font-semibold sm:table-cell sm:px-3"
-                    title="Serie"
-                  >
-                    Serie
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {league.standings.map((row) => (
-                  <tr
-                    class:list={[
-                      "border-border border-t",
-                      row.isUs && "bg-primary/10 text-text-dark font-semibold",
-                    ]}
-                  >
-                    <td class="px-2 py-3 text-right tabular-nums sm:px-3">
-                      {row.rank ? `${row.rank}.` : ""}
-                    </td>
-                    <td class="px-2 py-3 sm:px-3">{row.team}</td>
-                    <td class="hidden px-2 py-3 text-right tabular-nums sm:table-cell sm:px-3">
-                      {row.games}
-                    </td>
-                    <td class="px-2 py-3 text-right tabular-nums sm:px-3">
-                      {row.wins}
-                    </td>
-                    <td class="px-2 py-3 text-right tabular-nums sm:px-3">
-                      {row.losses}
-                    </td>
-                    <td class="px-2 py-3 text-right tabular-nums sm:px-3">
-                      {row.pct}
-                    </td>
-                    <td class="hidden px-2 py-3 text-right tabular-nums sm:table-cell sm:px-3">
-                      {row.gamesBehind}
-                    </td>
-                    <td class="hidden px-2 py-3 text-right tabular-nums sm:table-cell sm:px-3">
-                      {row.streak}
-                    </td>
+          <>
+            <div class="overflow-x-auto rounded-[6px] border border-line">
+              <table class="w-full border-collapse text-[15px]">
+                <thead>
+                  <tr class="bg-chalk text-left text-ink">
+                    <th class={`${num} font-semibold`} title="Platz">Pl.</th>
+                    <th class={`${cell} font-semibold`}>Team</th>
+                    <th class={`${num} hidden font-semibold sm:table-cell`} title="Spiele">Sp.</th>
+                    <th class={`${num} font-semibold`} title="Siege">S</th>
+                    <th class={`${num} font-semibold`} title="Niederlagen">N</th>
+                    <th class={`${num} font-semibold`} title="Siegquote">Quote</th>
+                    <th class={`${num} hidden font-semibold sm:table-cell`} title="Spiele Rückstand">GB</th>
+                    <th class={`${cell} hidden font-semibold md:table-cell`} title="Letzte fünf Spiele">Form</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {league.standings.map((row) => {
+                    const logos = rowLogos(row);
+                    return (
+                      <tr class:list={["border-t border-line", row.isUs ? "bg-[#EEF4E8] font-semibold text-ink" : "text-text"]}>
+                        <td class={num}>{row.rank ? `${row.rank}.` : ""}</td>
+                        <td class={cell}>
+                          <span class="flex items-center gap-2.5">
+                            <span class="flex w-7 shrink-0 justify-center" aria-hidden="true">
+                              {logos.map((src, i) => (
+                                <img
+                                  src={src}
+                                  alt=""
+                                  width="28"
+                                  height="28"
+                                  loading="lazy"
+                                  class:list={["size-7 object-contain", logos.length > 1 && "size-5", i > 0 && "-ml-2.5 mt-2"]}
+                                />
+                              ))}
+                            </span>
+                            <span class="leading-snug">{row.team}</span>
+                          </span>
+                        </td>
+                        <td class={`${num} hidden sm:table-cell`}>{row.games}</td>
+                        <td class={num}>{row.wins}</td>
+                        <td class={num}>{row.losses}</td>
+                        <td class={num}>{row.pct}</td>
+                        <td class={`${num} hidden sm:table-cell`}>{row.gamesBehind}</td>
+                        <td class={`${cell} hidden md:table-cell`}>
+                          {row.form?.length ? (
+                            <span class="flex gap-1">
+                              {row.form.map((r) => (
+                                <span
+                                  title={outcome[r].label}
+                                  class:list={["inline-flex size-6 items-center justify-center rounded-[4px] text-xs font-bold", outcome[r].class]}
+                                >
+                                  <span aria-hidden="true">{outcome[r].text}</span>
+                                  <span class="sr-only">{outcome[r].label}</span>
+                                </span>
+                              ))}
+                            </span>
+                          ) : null}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-3 text-sm text-text-light">
+              {league.fetchedAt && <>Stand: {formatDateTime(league.fetchedAt)} · Quelle: BSM · </>}
+              GB = Spiele Rückstand · Form = letzte fünf Spiele, das neueste rechts
+            </p>
+          </>
         ) : (
           <p>Die Tabelle ist zurzeit nicht verfügbar.</p>
-        )}
-        {league.fetchedAt && (
-          <p class="text-text-light mt-3 text-sm">
-            Stand: {formatDateTime(league.fetchedAt)} · Quelle: BSM
-          </p>
         )}
       </section>
     ))
