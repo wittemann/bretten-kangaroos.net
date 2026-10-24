@@ -1,6 +1,7 @@
 ---
 title: Vereinsgeschichte
 description: Die Geschichte der Bretten Kangaroos seit 1988.
+intro: Wie aus zwei Handschuhen und einem Schläger aus Philadelphia der einzige Baseballverein in Bretten wurde.
 ---
 
 ## 1988 – DIE WURZELN DER KANGAROOS GEHEN ZURÜCK IN DEN SOMMER DES JAHRES 1988
@@ -11,6 +12,8 @@ Jens-Uwe Otte überredete Andreas Bjelicic, ein wenig mit dem Handschuh und dem 
 
 ## 1992 – JETZT GING ES SCHLAG AUF SCHLAG
 Regelmäßig trafen sie sich, um die damals in Deutschland noch recht unbekannte Sportart Baseball auszuprobieren. Durch ein Zeitungsinserat in der Brettener Woche wurden damals die ersten interessierten Spieler angeworben. Zuerst wurde auf dem Bolzplatz in Diedelsheim gespielt (jetziges Gelände der Feuerwehr), doch dieser wurde nach einiger Zeit zu klein. Sie trainierten ohne Verständnis für das Spiel (mehr Liegestützen, als Werfen). Bereits im Herbst des selben Jahres schlossen sich die ersten Kangaroos unter der Leitung von Axel Leonhardt dem VFB Bretten als Unterabteilung Baseball an und der erste und bisher auch einzige Baseball Verein in Bretten und Umbebung war gegründet.
+
+![Der heutige Kangaroos Ballpark](/images/ballpark-hero.jpg "Heute spielen die Kangaroos auf dem eigenen Ballpark in Diedelsheim.")
 
 ## 1993 – DIE ERSTE ANMELDUNG IM BWBSV
 Eine Herren Baseball Mannschaft wurde zum Spielbetrieb in der Landesliga im Baden-Württembergischen Baseball- und Softballverband angemeldet. Das erste Spiel der Kangaroos Geschichte fand am 2.Mai 1993 mit einem Pokalspiel in Tübingen und endete am 5.September des selben Jahres mit einem Heimspiel gegen Östringen. Leider verloren sie alle Spiele und somit auch viele Spieler. Doch es kamen auch wieder begeisterte Spieler hinzu.
@@ -80,3 +83,5 @@ Auch in diesem Jahr waren die Kangaroos noch weit entfernt von einem Aufstieg in
 
 ## 2015 – WAR DAS JAHR DES WANDELS FÜR DIE KANGAROOS
 Unter Bryan Schaffer formiert sich eine T-Ball Mannschaft und ermöglicht Kindern ab 4 Jahren den Einstieg in die Sportart. Auch ein Slow-Pitch Softball Team wird durch Michael Wittemann ins Leben gerufen. Die Herrenmannschaft erzielt stetig Erfolge und scheitert nur knapp in einem Entscheidungsspiel am Aufstieg in die Verbandsliga. Der große Spielerkader führt außerdem zur Bildung eines zweiten Herrenteams das 2016 seinen Spielbetrieb aufnimmt. Der Knackpunkt des Jahres: Leider zerbricht die Jugendmannschaft durch Weggang einiger Spieler. Die größte Veränderung jedoch ist der Platzumbau, der schnell zu einem Großprojekt wird. Mit Hilfe aller Vereinsmitglieder und dem Engagement von Jens-Uwe Otte wird aus dem Umbau der Stadt Bretten und des VfB Bretten ein „Feld der Träume“. Notwendige Strukturen dafür konnten aus der Heidelberger Kaserne bezogen werden.
+
+… und weiter bis heute. [Die jüngste Geschichte steht in Aktuelles →](/news)

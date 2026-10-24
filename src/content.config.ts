@@ -97,6 +97,8 @@ const pagesCollection = defineCollection({
     title: z.string(),
     meta_title: optionalString,
     description: optionalString,
+    // shown under the title in the title band
+    intro: optionalString,
     image: optionalString,
     files: z.array(z.object({ title: z.string(), file: z.string() })).default([]),
     draft: z.boolean().optional(),

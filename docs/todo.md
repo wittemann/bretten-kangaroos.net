@@ -141,7 +141,10 @@ Needs: WP1.
         (Pages CMS "Ballpark", facts editable); the board's Kontakt section is left out, it lives on `/kontakt`.
         Map picture `public/images/ballpark-map.jpg` stitched from OpenStreetMap tiles (zoom 16) with the credit
         "© OpenStreetMap-Mitwirkende" in the picture; without `map_image` the box shows the crest
-  - [ ] Vereinsgeschichte (`Vereinsgeschichte.dc.html`): close already – add the intro in the title band and the photo box under 1992
+  - [x] Vereinsgeschichte (`Vereinsgeschichte.dc.html`): close already – add the intro in the title band and the photo box under 1992.
+        Done 2026-10-24: text pages have an `intro` field (Pages CMS "Einleitung") for the title band; an image alone in its
+        paragraph with a title (`![alt](src "Bildunterschrift")`) renders as a photo box with caption on every page;
+        closing line "… und weiter bis heute" links to Aktuelles
   - [ ] Verein dropdown (`Menu-Desktop.dc.html`): wide panel, links in two columns with descriptions, address box with crest and "Anfahrt →" on the right.
         Today one column. ~~Bug: hover opened it and the click right after closed it again~~ fixed 2026-10-24
   - [ ] Phone menu (`Menu-Handy.dc.html`): crest + name in the menu header instead of "Menü", ages under the team tiles, Verein links in normal text, Instagram/Facebook at the end

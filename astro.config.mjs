@@ -76,6 +76,29 @@ function rehypeBoldHeadings() {
   return (tree) => walk(tree);
 }
 
+// An image alone in its paragraph with a title (![alt](src "Caption")) becomes a
+// figure with that title as caption
+function rehypeFigures() {
+  const isBlank = (child) => child.type === "text" && !child.value.trim();
+  const walk = (node) => {
+    node.children?.forEach((child, i) => {
+      if (child.type !== "element" || child.tagName !== "p") return walk(child);
+      const content = child.children.filter((c) => !isBlank(c));
+      const img = content[0];
+      if (content.length !== 1 || img.type !== "element" || img.tagName !== "img" || !img.properties?.title) return;
+      const caption = String(img.properties.title);
+      delete img.properties.title;
+      node.children[i] = {
+        type: "element",
+        tagName: "figure",
+        properties: {},
+        children: [img, { type: "element", tagName: "figcaption", properties: {}, children: [{ type: "text", value: caption }] }],
+      };
+    });
+  };
+  return (tree) => walk(tree);
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: config.site.base_url,
@@ -102,7 +125,7 @@ export default defineConfig({
   ],
   markdown: {
     processor: unified(),
-    rehypePlugins: [rehypeBoldHeadings, rehypeYearHeadings],
+    rehypePlugins: [rehypeBoldHeadings, rehypeYearHeadings, rehypeFigures],
     shikiConfig: { theme: "one-dark-pro", wrap: true },
   },
 });

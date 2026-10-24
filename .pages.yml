@@ -152,6 +152,7 @@ content:
     fields:
       - { name: title, label: Titel, type: string, required: true }
       - { name: description, label: Kurzbeschreibung, type: text, description: "Für Suchmaschinen und das Verein-Menü (eine Zeile)" }
+      - { name: intro, label: Einleitung, type: text, description: "Ein Satz unter dem Titel oben auf der Seite" }
       - { name: image, label: Bild, type: image, options: { media: images } }
       - name: files
         label: Dateien
