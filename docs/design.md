@@ -4,6 +4,10 @@ Worked out together in Claude Design: **[Kangaroos Website Design](https://claud
 (private canvas, share it from the canvas' Share menu if others should see it). The canvas is the visual reference;
 this file records what was decided so the implementation doesn't depend on it.
 
+**The page layouts are only on the boards.** A copy of every board is in [`design/`](design/) (`*.dc.html`, open in a browser;
+images are canvas uploads and don't load locally). Before building or changing a page, open its board and build to it –
+this file alone is not enough. When the canvas changes, copy the boards again.
+
 Chosen direction: **"Clubhaus"** – green header with a faint pinstripe (from the crest), white pages, rust as the one accent.
 Directions "Anzeigetafel" and "Kreide & Rasen" were dropped.
 

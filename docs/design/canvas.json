@@ -1,0 +1,61 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-10-22T17:45:00Z" },
+  "title": "Kangaroos Website Design",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": { "x": 0, "y": -200, "w": 1280, "h": 1760, "title": "Grundlagen – Logo, Farben, Schrift, Bausteine" },
+    "Home-Clubhaus.dc.html": { "x": 0, "y": 1930, "w": 1280, "h": 2700, "title": "Startseite", "expand": "fill" },
+    "Home-Clubhaus-Handy.dc.html": { "x": 1360, "y": 1930, "w": 390, "h": 3300, "title": "Startseite auf dem Handy" },
+    "Menu-Desktop.dc.html": { "x": 0, "y": 5600, "w": 1280, "h": 620, "title": "Menü „Verein“ aufgeklappt" },
+    "Menu-Handy.dc.html": { "x": 1360, "y": 5600, "w": 390, "h": 1080, "title": "Menü auf dem Handy" },
+    "Teams.dc.html": { "x": 0, "y": 7100, "w": 1280, "h": 1800, "title": "Teams – Übersicht", "expand": "fill" },
+    "Team-Schueler.dc.html": { "x": 1360, "y": 7100, "w": 1280, "h": 2500, "title": "Teamseite – Schüler", "expand": "fill" },
+    "Spielplan-Clubhaus.dc.html": { "x": 2720, "y": 7100, "w": 1280, "h": 1900, "title": "Spielplan & Ergebnisse", "expand": "fill" },
+    "Probetraining.dc.html": { "x": 4080, "y": 7100, "w": 1280, "h": 1800, "title": "Probetraining", "expand": "fill" },
+    "Spielplan-Saison.dc.html": { "x": 5440, "y": 7100, "w": 1280, "h": 2150, "title": "Spielplan während der Saison – mit Kalender", "expand": "fill" },
+    "Aktuelles.dc.html": { "x": 0, "y": 9720, "w": 1280, "h": 2000, "title": "Aktuelles – Übersicht", "expand": "fill" },
+    "News-Artikel.dc.html": { "x": 1360, "y": 9720, "w": 1280, "h": 2600, "title": "News-Beitrag", "expand": "fill" },
+    "Ballpark.dc.html": { "x": 2720, "y": 9720, "w": 1280, "h": 2000, "title": "Ballpark & Kontakt", "expand": "fill" },
+    "Vereinsgeschichte.dc.html": { "x": 4080, "y": 9720, "w": 1280, "h": 2300, "title": "Vereinsgeschichte (Textseite)", "expand": "fill" }
+  },
+  "order": [
+    "Main.dc.html",
+    "Home-Clubhaus.dc.html",
+    "Home-Clubhaus-Handy.dc.html",
+    "Menu-Desktop.dc.html",
+    "Menu-Handy.dc.html",
+    "Teams.dc.html",
+    "Team-Schueler.dc.html",
+    "Spielplan-Clubhaus.dc.html",
+    "Probetraining.dc.html",
+    "Spielplan-Saison.dc.html",
+    "Aktuelles.dc.html",
+    "News-Artikel.dc.html",
+    "Ballpark.dc.html",
+    "Vereinsgeschichte.dc.html"
+  ],
+  "notes": {
+    "t-basics": { "x": 0, "y": -500, "text": "Grundlagen aus der alten Seite und dem Vereinslogo", "kind": "title1", "maxW": 1280 },
+    "t-home": { "x": 0, "y": 1630, "text": "Startseite", "kind": "title1", "maxW": 1750 },
+    "t-nav": { "x": 0, "y": 5300, "text": "Navigation", "kind": "title1", "maxW": 1750 },
+    "t-sub": { "x": 0, "y": 6800, "text": "Unterseiten", "kind": "title1", "maxW": 6720 },
+    "n-sample": {
+      "x": 6800, "y": 7100, "w": 380, "maxH": 460, "fill": "orange",
+      "text": "Beispieldaten: Die Saison 2027 ist noch nicht angesetzt, die Spiele hier sind ausgedacht, um den Zustand mit kommenden Spielen zu zeigen.\n\nOffseason-Zustand (keine Spiele angesetzt): Board „Spielplan & Ergebnisse“.",
+      "size": "s"
+    },
+    "n-feedback": {
+      "x": 1360, "y": -200, "w": 420, "maxH": 560, "fill": "green",
+      "text": "Richtung „Clubhaus“ ist gewählt.\n\nHauptmenü: Aktuelles · Teams · Spielplan · Tabellen · Verein ▾ · Probetraining\n\nKommentare direkt an die Stellen setzen, die stören oder gefallen. Danach baue ich das Design ins Bookworm-Theme ein.",
+      "size": "m"
+    },
+    "n-sizes": {
+      "x": 1830, "y": 5600, "w": 380, "maxH": 420, "fill": "gray",
+      "text": "Teams hat kein Untermenü mehr – der Team-Umschalter auf den Teamseiten übernimmt das. Nur „Verein“ klappt auf.",
+      "size": "s"
+    }
+  },
+  "designSystems": []
+}

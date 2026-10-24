@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Spielplan und Tabellen – Clubhaus</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1E7B3C}a:hover{color:#23461E}
+</style>
+</helmet>
+<div style="font-family: Barlow, system-ui, sans-serif; color: #1D231B; background: #FFFFFF; font-size: 17px; line-height: 1.55">
+
+  <header style="background: #23461E; background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.045) 0 2px, transparent 2px 28px); color: #FFFFFF">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="Home-Clubhaus.dc.html" style="display: flex; align-items: center; gap: 14px; color: #FFFFFF; text-decoration: none">
+        <img src="/_blob/b0581d610ad9676975dd013761914e75" alt="Bretten Kangaroos" style="height: 52px; width: auto; background: #FFFFFF; border-radius: 50%; padding: 3px">
+        <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 24px; text-transform: uppercase; letter-spacing: 0.03em">Bretten Kangaroos</span>
+      </a>
+      <nav aria-label="Hauptmenü" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 26px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.05em; text-transform: uppercase">
+        <a href="#" style="color: #FFFFFF; text-decoration: none">Aktuelles</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none">Teams</a>
+        <a href="#" aria-current="page" style="color: #FFFFFF; text-decoration: none; border-bottom: 2px solid #E39A5E; padding-bottom: 2px">Spielplan</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none">Tabellen</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none">Verein</a>
+        <a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 4px; background: #A3500F; color: #FFFFFF; text-decoration: none">Probetraining</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="background: #F7F6F1; border-bottom: 1px solid #E3E3DE">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 32px; display: flex; flex-direction: column; gap: 24px">
+      <h1 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 56px); line-height: 1; text-transform: uppercase">Spielplan &amp; Ergebnisse</h1>
+      <div role="group" aria-label="Nach Team filtern" style="display: flex; flex-wrap: wrap; gap: 8px">
+        <button type="button" aria-pressed="true" style="min-height: 44px; padding: 0 18px; border-radius: 22px; border: 2px solid #23461E; background: #23461E; color: #FFFFFF; font: 600 16px Barlow, sans-serif; cursor: pointer">Alle</button>
+        <button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 22px; border: 2px solid #C9C9C2; background: #FFFFFF; color: #1D231B; font: 600 16px Barlow, sans-serif; cursor: pointer">Herren</button>
+        <button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 22px; border: 2px solid #C9C9C2; background: #FFFFFF; color: #1D231B; font: 600 16px Barlow, sans-serif; cursor: pointer">Jugend</button>
+        <button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 22px; border: 2px solid #C9C9C2; background: #FFFFFF; color: #1D231B; font: 600 16px Barlow, sans-serif; cursor: pointer">Schüler</button>
+        <button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 22px; border: 2px solid #C9C9C2; background: #FFFFFF; color: #1D231B; font: 600 16px Barlow, sans-serif; cursor: pointer">T-Ball</button>
+      </div>
+    </div>
+  </section>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 80px; display: flex; flex-wrap: wrap; gap: 48px">
+    <div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px">
+      <section style="display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; text-transform: uppercase">Nächste Spiele</h2>
+        <div style="border: 1px dashed #C9C9C2; border-radius: 6px; padding: 22px; color: #4A4A4A">Die Saison ist vorbei. Die Termine für 2027 erscheinen hier, sobald der Verband sie veröffentlicht.</div>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; text-transform: uppercase">Ergebnisse</h2>
+        <div style="border: 1px solid #E3E3DE; border-radius: 6px; overflow: hidden">
+          <div style="padding: 10px 18px; background: #F7F6F1; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A4A4A">Oktober 2026</div>
+
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 14px 18px; border-top: 1px solid #E3E3DE">
+            <div style="width: 92px; font-size: 14px; line-height: 1.3; color: #4A4A4A"><strong style="color: #1D231B">Sa 17.10.</strong><br>13:00</div>
+            <div style="flex: 1 1 260px; line-height: 1.35"><strong>Bretten Kangaroos</strong> – Stuttgart Reds<div style="font-size: 13px; color: #4A4A4A">Jugend · Verbandsliga · Heimspiel</div></div>
+            <div style="display: flex; align-items: center; gap: 12px"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 26px">19:14</span><span style="min-width: 74px; text-align: center; padding: 3px 0; border-radius: 4px; background: #E3EFDC; color: #1A5E2E; font-size: 13px; font-weight: 600">Sieg</span><a href="#" style="font-size: 13px">Spielbericht</a></div>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 14px 18px; border-top: 1px solid #E3E3DE">
+            <div style="width: 92px; font-size: 14px; line-height: 1.3; color: #4A4A4A"><strong style="color: #1D231B">Sa 10.10.</strong><br>13:30</div>
+            <div style="flex: 1 1 260px; line-height: 1.35"><strong>Bretten Kangaroos</strong> – Green Sox Göppingen<div style="font-size: 13px; color: #4A4A4A">T-Ball · Heimspiel · kein Ergebnis gemeldet</div></div>
+            <div style="display: flex; align-items: center; gap: 12px"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 26px; color: #9A9A94">–</span><span style="min-width: 74px"></span></div>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 14px 18px; border-top: 1px solid #E3E3DE">
+            <div style="width: 92px; font-size: 14px; line-height: 1.3; color: #4A4A4A"><strong style="color: #1D231B">Sa 10.10.</strong><br>13:00</div>
+            <div style="flex: 1 1 260px; line-height: 1.35">Stuttgart Reds 2 – <strong>Bretten Kangaroos</strong><div style="font-size: 13px; color: #4A4A4A">Schüler · Landesliga · TVC-Ballpark, Stuttgart</div></div>
+            <div style="display: flex; align-items: center; gap: 12px"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 26px">11:6</span><span style="min-width: 74px; text-align: center; padding: 3px 0; border-radius: 4px; background: #F5E4D6; color: #7A3309; font-size: 13px; font-weight: 600">Niederlage</span><a href="#" style="font-size: 13px">Spielbericht</a></div>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 14px 18px; border-top: 1px solid #E3E3DE">
+            <div style="width: 92px; font-size: 14px; line-height: 1.3; color: #4A4A4A"><strong style="color: #1D231B">So 04.10.</strong><br>13:00</div>
+            <div style="flex: 1 1 260px; line-height: 1.35">SG Ravensburg/Göppingen – <strong>Bretten Kangaroos</strong><div style="font-size: 13px; color: #4A4A4A">Schüler · Landesliga · Auswärts</div></div>
+            <div style="display: flex; align-items: center; gap: 12px"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 26px">0:16</span><span style="min-width: 74px; text-align: center; padding: 3px 0; border-radius: 4px; background: #E3EFDC; color: #1A5E2E; font-size: 13px; font-weight: 600">Sieg</span><a href="#" style="font-size: 13px">Spielbericht</a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; text-transform: uppercase">Tabelle Schüler</h2>
+      <div style="border: 1px solid #E3E3DE; border-radius: 6px; overflow-x: auto">
+        <table style="width: 100%; border-collapse: collapse; font-size: 15px">
+          <thead>
+            <tr style="background: #F7F6F1; text-align: left">
+              <th style="padding: 10px 12px; font-weight: 600">Pl.</th>
+              <th style="padding: 10px 12px; font-weight: 600">Team</th>
+              <th style="padding: 10px 8px; font-weight: 600; text-align: right">S</th>
+              <th style="padding: 10px 8px; font-weight: 600; text-align: right">N</th>
+              <th style="padding: 10px 12px; font-weight: 600; text-align: right">GB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-top: 1px solid #E3E3DE; background: #EEF4E8; font-weight: 600"><td style="padding: 10px 12px">1.</td><td style="padding: 10px 12px">Bretten Kangaroos</td><td style="padding: 10px 8px; text-align: right">19</td><td style="padding: 10px 8px; text-align: right">5</td><td style="padding: 10px 12px; text-align: right">0</td></tr>
+            <tr style="border-top: 1px solid #E3E3DE"><td style="padding: 10px 12px">2.</td><td style="padding: 10px 12px">Remchingen Racoons</td><td style="padding: 10px 8px; text-align: right">19</td><td style="padding: 10px 8px; text-align: right">5</td><td style="padding: 10px 12px; text-align: right">0</td></tr>
+            <tr style="border-top: 1px solid #E3E3DE"><td style="padding: 10px 12px">3.</td><td style="padding: 10px 12px">Stuttgart Reds 2</td><td style="padding: 10px 8px; text-align: right">13</td><td style="padding: 10px 8px; text-align: right">9</td><td style="padding: 10px 12px; text-align: right">5</td></tr>
+            <tr style="border-top: 1px solid #E3E3DE; color: #4A4A4A"><td style="padding: 10px 12px">4.</td><td style="padding: 10px 12px">Aalen Strikers (a.K.)</td><td style="padding: 10px 8px; text-align: right">7</td><td style="padding: 10px 8px; text-align: right">15</td><td style="padding: 10px 12px; text-align: right">11</td></tr>
+            <tr style="border-top: 1px solid #E3E3DE"><td style="padding: 10px 12px">5.</td><td style="padding: 10px 12px">SG Ravensburg/Göppingen</td><td style="padding: 10px 8px; text-align: right">0</td><td style="padding: 10px 8px; text-align: right">24</td><td style="padding: 10px 12px; text-align: right">19</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="font-size: 13px; color: #4A4A4A">Stand: 22.10.2026, 19:30 Uhr · Quelle: BSM</div>
+      <a href="#" style="font-weight: 600; font-size: 15px">Alle Tabellen →</a>
+    </aside>
+  </div>
+
+  <footer style="background: #23461E; color: #DCE6D4">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+      <span>© 2026 Bretten Kangaroos · Kangaroos Ballpark, Häringsäcker 1, 75015 Bretten</span>
+      <span style="display: flex; gap: 20px"><a href="#" style="color: #DCE6D4">Impressum</a><a href="#" style="color: #DCE6D4">Datenschutz</a></span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

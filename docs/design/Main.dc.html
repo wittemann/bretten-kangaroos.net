@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Grundlagen</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600&amp;family=Graduate&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#A3500F}a:hover{color:#23461E}
+</style>
+</helmet>
+<div style="width: 1280px; height: 1760px; box-sizing: border-box; padding: 72px 80px; background: #FFFFFF; color: #1D231B; font-family: Barlow, system-ui, sans-serif; display: flex; flex-direction: column; gap: 64px">
+
+  <div style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid #1D231B; padding-bottom: 20px">
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <div style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #A3500F">Bretten Kangaroos · neue Website</div>
+      <h1 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 56px; line-height: 1; text-transform: uppercase">Grundlagen</h1>
+    </div>
+    <p style="margin: 0; max-width: 460px; font-size: 16px; line-height: 1.5; color: #4A4A4A">Farben und Schrift stammen aus dem Vereinslogo, den Trikots und der alten Seite. Alle Seiten unten sind daraus gebaut.</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="height: 260px; border: 1px solid #E3E3DE; border-radius: 6px; display: flex; align-items: center; justify-content: center; background: #FFFFFF">
+        <img src="/_blob/b0581d610ad9676975dd013761914e75" alt="Vereinslogo Bretten Kangaroos Baseball" style="height: 220px; width: auto">
+      </div>
+      <div style="font-size: 14px; color: #4A4A4A"><strong style="color: #1D231B">Wappen</strong> – Hauptlogo, aus dem BSM. Für Favicon, Footer, Social.</div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="height: 260px; border-radius: 6px; display: flex; align-items: center; justify-content: center; background: #23461E; background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 26px)">
+        <img src="/_blob/64c5c36f5861189bebb1fa8cd4374a10" alt="Schriftzug Kangaroos" style="width: 300px; height: auto">
+      </div>
+      <div style="font-size: 14px; color: #4A4A4A"><strong style="color: #1D231B">Schriftzug</strong> – von der alten Seite. Funktioniert nur auf dunklem Grund.</div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="height: 260px; border: 1px solid #E3E3DE; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; background: #F7F6F1">
+        <div style="display: flex; align-items: center; gap: 14px">
+          <img src="/_blob/b0581d610ad9676975dd013761914e75" alt="" style="height: 64px; width: auto">
+          <div style="display: flex; flex-direction: column; line-height: 1">
+            <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em">Bretten Kangaroos</span>
+            <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 500; font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase; color: #A3500F">Baseball · Softball</span>
+          </div>
+        </div>
+      </div>
+      <div style="font-size: 14px; color: #4A4A4A"><strong style="color: #1D231B">Kopfzeile hell</strong> – Wappen klein + Name gesetzt, für helle Seiten.</div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 20px">
+    <h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 28px; text-transform: uppercase">Farben</h2>
+    <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px">
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <div style="height: 110px; border-radius: 6px; background: #23461E"></div>
+        <div style="font-weight: 600; font-size: 15px">Waldgrün</div>
+        <div style="font-size: 13px; color: #4A4A4A; line-height: 1.4">#23461E · Wappenring<br>Kopf, Footer, Flächen</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <div style="height: 110px; border-radius: 6px; background: #1E7B3C"></div>
+        <div style="font-weight: 600; font-size: 15px">Trikotgrün</div>
+        <div style="font-size: 13px; color: #4A4A4A; line-height: 1.4">#1E7B3C · Trikots<br>Links, Hervorhebung</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <div style="height: 110px; border-radius: 6px; background: #80B058"></div>
+        <div style="font-weight: 600; font-size: 15px">Hellgrün</div>
+        <div style="font-size: 13px; color: #4A4A4A; line-height: 1.4">#80B058 · innerer Ring<br>nur Linien, nie Text</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <div style="height: 110px; border-radius: 6px; background: #A3500F"></div>
+        <div style="font-weight: 600; font-size: 15px">Känguru-Rost</div>
+        <div style="font-size: 13px; color: #4A4A4A; line-height: 1.4">#A3500F · das Känguru<br>Buttons, Akzente</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <div style="height: 110px; border-radius: 6px; background: #F7F6F1; border: 1px solid #E3E3DE"></div>
+        <div style="font-weight: 600; font-size: 15px">Kreide</div>
+        <div style="font-size: 13px; color: #4A4A4A; line-height: 1.4">#F7F6F1<br>ruhige Hintergründe</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <div style="height: 110px; border-radius: 6px; background: #1D231B"></div>
+        <div style="font-weight: 600; font-size: 15px">Tinte</div>
+        <div style="font-size: 13px; color: #4A4A4A; line-height: 1.4">#1D231B · Text<br>Grau #4A4A4A wie bisher</div>
+      </div>
+    </div>
+    <p style="margin: 0; font-size: 14px; color: #4A4A4A">Die alte Seite nutzt fast nur Grautöne plus ein Grün (#337719) für Überschriften und die Schrift „Graduate“. Die neue Palette nimmt die Farben aus Wappen und Trikot dazu, damit die Seite nach Verein aussieht.</p>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 20px">
+    <h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 28px; text-transform: uppercase">Schrift – Barlow Condensed + Barlow</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; border: 1px solid #E3E3DE; border-radius: 6px; padding: 24px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; align-items: baseline; gap: 16px"><span style="width: 120px; flex-shrink: 0; font-size: 13px; color: #4A4A4A">Seitentitel · 56</span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 56px; line-height: 1; text-transform: uppercase">Aktuelles</span></div>
+        <div style="display: flex; align-items: baseline; gap: 16px"><span style="width: 120px; flex-shrink: 0; font-size: 13px; color: #4A4A4A">Abschnitt · 32</span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 32px; line-height: 1; text-transform: uppercase">Unsere Teams</span></div>
+        <div style="display: flex; align-items: baseline; gap: 16px"><span style="width: 120px; flex-shrink: 0; font-size: 13px; color: #4A4A4A">Kachel · 24</span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.1; text-transform: uppercase">Schüler holen den Titel</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; align-items: baseline; gap: 16px"><span style="width: 120px; flex-shrink: 0; font-size: 13px; color: #4A4A4A">Einleitung · 20</span><span style="font-size: 20px; line-height: 1.5">Mit 19 Siegen aus 24 Spielen holen die Schüler den Titel.</span></div>
+        <div style="display: flex; align-items: baseline; gap: 16px"><span style="width: 120px; flex-shrink: 0; font-size: 13px; color: #4A4A4A">Text · 17</span><span style="font-size: 17px; line-height: 1.6; color: #4A4A4A">Neue Spielerinnen und Spieler sind jederzeit zum Probetraining willkommen.</span></div>
+        <div style="display: flex; align-items: baseline; gap: 16px"><span style="width: 120px; flex-shrink: 0; font-size: 13px; color: #4A4A4A">Kennzeile · 15</span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #A3500F">Sommer · ab März</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 20px">
+    <h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 28px; text-transform: uppercase">Bausteine</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 4px; background: #A3500F; color: #FFFFFF; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase">Probetraining</a>
+          <a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 4px; border: 2px solid #23461E; color: #23461E; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase">Spielplan</a>
+        </div>
+        <div style="font-size: 13px; color: #4A4A4A">Buttons: Rost für die eine Hauptaktion, sonst Umriss.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <div style="border: 1px solid #E3E3DE; border-radius: 6px; overflow: hidden">
+          <div style="display: flex; align-items: center; gap: 14px; padding: 12px 16px; border-bottom: 1px solid #E3E3DE">
+            <div style="width: 64px; font-size: 13px; color: #4A4A4A; line-height: 1.3">Sa 17.10.<br>13:00</div>
+            <div style="flex: 1; font-size: 15px; line-height: 1.35"><strong>Bretten Kangaroos</strong> – Stuttgart Reds<div style="font-size: 12px; color: #4A4A4A">Jugend · Heimspiel</div></div>
+            <div style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 22px">19:14</div>
+            <div style="width: 26px; height: 26px; border-radius: 13px; background: #1E7B3C; color: #FFFFFF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center">S</div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 14px; padding: 12px 16px">
+            <div style="width: 64px; font-size: 13px; color: #4A4A4A; line-height: 1.3">Sa 10.10.<br>13:00</div>
+            <div style="flex: 1; font-size: 15px; line-height: 1.35">Stuttgart Reds 2 – <strong>Bretten Kangaroos</strong><div style="font-size: 12px; color: #4A4A4A">Schüler · Auswärts</div></div>
+            <div style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 22px">11:6</div>
+            <div style="width: 26px; height: 26px; border-radius: 13px; background: #8A3A0A; color: #FFFFFF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center">N</div>
+          </div>
+        </div>
+        <div style="font-size: 13px; color: #4A4A4A">Spielzeile: Sieg grün, Niederlage dunkles Rost statt Rot – passt zur Palette.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <div style="border: 1px solid #E3E3DE; border-radius: 6px; overflow: hidden; font-size: 14px">
+          <div style="display: grid; grid-template-columns: 40px minmax(0, 1fr) 36px 36px 52px; gap: 8px; padding: 10px 14px; background: #F7F6F1; font-weight: 600"><span>Pl.</span><span>Team</span><span>S</span><span>N</span><span>Quote</span></div>
+          <div style="display: grid; grid-template-columns: 40px minmax(0, 1fr) 36px 36px 52px; gap: 8px; padding: 10px 14px; border-top: 1px solid #E3E3DE; background: #EEF4E8; font-weight: 600"><span>1.</span><span>Bretten Kangaroos</span><span>19</span><span>5</span><span>.792</span></div>
+          <div style="display: grid; grid-template-columns: 40px minmax(0, 1fr) 36px 36px 52px; gap: 8px; padding: 10px 14px; border-top: 1px solid #E3E3DE"><span>2.</span><span>Remchingen Racoons</span><span>19</span><span>5</span><span>.792</span></div>
+          <div style="display: grid; grid-template-columns: 40px minmax(0, 1fr) 36px 36px 52px; gap: 8px; padding: 10px 14px; border-top: 1px solid #E3E3DE"><span>3.</span><span>Stuttgart Reds 2</span><span>13</span><span>9</span><span>.591</span></div>
+        </div>
+        <div style="font-size: 13px; color: #4A4A4A">Tabelle: eigene Zeile hellgrün hinterlegt.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1760}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

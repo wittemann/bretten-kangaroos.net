@@ -103,7 +103,40 @@ Needs: WP1.
   - [x] Part 3: text pages (`[regular].astro` with title band, year column, file list), Kontakt page; content of Ballpark, Vereinsgeschichte, Förderverein, BKIL, Downloads, Kontakt, Impressum, Datenschutz copied from the old site (PDFs in `public/files`)
   - [x] Real crest at `public/images/crest.png`
   - [x] Startseite: hero with ballpark photo, last results from BSM, news, Xmas-Ball teaser, team tiles
-  - [ ] News templates, Spielplan restyle, calendar feeds
+  - [ ] News templates, Spielplan restyle, calendar feeds (detailed in "Match the design boards" below)
+- [ ] **Match the design boards** — compared every board in [`design/`](design/) with the built pages on 2026-10-24.
+      Colours, fonts, header and footer fit everywhere; the page layouts were built from Bookworm defaults instead of
+      the boards. Before each item: open the board, build to it — **Sonnet**
+  - [ ] All subpages: one shared title band like the boards – left-aligned title, intro text inside the band, filter/switcher
+        pills inside the band. `/spielplan` and `/tabellen` still use Bookworm's centred title with the underline and square filter buttons
+  - [ ] Teams overview (`Teams.dc.html`): list rows instead of cards – team + ages · league, badge (e.g. "Meister 2026"),
+        "Training" with summer/winter times, "Coach(es)" with names, "Zur Teamseite →"; below a green Probetraining box and an "Außerdem: Intra League (BKIL)" box
+  - [ ] Team page (`Team-Schueler.dc.html`): ages · league line under the title, badge top right (e.g. "Landesliga-Meister 2026"),
+        team photo under the title band; main column: text, training as summer/winter cards, coaches as cards with initials
+        and roles, "Aus dem Team"; sidebar: green "Lust mitzuspielen?" box with button, mini standings ("Tabelle") with the own row
+        highlighted, "Letzte Spiele" with S/N scores and "Alle Spiele der <Team> →". Today the sidebar only has Alter/Liga, Training, Trainer & Kontakt
+  - [ ] Probetraining (`Probetraining.dc.html`): three steps "Team finden · Kurz Bescheid geben · Vorbeikommen" in the title band,
+        one table (Team, Alter, Wann, Wo, Kontakt) with a Winter/Sommer switch that picks the current season by itself, "Noch Fragen?" box with Kontakt button.
+        Today: one card per team
+  - [ ] Spielplan offseason (`Spielplan-Clubhaus.dc.html`): two columns – games left, standings of the selected team right with
+        "Alle Tabellen →"; results grouped by month, "Sieg"/"Niederlage" as a text chip instead of the S/N dot, "Spielbericht" link.
+        Today one long list of the whole season – show the latest results with "Alle Ergebnisse der Saison →" like `Spielplan-Saison.dc.html`
+  - [ ] Spielplan in season (`Spielplan-Saison.dc.html`): days as green bars ("Heimspieltag am Ballpark"), large start time,
+        "In meinen Kalender" per game, "Spielplan abonnieren" button in the title band and the green subscription box – together with the calendar feeds (WP4)
+  - [ ] Aktuelles (`Aktuelles.dc.html`): two lead posts with photo side by side, then a compact list (date + team left, title + one-line teaser right),
+        numbered pagination. Today: Bookworm card grid with big gaps
+  - [ ] News post (`News-Artikel.dc.html`): "← Aktuelles" back link, team chip + date + author, large left-aligned title, intro paragraph,
+        then the image with caption; body headings in the section style (today they render as small bold text), green quote box,
+        "Zahlen" box, footer with "Zur Teamseite der <Team> →" and share links (WhatsApp, Link kopieren), "Weitere Beiträge" with three posts.
+        Today: Bookworm single post with centred title and the image above it
+  - [ ] Ballpark (`Ballpark.dc.html`): title band over the ballpark photo with the address, text plus a facts grid (Kunstrasen, Flutlicht,
+        Dugouts, Tribünen, Verkaufshaus, DBV-tauglich), "Anfahrt" box with a map image (no embedded Google Maps) and "In Karten-App öffnen",
+        "1992 – seit über 30 Jahren" box linking to Vereinsgeschichte. Today: plain text page
+  - [ ] Vereinsgeschichte (`Vereinsgeschichte.dc.html`): close already – add the intro in the title band and the photo box under 1992
+  - [ ] Verein dropdown (`Menu-Desktop.dc.html`): wide panel, links in two columns with descriptions, address box with crest and "Anfahrt →" on the right.
+        Today one column. Bug: on desktop hover opens it and the click right after closes it again, so clicking "Verein" with a mouse seems to do nothing
+  - [ ] Phone menu (`Menu-Handy.dc.html`): crest + name in the menu header instead of "Menü", ages under the team tiles, Verein links in normal text, Instagram/Facebook at the end
+  - [ ] Startseite (`Home-Clubhaus*.dc.html`): fits; small things – four team tiles per row on desktop, compact one-line results on the phone
 - [x] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet** (`/teams`, `/teams/<slug>` with switcher, `/probetraining`; team files are still empty stubs, so texts/times need filling in Pages CMS)
 
 ### WP3 – Deployment pipeline
