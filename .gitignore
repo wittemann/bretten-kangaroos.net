@@ -22,3 +22,4 @@ server/vendor/
 server/config.php
 private/
 signup-config.php
+.claude/settings.local.json
