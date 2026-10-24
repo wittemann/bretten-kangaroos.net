@@ -1,0 +1,81 @@
+---
+// Shows the pictures of a news post large: a click on a picture in
+// [data-lightbox] opens it in a full-screen dialog, arrows and swipes go
+// through all pictures of the post. Pictures with data-full show that file.
+---
+
+<dialog id="lightbox" class="lightbox" aria-label="Bildansicht">
+  <figure class="flex h-full w-full items-center justify-center p-4 md:px-20 md:py-12">
+    <img data-lightbox-image alt="" class="max-h-full max-w-full rounded-[4px] object-contain" />
+  </figure>
+  <p data-lightbox-count class="absolute left-4 top-4 text-[15px] text-white/80"></p>
+  <button type="button" data-lightbox-close class="lightbox-button right-3 top-3" aria-label="Schließen">✕</button>
+  <button type="button" data-lightbox-prev class="lightbox-button left-3 top-1/2 -translate-y-1/2" aria-label="Vorheriges Bild">‹</button>
+  <button type="button" data-lightbox-next class="lightbox-button right-3 top-1/2 -translate-y-1/2" aria-label="Nächstes Bild">›</button>
+</dialog>
+
+<script>
+  function init() {
+    const dialog = document.getElementById("lightbox") as HTMLDialogElement | null;
+    if (!dialog) return;
+    const view = dialog.querySelector<HTMLImageElement>("[data-lightbox-image]")!;
+    const count = dialog.querySelector<HTMLElement>("[data-lightbox-count]")!;
+    const prev = dialog.querySelector<HTMLButtonElement>("[data-lightbox-prev]")!;
+    const next = dialog.querySelector<HTMLButtonElement>("[data-lightbox-next]")!;
+    const images = [...document.querySelectorAll<HTMLImageElement>("[data-lightbox] img")];
+    let index = 0;
+
+    const show = (i: number) => {
+      index = (i + images.length) % images.length;
+      const image = images[index];
+      view.src = image.dataset.full || image.currentSrc || image.src;
+      view.alt = image.alt;
+      count.textContent = images.length > 1 ? `Bild ${index + 1} von ${images.length}` : "";
+    };
+    prev.hidden = next.hidden = images.length < 2;
+
+    images.forEach((image, i) => {
+      image.classList.add("cursor-zoom-in");
+      image.tabIndex = 0;
+      image.setAttribute("role", "button");
+      image.setAttribute("aria-label", image.alt ? `${image.alt} – vergrößern` : "Bild vergrößern");
+      const open = () => {
+        show(i);
+        dialog.showModal();
+      };
+      image.addEventListener("click", open);
+      image.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          open();
+        }
+      });
+    });
+
+    prev.addEventListener("click", () => show(index - 1));
+    next.addEventListener("click", () => show(index + 1));
+    dialog.querySelector("[data-lightbox-close]")!.addEventListener("click", () => dialog.close());
+    // a click next to the picture closes it
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog || (event.target as Element).tagName === "FIGURE") dialog.close();
+    });
+    dialog.addEventListener("keydown", (event) => {
+      if (images.length < 2) return;
+      if (event.key === "ArrowLeft") show(index - 1);
+      if (event.key === "ArrowRight") show(index + 1);
+    });
+    dialog.addEventListener("close", () => images[index]?.focus());
+
+    let touchX: number | null = null;
+    dialog.addEventListener("touchstart", (event) => (touchX = event.touches[0].clientX), { passive: true });
+    dialog.addEventListener("touchend", (event) => {
+      if (touchX === null || images.length < 2) return;
+      const distance = event.changedTouches[0].clientX - touchX;
+      if (Math.abs(distance) > 50) show(index + (distance < 0 ? 1 : -1));
+      touchX = null;
+    });
+  }
+
+  document.addEventListener("astro:page-load", init);
+</script>
+

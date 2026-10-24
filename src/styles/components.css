@@ -289,3 +289,21 @@ footer p a {
 .ballpark-text > p:first-child {
   @apply text-intro text-ink;
 }
+
+/* news post picture viewer (components/Lightbox.astro) */
+.lightbox {
+  @apply m-0 h-dvh max-h-none w-screen max-w-none bg-transparent p-0;
+  &[open] {
+    @apply block;
+  }
+  &::backdrop {
+    @apply bg-black/90;
+  }
+}
+
+.lightbox-button {
+  @apply absolute flex size-12 cursor-pointer items-center justify-center rounded-full bg-black/40 text-[28px] leading-none text-white hover:bg-black/70;
+  &[hidden] {
+    @apply hidden;
+  }
+}

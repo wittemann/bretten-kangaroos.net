@@ -2,6 +2,8 @@
 // News post after the board (docs/design/News-Artikel.dc.html): back link,
 // team chip, date, author, title and the first paragraph as intro above the
 // image, then the text, "Zahlen" box, team link, share links, more posts.
+// A click on a picture shows it large (Lightbox).
+import Lightbox from "@/components/Lightbox.astro";
 import { postTeamLabel } from "@/lib/teams";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
@@ -32,7 +34,7 @@ const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
 const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(`${title} ${pageUrl}`)}`;
 ---
 
-<article>
+<article data-lightbox>
   <div class="mx-auto flex max-w-[760px] flex-col gap-4 px-4 pb-8 pt-12 md:px-6">
     <a href="/news" class="self-start text-[15px] font-semibold text-primary hover:underline">← Aktuelles</a>
     <div class="flex flex-wrap items-center gap-x-3.5 gap-y-2 text-[15px]">
@@ -57,7 +59,7 @@ const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(`${title} ${pageUr
   {
     image && (
       <figure class="mx-auto max-w-[1040px] px-4 md:px-6">
-        <Image src={image} alt="" width={1040} height={585} class="block h-auto w-full rounded-[6px]" />
+        <Image src={image} alt="" width={1040} height={585} class="block h-auto w-full rounded-[6px]" data-full={image} />
       </figure>
     )
   }
@@ -96,6 +98,8 @@ const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(`${title} ${pageUr
     </div>
   </div>
 </article>
+
+<Lightbox />
 
 {
   morePosts.length > 0 && (
