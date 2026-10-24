@@ -99,9 +99,9 @@ Needs: the WordPress backup (path) from my tasks.
 ### WP2 – Astro + Bookworm theme
 Needs: WP1.
 
-- [ ] Set up Astro with the Bookworm theme in the repo — **Sonnet**
-- [ ] Content collections that read `content/`, images from `public/images` — **Sonnet**
-- [ ] Hide news with `draft: true` in the build — **Haiku**
+- [x] Set up Astro with the Bookworm theme in the repo — **Sonnet**
+- [x] Content collections that read `content/`, images from `public/images` — **Sonnet** (`src/content.config.ts`)
+- [x] Hide news with `draft: true` in the build — **Haiku** (`src/lib/contentParser.astro`)
 - [x] Work out the Kangaroos look with **Claude Design** (colours, logo, navigation, layouts of the pages from WP1) — together with me → [`design.md`](design.md)
 - [ ] Apply the design from [`design.md`](design.md) to the Bookworm theme (colours, fonts, header/menus, footer, page templates) — **Sonnet**
   - [x] Part 1: brand tokens (`theme.json`, type scale, Barlow/Barlow Condensed via Astro Font API), header (pinstripe, Verein dropdown, phone full-screen menu), footer, shared `.page-title-band` style
@@ -155,7 +155,8 @@ Needs: WP1.
   - [ ] Verein dropdown (`Menu-Desktop.dc.html`): wide panel, links in two columns with descriptions, address box with crest and "Anfahrt →" on the right.
         Today one column. ~~Bug: hover opened it and the click right after closed it again~~ fixed 2026-10-24
   - [ ] Phone menu (`Menu-Handy.dc.html`): crest + name in the menu header instead of "Menü", ages under the team tiles, Verein links in normal text, Instagram/Facebook at the end
-  - [ ] Startseite (`Home-Clubhaus*.dc.html`): fits; small things – four team tiles per row on desktop, compact one-line results on the phone
+  - [x] Startseite (`Home-Clubhaus*.dc.html`): fits. The small differences (four team tiles per row on desktop, compact one-line
+        results on the phone) stay as they are – decided 2026-10-24
 - [x] Team pages from `content/teams/*.md`, Teams overview and Probetraining page generated from them — **Sonnet** (`/teams`, `/teams/<slug>` with switcher, `/probetraining`; team files are still empty stubs, so texts/times need filling in Pages CMS)
 
 ### WP3 – Deployment pipeline
@@ -223,7 +224,7 @@ Needs: WP2 + WP3, mailbox + PHP version from my tasks. Sends mail only, no list 
 ### WP9 – Go-live
 Needs: everything above, privacy policy review + DNS plan from my tasks.
 
-- [ ] Add the Impressum and privacy policy pages, texts copied from the current WordPress site — **Haiku**
+- [x] Add the Impressum and privacy policy pages, texts copied from the current WordPress site — **Haiku** (done in WP2 part 3)
 - [x] Mark the privacy policy passages that no longer fit the new site (WordPress plugins, cookies, ...) for my review — **Sonnet** → [`datenschutz-review.md`](datenschutz-review.md)
-- [ ] Remove the test content (`content/test.md`, sample news) — **Haiku**
+- [x] Remove the test content (`content/pages/test.md`, sample news `2026-10-16-saisonabschluss.md`) — **Haiku**, 2026-10-24
 - [ ] Final check: links, images, mobile view, BSM pages, sign-up form (test submission), deploy schedule — **Sonnet**
