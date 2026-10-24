@@ -1,6 +1,7 @@
 ---
 title: "Erste Chancen der Saison verpasst"
 date: 2010-05-04
+author: "Martin Wittemann"
 team: "herren"
 ---
 

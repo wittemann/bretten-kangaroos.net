@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos spielen im Basbeball Pokal gegen den Regionalligisten Ulm Falcons"
 date: 2014-04-14
+author: "Michael Wittemann"
 team: "herren"
 ---
 

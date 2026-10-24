@@ -1,6 +1,7 @@
 ---
 title: "Spannendes und Erfolgreiches U-10 Coach-Pitch Turnier"
 date: 2025-07-01
+author: "Michael Wittemann"
 image: "/images/news/2025/07/whatsapp-bild-2025-06-28-um-16-14-10-98ac178c.jpg"
 ---
 

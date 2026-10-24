@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreiches T-Ball Turnier in Bretten"
 date: 2007-07-09
+author: "Bryan Schaffer"
 team: "t-ball"
 ---
 

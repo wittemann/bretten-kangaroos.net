@@ -1,6 +1,7 @@
 ---
 title: "Unerwarteter Saisonabschluss der Bretten Kangaroos"
 date: 2005-09-05
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

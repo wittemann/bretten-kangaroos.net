@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos konnten nicht an die gute Leistung anknüpfen"
 date: 2010-09-13
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "WIR SUCHEN DICH"
 date: 2024-03-05
+author: "Michael Wittemann"
 image: "/images/news/2024/03/wsd.jpg"
 ---
 

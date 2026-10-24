@@ -1,6 +1,7 @@
 ---
 title: "Werde auch du Teil der Kangaroos Teams"
 date: 2025-02-02
+author: "Michael Wittemann"
 image: "/images/news/2025/02/we-want-you.jpg"
 ---
 

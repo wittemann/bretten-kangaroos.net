@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos weiterhin im Rennen um die Meisterschaft"
 date: 2004-09-19
+author: "Michael Wittemann"
 team: "herren"
 ---
 

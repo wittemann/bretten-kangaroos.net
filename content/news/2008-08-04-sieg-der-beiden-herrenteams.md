@@ -1,6 +1,7 @@
 ---
 title: "Sieg der beiden Herrenteams"
 date: 2008-08-04
+author: "Martin Wittemann"
 ---
 
 Das drittletzte Spiel der Kangaroos Herren in der aktuellen Saison ging wieder einmal gegen den Lokalrivalen aus Karlsruhe. Die letzten beiden Spiele gingen deutlich, mit jeweils 20 Punkten Vorsprung für die Kangaroos aus. Daher war auch in diesem Spiel ein Sieg Pflicht, auch wenn es an der Tabellensituation nichts mehr ändert.\

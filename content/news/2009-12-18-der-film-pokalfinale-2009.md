@@ -1,6 +1,7 @@
 ---
 title: "Der Film: Pokalfinale 2009"
 date: 2009-12-18
+author: "Bryan Schaffer"
 ---
 
 Das optimale Weihnachtsgeschenk

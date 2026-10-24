@@ -1,6 +1,7 @@
 ---
 title: "Softball is Back in Bretten"
 date: 2007-03-29
+author: "Bryan Schaffer"
 old_team: "Damen"
 ---
 

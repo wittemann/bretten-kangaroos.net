@@ -1,6 +1,7 @@
 ---
 title: "XMas‑Ball 2025: KraichgauTV berichtet über unser Hallenturnier"
 date: 2025-12-22
+author: "Michael Wittemann"
 image: "/images/news/2025/12/img-20251216-wa0008.jpg"
 ---
 

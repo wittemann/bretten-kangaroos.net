@@ -1,6 +1,7 @@
 ---
 title: "Einladung zur ordentlichen Mitgliederversammlung"
 date: 2021-01-31
+author: "Bryan Schaffer"
 ---
 
 ***Einladung zur ordentlichen Mitgliederversammlung***

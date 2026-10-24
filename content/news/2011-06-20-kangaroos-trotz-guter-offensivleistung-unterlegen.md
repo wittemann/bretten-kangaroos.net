@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos trotz guter Offensivleistung unterlegen"
 date: 2011-06-20
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Erster Heimsieg der Herren"
 date: 2005-06-25
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

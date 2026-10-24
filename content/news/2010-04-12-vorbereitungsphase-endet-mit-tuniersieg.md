@@ -1,6 +1,7 @@
 ---
 title: "Vorbereitungsphase endet mit Tuniersieg"
 date: 2010-04-12
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

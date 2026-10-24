@@ -1,6 +1,7 @@
 ---
 title: "Arbeiter fast eingeschneit!"
 date: 2006-03-05
+author: "Bryan Schaffer"
 ---
 
 Am 04.03. mussten die Platzarbeiten unter sehr schlechten Bedingungen durchgeführt werden, da der ganze Platz unter einer Schneedecke lag. Um aber den Platz bis zum Saisonbeginn fertig zu bekommen, muss auch unter solchen Wetterverhältnissen gearbeitet werden.\

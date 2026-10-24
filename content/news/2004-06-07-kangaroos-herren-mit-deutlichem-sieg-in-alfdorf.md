@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Herren mit deutlichem Sieg in Alfdorf"
 date: 2004-06-07
+author: "Michael Wittemann"
 ---
 
 Eine Woche nach der klaren Niederlage in Ladenburg mit 14 zu 4 am Pfingstwochenende rehabilitierten sich die Kangaroos Herren bei ihrem Auswärtsspiel in Alfdorf und fuhren einen klaren 17 zu 1 Sieg ein.

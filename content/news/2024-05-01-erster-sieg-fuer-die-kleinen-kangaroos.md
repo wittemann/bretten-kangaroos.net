@@ -1,6 +1,7 @@
 ---
 title: "Erster Sieg für die kleinen Kangaroos"
 date: 2024-05-01
+author: "Michael Wittemann"
 image: "/images/news/2024/05/sjbye3782.jpg"
 ---
 

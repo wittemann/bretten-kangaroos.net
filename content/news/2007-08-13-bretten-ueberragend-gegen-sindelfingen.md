@@ -1,6 +1,7 @@
 ---
 title: "Bretten überragend gegen Sindelfingen"
 date: 2007-08-13
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

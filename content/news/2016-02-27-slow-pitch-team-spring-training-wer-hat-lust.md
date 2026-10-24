@@ -1,6 +1,7 @@
 ---
 title: "Slow-Pitch Team Spring-Training, wer hat Lust?"
 date: 2016-02-27
+author: "Michael Wittemann"
 old_team: "Slow Pitch"
 ---
 

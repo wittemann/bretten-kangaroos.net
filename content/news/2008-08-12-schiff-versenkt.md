@@ -1,6 +1,7 @@
 ---
 title: "Schiff versenkt"
 date: 2008-08-12
+author: "Bryan Schaffer"
 ---
 
 Am Sonntag, den 03.August war die Begegnung Heilbronn Pirates gegen\

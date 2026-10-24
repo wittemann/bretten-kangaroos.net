@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos verlieren gegen Stuttgart Reds"
 date: 2006-05-15
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

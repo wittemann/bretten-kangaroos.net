@@ -1,6 +1,7 @@
 ---
 title: "Fünfter Sieg der Saison"
 date: 2009-06-22
+author: "Martin Wittemann"
 ---
 
 Am vergangenen Spieltag der Kangaroos fand ein Duell statt, auf das die Mannschaft schon die ganze Saison gewartet hatte. Es ging gegen die Mohawks aus Nagold, welche die Kangaroos durch drei Siege in der letzten Saison auf den zweiten Tabellenplatz schickten. Daher war ein Sieg für das Team von Jens-Uwe Otte Pflicht. Um so ärgerlicher war es, dass wieder einige Schlüsselspieler nicht dabei sein konnte.

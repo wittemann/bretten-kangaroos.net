@@ -1,6 +1,7 @@
 ---
 title: "Ordentlichen Mitgliederversammlung 2016"
 date: 2016-01-29
+author: "Martin Wittemann"
 ---
 
 Liebe Kangaroos,

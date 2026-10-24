@@ -1,6 +1,7 @@
 ---
 title: "Baseballspieler gesucht!!!"
 date: 2005-11-04
+author: "Bryan Schaffer"
 ---
 
 Am 12.11.05 findet auf dem Baseballplatz in Diedelsheim ein Probetraining für jedermann statt. Wer bereits beim vergangenen Freizeittunier Interesse an diesem Sport fand oder einfach mal Lust auf etwas neues hat, ist herzlichst eingeladen.\

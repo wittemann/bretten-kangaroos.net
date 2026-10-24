@@ -1,6 +1,7 @@
 ---
 title: "Arbeit geht schnell voran!"
 date: 2006-03-11
+author: "Bryan Schaffer"
 ---
 
 Am Samstag 11.03.06 fand endlich mal ein Arbeitseinsatz mit guten Wetterverhältnissen statt.

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos erneut mit knapper Niederlage"
 date: 2010-07-12
+author: "Martin Wittemann"
 team: "herren"
 ---
 

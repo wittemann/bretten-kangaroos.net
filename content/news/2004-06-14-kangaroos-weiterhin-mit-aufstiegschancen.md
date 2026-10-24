@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos weiterhin mit Aufstiegschancen"
 date: 2004-06-14
+author: "Michael Wittemann"
 ---
 
 Mit einem verdienten 14 zu 10 Sieg gegen die Romans aus Ladenburg konnte sich das Herren Baseball Team der Bretten Kangaroos am vergangenen Sonntag für die Niederlage vor zwei Wochen in Ladenburg erfolgreich revanchieren.

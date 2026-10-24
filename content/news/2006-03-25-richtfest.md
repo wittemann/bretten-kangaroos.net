@@ -1,6 +1,7 @@
 ---
 title: "Richtfest"
 date: 2006-03-25
+author: "Bryan Schaffer"
 ---
 
 Am Samstag 25.03.06 fand auf dem Kangaroos Field in Diedelsheim ein weiterer Arbeitseinsatz statt. Gesetzte Ziele waren das Fertigstellen des Grundgestells unserer neuen Spielerbänke. Die Arbeitsbeteiligung war super, auch Jugendspieler kamen zur Hilfe worüber wir uns sehr freuten.\

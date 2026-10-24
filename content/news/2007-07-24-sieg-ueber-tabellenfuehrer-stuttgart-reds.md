@@ -1,6 +1,7 @@
 ---
 title: "Sieg über Tabellenführer Stuttgart Reds"
 date: 2007-07-24
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

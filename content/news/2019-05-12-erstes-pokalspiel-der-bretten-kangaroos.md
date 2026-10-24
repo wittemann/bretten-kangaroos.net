@@ -1,6 +1,7 @@
 ---
 title: "Erstes Pokalspiel der Bretten Kangaroos"
 date: 2019-05-12
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

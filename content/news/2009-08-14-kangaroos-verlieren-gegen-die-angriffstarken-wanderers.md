@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos verlieren gegen die angriffstarken Wanderers"
 date: 2009-08-14
+author: "Martin Wittemann"
 ---
 
 Am vergangenen Wochenende waren die Baseballer der Herrenberg Wanderers zu Gast auf dem Hartplatz der Kangaroos. Der talentierte Werfer Raphael Zippenfenig führte zu Beginn die Abwehr der Brettener an. An diesem Spieltag lief er jedoch nicht zur Höchstform auf und erlaubte den Gegnern im ersten von acht Spielabschnitten acht Punkte zu erzielen. Die Brettener konnten am Anfang der Partie keinen Punktgewinn verbuchen und standen deshalb schon früh unter hohem Druck.

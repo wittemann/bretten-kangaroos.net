@@ -1,6 +1,7 @@
 ---
 title: "Saisonabschluss der Baseballer"
 date: 2009-09-21
+author: "Martin Wittemann"
 team: "herren"
 ---
 

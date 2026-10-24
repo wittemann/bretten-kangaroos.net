@@ -1,6 +1,7 @@
 ---
 title: "Grandioser Sieg"
 date: 2008-08-05
+author: "Bryan Schaffer"
 old_team: "Damen"
 ---
 

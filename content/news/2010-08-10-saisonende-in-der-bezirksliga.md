@@ -1,6 +1,7 @@
 ---
 title: "Saisonende in der Bezirksliga"
 date: 2010-08-10
+author: "Bryan Schaffer"
 ---
 
 Die zweite Mannschaft der Kangaroos fuhr am Samstag, den 07.08., zum diesjährigen sehr frühen Saisonabschluss nach Ladenburg zu den Romans. Trotz tapferer Gegenwehr mussten sich die neun angereisten Spieler aus Bretten nach dem 4. Inning laut 15-run-rule mit 2:17 geschlagen geben. Die hohe Niederlage zeigte den Kangaroos , dass sie in den Trainingseinheiten bis nächstes Jahr noch viel zu lernen haben.

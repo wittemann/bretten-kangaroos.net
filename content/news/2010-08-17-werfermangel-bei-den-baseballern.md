@@ -1,6 +1,7 @@
 ---
 title: "Werfermangel bei den Baseballern"
 date: 2010-08-17
+author: "Martin Wittemann"
 team: "herren"
 ---
 

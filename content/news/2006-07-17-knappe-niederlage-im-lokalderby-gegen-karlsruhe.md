@@ -1,6 +1,7 @@
 ---
 title: "Knappe Niederlage  im Lokalderby gegen Karlsruhe"
 date: 2006-07-17
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

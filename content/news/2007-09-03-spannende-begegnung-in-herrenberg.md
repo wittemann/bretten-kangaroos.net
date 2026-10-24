@@ -1,6 +1,7 @@
 ---
 title: "Spannende Begegnung in Herrenberg"
 date: 2007-09-03
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

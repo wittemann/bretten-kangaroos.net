@@ -1,6 +1,7 @@
 ---
 title: "Saisonauftakt nach Maß"
 date: 2010-04-30
+author: "Martin Wittemann"
 old_team: "Herren 2"
 ---
 

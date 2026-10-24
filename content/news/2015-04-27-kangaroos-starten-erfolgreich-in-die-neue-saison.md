@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos starten erfolgreich in die neue Saison"
 date: 2015-04-27
+author: "Michael Wittemann"
 team: "herren"
 ---
 

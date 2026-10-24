@@ -1,6 +1,7 @@
 ---
 title: "Saisonabschluss mit BKIL-Spieltag am 3. Oktober"
 date: 2025-09-28
+author: "Michael Wittemann"
 image: "/images/news/2025/09/bild.jpg"
 ---
 

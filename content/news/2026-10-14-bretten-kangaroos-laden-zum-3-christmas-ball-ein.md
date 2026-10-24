@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos laden zum 3. Christmas-Ball ein"
 date: 2026-10-14
+author: "Michael Wittemann"
 image: "/images/news/2026/10/flyer-2026.jpg"
 ---
 

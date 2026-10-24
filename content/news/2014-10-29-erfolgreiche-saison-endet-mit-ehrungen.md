@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreiche Saison endet mit Ehrungen"
 date: 2014-10-29
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

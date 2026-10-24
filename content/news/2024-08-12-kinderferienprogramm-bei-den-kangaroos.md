@@ -1,6 +1,7 @@
 ---
 title: "Kinderferienprogramm bei den Kangaroos"
 date: 2024-08-12
+author: "Michael Wittemann"
 image: "/images/news/2024/08/gruppenbild.jpg"
 ---
 

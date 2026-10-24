@@ -1,6 +1,7 @@
 ---
 title: "Niederlage der Baseballer"
 date: 2006-05-28
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

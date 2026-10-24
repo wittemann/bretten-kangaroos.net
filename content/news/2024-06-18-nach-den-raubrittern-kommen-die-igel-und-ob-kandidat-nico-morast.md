@@ -1,6 +1,7 @@
 ---
 title: "Nach den Raubrittern kommen die Igel | Und OB Kandidat Nico Morast"
 date: 2024-06-18
+author: "Michael Wittemann"
 image: "/images/news/2024/06/spieltag-7-vorbericht.jpg"
 ---
 

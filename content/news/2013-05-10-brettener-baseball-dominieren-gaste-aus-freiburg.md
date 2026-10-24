@@ -1,6 +1,7 @@
 ---
 title: "Brettener Baseball dominieren Gäste aus Freiburg"
 date: 2013-05-10
+author: "Bryan Schaffer"
 ---
 
 **Gnadenregel erlöst Gegner**

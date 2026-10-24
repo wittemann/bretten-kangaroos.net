@@ -1,6 +1,7 @@
 ---
 title: "Pokalheimspiel gegen Herrenberg"
 date: 2013-03-31
+author: "Bryan Schaffer"
 ---
 
 Nach weiterhin anhaltendem winterlichen Wetter, musste das Doubleheader gegen Karlsruhe 2 und Schriesheim leider ebenfalls abgesagt werden. Trotzdem sind die Bretten Kangaroos bereit für das kommenden Pokalspiel gegen die Wanderers aus der Regionalliga am Sonntag den 7.4. Dieses Spiel dient zwar als sozusagen erstes Vorbereitungsspiel der Saison, ist aber für Coach Bryan Schaffer genauso wichtig wie ein Saisonspiel. Falls die Kangaroos es schaffen, die Mannschaft aus Herrenberg zu besiegen, geht's am 1. Mai in die nächste Runde.

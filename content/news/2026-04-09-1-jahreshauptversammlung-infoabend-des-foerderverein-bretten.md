@@ -1,6 +1,7 @@
 ---
 title: "1. Jahreshauptversammlung & Infoabend des Förderverein Bretten Kangaroos e.V."
 date: 2026-04-09
+author: "Robin Hinze"
 image: "/images/news/2026/04/whatsapp-image-2026-04-09-at-09-42-43.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Saisonabschlussaktivitäten der Schüler- und Jugendmannschaften"
 date: 2024-10-27
+author: "Markus Rittmann"
 image: "/images/news/2024/10/lasertag2-1-rotated.jpg"
 ---
 

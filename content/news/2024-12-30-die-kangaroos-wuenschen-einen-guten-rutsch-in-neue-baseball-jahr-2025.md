@@ -1,6 +1,7 @@
 ---
 title: "Die Kangaroos wünschen einen guten Rutsch in neue Baseball-Jahr 2025"
 date: 2024-12-30
+author: "Michael Wittemann"
 image: "/images/news/2024/12/new-years.jpg"
 ---
 

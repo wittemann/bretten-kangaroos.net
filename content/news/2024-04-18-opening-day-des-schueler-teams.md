@@ -1,6 +1,7 @@
 ---
 title: "Opening Day des Schüler Teams"
 date: 2024-04-18
+author: "Michael Wittemann"
 image: "/images/news/2024/04/spieltag-1-vorberich-absage.jpg"
 ---
 

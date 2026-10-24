@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos sichern sich das Ticket für die nächste Runde im BWBSV-Pokal"
 date: 2019-06-01
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

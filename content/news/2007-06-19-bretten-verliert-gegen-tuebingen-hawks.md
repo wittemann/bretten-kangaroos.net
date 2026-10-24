@@ -1,6 +1,7 @@
 ---
 title: "Bretten verliert gegen Tübingen Hawks"
 date: 2007-06-19
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

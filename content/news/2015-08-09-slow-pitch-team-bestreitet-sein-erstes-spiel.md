@@ -1,6 +1,7 @@
 ---
 title: "Slow-Pitch Team bestreitet sein erstes Spiel"
 date: 2015-08-09
+author: "Michael Wittemann"
 old_team: "Slow Pitch"
 ---
 

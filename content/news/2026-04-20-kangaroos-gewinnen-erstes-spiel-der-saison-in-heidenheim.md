@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos gewinnen erstes Spiel der Saison in Heidenheim! 🦘⚾"
 date: 2026-04-20
+author: "Markus Rittmann"
 image: "/images/news/2026/04/whatsapp-image-2026-04-18-at-14-23-06.jpg"
 ---
 

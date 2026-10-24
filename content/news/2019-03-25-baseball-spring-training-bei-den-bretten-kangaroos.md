@@ -1,6 +1,7 @@
 ---
 title: "Baseball Spring Training bei den Bretten Kangaroos"
 date: 2019-03-25
+author: "Bryan Schaffer"
 ---
 
 Nach einer langen Wintersaison mit Hallentraining und diversen Indoor Baseball Turnieren ist endlich mal wieder Baseball Wetter angesagt und somit begann auch schon das sogenannte Spring Training (Saisonvorbereitung) auf dem Kunstrasen Baseball Platz in Bretten, Diedelsheim. Dieses Jahr gibt es viel zu erwarten. Mit insgesamt 5 Mannschaften wächst der Verein und somit auch das Baseball Interesse in der Umgebung.

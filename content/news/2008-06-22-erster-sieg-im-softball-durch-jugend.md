@@ -1,6 +1,7 @@
 ---
 title: "Erster Sieg im Softball durch Jugend"
 date: 2008-06-22
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

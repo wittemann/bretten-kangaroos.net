@@ -1,6 +1,7 @@
 ---
 title: "Der Thron wackelt - Baseballer stecken erste Niederlage ein"
 date: 2015-06-09
+author: "Bryan Schaffer"
 ---
 
 Wenn auf dem roten Sand in Diedelsheim Forellen schwimmen sollte man aufpassen, dass einem der Himmel nicht auf den Kopf fällt. Dies konnten die Brettener Schlagballspieler jedoch vergangenen Sonntag vor Weltuntergangsatmosphäre nicht verhindern und mussten ihre erste Niederlage in der Landesliga gegen die „Höhlenmenschen“ aus dem Hochschwarzwald hinnehmen.

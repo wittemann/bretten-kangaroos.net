@@ -1,6 +1,7 @@
 ---
 title: "Ordentliche Mitgliederversammlung 2015"
 date: 2015-02-15
+author: "Martin Wittemann"
 ---
 
 Liebe Kangaroos,

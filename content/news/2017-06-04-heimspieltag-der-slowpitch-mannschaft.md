@@ -1,6 +1,7 @@
 ---
 title: "Heimspieltag der Slowpitch Mannschaft"
 date: 2017-06-04
+author: "Michael Wittemann"
 old_team: "Slow Pitch"
 ---
 

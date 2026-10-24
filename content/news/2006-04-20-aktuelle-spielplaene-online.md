@@ -1,6 +1,7 @@
 ---
 title: "Aktuelle Spielpläne online"
 date: 2006-04-20
+author: "Bryan Schaffer"
 ---
 
 Die Spielpläne aller am Spielbetrieb teilnehmenden Mannschaften sind jetzt aktuell und auf dem neusten Stand. Alle Fans, Teams und Spieler der Kangaroos können sich nun nach den Terminen richten, da alle Verlegungen von uns und den anderen Vereinen jetzt durch sind.\

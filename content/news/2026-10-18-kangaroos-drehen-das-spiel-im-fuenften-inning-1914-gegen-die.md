@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos drehen das Spiel im fünften Inning – 19:14 gegen die Stuttgart Reds"
 date: 2026-10-18
+author: "Markus Rittmann"
 image: "/images/news/2026/10/img-3007.jpg"
 ---
 

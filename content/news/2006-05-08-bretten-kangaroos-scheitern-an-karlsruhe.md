@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos scheitern an Karlsruhe"
 date: 2006-05-08
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

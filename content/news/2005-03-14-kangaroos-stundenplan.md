@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Stundenplan"
 date: 2005-03-14
+author: "Martin Wittemann"
 ---
 
 Erneut gibt es eine Neuerung auf der Kangaroos Page 2005 speziell für die kleinen Fans und Spieler der Kangaroos.\

@@ -1,6 +1,7 @@
 ---
 title: "Back online"
 date: 2005-02-18
+author: "Martin Wittemann"
 ---
 
 Endlich ist die Homepage der Kangaroos wieder online!\

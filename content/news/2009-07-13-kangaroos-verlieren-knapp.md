@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos verlieren knapp"
 date: 2009-07-13
+author: "Martin Wittemann"
 ---
 
 Nach einer Woche Pause fuhren die Kangaroos zu beginn der Rückrunde in das schwäbische Göppingen. Die dort ansässigen Green Sox waren heiß auf eine Revanche nach dem mit nur einem Punkt knapp verlorenen Hinspiel in Bretten.

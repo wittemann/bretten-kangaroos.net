@@ -1,6 +1,7 @@
 ---
 title: "NEU! -  individuelle Spielpläne"
 date: 2005-03-11
+author: "Martin Wittemann"
 ---
 
 Auf Anregung von Andreas B. habe ich der Kangaroos Seite eine neue, meiner Meinung nach sehr nützliche Funktion hinzugefügt.

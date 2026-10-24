@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Softballer kämpfen beim \"Bird-Bowl-Turnier\" in Kornwestheim"
 date: 2025-07-16
+author: "Robin Hinze"
 old_team: "Slow Pitch"
 image: "/images/news/2025/07/img-20250716-wa0000.jpg"
 ---

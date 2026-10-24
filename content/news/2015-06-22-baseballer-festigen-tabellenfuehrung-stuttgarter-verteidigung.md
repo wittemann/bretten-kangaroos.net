@@ -1,6 +1,7 @@
 ---
 title: "Baseballer festigen Tabellenführung - Stuttgarter Verteidigung erfolglos"
 date: 2015-06-22
+author: "Bryan Schaffer"
 ---
 
 Bretten-Diedelsheim (ts) Nach der bisher einzigen Niederlage gegen den Ligakonkurrenten Villingendorf reisten die Kangaroos vergangenen Sonntag ins Schwabenländle um die Rückrunde der Landesligasaison mit einem Sieg zu beginnen. Die Stuttgarter, die sich bisher nur gegen die aufgestiegenen Freiberger durchsetzen konnten, wurden beim Heimspiel in Bretten mit bereits 10:2 Punkten geschlagen. Deren Abwehr bestehend aus einem erfahrenen Spieler, dessen Wurfkraft über die Jahre abgenommen hat und einem jungen Werfertalent mit kurzem Durchhaltevermögen, aber beeindruckender Geschwindigkeit stellte bei dieser Begegnung kein Problem für den Brettener Angriff dar. Vielmehr war die Brettener Abwehr an diesem Tag im Fokus der Aufmerksamkeit.

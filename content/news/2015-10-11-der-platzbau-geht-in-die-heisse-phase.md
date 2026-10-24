@@ -1,6 +1,7 @@
 ---
 title: "Der Platzbau geht in die heiße Phase"
 date: 2015-10-11
+author: "Michael Wittemann"
 ---
 
 Sowohl die offiziellen Arbeiten am neuen Platz gehen mit großen Schritten voran, als auch die vielen Arbeiten, die von den Kangaroos um den neuen Platz herum in Eigenleistung erbracht werden, machen große Fortschritte.

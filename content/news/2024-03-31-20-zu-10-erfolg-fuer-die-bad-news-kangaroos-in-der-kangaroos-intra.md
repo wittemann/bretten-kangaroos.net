@@ -1,6 +1,7 @@
 ---
 title: "20 zu 10 Erfolg für die Bad News Kangaroos  in der Kangaroos Intra League (BKIL)"
 date: 2024-03-31
+author: "Michael Wittemann"
 image: "/images/news/2024/03/vojv2187.jpg"
 ---
 

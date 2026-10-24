@@ -1,6 +1,7 @@
 ---
 title: "Baseball-Ferienprogramm begeistert junge Nachwuchsspieler"
 date: 2026-08-16
+author: "Michael Wittemann"
 image: "/images/news/2026/08/whatsapp-image-2026-08-15-at-13-26-02.jpg"
 ---
 

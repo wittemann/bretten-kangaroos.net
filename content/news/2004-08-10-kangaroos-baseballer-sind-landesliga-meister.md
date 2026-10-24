@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Baseballer sind Landesliga Meister"
 date: 2004-08-10
+author: "Michael Wittemann"
 team: "herren"
 ---
 

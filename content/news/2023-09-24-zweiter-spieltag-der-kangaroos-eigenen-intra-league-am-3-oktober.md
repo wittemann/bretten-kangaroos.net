@@ -1,6 +1,7 @@
 ---
 title: "Zweiter Spieltag der Kangaroos eigenen Intra League am 3. Oktober"
 date: 2023-09-24
+author: "Michael Wittemann"
 old_team: "Slow Pitch"
 ---
 

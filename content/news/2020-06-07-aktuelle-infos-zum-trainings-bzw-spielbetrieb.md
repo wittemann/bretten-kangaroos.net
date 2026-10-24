@@ -1,6 +1,7 @@
 ---
 title: "Aktuelle Infos zum Trainings- bzw. Spielbetrieb"
 date: 2020-06-07
+author: "Bryan Schaffer"
 ---
 
 Hallo Zusammen,

@@ -1,6 +1,7 @@
 ---
 title: "Nur knapp am Aufstieg vorbei"
 date: 2005-08-15
+author: "Bryan Schaffer"
 ---
 
 Mit Ausnahme der Herrenmannschaft haben alle Teams der Kangaroos die Saison beendet zum Teil mit erheblichen Erfolgen. Nach dem Aufstieg der Herren im letzten Jahr konnten nun die Junioren ihre Chance nur um Haaresbreite nicht nutzen. Die Junioren der Kangaroos spielten in einem herausragend guten Saisonjahr ganz weit oben mit, leider verfehlten sie den ersten Platz ganz knapp und müssen wohl noch ein Jahr in der Landesliga beweisen, dass sie aus dem gleichen Holz geschnitzt sind wie die erste Mannschaft.

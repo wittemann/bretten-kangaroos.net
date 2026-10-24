@@ -1,6 +1,7 @@
 ---
 title: "Bewegung auf dem Baseballplatz"
 date: 2013-03-26
+author: "Bryan Schaffer"
 ---
 
 Kurz vor Saisonbeginn ist das Baseballfeld der Kangaroos weiterhin  unter einer Schneedecke bedeckt.  Das bis zum heutigen Zeitpunkt noch keine Vorbereitungsspiele durchgeführt werden konnten, ist in der Geschichte der Kangaroos einzigartig. Dieses Schicksal teilen die Brettener Baseballer auch mit anderen Mannschaften. Ein erneuter Versuch dem Wetter zu trotzen wird am kommenden Samstag (30.3.) bei einem Vorbereitungsturnier unternommen. Hierzu sind die Gastmannschaften aus Karlsruhe und Schriesheim eingeladen.

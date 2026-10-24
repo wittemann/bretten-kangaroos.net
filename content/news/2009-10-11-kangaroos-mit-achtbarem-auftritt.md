@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit achtbarem Auftritt"
 date: 2009-10-11
+author: "Bryan Schaffer"
 ---
 
 Mit einer 1:11 Niederlage haben die Bretten Kangaroos die Saison beendet.

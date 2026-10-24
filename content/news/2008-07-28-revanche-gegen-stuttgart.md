@@ -1,6 +1,7 @@
 ---
 title: "Revanche gegen Stuttgart"
 date: 2008-07-28
+author: "Martin Wittemann"
 ---
 
 Nachdem die Kangaroos nun die Saison nicht mehr als Meister beenden können, sind die letzten Spiele eher unbedeutend. Nichts desto trotz hatten sie noch eine Rechnung mit den Reds aus Stuttgart offen. Das letzte Heimspiel gegen die Reds wurde leider verloren. Dies wollte die Spieler der Kangaroos am vergangenen Sonntag wieder gut machen.

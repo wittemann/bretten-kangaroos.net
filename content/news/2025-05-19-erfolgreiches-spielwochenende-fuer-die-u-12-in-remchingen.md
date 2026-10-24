@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreiches Spielwochenende für die U-12 in Remchingen"
 date: 2025-05-19
+author: "Michael Wittemann"
 image: "/images/news/2025/05/team-2-1.jpg"
 ---
 

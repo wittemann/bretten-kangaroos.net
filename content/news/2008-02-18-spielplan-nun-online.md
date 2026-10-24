@@ -1,6 +1,7 @@
 ---
 title: "Spielplan nun online"
 date: 2008-02-18
+author: "Martin Wittemann"
 team: "herren"
 ---
 

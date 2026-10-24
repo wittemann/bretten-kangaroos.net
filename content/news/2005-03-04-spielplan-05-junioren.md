@@ -1,6 +1,7 @@
 ---
 title: "Spielplan 05 - Junioren"
 date: 2005-03-04
+author: "Bryan Schaffer"
 old_team: "Junioren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Starker Auftritt der Kangaroos Schüler"
 date: 2019-05-29
+author: "Henning Sommerfeld"
 team: "schueler"
 ---
 

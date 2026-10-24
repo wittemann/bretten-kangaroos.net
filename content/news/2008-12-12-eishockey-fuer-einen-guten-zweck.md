@@ -1,6 +1,7 @@
 ---
 title: "Eishockey für einen guten Zweck"
 date: 2008-12-12
+author: "Bryan Schaffer"
 ---
 
 Spaß ist garantiert:

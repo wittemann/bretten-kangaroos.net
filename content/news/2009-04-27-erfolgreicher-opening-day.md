@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreicher Opening Day"
 date: 2009-04-27
+author: "Martin Wittemann"
 team: "herren"
 ---
 

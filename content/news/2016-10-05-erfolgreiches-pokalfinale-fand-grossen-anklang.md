@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreiches Pokalfinale fand großen Anklang"
 date: 2016-10-05
+author: "Bryan Schaffer"
 ---
 
 **Bürgermeister Michael Nöltner eröffnete die Veranstaltung mit gutem Wurf**

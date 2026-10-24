@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Herren belegen beim Turnier in Weißenburg den zweiten Platz"
 date: 2003-09-24
+author: "Michael Wittemann"
 team: "herren"
 ---
 

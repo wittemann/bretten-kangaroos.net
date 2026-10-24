@@ -1,6 +1,7 @@
 ---
 title: "Schüler Team mit Doppelsieg beim Heimspiel gegen Remchingen"
 date: 2026-04-26
+author: "Michael Wittemann"
 image: "/images/news/2026/04/whatsapp-image-2026-04-25-at-16-03-47.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Incrediball Turnier 2019"
 date: 2019-10-04
+author: "Bryan Schaffer"
 ---
 
 Am vergangenen Samstag haben die Bretten Kangaroos ihr geliebtes Incrediball Turnier veranstaltet. Das Incrediball Turnier ist ein Slow pitch Softball Turnier für alle Personen die nicht in ein Baseball oder Softball Mannschaft gemeldet sind.

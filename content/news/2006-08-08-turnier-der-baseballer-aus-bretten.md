@@ -1,6 +1,7 @@
 ---
 title: "Turnier der Baseballer aus Bretten"
 date: 2006-08-08
+author: "Bryan Schaffer"
 ---
 
 Am 2. September findet wieder das Jedermann-Turnier der Kangaroos statt.

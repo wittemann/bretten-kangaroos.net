@@ -1,6 +1,7 @@
 ---
 title: "Stuttgart als Favoritenschreck"
 date: 2008-06-30
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos unterliegen Knights"
 date: 2005-07-11
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

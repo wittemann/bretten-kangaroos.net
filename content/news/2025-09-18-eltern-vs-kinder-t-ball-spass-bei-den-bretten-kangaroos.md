@@ -1,6 +1,7 @@
 ---
 title: "Eltern vs. Kinder! T-Ball-Spaß bei den Bretten Kangaroos"
 date: 2025-09-18
+author: "Robin Hinze"
 team: "t-ball"
 image: "/images/news/2025/09/img-20250915-wa0004.jpg"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Bildbetrachtung leicht gemacht"
 date: 2006-03-06
+author: "Martin Wittemann"
 ---
 
 Erneut wurde die Kangaroos Page (hoffentlich) verbessert. Wie einigen aufgefallen ist, war das Zappen durch alle Bilder zu einem Bericht recht mühsam, da man immer wieder zurück auf die Gesamtübersicht der Bilder musste. Genau diesen Mangel habe ich heute behoben.\

@@ -1,6 +1,7 @@
 ---
 title: "Team Foto online"
 date: 2005-04-11
+author: "Martin Wittemann"
 team: "herren"
 ---
 

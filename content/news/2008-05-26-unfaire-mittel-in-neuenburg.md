@@ -1,6 +1,7 @@
 ---
 title: "Unfaire Mittel in Neuenburg"
 date: 2008-05-26
+author: "Bryan Schaffer"
 old_team: "Damen"
 ---
 

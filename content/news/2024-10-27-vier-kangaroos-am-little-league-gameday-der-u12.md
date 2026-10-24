@@ -1,6 +1,7 @@
 ---
 title: "Vier Kangaroos am Little League Gameday der U12"
 date: 2024-10-27
+author: "Markus Rittmann"
 image: "/images/news/2024/10/ll1.jpg"
 ---
 

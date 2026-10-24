@@ -1,6 +1,7 @@
 ---
 title: "Strahlende Kindergesichter – trotz nasskaltem Wetter"
 date: 2017-10-09
+author: "Bryan Schaffer"
 ---
 
 Die T-Baller der Bretten Kangaroos stemmen erfolgreich das zweite Heimturnier.

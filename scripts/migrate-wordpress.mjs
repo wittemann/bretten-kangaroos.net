@@ -107,7 +107,7 @@ const report = {
 
 // --- Read the export ----------------------------------------------------------
 
-const items = readExport(positionals[0]);
+const { items, authors } = readExport(positionals[0]);
 const attachments = new Map(
   items
     .filter((item) => item["wp:post_type"] === "attachment")
@@ -193,7 +193,20 @@ function readExport(path) {
     parseTagValue: false,
     isArray: (name) => ["item", "category", "wp:postmeta"].includes(name),
   });
-  return parser.parse(xml).rss.channel.item;
+  const channel = parser.parse(xml).rss.channel;
+  // login → name shown as the post's author; some accounts only have their
+  // login ("bryan.schaffer") as display name, that becomes "Bryan Schaffer"
+  const authors = new Map(
+    [channel["wp:author"] ?? []].flat().map((a) => {
+      const name = textOf(a["wp:author_display_name"]).trim();
+      const fromLogin = name
+        .split(".")
+        .map((part) => part.replace(/(^|-)\p{Ll}/gu, (c) => c.toUpperCase()))
+        .join(" ");
+      return [textOf(a["wp:author_login"]), /^[\p{L}-]+(\.[\p{L}-]+)+$/u.test(name) ? fromLogin : name];
+    }),
+  );
+  return { items: channel.item, authors };
 }
 
 function readPost(item) {
@@ -212,6 +225,7 @@ function readPost(item) {
     slug,
     oldPath: `/${date.replaceAll("-", "/")}/${slug}/`,
     categories,
+    author: authors.get(textOf(item["dc:creator"])) || undefined,
     content: textOf(item["content:encoded"]),
     thumbnail: thumbnailId ? attachments.get(String(thumbnailId)) : undefined,
   };
@@ -264,6 +278,7 @@ function frontMatter(post, image) {
   const fields = {
     title: post.title,
     date: post.date,
+    ...(post.author ? { author: post.author } : {}),
     ...teamFields(post.categories),
     ...(image ? { image } : {}),
   };

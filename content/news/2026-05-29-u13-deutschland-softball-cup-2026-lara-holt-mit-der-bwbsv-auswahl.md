@@ -1,6 +1,7 @@
 ---
 title: "🥎 U13‑Deutschland‑Softball‑Cup 2026: Lara holt mit der BWBSV‑Auswahl Platz 3!"
 date: 2026-05-29
+author: "Michael Wittemann"
 image: "/images/news/2026/05/img-5668.png"
 ---
 

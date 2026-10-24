@@ -1,6 +1,7 @@
 ---
 title: "Einladung zur Mitgliederversammlung 2014"
 date: 2014-02-08
+author: "Martin Wittemann"
 ---
 
 Liebe Kangaroos,

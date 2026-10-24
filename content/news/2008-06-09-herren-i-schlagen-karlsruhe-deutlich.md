@@ -1,6 +1,7 @@
 ---
 title: "Herren I schlagen Karlsruhe deutlich"
 date: 2008-06-09
+author: "Martin Wittemann"
 team: "herren"
 ---
 

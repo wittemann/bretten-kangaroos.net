@@ -1,6 +1,7 @@
 ---
 title: "Außerordentliche Mitgliederversammlung 18.09.2009"
 date: 2009-09-16
+author: "Bryan Schaffer"
 ---
 
 Liebe Kangaroos,

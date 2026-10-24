@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos bereiten sich auf die neue Saison vor"
 date: 2014-03-21
+author: "Michael Wittemann"
 ---
 
 Die Baseballer der Bretten Kangaroos bereiten sich aktuell auf die kommende Baseball Saison diesen Sommer vor.\

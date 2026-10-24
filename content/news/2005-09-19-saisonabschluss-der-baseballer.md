@@ -1,6 +1,7 @@
 ---
 title: "Saisonabschluss der Baseballer"
 date: 2005-09-19
+author: "Bryan Schaffer"
 ---
 
 Mit dem zweiten Incrediball-Turnier, einem sportlichen Ereignis bei dem die Türen der Bretten Kangaroos für Jedermann geöffnet sind, möchte die Abteilung für Baseball im VfB Bretten sich aus der Saison 2005 verabschieden.

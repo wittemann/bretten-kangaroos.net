@@ -1,6 +1,7 @@
 ---
 title: "🎄⚾ Christmas-Ball Baseball Turnier 2025 in Bretten!"
 date: 2025-12-06
+author: "Michael Wittemann"
 image: "/images/news/2025/12/bild-2025.jpg"
 ---
 

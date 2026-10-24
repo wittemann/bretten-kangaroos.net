@@ -1,6 +1,7 @@
 ---
 title: "Danke Diedelsheim! Ein tolles Wochenende auf dem Weihnachtsmarkt"
 date: 2025-12-10
+author: "Robin Hinze"
 image: "/images/news/2025/12/20251205-170434-1.jpg"
 ---
 

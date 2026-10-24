@@ -1,6 +1,7 @@
 ---
 title: "Das T-Ball Team spiel seine ersten Spiele in Reutlingen"
 date: 2015-10-11
+author: "Michael Wittemann"
 team: "t-ball"
 ---
 

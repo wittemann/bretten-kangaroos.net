@@ -1,6 +1,7 @@
 ---
 title: "Softball Tryouts"
 date: 2007-08-30
+author: "Bryan Schaffer"
 old_team: "Damen"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Saisonbeginn"
 date: 2010-04-12
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

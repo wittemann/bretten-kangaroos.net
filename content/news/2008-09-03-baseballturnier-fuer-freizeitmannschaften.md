@@ -1,6 +1,7 @@
 ---
 title: "Baseballturnier für Freizeitmannschaften"
 date: 2008-09-03
+author: "Bryan Schaffer"
 ---
 
 Während sich die diesjährige Base- und Softballsaison der Bretten Kangaroos dem Ende nähert, beginnt nun die Saison für die Freizeitmannschaften in und um Bretten. Bereits zum 5. Mal organisieren die Bretten Kangaroos ihr im Jahresplan fest etabliertes Incrediballturnier. Ausschließlich für nicht aktive Baseballspieler gedacht, erfreut sich das Turnier immer größerer Beliebtheit.\

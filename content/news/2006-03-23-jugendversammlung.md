@@ -1,6 +1,7 @@
 ---
 title: "Jugendversammlung"
 date: 2006-03-23
+author: "Bryan Schaffer"
 ---
 
 Am 06. April 2006 findet um 19.00 Uhr im VfB-Clubhaus die Elternversammlung der Jugend statt.

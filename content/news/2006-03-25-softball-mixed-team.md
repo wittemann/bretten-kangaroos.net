@@ -1,6 +1,7 @@
 ---
 title: "Softball Mixed Team"
 date: 2006-03-25
+author: "Bryan Schaffer"
 old_team: "Slow Pitch"
 ---
 

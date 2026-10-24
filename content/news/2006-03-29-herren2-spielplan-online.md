@@ -1,6 +1,7 @@
 ---
 title: "Herren2-Spielplan online"
 date: 2006-03-29
+author: "Martin Wittemann"
 old_team: "Herren 2"
 ---
 

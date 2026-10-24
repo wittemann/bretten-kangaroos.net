@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos trotz starker Offensive nicht belohnt"
 date: 2011-04-18
+author: "Martin Wittemann"
 team: "herren"
 ---
 

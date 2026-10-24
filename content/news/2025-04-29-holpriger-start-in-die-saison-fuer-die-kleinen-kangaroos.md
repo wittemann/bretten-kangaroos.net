@@ -1,6 +1,7 @@
 ---
 title: "Holpriger Start in die Saison für die kleinen Kangaroos"
 date: 2025-04-29
+author: "Michael Wittemann"
 image: "/images/news/2025/04/whatsapp-bild-2025-04-27-um-17-05-51-7ec564ed.jpg"
 ---
 

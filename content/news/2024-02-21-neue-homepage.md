@@ -1,6 +1,7 @@
 ---
 title: "Neue Homepage zum Start in die neue Saison"
 date: 2024-02-21
+author: "Michael Wittemann"
 image: "/images/news/2024/02/new-website-1.png"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Verteidigung patzt gegen Liga-Konkurrent"
 date: 2013-04-23
+author: "Bryan Schaffer"
 ---
 
 Ladenburg weist Bretten in die Schranken

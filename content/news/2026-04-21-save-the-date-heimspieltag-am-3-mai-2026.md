@@ -1,6 +1,7 @@
 ---
 title: "🗓️ Save the Date – Heimspieltag am 3. Mai 2026!"
 date: 2026-04-21
+author: "Markus Rittmann"
 image: "/images/news/2026/04/whatsapp-image-2026-04-10-at-23-12-19.jpg"
 ---
 

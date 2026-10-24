@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos zeigen starke Reaktion und gehen mit Rückenwind in die nächsten Aufgaben"
 date: 2026-07-26
+author: "Michael Wittemann"
 image: "/images/news/2026/07/whatsapp-image-2026-07-25-at-18-22-23-1.jpg"
 ---
 

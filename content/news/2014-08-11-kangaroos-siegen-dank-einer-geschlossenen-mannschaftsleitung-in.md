@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos siegen dank einer geschlossenen Mannschaftsleitung in Villingendorf"
 date: 2014-08-11
+author: "Michael Wittemann"
 team: "herren"
 ---
 

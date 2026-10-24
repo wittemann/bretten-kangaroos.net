@@ -1,6 +1,7 @@
 ---
 title: "U12 holt ersten Saisonsieg gegen Heidelberg"
 date: 2025-05-13
+author: "Michael Wittemann"
 image: "/images/news/2025/05/whatsapp-bild-2025-05-11-um-16-26-09-80809c9f.jpg"
 ---
 

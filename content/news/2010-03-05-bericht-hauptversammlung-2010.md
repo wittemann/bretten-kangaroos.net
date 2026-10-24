@@ -1,6 +1,7 @@
 ---
 title: "Bericht Hauptversammlung 2010"
 date: 2010-03-05
+author: "Bryan Schaffer"
 ---
 
 Bericht zur Hauptversammlung

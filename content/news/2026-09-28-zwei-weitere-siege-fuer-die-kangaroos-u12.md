@@ -1,6 +1,7 @@
 ---
 title: "Zwei weitere Siege für die Kangaroos U12"
 date: 2026-09-28
+author: "Michael Wittemann"
 image: "/images/news/2026/09/whatsapp-image-2026-09-27-at-15-35-19-4.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Showdown in der Landesliga"
 date: 2012-08-18
+author: "Martin Wittemann"
 team: "herren"
 ---
 

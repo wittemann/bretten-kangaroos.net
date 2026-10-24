@@ -1,6 +1,7 @@
 ---
 title: "Juniorenmannschaft vom Erfolg verwöhnt"
 date: 2005-06-07
+author: "Bryan Schaffer"
 old_team: "Junioren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Einladung zum Incrediball-Softball-Turnier 2021"
 date: 2021-07-09
+author: "Kerim Murtaza"
 ---
 
 ## Hallo liebe Freunde des Slowpitch-Softballs,

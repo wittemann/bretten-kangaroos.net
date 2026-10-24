@@ -1,6 +1,7 @@
 ---
 title: "Rückzug Schwetzingen Braves"
 date: 2005-04-08
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

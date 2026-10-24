@@ -1,6 +1,7 @@
 ---
 title: "Einladung zum Incrediball-Softball-Turnier 2019"
 date: 2019-08-07
+author: "Martin Wittemann"
 ---
 
 Hallo liebe Freunde des Slowpitch-Softballs,

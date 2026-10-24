@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit starkem Start – Ravensburg am Ende überlegen"
 date: 2025-07-09
+author: "Jens-Uwe Otte"
 image: "/images/news/2025/07/bretten-kangaroos-baseball.jpg"
 ---
 

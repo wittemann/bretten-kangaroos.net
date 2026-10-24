@@ -1,6 +1,7 @@
 ---
 title: "Einladung zur Mitgliederversammlung am Freitag 21. März um 19:00 Uhr"
 date: 2025-03-16
+author: "Michael Wittemann"
 image: "/images/news/2025/03/mv-2025.jpg"
 ---
 

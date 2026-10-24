@@ -1,6 +1,7 @@
 ---
 title: "Schüler folgen dem Kurs der ersten Herrenmannschaft"
 date: 2008-04-29
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

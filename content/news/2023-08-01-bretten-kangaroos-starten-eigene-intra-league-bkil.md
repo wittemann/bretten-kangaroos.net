@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos starten eigene Intra League (BKIL)"
 date: 2023-08-01
+author: "Michael Wittemann"
 ---
 
 # Bretten Kangaroos starten eigene Intra League (BKIL)

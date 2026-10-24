@@ -1,6 +1,7 @@
 ---
 title: "Interview mit dem neuen Trainer-Duo Bernd Gottselig und Isaia Lauvai"
 date: 2015-04-09
+author: "Michael Wittemann"
 ---
 
 Zur Einstimmung auf die am 26 April beginnenden Baseball Saison gibt es ein kleines Interview mit dem neuen Trainer-Duo der Baseball Herren Mannschaft Bernd Gottselig und Isaia Lauvai.

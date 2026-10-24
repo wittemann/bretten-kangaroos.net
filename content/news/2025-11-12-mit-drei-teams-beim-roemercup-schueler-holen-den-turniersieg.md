@@ -1,6 +1,7 @@
 ---
 title: "Mit drei Teams beim Römercup – Schüler holen den Turniersieg!"
 date: 2025-11-12
+author: "Michael Wittemann"
 image: "/images/news/2025/11/whatsapp-bild-2025-11-08-um-18-34-49-2e493b8a.jpg"
 ---
 

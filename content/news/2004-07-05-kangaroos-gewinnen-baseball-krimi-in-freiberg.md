@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos gewinnen Baseball Krimi in Freiberg"
 date: 2004-07-05
+author: "Michael Wittemann"
 team: "herren"
 ---
 

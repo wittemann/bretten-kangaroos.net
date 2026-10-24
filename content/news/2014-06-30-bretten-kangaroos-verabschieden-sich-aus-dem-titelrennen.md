@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos verabschieden sich aus dem Titelrennen"
 date: 2014-06-30
+author: "Michael Wittemann"
 team: "herren"
 ---
 

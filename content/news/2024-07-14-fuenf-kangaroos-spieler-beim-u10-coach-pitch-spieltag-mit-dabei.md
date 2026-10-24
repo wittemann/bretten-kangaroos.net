@@ -1,6 +1,7 @@
 ---
 title: "Fünf Kangaroos Spieler beim U10 Coach Pitch Spieltag mit dabei"
 date: 2024-07-14
+author: "Michael Wittemann"
 image: "/images/news/2024/07/team-2.jpg"
 ---
 

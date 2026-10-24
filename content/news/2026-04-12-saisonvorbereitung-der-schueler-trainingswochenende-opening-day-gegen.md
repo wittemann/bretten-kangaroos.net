@@ -1,6 +1,7 @@
 ---
 title: "Saisonvorbereitung der Schüler – Trainingswochenende & Opening Day gegen Aalen"
 date: 2026-04-12
+author: "Michael Wittemann"
 image: "/images/news/2026/04/img-5429.jpg"
 ---
 

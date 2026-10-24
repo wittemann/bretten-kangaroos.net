@@ -1,6 +1,7 @@
 ---
 title: "Sturm zerstört Baseballplatz!"
 date: 2006-04-01
+author: "Bryan Schaffer"
 ---
 
 Beim Arbeitseinsatz am 01.04.06 gab es einiges zu tun !

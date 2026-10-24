@@ -1,6 +1,7 @@
 ---
 title: "Bryan Schaffer führt Kangaroos mit einem Homerun zum Sieg"
 date: 2014-04-21
+author: "Michael Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Happy new year"
 date: 2007-12-31
+author: "Martin Wittemann"
 ---
 
 Die Kangaroos wünschen allen Besuchern der Webseite, Mitglieder und Baseball Fans einen guten Rutsch ins neue Jahr 2008.\

@@ -1,6 +1,7 @@
 ---
 title: "Erstes Turnier für den Nachwuchs"
 date: 2010-06-22
+author: "Bryan Schaffer"
 team: "t-ball"
 ---
 

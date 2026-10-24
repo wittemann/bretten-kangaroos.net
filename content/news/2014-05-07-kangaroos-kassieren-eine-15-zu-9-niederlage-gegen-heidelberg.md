@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos kassieren eine 15 zu 9 Niederlage gegen Heidelberg"
 date: 2014-05-07
+author: "Martin Wittemann"
 team: "herren"
 ---
 

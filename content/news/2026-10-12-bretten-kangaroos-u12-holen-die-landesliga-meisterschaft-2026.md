@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos U12 holen die Landesliga-Meisterschaft 2026!"
 date: 2026-10-12
+author: "Michael Wittemann"
 image: "/images/news/2026/10/whatsapp-image-2026-10-04-at-17-02-50-4.jpg"
 ---
 

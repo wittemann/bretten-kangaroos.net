@@ -1,6 +1,7 @@
 ---
 title: "Die Rückkehr von Yoda"
 date: 2007-06-10
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Unglaubliche Siegesserie der Kangaroos"
 date: 2006-08-28
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

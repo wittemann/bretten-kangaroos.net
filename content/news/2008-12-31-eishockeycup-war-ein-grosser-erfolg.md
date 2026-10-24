@@ -1,6 +1,7 @@
 ---
 title: "Eishockeycup war ein großer Erfolg"
 date: 2008-12-31
+author: "Bryan Schaffer"
 ---
 
 Spiel, Spaß und blaue Flecken für den ?Guten Zweck?

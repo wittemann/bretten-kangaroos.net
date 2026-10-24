@@ -1,6 +1,7 @@
 ---
 title: "Heimspiel der Schüler gegen Karlsruhe"
 date: 2024-05-31
+author: "Michael Wittemann"
 image: "/images/news/2024/05/spieltag-5-vorbericht.jpg"
 ---
 

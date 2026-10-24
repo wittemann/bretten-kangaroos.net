@@ -1,6 +1,7 @@
 ---
 title: "Spielverlegung wegen Regen"
 date: 2005-08-14
+author: "Martin Wittemann"
 team: "herren"
 ---
 

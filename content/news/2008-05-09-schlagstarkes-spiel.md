@@ -1,6 +1,7 @@
 ---
 title: "Schlagstarkes Spiel"
 date: 2008-05-09
+author: "Bryan Schaffer"
 ---
 
 Das zweite Saisonspiel, der 2.Herrenmannschaft der Bretten Kangaroos war ein Auswärtsspiel in Schwetzingen gegen die Braves.

@@ -1,6 +1,7 @@
 ---
 title: "Saisonabschluss & zweiter Spieltag der Kangaroos eigenen Intra League (BKIL) am 3. Oktober"
 date: 2024-09-22
+author: "Michael Wittemann"
 image: "/images/news/2024/09/bild-4.jpg"
 ---
 

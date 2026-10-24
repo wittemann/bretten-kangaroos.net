@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Nachwuchs beim Nikolauscup in Stuttgart"
 date: 2017-11-23
+author: "Bryan Schaffer"
 ---
 
 Am 19 November war der Kangaroos Nachwuchs mit seinem T-Ball und Schüler Team beim Nikolaus-Cup der Stuttgart Reds zu Gast.

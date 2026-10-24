@@ -1,6 +1,7 @@
 ---
 title: "+ Heimspiel der Kangaroos mit BBQ diesen Sonntag, 29. April ab 15 Uhr +"
 date: 2018-04-27
+author: "Bryan Schaffer"
 ---
 
 \+ Heimspiel der Kangaroos mit BBQ diesen Sonntag, 29. April ab 15 Uhr +

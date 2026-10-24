@@ -1,6 +1,7 @@
 ---
 title: "Mitgliederversammlung 2014"
 date: 2014-03-19
+author: "Martin Wittemann"
 ---
 
 Vergangenen Freitag fand wie jährliche Mitgliederversammlung der Kangaroos im [Vereinsheim](https://www.facebook.com/pages/Classics-Sportsbar-Diner/491618910899562) unseres Hauptvereins, des [VfB Bretten](http://www.vfb-bretten.de), statt.

@@ -1,6 +1,7 @@
 ---
 title: "Deutschland bei der Weltmeisterschaft"
 date: 2007-11-12
+author: "Martin Wittemann"
 ---
 
 Derzeit ist gerade die 37te Weltmeisterschaft im Baseball in Taiwan. Auch die deutsche Nationalmannschaft ist dort vertreten und muss gegen das Team aus Kuba, Kanada oder ähnlich starke Mannschaften antreten. Auch im Turnier vertreten, jedoch in einer andere Gruppe ist der letztjährige World Baseball Classic Gewinner Japan.\

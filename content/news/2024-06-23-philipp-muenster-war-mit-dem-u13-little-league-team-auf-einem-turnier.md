@@ -1,6 +1,7 @@
 ---
 title: "Philipp Münster war mit dem U13 Little League Team auf einem Turnier in Wiesbaden"
 date: 2024-06-23
+author: "Michael Wittemann"
 image: "/images/news/2024/06/team.jpg"
 ---
 

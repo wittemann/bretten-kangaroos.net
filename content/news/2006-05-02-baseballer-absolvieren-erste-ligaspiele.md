@@ -1,6 +1,7 @@
 ---
 title: "Baseballer absolvieren erste Ligaspiele"
 date: 2006-05-02
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

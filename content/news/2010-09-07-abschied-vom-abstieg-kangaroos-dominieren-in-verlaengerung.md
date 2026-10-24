@@ -1,6 +1,7 @@
 ---
 title: "Abschied vom Abstieg ? Kangaroos dominieren in Verlängerung"
 date: 2010-09-07
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Schüler in den letzten Partien unterlegen"
 date: 2008-06-11
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Impressionen vom Slow-Pitch Team Training"
 date: 2015-05-23
+author: "Michael Wittemann"
 old_team: "Slow Pitch"
 ---
 

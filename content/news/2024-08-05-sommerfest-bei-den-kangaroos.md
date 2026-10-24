@@ -1,6 +1,7 @@
 ---
 title: "Sommerfest bei den Kangaroos"
 date: 2024-08-05
+author: "Michael Wittemann"
 image: "/images/news/2024/08/qpwh3156.jpg"
 ---
 

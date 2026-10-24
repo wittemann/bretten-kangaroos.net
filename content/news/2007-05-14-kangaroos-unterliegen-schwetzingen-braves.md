@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos unterliegen Schwetzingen Braves"
 date: 2007-05-14
+author: "Bryan Schaffer"
 old_team: "Herren 2"
 ---
 

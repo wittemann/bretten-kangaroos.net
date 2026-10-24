@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos starten ins Spring Training"
 date: 2015-03-16
+author: "Michael Wittemann"
 team: "herren"
 ---
 

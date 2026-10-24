@@ -1,6 +1,7 @@
 ---
 title: "Schüler und T-Ball Teams beim Winterball in Mannheim"
 date: 2024-03-27
+author: "Michael Wittemann"
 image: "/images/news/2024/03/img-2415.jpg"
 ---
 

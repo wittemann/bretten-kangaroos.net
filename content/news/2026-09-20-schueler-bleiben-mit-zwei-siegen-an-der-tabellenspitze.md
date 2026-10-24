@@ -1,6 +1,7 @@
 ---
 title: "Schüler bleiben mit zwei Siegen an der Tabellenspitze"
 date: 2026-09-20
+author: "Michael Wittemann"
 image: "/images/news/2026/09/whatsapp-image-2026-09-19-at-16-25-02-1.jpg"
 ---
 

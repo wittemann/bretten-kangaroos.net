@@ -1,6 +1,7 @@
 ---
 title: "Die Vorbereitung wurde erfolgreich abgeschlossen"
 date: 2008-04-14
+author: "Martin Wittemann"
 team: "herren"
 ---
 

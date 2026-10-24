@@ -1,6 +1,7 @@
 ---
 title: "U10 Coach Pitch Gameday der Nord Baden Titans in Bretten"
 date: 2024-11-02
+author: "Markus Rittmann"
 image: "/images/news/2024/10/titans.jpg"
 ---
 

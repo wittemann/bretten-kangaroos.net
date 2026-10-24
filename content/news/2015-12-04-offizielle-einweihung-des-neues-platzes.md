@@ -1,6 +1,7 @@
 ---
 title: "Offizielle Einweihung des neuen Platzes"
 date: 2015-12-04
+author: "Michael Wittemann"
 ---
 
 Nach einer anstrengenden und mit unzähligen Arbeitsstunden der Kangaroos unterstützten Bauphase fand am Mittwoch den 3 Dezember um 18:00 die offizielle Eröffnung des neuen Baseball und Fußball Feldes in Bretten Diedelsheim statt.

@@ -1,6 +1,7 @@
 ---
 title: "Ein Meilenstein in der Geschichte der Bretten Kangaroos"
 date: 2009-06-14
+author: "Bryan Schaffer"
 ---
 
 Am diesjährigen Fronleichnam empfingen die Bretten Kangaroos den Zweitligisten Tübingen Hawks im BWBSV(Baden-Württembergischer Baseball Verband) - Pokalhalbfinale. Andreas Bjelicic begann als Werfer auf Seiten der Kangaroos. In den ersten Innings schenkten sich die beiden Mannschaften wenig, und so stand es bis zur ersten Hälfte des dritten Innings eins zu eins. In der zweiten Hälfte fanden die Kangaroos zu ihrer Schlagstärke zurück und konnten mit 3:1 in Führung gehen. Ende des vierten Innings konnten die Brettener die Führung sogar auf 5:1 ausbauen. Im nächsten Spielabschnitt kamen die Tübinger jedoch zurück und glichen mit 5:5 aus. Unbeeindruckt von der Tübinger Aufholjagd gewannen die Brettener mit dem neuen Werfer Raphael Zippenfenig das sechste und siebte Inning, und machten ihren Finaleinzug durch zehn weitere Punkte zum Endstand von 15:5 perfekt.

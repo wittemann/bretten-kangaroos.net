@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos U12 Team zeigt Kampfgeist und Teamstärke – ein spannender Spieltag mit Happy End!"
 date: 2025-07-22
+author: "Michael Wittemann"
 image: "/images/news/2025/07/img-20250720-wa0036.jpg"
 ---
 

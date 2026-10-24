@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos geben Hoffnung nicht auf"
 date: 2005-08-08
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

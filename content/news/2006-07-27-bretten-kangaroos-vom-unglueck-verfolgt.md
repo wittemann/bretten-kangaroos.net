@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos vom Unglück verfolgt"
 date: 2006-07-27
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

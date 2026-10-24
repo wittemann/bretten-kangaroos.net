@@ -1,6 +1,7 @@
 ---
 title: "Außerordentliche Mitgliederversammlung 2013"
 date: 2013-09-19
+author: "Martin Wittemann"
 ---
 
 Liebe Kangaroos,

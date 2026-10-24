@@ -1,6 +1,7 @@
 ---
 title: "🎄Diedelsheimer Weihnachtsmarkt 2025 – Wir sind dabei! 🎅✨"
 date: 2025-11-10
+author: "Robin Hinze"
 image: "/images/news/2025/11/2025-flyer-weihnachtsmarkt-instagram-post-45.jpg"
 ---
 

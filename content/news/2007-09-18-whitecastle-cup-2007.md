@@ -1,6 +1,7 @@
 ---
 title: "Whitecastle Cup 2007"
 date: 2007-09-18
+author: "Martin Wittemann"
 ---
 
 Es ist schon zur Tradition geworden, dass die Kangaroos nach ihrer Saison zum Saisonabschluss nach Franken zum Whitecastlecup fahren. Auch dieses Jahr konnten wieder 11 Kangaroos in Franken angetroffen werden um die Saison gebührend ausklingen zu lassen.\

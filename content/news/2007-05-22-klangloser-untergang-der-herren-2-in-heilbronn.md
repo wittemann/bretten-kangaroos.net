@@ -1,6 +1,7 @@
 ---
 title: "Klangloser Untergang der Herren 2 in Heilbronn"
 date: 2007-05-22
+author: "Bryan Schaffer"
 old_team: "Herren 2"
 ---
 

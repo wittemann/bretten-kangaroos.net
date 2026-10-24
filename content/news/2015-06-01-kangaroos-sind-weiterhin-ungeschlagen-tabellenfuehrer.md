@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos sind weiterhin ungeschlagen Tabellenführer"
 date: 2015-06-01
+author: "Michael Wittemann"
 ---
 
 Am Sonntag war der Tabellenzweite, die Heilbronn Pirates zu Gast in Bretten-Diedelsheim zum Spitzenspiel der Baseball Landesliga Baden-Württemberg.

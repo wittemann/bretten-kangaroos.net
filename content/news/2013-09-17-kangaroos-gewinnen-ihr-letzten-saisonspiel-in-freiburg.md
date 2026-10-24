@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos gewinnen ihr letzten Saisonspiel in Freiburg"
 date: 2013-09-17
+author: "Michael Wittemann"
 team: "herren"
 ---
 

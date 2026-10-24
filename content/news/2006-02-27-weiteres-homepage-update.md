@@ -1,6 +1,7 @@
 ---
 title: "Weiteres Homepage Update"
 date: 2006-02-27
+author: "Martin Wittemann"
 ---
 
 Im Diskussionsbereich der Kangaroos Page wurde, zur Verbesserung der Benutzerfreundlichkeit, ein HTML Editor integriert. Mit hilfe dieses Editor können alle Besucher ihre Einträge komfortabel formatieren.

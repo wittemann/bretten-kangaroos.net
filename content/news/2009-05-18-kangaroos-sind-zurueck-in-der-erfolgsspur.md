@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos sind zurück in der Erfolgsspur"
 date: 2009-05-18
+author: "Michael Wittemann"
 ---
 
 Ohne 4 Stammspieler mussten die Kangaroos Baseballer am vergangenen Samstag zum Auswärtsspiel nach Sindelfingen fahren.\

@@ -1,6 +1,7 @@
 ---
 title: "Einladung zum Incrediball-Softball-Turnier 2022"
 date: 2022-07-26
+author: "Kerim Murtaza"
 old_team: "Incrediball"
 ---
 

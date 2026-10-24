@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos gewinnen mit 19 zu 2 gegen die Heilbronn Pirates"
 date: 2014-08-04
+author: "Michael Wittemann"
 team: "herren"
 ---
 

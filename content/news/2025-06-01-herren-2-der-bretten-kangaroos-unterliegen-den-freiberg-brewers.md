@@ -1,6 +1,7 @@
 ---
 title: "Herren 2 der Bretten Kangaroos unterliegen den Freiberg Brewers – wertvolle Erkenntnisse für die Entwicklung des jungen Teams"
 date: 2025-06-01
+author: "Jens-Uwe Otte"
 old_team: "Herren 2"
 image: "/images/news/2025/06/herren-2-01-06-2025-202.jpg"
 ---

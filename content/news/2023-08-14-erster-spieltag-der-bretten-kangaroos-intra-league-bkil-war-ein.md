@@ -1,6 +1,7 @@
 ---
 title: "Erster Spieltag der Bretten Kangaroos Intra League (BKIL) war ein voller Erfolg"
 date: 2023-08-14
+author: "Michael Wittemann"
 image: "/images/news/2023/08/bkil-teams.png"
 ---
 

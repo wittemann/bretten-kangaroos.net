@@ -1,6 +1,7 @@
 ---
 title: "Herren-Spielplan online"
 date: 2006-02-17
+author: "Martin Wittemann"
 team: "herren"
 ---
 

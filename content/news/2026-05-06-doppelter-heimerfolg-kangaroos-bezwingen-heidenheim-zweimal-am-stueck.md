@@ -1,6 +1,7 @@
 ---
 title: "Doppelter Heimerfolg! Kangaroos bezwingen Heidenheim zweimal am Stück"
 date: 2026-05-06
+author: "Markus Rittmann"
 image: "/images/news/2026/05/whatsapp-image-2026-05-06-at-11-14-14-6.jpg"
 ---
 

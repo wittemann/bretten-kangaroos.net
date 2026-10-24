@@ -1,6 +1,7 @@
 ---
 title: "Die Vorbereitung hat begonnen"
 date: 2005-02-03
+author: "Michael Wittemann"
 team: "herren"
 ---
 

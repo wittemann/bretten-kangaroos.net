@@ -1,6 +1,7 @@
 ---
 title: "Deutsch-französisches Spitzenspiel"
 date: 2007-05-15
+author: "Bryan Schaffer"
 old_team: "Herren 2"
 ---
 

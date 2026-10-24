@@ -1,6 +1,7 @@
 ---
 title: "Winterpause mit einem Spiel gegen die Cougars beendet"
 date: 2009-03-16
+author: "Martin Wittemann"
 team: "herren"
 ---
 

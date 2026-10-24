@@ -1,6 +1,7 @@
 ---
 title: "Begeisterung im Schulprojekt"
 date: 2007-08-17
+author: "Bryan Schaffer"
 ---
 
 Bevor die Sommerferien begannen, hieß es auf der

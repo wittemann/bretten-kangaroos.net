@@ -1,6 +1,7 @@
 ---
 title: "Erstes T-Ball Turnier der Kangaroos - Fünf Teams zeigten ihr Können"
 date: 2016-06-07
+author: "Bryan Schaffer"
 ---
 
 Am vergangenen Wochenende veranstalteten die Bretten Kangaroos das erste T-Ball Turnier und luden dazu vier Mannschaften ein. Neben den Karlsruhe Cougars und den Aalen Strikers waren auch die Gammertingen Royals, sowie die Sieger des Turnieres, die Neckargemünd Flusspiraten eingeladen. Die vereinfachte Version des Baseballsports ist schon für die kleinsten Interessierten ein Riesenspass, dabei wird besonderen Wert auf die Sicherheit gelegt. Und so tummelten sich ungefähr fünfzig Kinder, mit Eltern, Übungsleiter und Schiedsrichtern auf dem Kunstrasenfeld in Diedelsheim um für Ihre Mannschaft zu eifern. Obwohl auch die kleinsten sehr ehrgeizig sein können stand dabei der Spielspass im Vordergrund. Den zweiten Platz erreichten die Gammertingen Royals und Karlsruhe teilte sich mit Bretten den dritten Platz, das Schlusslicht bildeten die Aalen Strikers. Der amerikanische Übungsleiter Bryan Schaffer freute sich über das positive Feedback der Beteiligten und lädt alle Teilnehmer und interessierten Eltern und Kinder ein, in das Training der T-Baller zu schnuppern. Das Training findet mittwochs zwischen 17 und 18 Uhr statt, außer kunstrasentauglichen Schuhen und warmer Kleidung wird nichts benötigt, teilnehmen können Kinder zwischen 5 und 10 Jahren. Infos und Anmeldung unter Schaffer@bretten-kangaroos.com

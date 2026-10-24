@@ -1,6 +1,7 @@
 ---
 title: "Medaillen und BKIL-Spieltag zum Saisonabschluss"
 date: 2024-10-04
+author: "Michael Wittemann"
 image: "/images/news/2024/10/ehrung-5.jpg"
 ---
 

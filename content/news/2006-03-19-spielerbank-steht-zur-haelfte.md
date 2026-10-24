@@ -1,6 +1,7 @@
 ---
 title: "Spielerbank steht zur Hälfte !!!"
 date: 2006-03-19
+author: "Bryan Schaffer"
 ---
 
 Der Arbeitseinsatz am Samstag 18.03.06 begann um 8.00 Uhr. Wir mussten so früh beginnen,\

@@ -1,6 +1,7 @@
 ---
 title: "Einladung zur ordentlichen Mitgliederversammlung"
 date: 2022-02-25
+author: "Bryan Schaffer"
 ---
 
 ## am Freitag 18. März 2022 um 19:30 Uhr im VfB Clubhaus

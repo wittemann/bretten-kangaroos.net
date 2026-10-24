@@ -1,6 +1,7 @@
 ---
 title: "Heimsieg der Bretten Kangaroos gegen Reutlingen Woodpeckers"
 date: 2025-05-20
+author: "Jens-Uwe Otte"
 team: "herren"
 image: "/images/news/2025/05/reutlingen-19-05-2025-8.jpg"
 ---

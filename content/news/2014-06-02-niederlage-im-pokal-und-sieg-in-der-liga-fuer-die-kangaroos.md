@@ -1,6 +1,7 @@
 ---
 title: "Niederlage im Pokal und Sieg in der Liga für die Kangaroos"
 date: 2014-06-02
+author: "Michael Wittemann"
 team: "herren"
 ---
 

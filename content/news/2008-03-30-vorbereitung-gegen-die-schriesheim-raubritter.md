@@ -1,6 +1,7 @@
 ---
 title: "Vorbereitung gegen die Schriesheim Raubritter"
 date: 2008-03-30
+author: "Martin Wittemann"
 team: "herren"
 ---
 

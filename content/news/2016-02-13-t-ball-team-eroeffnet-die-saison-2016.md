@@ -1,6 +1,7 @@
 ---
 title: "T-Ball Team eröffnet die Saison 2016"
 date: 2016-02-13
+author: "Michael Wittemann"
 team: "t-ball"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Tübingen Hawks verlieren frühzeitig"
 date: 2007-08-13
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Pokalspiele der Baseballer"
 date: 2005-09-12
+author: "Bryan Schaffer"
 ---
 
 Die Saison für die Bretten Kangaroos ist zwar vorbei, dennoch konnten die Mannschaften ihr Können in der Pokalrunde unter Beweis stellen.

@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreiche Auswärtspartie in Neuenburg"
 date: 2013-07-22
+author: "Martin Wittemann"
 ---
 
 Nachdem die Kangaroos ihr letztes Heimspiel klar verloren hatten, wollten sie diese Niederlage beim Tabellenvorletzen wieder gut machen. Diese Aufgabe hatten insgesamt nur neun Spieler, da durch Verletzungen und Abwesenheiten wichtige Stammspieler fehlten. Nichts desto trotz machten sich die Baseballer aus Bretten auf den zweistündigen Weg nach Neuenburg am Rhein, um dort gegen die dritte Mannschaft der Atomics anzutreten.

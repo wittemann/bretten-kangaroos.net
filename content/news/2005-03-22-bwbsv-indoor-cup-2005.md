@@ -1,6 +1,7 @@
 ---
 title: "BWBSV Indoor Cup 2005"
 date: 2005-03-22
+author: "Bryan Schaffer"
 ---
 
 Die diesjährige Hallenbaseball-Meisterschaft wurde am 19. und 20.März von den Schwäbisch Hall Renegades ausgetragen.\

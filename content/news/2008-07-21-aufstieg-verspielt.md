@@ -1,6 +1,7 @@
 ---
 title: "Aufstieg verspielt"
 date: 2008-07-21
+author: "Martin Wittemann"
 ---
 
 Nach einer drei wöchigen Pause und dem zuletzt verlorenen Spiel gegen Stuttgart mussten die Kangaroos am vergangenen Sonntag erneut in Nagold antreten. Die Ausgangssituation war klar, ein Sieg musste her um die Nagolder noch vom Tabellenthron stoßen zu können.\

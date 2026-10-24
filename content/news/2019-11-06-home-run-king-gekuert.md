@@ -1,6 +1,7 @@
 ---
 title: "Home Run King gekürt"
 date: 2019-11-06
+author: "Bryan Schaffer"
 ---
 
 Das Team von KraichgauTV hat uns bei unserem diesjährigen Incrediballturnier begleitet und einen tollen Beitrag dazu erstellt.

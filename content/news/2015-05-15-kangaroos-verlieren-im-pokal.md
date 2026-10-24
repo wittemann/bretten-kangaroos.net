@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos verlieren im Pokal"
 date: 2015-05-15
+author: "Michael Wittemann"
 ---
 
 In der zweite Runde des BWBSV Pokal Wettbewerb war diese Jahr Schluss für die Kangaroos. Am Vatertag unterlag das Team bei den Cavemann in Villingedorf mit 17 : 21.\

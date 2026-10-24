@@ -1,6 +1,7 @@
 ---
 title: "Nichts zu holen beim Tabellenführer in Karlsruhe"
 date: 2024-09-17
+author: "Michael Wittemann"
 image: "/images/news/2024/09/bild-2.jpg"
 ---
 

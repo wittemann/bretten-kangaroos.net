@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit erster Saison Niederlage beim Tabellenführer"
 date: 2009-05-11
+author: "Michael Wittemann"
 ---
 
 Das Kangaroos Baseball Team musste am Samstag beim Auswärtsspiel, gegen Tabellenführer Ellwangen Elks, die erste Saisonniederlage hinnehmen.\

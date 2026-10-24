@@ -1,6 +1,7 @@
 ---
 title: "Starkes Auftreten der Bretten Kangaroos"
 date: 2019-05-12
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

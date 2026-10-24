@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos schlagen Kehl Mosquitos"
 date: 2005-08-29
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

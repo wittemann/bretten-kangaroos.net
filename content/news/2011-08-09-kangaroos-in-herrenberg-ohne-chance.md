@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos in Herrenberg ohne Chance"
 date: 2011-08-09
+author: "Martin Wittemann"
 team: "herren"
 ---
 

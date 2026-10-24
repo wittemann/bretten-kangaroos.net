@@ -1,6 +1,7 @@
 ---
 title: "Pechsträhne zum Saisonbeginn"
 date: 2007-05-14
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

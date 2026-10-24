@@ -1,6 +1,7 @@
 ---
 title: "Information zur Training und Spielbetrieb"
 date: 2020-05-01
+author: "Bryan Schaffer"
 ---
 
 Liebe Mitglieder, Eltern und Freunde der Bretten Kangaroos,

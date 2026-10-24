@@ -1,6 +1,7 @@
 ---
 title: "Einladung zum Xmas-Ball 2024"
 date: 2024-10-06
+author: "Michael Wittemann"
 image: "/images/news/2024/10/bk-poster-christmas-ball-2024-v3.jpg"
 ---
 

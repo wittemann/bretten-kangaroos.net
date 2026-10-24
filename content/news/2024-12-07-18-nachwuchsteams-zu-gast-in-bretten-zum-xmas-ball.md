@@ -1,6 +1,7 @@
 ---
 title: "18 Nachwuchsteams zu Gast in Bretten zum Xmas-Ball"
 date: 2024-12-07
+author: "Michael Wittemann"
 image: "/images/news/2024/12/vorbericht-bild.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos erobern Tabellenführung in Schwetzingen"
 date: 2004-07-12
+author: "Michael Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos kommen in Fahrt"
 date: 2007-06-26
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

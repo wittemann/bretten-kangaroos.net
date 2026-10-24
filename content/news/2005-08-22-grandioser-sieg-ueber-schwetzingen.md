@@ -1,6 +1,7 @@
 ---
 title: "Grandioser Sieg über Schwetzingen"
 date: 2005-08-22
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

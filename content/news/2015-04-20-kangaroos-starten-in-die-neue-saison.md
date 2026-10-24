@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos  starten in die neue Saison"
 date: 2015-04-20
+author: "Michael Wittemann"
 ---
 
 Mit zwei Teams treten die Baseballer der Bretten Kangaroos 2015 im offiziellen Spielbetrieb des Baden-Württembergischen Baseball- und Softball-Verbandes an. Zum einen mit einem Jugend-Team für Mädchen und Jungen im Alter von 10 -16 Jahren und zum anderen mit einem Herren-Team.

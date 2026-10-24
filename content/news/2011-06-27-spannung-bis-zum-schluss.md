@@ -1,6 +1,7 @@
 ---
 title: "Spannung bis zum Schluss"
 date: 2011-06-27
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Außerordentliche Mitgliederversammlung 2011"
 date: 2011-08-25
+author: "Bryan Schaffer"
 ---
 
 Liebe Kangaroos,\

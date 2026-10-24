@@ -1,6 +1,7 @@
 ---
 title: "BWBSV INDOOR MEISTERSCHAFT"
 date: 2006-02-28
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

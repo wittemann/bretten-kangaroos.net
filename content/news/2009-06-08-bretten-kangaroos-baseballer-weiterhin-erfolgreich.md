@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos Baseballer weiterhin erfolgreich"
 date: 2009-06-08
+author: "Bryan Schaffer"
 ---
 
 Am gestrigen Sonntag trat die erste Herrenmannschaft der Bretten Kangaroos gegen die Mannheim Tornados in deren Heimatstadt an.

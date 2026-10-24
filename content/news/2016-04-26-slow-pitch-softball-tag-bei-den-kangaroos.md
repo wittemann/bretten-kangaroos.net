@@ -1,6 +1,7 @@
 ---
 title: "Slow-Pitch Softball Tag bei den Kangaroos"
 date: 2016-04-26
+author: "Michael Wittemann"
 old_team: "Slow Pitch"
 ---
 

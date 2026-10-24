@@ -1,6 +1,7 @@
 ---
 title: "BKIL-Spieltag: Triumph der Bad News Kangaroos & Ehrung des Nachwuchses"
 date: 2025-10-04
+author: "Michael Wittemann"
 image: "/images/news/2025/10/nachwuchs-ehrung.jpg"
 ---
 

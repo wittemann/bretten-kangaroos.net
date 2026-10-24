@@ -1,6 +1,7 @@
 ---
 title: "Sommerfeld führt Kangaroos zum 10:1 Sieg über Neuenburg"
 date: 2014-04-28
+author: "Michael Wittemann"
 ---
 
 Mit einem gekonnten "first pitch" eröffnete Michael Stiller, 1. Vorstand des Fördervereins des VfB Bretten, die Saison 2014 für das Herren Team der Kangaroos.

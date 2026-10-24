@@ -1,6 +1,7 @@
 ---
 title: "Trainingsfreie Zeit"
 date: 2018-08-02
+author: "Andrea Klein"
 ---
 
 Liebe Baseballfreunde, Baseballinteressierten,

@@ -1,6 +1,7 @@
 ---
 title: "Erstes XMas-Ball Turnier  begeistert Teilnehmer und Zuschauer"
 date: 2024-12-17
+author: "Michael Wittemann"
 image: "/images/news/2024/12/dsc-4025.jpg"
 ---
 

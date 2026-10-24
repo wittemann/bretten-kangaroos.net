@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos schaffen den Klassenerhalt"
 date: 2010-09-22
+author: "Martin Wittemann"
 team: "herren"
 ---
 

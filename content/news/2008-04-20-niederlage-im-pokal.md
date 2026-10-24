@@ -1,6 +1,7 @@
 ---
 title: "Niederlage im Pokal"
 date: 2008-04-20
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos lassen Tür zur Landesligameisterschaft geöffnet"
 date: 2015-08-24
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

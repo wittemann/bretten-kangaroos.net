@@ -1,6 +1,7 @@
 ---
 title: "Baseball WM in Deutschland"
 date: 2008-11-18
+author: "Martin Wittemann"
 ---
 
 Bei der kommenden Baseball Weltmeisterschaft wird unter anderen auch in Deutschland gespielt. Dies ist sicher für jeden Baseballfan ein muss. Der Austragungsort wird Regensburg sein. Die dort ansässigen Legionäre sind eigens dafür dabei ihr Stadion für 1,3 Millionen ? umzubauen und es für die WM fit zu machen. Wer Interesse an dem Umbaumaßnahmen hat kann sich auf der Seite der Legionäre informieren. Dort sind unter anderem auch Bilder und Videos des Stadionbaus zu sehen. ([http://www.legionaere.de](http://www.legionaere.de/))\

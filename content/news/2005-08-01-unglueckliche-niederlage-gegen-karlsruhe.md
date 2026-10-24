@@ -1,6 +1,7 @@
 ---
 title: "Unglückliche Niederlage gegen Karlsruhe"
 date: 2005-08-01
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

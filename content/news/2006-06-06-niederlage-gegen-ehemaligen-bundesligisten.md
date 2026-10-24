@@ -1,6 +1,7 @@
 ---
 title: "Niederlage gegen ehemaligen Bundesligisten"
 date: 2006-06-06
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

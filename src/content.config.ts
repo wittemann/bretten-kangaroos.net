@@ -27,6 +27,7 @@ const newsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
+    author: optionalString,
     // no team = Vereins-News, shown under "Alle" only
     team: z.enum(teamSlugs).or(z.literal("")).optional().transform((t) => t || undefined),
     // name of a team that no longer exists (old posts), shown as a label

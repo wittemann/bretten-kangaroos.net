@@ -1,6 +1,7 @@
 ---
 title: "Grandioser Sieg für die Kangaroos Schüler"
 date: 2018-04-25
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

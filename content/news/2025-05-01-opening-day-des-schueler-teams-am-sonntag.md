@@ -1,6 +1,7 @@
 ---
 title: "Opening Day des Schüler Teams am Sonntag"
 date: 2025-05-01
+author: "Michael Wittemann"
 image: "/images/news/2025/05/spieltag-2-vorbericht.jpg"
 ---
 

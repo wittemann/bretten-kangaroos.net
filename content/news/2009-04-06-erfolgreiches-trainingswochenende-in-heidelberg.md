@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreiches Trainingswochenende in Heidelberg"
 date: 2009-04-06
+author: "Michael Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "❄️ Baseball im Winter – bei den Bretten Kangaroos! ⚾"
 date: 2025-11-02
+author: "Michael Wittemann"
 image: "/images/news/2025/11/wintertraining.png"
 ---
 

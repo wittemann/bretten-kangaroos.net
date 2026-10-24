@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos unterliegen beim Spitzenreiter"
 date: 2011-07-18
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos verspielen Führung"
 date: 2010-06-07
+author: "Martin Wittemann"
 team: "herren"
 ---
 

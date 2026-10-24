@@ -1,6 +1,7 @@
 ---
 title: "Die kleinen Kangaroos machen auch im Winter große Sprünge"
 date: 2017-03-12
+author: "Michael Wittemann"
 ---
 
 Wer denkt Baseball wird nur im Sommer gespielt, der liegt falsch! Vor allem der Kangaroos Nachwuchs war auch über die Wintermonate sehr aktiv.

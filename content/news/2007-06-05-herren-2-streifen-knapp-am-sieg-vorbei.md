@@ -1,6 +1,7 @@
 ---
 title: "Herren 2 streifen knapp am Sieg vorbei"
 date: 2007-06-05
+author: "Bryan Schaffer"
 old_team: "Herren 2"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Walk-Off 2RBI Double von Isaia Lauvai bring den Sieg im 10 Inning"
 date: 2015-05-04
+author: "Michael Wittemann"
 team: "herren"
 ---
 

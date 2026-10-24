@@ -1,6 +1,7 @@
 ---
 title: "mitten in der Vorbereitung"
 date: 2006-03-16
+author: "Martin Wittemann"
 team: "herren"
 ---
 

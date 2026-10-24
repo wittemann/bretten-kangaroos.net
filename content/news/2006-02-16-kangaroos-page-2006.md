@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Page 2006"
 date: 2006-02-16
+author: "Martin Wittemann"
 ---
 
 Auch für diese Saison hat sich die Kangaroos Page ein wenig verändert. Im, für den Benuter der Webseite sichtbaren Bereich hat sich nicht viel getan. Jedoch auch dies soll einmal hier erwähnt werden.

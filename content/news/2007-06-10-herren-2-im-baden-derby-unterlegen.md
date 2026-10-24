@@ -1,6 +1,7 @@
 ---
 title: "Herren 2 im \"Baden-Derby\" unterlegen"
 date: 2007-06-10
+author: "Bryan Schaffer"
 old_team: "Herren 2"
 ---
 

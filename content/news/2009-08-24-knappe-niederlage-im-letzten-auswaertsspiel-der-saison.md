@@ -1,6 +1,7 @@
 ---
 title: "Knappe Niederlage im letzten Auswärtsspiel der Saison"
 date: 2009-08-24
+author: "Martin Wittemann"
 ---
 
 Zum letzten Auswärtsspiel der Saison mussten die Kangaroos an die französische Grenze nach Kehl reisen. Der alt bekannte Gegner aus Kehl ist in der Tabelle weit hinter den Kangaroos, wurden jedoch nicht unterschätzt. Schließlich taten sich die Kangaroos schon immer schwer gegen die Mannschaft aus Kehl.

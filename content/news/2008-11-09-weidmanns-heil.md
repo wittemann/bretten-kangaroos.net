@@ -1,6 +1,7 @@
 ---
 title: "Weidmanns Heil!"
 date: 2008-11-09
+author: "Bryan Schaffer"
 ---
 
 Die Bretten Kangaroos machten auch dieses Jahr beim 42. Vereinsschiessen des Brettener Schützenvereins KKS-1923 mit. An solch einem Turnier nehmen nur nicht-aktive Schützen teil. Am Sonntag, dem 19.10.08, gingen zwei Teams der Baseballer ? ausgerüstet mit Munition und einem scharfen Auge ? zum bereits 9. Mal zum Kleinkaliberschießen.

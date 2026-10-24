@@ -1,6 +1,7 @@
 ---
 title: "Das Incrediball-Turnier ist zurück! Der Softball-Spaß für Dich und dein Team. Jetzt anmelden!"
 date: 2025-07-29
+author: "Robin Hinze"
 old_team: "Incrediball"
 image: "/images/news/2025/07/incrediball-turnier-2025.jpg"
 ---

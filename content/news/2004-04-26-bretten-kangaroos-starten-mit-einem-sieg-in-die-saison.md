@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos starten mit einem Sieg in die Saison"
 date: 2004-04-26
+author: "Michael Wittemann"
 ---
 
 Zum Auftakt der Baseball Saison 2004 warf der Vortand unseres Hauptvereins VFB Bretten Herr Glaser einen gekonnten „first pitch“ mit dem traditionell in eine neue Saison gestartet wird. Nachdem dann das Kangaroos Team 2004 den zahlreich erschienen Fans vorgestellt wurde ging es auch schon Los. Mit einem schönen „double play“ (zwei aus in einem Spielzug) durch David Opatic und Bill Butler zeigten die Kangaroos dem Gegner aus Aalen auch gleich wer Herr im Hause ist.

@@ -1,6 +1,7 @@
 ---
 title: "Auch im Winter wird Baseball gespielt!"
 date: 2022-11-13
+author: "Michael Wittemann"
 ---
 
 Das T-Ball und Schüler Team der Bretten Kangaroos trainiert in der Off-Season (Winter) zusammen und hat mit dem Hallentraining begonnen. Gerade für die kleineren ist Baseball in der Halle sehr gut geeignet. Dort werden über den Winter die Grundlagen für die nächste Sommersaison gelegt und durch die Teilnahme an Hallenturnier wird auch weitere Spielpraxis gesammelt.

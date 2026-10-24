@@ -1,6 +1,7 @@
 ---
 title: "Linda Mößner auf Sichtung!"
 date: 2006-04-04
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

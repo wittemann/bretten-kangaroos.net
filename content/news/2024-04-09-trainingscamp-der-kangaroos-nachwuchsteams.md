@@ -1,6 +1,7 @@
 ---
 title: "Trainingscamp der Kangaroos Nachwuchsteams"
 date: 2024-04-09
+author: "Michael Wittemann"
 image: "/images/news/2024/04/img-e2499.jpg"
 ---
 

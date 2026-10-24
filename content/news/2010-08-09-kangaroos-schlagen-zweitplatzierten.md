@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos schlagen Zweitplatzierten"
 date: 2010-08-09
+author: "Martin Wittemann"
 team: "herren"
 ---
 

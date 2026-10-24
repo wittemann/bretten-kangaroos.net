@@ -1,6 +1,7 @@
 ---
 title: "Vorbildliche Jugendmannschaft"
 date: 2005-06-07
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

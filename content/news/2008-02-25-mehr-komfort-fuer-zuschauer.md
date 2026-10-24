@@ -1,6 +1,7 @@
 ---
 title: "Mehr Komfort für Zuschauer"
 date: 2008-02-25
+author: "Bryan Schaffer"
 ---
 
 Der Platz muss bis zum Saisonstart in Ordnung sein. Aus diesem Anlass haben die Kangaroos-Mitglieder in den vergangenen Wochen mit Restauration, Aufräumarbeiten und der Umgestaltung unseres Baseballfeldes begonnen. Bei der Umgestaltung der Sportanlage ging es in erster Linie um das Wohle unserer Zuschauer.\

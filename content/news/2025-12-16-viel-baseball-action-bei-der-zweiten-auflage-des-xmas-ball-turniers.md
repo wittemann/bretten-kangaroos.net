@@ -1,6 +1,7 @@
 ---
 title: "Viel Baseball-Action bei der zweiten Auflage des XMas-Ball Turniers"
 date: 2025-12-16
+author: "Michael Wittemann"
 image: "/images/news/2025/12/img-20251216-wa0034.jpg"
 ---
 

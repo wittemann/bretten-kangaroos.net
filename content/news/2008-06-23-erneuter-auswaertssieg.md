@@ -1,6 +1,7 @@
 ---
 title: "Erneuter Auswärtssieg"
 date: 2008-06-23
+author: "Martin Wittemann"
 team: "herren"
 ---
 

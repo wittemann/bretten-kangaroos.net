@@ -1,6 +1,7 @@
 ---
 title: "Aufholjagt nach unglücklichem Start"
 date: 2008-05-05
+author: "Bryan Schaffer"
 old_team: "Damen"
 ---
 

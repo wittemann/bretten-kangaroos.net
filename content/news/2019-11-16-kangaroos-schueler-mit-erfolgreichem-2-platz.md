@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Schüler mit erfolgreichem 2. Platz"
 date: 2019-11-16
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Herren mit zweitem Sieg im zweiten Spiel"
 date: 2004-05-10
+author: "Michael Wittemann"
 ---
 
 Im zweiten Saisonspiel gegen die Brewers aus Freiberg konnten die Kangaroos Herren in einem spannenden und dramatischen Spiel ihren zweiten Sieg feiern. Gleich zu beginn des Spiel leistete sich die Verteidigung einen Fehler durch den die Gäste aus Freiberg auch gleich mit 2 : 0 in Führung gehen konnten. Doch dies sollte an diesem Spieltag der letzte Fehler des Kangaroos Teams bleiben. Im weiteren verlauf des Spiel wurde hervorragende Verteidigung ohne Fehler gespielt und auch das pitching von Henning Sommerfeld war wieder einmal herausragend.

@@ -1,6 +1,7 @@
 ---
 title: "T-Ball Turnier in Ladenburg"
 date: 2019-11-15
+author: "Bryan Schaffer"
 team: "t-ball"
 ---
 

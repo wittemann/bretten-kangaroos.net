@@ -1,6 +1,7 @@
 ---
 title: "Knappe Partie in Schwetzingen"
 date: 2007-07-11
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

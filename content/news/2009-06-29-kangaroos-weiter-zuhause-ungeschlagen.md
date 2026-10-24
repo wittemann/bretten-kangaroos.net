@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos weiter Zuhause ungeschlagen"
 date: 2009-06-29
+author: "Martin Wittemann"
 ---
 
 So viel schon einmal vorab, auch im dritten Heimspiel der Kangaroos blieb das Team um Jens-Uwe Otte ungeschlagen. Nun aber der Reihe nach.

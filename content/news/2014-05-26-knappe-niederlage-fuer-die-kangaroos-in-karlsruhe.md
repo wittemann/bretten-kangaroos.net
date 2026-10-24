@@ -1,6 +1,7 @@
 ---
 title: "Knappe Niederlage für die Kangaroos in Karlsruhe"
 date: 2014-05-26
+author: "Michael Wittemann"
 team: "herren"
 ---
 

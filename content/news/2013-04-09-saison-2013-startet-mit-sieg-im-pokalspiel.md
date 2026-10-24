@@ -1,6 +1,7 @@
 ---
 title: "Saison 2013 startet mit Sieg im Pokalspiel"
 date: 2013-04-09
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Gelungenes Turnier der Kangaroos"
 date: 2006-09-04
+author: "Bryan Schaffer"
 ---
 
 Am vergangenen Samstag fand das alljährliche Turnier der Bretten Kangaroos statt, bei dem sich alle Begeisterten für den Sport in einem Wettbewerb mit zwölf Mannschaften beweisen konnten. Da das Wetter gegen alle Erwartungen sehr gut mitspielte, konnten pünktlich um neun Uhr die ersten Spiele um den Gruppensieg beginnen. Auch wenn  mancherorts sehr ehrgeizig gespielt wurde, sah man allen Beteiligten den Spielspaß deutlich an. Die Spiele waren dieses Jahr deutlich spannender als in den Jahren zuvor, da die unterschiedlichen Stärken der Mannschaften fast auf gleichem Niveau waren.

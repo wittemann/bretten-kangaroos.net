@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos Intra-League (BKIL) startet am 30. März in die Saison 2024"
 date: 2024-03-23
+author: "Michael Wittemann"
 image: "/images/news/2024/03/bild.jpg"
 ---
 

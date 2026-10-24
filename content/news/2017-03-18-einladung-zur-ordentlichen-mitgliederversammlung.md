@@ -1,6 +1,7 @@
 ---
 title: "Einladung zur ordentlichen Mitgliederversammlung"
 date: 2017-03-18
+author: "Michael Wittemann"
 ---
 
 Die Abteilungsleitung lädt alle Mitglieder zu ordentlichen Mitgliederversammmlung **am 07. April um 19:30 Uhr im Clubhaus des VFB-Bretten** ein.

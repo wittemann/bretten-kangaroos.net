@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos schlagen zurück"
 date: 2006-08-14
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

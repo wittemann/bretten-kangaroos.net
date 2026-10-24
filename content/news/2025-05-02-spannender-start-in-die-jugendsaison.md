@@ -1,6 +1,7 @@
 ---
 title: "Spannender Start in die Jugendsaison"
 date: 2025-05-02
+author: "Markus Rittmann"
 image: "/images/news/2025/05/dsc-0307.jpg"
 ---
 

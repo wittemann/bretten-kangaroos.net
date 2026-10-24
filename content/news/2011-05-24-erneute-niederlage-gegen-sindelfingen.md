@@ -1,6 +1,7 @@
 ---
 title: "Erneute Niederlage gegen Sindelfingen"
 date: 2011-05-24
+author: "Martin Wittemann"
 team: "herren"
 ---
 

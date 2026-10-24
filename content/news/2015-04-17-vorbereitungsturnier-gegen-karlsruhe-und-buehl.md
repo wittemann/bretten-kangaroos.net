@@ -1,6 +1,7 @@
 ---
 title: "Vorbereitungsturnier gegen Karlsruhe und Bühl"
 date: 2015-04-17
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

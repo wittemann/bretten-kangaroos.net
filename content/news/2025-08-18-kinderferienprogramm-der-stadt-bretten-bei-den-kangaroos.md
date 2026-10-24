@@ -1,6 +1,7 @@
 ---
 title: "Kinderferienprogramm der Stadt Bretten bei den Kangaroos"
 date: 2025-08-18
+author: "Markus Rittmann"
 image: "/images/news/2025/08/0q4a0091.jpg"
 ---
 

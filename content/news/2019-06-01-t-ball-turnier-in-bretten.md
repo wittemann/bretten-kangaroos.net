@@ -1,6 +1,7 @@
 ---
 title: "T-Ball Turnier in Bretten"
 date: 2019-06-01
+author: "Bryan Schaffer"
 team: "t-ball"
 ---
 

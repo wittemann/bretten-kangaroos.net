@@ -1,6 +1,7 @@
 ---
 title: "Saisoneröffnung am kommenden Sonntag 22.04. ab 16 Uhr mit BBQ"
 date: 2018-04-16
+author: "Bryan Schaffer"
 ---
 
 Saisoneröffnung auf Baseballfeld passend zur Start der Grillsaison

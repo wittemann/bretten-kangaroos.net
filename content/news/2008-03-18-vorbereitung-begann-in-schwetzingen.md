@@ -1,6 +1,7 @@
 ---
 title: "Vorbereitung begann in Schwetzingen"
 date: 2008-03-18
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Platzumbau ist bereits in vollem Gange"
 date: 2015-08-15
+author: "Michael Wittemann"
 ---
 
 Der Umbau unseres Hartplatz zu einem Kunstrasenplatz ist bereits in vollem Gange. Der geplante Bauabschluss ist Ende Oktober .

@@ -1,6 +1,7 @@
 ---
 title: "Sorry Boys - Girls Only"
 date: 2007-02-07
+author: "Bryan Schaffer"
 old_team: "Softball-Juniors"
 ---
 

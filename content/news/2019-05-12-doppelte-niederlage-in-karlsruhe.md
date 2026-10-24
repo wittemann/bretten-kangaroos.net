@@ -1,6 +1,7 @@
 ---
 title: "Doppelte Niederlage in Karlsruhe"
 date: 2019-05-12
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

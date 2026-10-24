@@ -1,6 +1,7 @@
 ---
 title: "Eröffnungsfeier im Baseballstadion"
 date: 2006-04-17
+author: "Bryan Schaffer"
 ---
 
 Die Vorbereitungsphase der Bretten Kangaroos, vor dem Saisonstart 2006 neigt sich ihrem Ende zu. Der Verein, dessen 1. Herrenmannschaft nun im zweiten Jahr in der Verbandsliga spielt geht jetzt mit sechs Teams in den Ligabetrieb. Diese Saison kommt eine 2. Herrenmannschaft, sowie ein Fun-Team für Jedermann und eine T-Ball Mannschaft für Kinder ab 4 Jahren hinzu, bei beiden wird nur einmal pro Saison ein Turnier stattfinden.

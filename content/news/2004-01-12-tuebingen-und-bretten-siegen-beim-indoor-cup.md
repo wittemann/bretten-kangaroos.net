@@ -1,6 +1,7 @@
 ---
 title: "Tübingen und Bretten siegen beim Indoor Cup"
 date: 2004-01-12
+author: "Martin Wittemann"
 team: "jugend"
 ---
 

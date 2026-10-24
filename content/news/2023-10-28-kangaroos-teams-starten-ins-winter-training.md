@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Teams starten ins Winter Training"
 date: 2023-10-28
+author: "Michael Wittemann"
 ---
 
 Nach der Saison ist vor der Saison und so starten die Nachwuchsteams der Kangaroos nach den Herbstferien in die Wintersaison.

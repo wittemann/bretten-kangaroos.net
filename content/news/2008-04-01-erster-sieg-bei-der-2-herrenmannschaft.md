@@ -1,6 +1,7 @@
 ---
 title: "Erster Sieg bei der 2.Herrenmannschaft"
 date: 2008-04-01
+author: "Bryan Schaffer"
 old_team: "Herren 2"
 ---
 

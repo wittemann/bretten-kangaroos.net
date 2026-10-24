@@ -1,6 +1,7 @@
 ---
 title: "Mit vier Teams beim Römercup in Ladenburg vertreten"
 date: 2024-11-21
+author: "Michael Wittemann"
 image: "/images/news/2024/11/whatsapp-bild-2024-11-17-um-09-10-45-fdba58b8.jpg"
 ---
 

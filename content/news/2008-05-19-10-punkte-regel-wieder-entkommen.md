@@ -1,6 +1,7 @@
 ---
 title: "10-Punkte-Regel wieder entkommen"
 date: 2008-05-19
+author: "Bryan Schaffer"
 old_team: "Damen"
 ---
 

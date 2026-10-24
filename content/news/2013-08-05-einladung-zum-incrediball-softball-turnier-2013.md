@@ -1,6 +1,7 @@
 ---
 title: "Einladung zum Incrediball-Softball-Turnier 2013"
 date: 2013-08-05
+author: "Martin Wittemann"
 ---
 
 Wie jedes Jahr veranstalten die Bretten Kangaroos auch in diesem Jahr wieder das bekannte Incrediball\*-Turnier für jedermann\*\*.

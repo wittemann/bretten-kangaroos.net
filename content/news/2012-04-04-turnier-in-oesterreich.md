@@ -1,6 +1,7 @@
 ---
 title: "Turnier in Österreich"
 date: 2012-04-04
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

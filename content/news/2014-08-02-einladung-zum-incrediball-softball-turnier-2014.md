@@ -1,6 +1,7 @@
 ---
 title: "Einladung zum Incrediball-Softball-Turnier 2014"
 date: 2014-08-02
+author: "Martin Wittemann"
 ---
 
 Hallo liebe Freunde des Slowpitch-Softballs,

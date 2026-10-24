@@ -1,6 +1,7 @@
 ---
 title: "Neues Kleid für die Kangaroos Webseite"
 date: 2009-02-01
+author: "Martin Wittemann"
 ---
 
 Es ist schon fast zur Tradition geworden, dass es jedes Jahr Änderungen des Designs der Kangaroos-Webseite gibt, auch wenn es teils nur kleinere Veränderungen waren. Dieses Jahr ist die Veränderung jedoch sichtlich größer.\

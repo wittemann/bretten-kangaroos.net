@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos-Baseballer unterliegen Heidelberg deutlich"
 date: 2013-07-18
+author: "Martin Wittemann"
 ---
 
 Beim letzten Heimspiel der Saison gegen den Tabellennachbarn aus Heidelberg mussten die Baseballer der Bretten Kangaroos eine deutliche Niederlage einstecken.

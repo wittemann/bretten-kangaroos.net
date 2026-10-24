@@ -1,6 +1,7 @@
 ---
 title: "Einladung zum Incrediball-Softball-Turnier 2023"
 date: 2023-07-20
+author: "Marco Kremser"
 old_team: "Incrediball"
 ---
 

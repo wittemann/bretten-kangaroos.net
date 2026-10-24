@@ -1,6 +1,7 @@
 ---
 title: "Kein Glück in Karlsruhe - Cougars holen Sieg im Nachschlag"
 date: 2021-07-30
+author: "Kerim Murtaza"
 team: "herren"
 ---
 

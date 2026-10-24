@@ -1,6 +1,7 @@
 ---
 title: "Hitzeschlacht in Reutlingen: Bretten Kangaroos unterliegen den Woodpeckers"
 date: 2025-06-24
+author: "Jens-Uwe Otte"
 image: "/images/news/2025/06/foto-1.jpg"
 ---
 

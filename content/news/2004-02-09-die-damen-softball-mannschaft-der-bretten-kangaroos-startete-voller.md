@@ -1,6 +1,7 @@
 ---
 title: "Die Damen-Softball Mannschaft der Bretten Kangaroos startete voller Zuversicht in die neue Saison"
 date: 2004-02-09
+author: "Michael Wittemann"
 old_team: "Damen"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "In the heat of Mannheim - Erfolgreiche Saisonvorbereitung abgeschlossen"
 date: 2018-04-10
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Vorbereitungsspiel gegen Schwetzingen Braves2"
 date: 2008-03-17
+author: "Bryan Schaffer"
 old_team: "Herren 2"
 ---
 

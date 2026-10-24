@@ -1,6 +1,7 @@
 ---
 title: "Begegnung der Spitzenreiter endet mit deutlichem Ergebnis"
 date: 2012-08-21
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Baseball trifft Golf - Roos Jugendabteilung im Golfclub"
 date: 2025-08-05
+author: "Markus Rittmann"
 image: "/images/news/2025/08/2025-08-02-19-32-18-000.jpg"
 ---
 

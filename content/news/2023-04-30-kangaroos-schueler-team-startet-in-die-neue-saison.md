@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Schüler Team startet in die neue Saison"
 date: 2023-04-30
+author: "Michael Wittemann"
 team: "schueler"
 ---
 

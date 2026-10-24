@@ -1,6 +1,7 @@
 ---
 title: "Spielplan 05 - Schüler"
 date: 2005-03-04
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

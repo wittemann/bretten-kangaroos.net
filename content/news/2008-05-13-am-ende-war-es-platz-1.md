@@ -1,6 +1,7 @@
 ---
 title: "Am Ende war es Platz 1"
 date: 2008-05-13
+author: "Martin Wittemann"
 team: "herren"
 ---
 

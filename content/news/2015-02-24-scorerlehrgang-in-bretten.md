@@ -1,6 +1,7 @@
 ---
 title: "Scorerlehrgang in Bretten"
 date: 2015-02-24
+author: "Bryan Schaffer"
 ---
 
 Am vergangenen Wochenende wurde der jährliche Scorerlehrgang des Baden-Württembergischen Baseballverbands in der Classics-Sportsbar in Bretten ausgetragen. Der Statistiklehrgangen, an dem Teilnehmer von verschiedensten Baseballvereinen aus Baden-Württemberg vertreten waren, startete Freitag Abend und endete mit einer Prüfung am Sonntag.

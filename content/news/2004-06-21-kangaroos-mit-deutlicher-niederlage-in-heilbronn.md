@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit deutlicher Niederlage in Heilbronn"
 date: 2004-06-21
+author: "Michael Wittemann"
 ---
 
 Mit einem Sieg gegen das bekanntermaßen immer sehr offensiv Starke Team der Pirates aus Heilbronn wollten die Kangaroos Herren einen weiteren Schritt in Richtung Tabellenspitze unternehmen.

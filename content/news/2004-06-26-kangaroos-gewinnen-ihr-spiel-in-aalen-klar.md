@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos gewinnen ihr Spiel in Aalen klar"
 date: 2004-06-26
+author: "Michael Wittemann"
 ---
 
 Am vergangenen Sonntag machte sich das Baseball Herren Team der Kangaroos auf den weiten weg nach Aalen um dort gegen den letzten der Tabelle, die Aalen Strikers anzutreten. Die Vorgabe von Trainer Andreas Bjelicic war das Spiel auf keinen Fall auf die leichte Schulter zu nehmen, denn mit einer weiteren Niederlage wären alle Chancen auf den Aufstieg dahin.

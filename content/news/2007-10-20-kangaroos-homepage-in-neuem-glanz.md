@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Homepage in neuem Glanz"
 date: 2007-10-20
+author: "Martin Wittemann"
 ---
 
 Für die kommenden Saison wurde die Webseite der Kangaroos komplett überarbeitet und das Ergebnis siehst du hier.\

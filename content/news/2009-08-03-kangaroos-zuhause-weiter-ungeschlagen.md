@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos zuhause weiter ungeschlagen"
 date: 2009-08-03
+author: "Martin Wittemann"
 team: "herren"
 ---
 

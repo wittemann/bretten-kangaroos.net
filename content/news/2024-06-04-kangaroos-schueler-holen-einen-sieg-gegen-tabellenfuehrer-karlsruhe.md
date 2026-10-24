@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Schüler holen einen Sieg gegen Tabellenführer Karlsruhe"
 date: 2024-06-04
+author: "Michael Wittemann"
 image: "/images/news/2024/06/bild-2.jpg"
 ---
 

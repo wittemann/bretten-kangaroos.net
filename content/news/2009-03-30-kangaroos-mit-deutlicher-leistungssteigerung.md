@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit deutlicher Leistungssteigerung"
 date: 2009-03-30
+author: "Michael Wittemann"
 team: "herren"
 ---
 

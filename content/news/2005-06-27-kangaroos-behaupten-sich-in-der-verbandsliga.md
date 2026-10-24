@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos behaupten sich in der Verbandsliga"
 date: 2005-06-27
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

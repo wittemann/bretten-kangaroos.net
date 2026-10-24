@@ -1,6 +1,7 @@
 ---
 title: "Double Header der Jugend in Heidelberg: Knappes Spiel, kein Happy End"
 date: 2025-07-15
+author: "Markus Rittmann"
 image: "/images/news/2025/07/img-4731-1.jpg"
 ---
 

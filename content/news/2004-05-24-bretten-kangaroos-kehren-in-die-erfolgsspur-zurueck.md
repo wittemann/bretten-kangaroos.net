@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos kehren in die Erfolgsspur zurück"
 date: 2004-05-24
+author: "Michael Wittemann"
 ---
 
 Nach der ernüchternden Heimniederlage noch vor einer Woche gegen Schwetzingen war das Herren Team der Kangaroos beim Spiel gegen die Schwäbisch Hall Renegades auf wieder Gutmachung aus.

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos gewinnen auch das zweite Spiel der kleinen Vorbereitungsserie gegen Worms"
 date: 2015-03-23
+author: "Michael Wittemann"
 team: "herren"
 ---
 

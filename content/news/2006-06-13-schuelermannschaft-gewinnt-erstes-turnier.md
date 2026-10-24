@@ -1,6 +1,7 @@
 ---
 title: "Schülermannschaft gewinnt erstes Turnier"
 date: 2006-06-13
+author: "Bryan Schaffer"
 old_team: "Slow Pitch"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos im Pokal und in der Liga erfolgreich"
 date: 2009-05-04
+author: "Michael Wittemann"
 ---
 
 Am ersten Mai mussten die Kangaroos-Baseballer im Pokal nach Dornstadt bei Ulm reisen. Dort übernahm pitcher Raphael Zippenfenig sofort das Kommando auf dem Werferhügel und ließ den gegnerischen Schlagmännern keine Chance Punkte zu machen.

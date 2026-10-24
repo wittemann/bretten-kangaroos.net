@@ -1,6 +1,7 @@
 ---
 title: "Raubritter zu Gast beim Schüler Team"
 date: 2024-06-11
+author: "Michael Wittemann"
 image: "/images/news/2024/06/spieltag-6-vorbericht.jpg"
 ---
 

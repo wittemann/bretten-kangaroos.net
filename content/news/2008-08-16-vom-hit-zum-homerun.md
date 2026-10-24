@@ -1,6 +1,7 @@
 ---
 title: "Vom Hit zum Homerun"
 date: 2008-08-16
+author: "Bryan Schaffer"
 ---
 
 Die Bretten Kangaroos nahmen in diesem Jahr mit einem Schnuppertraining am Brettener Ferienprogramm teil. Die Veranstaltung fand am 15.08.08 auf der heimischen Baseballanlage in Diedelsheim statt.\

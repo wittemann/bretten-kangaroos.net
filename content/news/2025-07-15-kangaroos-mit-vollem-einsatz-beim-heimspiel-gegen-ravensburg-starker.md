@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit vollem Einsatz beim Heimspiel gegen Ravensburg – starker Teamgeist und Sommer-Atmosphäre"
 date: 2025-07-15
+author: "Jens-Uwe Otte"
 team: "herren"
 image: "/images/news/2025/07/herren-1-12-07-2025-14.jpg"
 ---

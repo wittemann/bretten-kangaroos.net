@@ -1,6 +1,7 @@
 ---
 title: "Saison Start bei den Kangaroos Junioren"
 date: 2004-04-26
+author: "Bryan Schaffer"
 old_team: "Junioren"
 ---
 

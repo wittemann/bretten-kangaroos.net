@@ -1,6 +1,7 @@
 ---
 title: "Kein leichtes Duell gegen Neuenburg"
 date: 2012-05-18
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Frohes Fest"
 date: 2008-12-24
+author: "Martin Wittemann"
 ---
 
 Die Kangaroos wünschen allen Besuchern der Webseite ein schönes Weihnachtsfest und einen guten Rutsch ins Jahr 2009!\

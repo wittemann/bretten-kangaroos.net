@@ -1,6 +1,7 @@
 ---
 title: "Geschwächte Kangaroos skalpiert"
 date: 2008-05-05
+author: "Martin Wittemann"
 team: "herren"
 ---
 

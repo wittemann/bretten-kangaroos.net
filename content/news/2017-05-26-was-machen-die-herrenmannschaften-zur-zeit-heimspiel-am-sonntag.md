@@ -1,6 +1,7 @@
 ---
 title: "Was machen die Herrenmannschaften zur Zeit? Heimspiel am Sonntag."
 date: 2017-05-26
+author: "Bryan Schaffer"
 ---
 
 Nachdem die erste Mannschaft verletzungsgeplagt eine Auszeit genommen hatte um sich neu aufzustellen steht am morgigen Samstag in Heidelberg eine wichtige Begegnung auf dem Spiel. In Abwesenheit von Trainer Sommerfeld trifft die Mannschaft auf die Erzrivalen Hedhgehogs die in der letzten Begegnung in Bretten gewannen.\

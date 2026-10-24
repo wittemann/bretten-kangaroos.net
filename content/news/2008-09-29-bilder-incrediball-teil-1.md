@@ -1,6 +1,7 @@
 ---
 title: "Bilder Incrediball Teil 1"
 date: 2008-09-29
+author: "Bryan Schaffer"
 ---
 
 Am vergangenen Samstag fand das 5. Incrediball Turnier der Bretten Kangaroos statt.

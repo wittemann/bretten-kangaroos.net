@@ -1,6 +1,7 @@
 ---
 title: "Jahresabschluss des Kangaroos Nachwuchs: Viel Spaß beim Baseball Biathlon mit Pizza"
 date: 2024-12-21
+author: "Michael Wittemann"
 image: "/images/news/2024/12/bild-4.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Gemeinsam in den Süden"
 date: 2012-04-22
+author: "Bryan Schaffer"
 ---
 
 Am vergangenen Samstag stand für die beiden Teams der Kangaroos eine weite Fahrt in den Süden an. Während das Jungendteam bereits ihr zweites Spiel der Saison bestritt, wollte die Herrenmannschaft bei den Neuenburg-Atomics mit einem Sieg in die Saison starten.

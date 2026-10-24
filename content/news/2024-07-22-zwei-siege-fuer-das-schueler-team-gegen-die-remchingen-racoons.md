@@ -1,6 +1,7 @@
 ---
 title: "Zwei Siege für das Schüler Team gegen die Remchingen Racoons"
 date: 2024-07-22
+author: "Michael Wittemann"
 image: "/images/news/2024/07/ijzv2242.jpg"
 ---
 

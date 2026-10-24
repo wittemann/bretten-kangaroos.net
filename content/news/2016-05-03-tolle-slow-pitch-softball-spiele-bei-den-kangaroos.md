@@ -1,6 +1,7 @@
 ---
 title: "Tolle Slow-Pitch Softball Spiele bei den Kangaroos"
 date: 2016-05-03
+author: "Michael Wittemann"
 ---
 
 Am Samstag trafen sich neben dem Slow-Pitch Softball Team der Kangaroos noch die Neuenheim Feldmeister und der Hörsaal-13 um auch das neue Softball Feld einzuweihen.

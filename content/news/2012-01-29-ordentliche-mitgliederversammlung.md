@@ -1,6 +1,7 @@
 ---
 title: "Ordentliche Mitgliederversammlung"
 date: 2012-01-29
+author: "Bryan Schaffer"
 ---
 
 Liebe Kangaroos,

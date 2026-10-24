@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos weiterhin Tabellenführer der Baseball Landesliga"
 date: 2015-05-18
+author: "Michael Wittemann"
 team: "herren"
 ---
 

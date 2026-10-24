@@ -4,7 +4,7 @@ import dateFormat from "@/lib/utils/dateFormat";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 import { render, type CollectionEntry } from "astro:content";
-import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi";
+import { BiCalendarEdit, BiCategoryAlt, BiUser } from "react-icons/bi";
 
 type Props = {
   post: CollectionEntry<"news">;
@@ -12,7 +12,7 @@ type Props = {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const { title, image, date } = post.data;
+const { title, image, date, author } = post.data;
 const team = postTeamLabel(post.data);
 ---
 
@@ -26,6 +26,14 @@ const team = postTeamLabel(post.data);
             <BiCalendarEdit className="mr-1 h-5 w-5 text-gray-600" />
             {dateFormat(date)}
           </li>
+          {
+            author && (
+              <li class="mx-3 flex items-center flex-wrap font-medium">
+                <BiUser className="mr-1 h-[18px] w-[18px] text-gray-600" />
+                {author}
+              </li>
+            )
+          }
           {
             team && (
               <li class="mx-3 flex items-center flex-wrap font-medium">

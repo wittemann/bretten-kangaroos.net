@@ -37,6 +37,7 @@ content:
     fields:
       - { name: title, label: Titel, type: string, required: true }
       - { name: date, label: Datum, type: date, required: true }
+      - { name: author, label: Autor, type: string, description: "Name, wie er unter dem Titel erscheinen soll" }
       - name: team
         label: Team
         type: select

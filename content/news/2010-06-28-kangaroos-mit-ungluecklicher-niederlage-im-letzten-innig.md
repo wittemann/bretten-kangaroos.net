@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit unglücklicher Niederlage im letzten Innig"
 date: 2010-06-28
+author: "Martin Wittemann"
 team: "herren"
 ---
 

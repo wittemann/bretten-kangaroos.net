@@ -1,6 +1,7 @@
 ---
 title: "Saisoneröffnung bei den Kangaroos am 23. April"
 date: 2017-04-14
+author: "Bryan Schaffer"
 ---
 
 Es ist wieder soweit: Nach der Winterpause, dem Hallentraining und der Saisonvorbereitung starten Brettens Baseballer in die Landesligasaison 2017. Dazu findet am Sonntag, 23. April ab 15 Uhr, das Eröffnungsspiel gegen die „Lokalrivalen“ Heidelberg Hedghehogs auf dem Kunstrasenfeld in Diedelsheim (Häringsäcker 1) statt. Wie immer gibt es ein buntes Rahmenprogramm, der Eröffnungswurf wird in diesem Jahr vom gebürtigen Amerikaner und Baseball-Aktivist Bernard Zimmermann aus Kraichtal durchgeführt, und Stadionsprecher Christian Pehle führt durch den Dschungel aus Spielregeln. Für das leibliche Wohl stehen neben Grillspezialitäten und Frittierten sowohl kühle Getränke, als auch Kaffe und Kuchen auf der Karte.

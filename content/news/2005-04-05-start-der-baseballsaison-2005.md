@@ -1,6 +1,7 @@
 ---
 title: "Start der Baseballsaison 2005"
 date: 2005-04-05
+author: "Bryan Schaffer"
 ---
 
 Nach dem Erfolgsjahr ´04 und dem erreichten Aufstieg in die Verbandsliga steht nun die neue Saison vor der Tür.

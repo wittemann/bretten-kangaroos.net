@@ -1,6 +1,7 @@
 ---
 title: "Trainingsspiel in Herrenberg"
 date: 2006-04-11
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

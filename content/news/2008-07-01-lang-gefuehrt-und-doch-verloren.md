@@ -1,6 +1,7 @@
 ---
 title: "Lang geführt und doch verloren"
 date: 2008-07-01
+author: "Bryan Schaffer"
 old_team: "Damen"
 ---
 

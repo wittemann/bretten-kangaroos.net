@@ -1,6 +1,7 @@
 ---
 title: "Das Spiel der Neuanfänge..."
 date: 2005-04-05
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

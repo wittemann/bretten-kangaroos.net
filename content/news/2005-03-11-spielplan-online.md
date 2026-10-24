@@ -1,6 +1,7 @@
 ---
 title: "Spielplan online"
 date: 2005-03-11
+author: "Martin Wittemann"
 team: "herren"
 ---
 

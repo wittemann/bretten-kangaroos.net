@@ -1,6 +1,7 @@
 ---
 title: "Deutschland vs. Australien"
 date: 2005-06-09
+author: "Martin Wittemann"
 ---
 
 ... die Zeit vergeht wie im Flug und schon in der nächsten Woche findet ein Baseballspiel der besonderen Art in Ladenburg statt.

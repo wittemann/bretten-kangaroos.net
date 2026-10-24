@@ -1,6 +1,7 @@
 ---
 title: "Mit Geduld zum ersten Heimsieg"
 date: 2011-05-30
+author: "Martin Wittemann"
 team: "herren"
 ---
 

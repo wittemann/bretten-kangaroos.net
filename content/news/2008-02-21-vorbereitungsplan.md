@@ -1,6 +1,7 @@
 ---
 title: "Vorbereitungsplan"
 date: 2008-02-21
+author: "Martin Wittemann"
 team: "herren"
 ---
 

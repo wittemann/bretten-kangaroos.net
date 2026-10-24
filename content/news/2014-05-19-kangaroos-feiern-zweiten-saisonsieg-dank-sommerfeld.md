@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos feiern zweiten Saisonsieg dank Sommerfeld"
 date: 2014-05-19
+author: "Michael Wittemann"
 team: "herren"
 ---
 

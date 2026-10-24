@@ -1,6 +1,7 @@
 ---
 title: "Melanchthon-Cup war ein voller Erfolg"
 date: 2007-05-14
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

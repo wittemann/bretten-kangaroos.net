@@ -1,6 +1,7 @@
 ---
 title: "Erste Hürde genommen"
 date: 2010-09-01
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

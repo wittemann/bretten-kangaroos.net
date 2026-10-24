@@ -1,6 +1,7 @@
 ---
 title: "Spannung pur bis zur letzten Minute"
 date: 2004-05-04
+author: "Bryan Schaffer"
 old_team: "Junioren"
 ---
 

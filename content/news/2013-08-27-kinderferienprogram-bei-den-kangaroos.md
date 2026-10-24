@@ -1,6 +1,7 @@
 ---
 title: "Kinderferienprogram bei den Kangaroos"
 date: 2013-08-27
+author: "Michael Wittemann"
 ---
 
 Am Freitag den 23 August waren 11 neugierige Kinder beim Ferienprogramm der Kangaroos um die Sportart Baseball etwas näher kennen zu lernen.\

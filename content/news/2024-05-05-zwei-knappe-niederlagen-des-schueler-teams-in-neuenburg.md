@@ -1,6 +1,7 @@
 ---
 title: "Zwei knappe Niederlagen des Schüler Teams in Neuenburg"
 date: 2024-05-05
+author: "Michael Wittemann"
 image: "/images/news/2024/05/28.jpg"
 ---
 

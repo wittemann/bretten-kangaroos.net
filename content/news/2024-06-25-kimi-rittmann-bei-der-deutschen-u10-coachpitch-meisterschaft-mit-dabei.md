@@ -1,6 +1,7 @@
 ---
 title: "Kimi Rittmann bei der Deutschen U10 Coachpitch Meisterschaft mit dabei"
 date: 2024-06-25
+author: "Michael Wittemann"
 image: "/images/news/2024/06/team-3.jpg"
 ---
 

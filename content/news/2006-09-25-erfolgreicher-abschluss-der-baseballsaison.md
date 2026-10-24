@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreicher Abschluss der Baseballsaison"
 date: 2006-09-25
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

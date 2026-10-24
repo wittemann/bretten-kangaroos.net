@@ -1,6 +1,7 @@
 ---
 title: "Zwei Spielerinnen bei der Deutschen Softball-U16-Meisterschaft"
 date: 2025-10-21
+author: "Markus Rittmann"
 image: "/images/news/2025/10/img-7569.jpg"
 ---
 

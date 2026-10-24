@@ -1,6 +1,7 @@
 ---
 title: "Baustelle Baseballfeld"
 date: 2006-02-25
+author: "Bryan Schaffer"
 ---
 
 Auch dieses Jahr gleicht das Baseballfeld der Kangaroos nicht einem Spielfeld sondern einer Großbaustelle. Diverse Reparaturarbeiten sind schon erledigt, außerdem wurde das Gelände von Wildwuchs befreit.

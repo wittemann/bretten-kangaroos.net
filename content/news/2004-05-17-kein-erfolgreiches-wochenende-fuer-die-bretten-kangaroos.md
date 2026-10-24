@@ -1,6 +1,7 @@
 ---
 title: "Kein erfolgreiches Wochenende für die Bretten Kangaroos"
 date: 2004-05-17
+author: "Michael Wittemann"
 ---
 
 Das vergangene Wochenende stand unter keinem guten Stern für die Baseballer und Softballer der Kangaroos, denn alle vier angetretenen Mannschaften mussten Niederlagen einstecken.

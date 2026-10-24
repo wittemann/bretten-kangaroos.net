@@ -1,6 +1,7 @@
 ---
 title: "Spielpläne online"
 date: 2008-03-09
+author: "Martin Wittemann"
 ---
 
 Nachdem schon vor einiger Zeit der Spielplan der Herren vom Verband erstellt und zur Verfügung gestellt wurde, sind inzwischen auch alle anderen Spielpläne verfügbar und heute auch auf der Kangaroos-Seite angekommen.\

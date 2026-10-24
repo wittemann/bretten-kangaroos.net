@@ -1,6 +1,7 @@
 ---
 title: "Spielplan online"
 date: 2005-04-08
+author: "Martin Wittemann"
 team: "jugend"
 ---
 

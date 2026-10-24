@@ -1,6 +1,7 @@
 ---
 title: "Baseballer gewinnen letztes Heimspiel"
 date: 2015-07-14
+author: "Bryan Schaffer"
 ---
 
 Diedelsheim. (ths) Nach den verlorenen Spielen gegen die Ligakonkurrenten Heidelberg und Villingendorf bleiben Brettens Baseballer, mit einem wichtigen Sieg gegen die Atomics, auf Erfolgskurs in der Landesliga.\

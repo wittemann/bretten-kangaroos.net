@@ -1,6 +1,7 @@
 ---
 title: "Spielpläne online"
 date: 2009-03-20
+author: "Martin Wittemann"
 ---
 
 Die Spielpläne für die kommende Saison 2009 sind inzwischen auf der Kangaroos Seite angekommen. Folgende Pläne sind eingetragen:

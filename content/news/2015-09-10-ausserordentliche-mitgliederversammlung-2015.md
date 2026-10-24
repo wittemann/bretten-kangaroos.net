@@ -1,6 +1,7 @@
 ---
 title: "Außerordentliche Mitgliederversammlung 2015"
 date: 2015-09-10
+author: "Martin Wittemann"
 ---
 
 Liebe Kangaroos,

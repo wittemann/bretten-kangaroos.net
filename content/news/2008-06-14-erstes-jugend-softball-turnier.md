@@ -1,6 +1,7 @@
 ---
 title: "Erstes Jugend Softball Turnier"
 date: 2008-06-14
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

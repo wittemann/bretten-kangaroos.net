@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos starten in die neue Baseball Saison"
 date: 2004-04-19
+author: "Michael Wittemann"
 ---
 
 Nach dem Ende der Vorbereitungsphase starten die Baseballer der Bretten Kangaroos am kommenden Sonntag in die Baseballsaison 2004.

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos kassieren verdiente Niederlage"
 date: 2011-07-25
+author: "Martin Wittemann"
 team: "herren"
 ---
 

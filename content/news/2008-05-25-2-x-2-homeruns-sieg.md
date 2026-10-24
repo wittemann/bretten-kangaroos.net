@@ -1,6 +1,7 @@
 ---
 title: "2 x 2 Homeruns = Sieg"
 date: 2008-05-25
+author: "Martin Wittemann"
 team: "herren"
 ---
 

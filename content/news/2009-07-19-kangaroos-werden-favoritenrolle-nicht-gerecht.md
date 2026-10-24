@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos werden Favoritenrolle nicht gerecht"
 date: 2009-07-19
+author: "Martin Wittemann"
 team: "herren"
 ---
 

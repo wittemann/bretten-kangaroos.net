@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos geben Spiel im letzten Spielabschnitt aus der Hand"
 date: 2010-05-30
+author: "Martin Wittemann"
 team: "herren"
 ---
 

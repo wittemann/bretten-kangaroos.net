@@ -1,6 +1,7 @@
 ---
 title: "Neuausrichtung der Herrenmannschaften - Wichtiges Spiel am Sonntag 16. Juli"
 date: 2017-07-11
+author: "Bryan Schaffer"
 ---
 
 Die Baseballer der Bretten Kangaroos positionieren sich momentan um und haben am vergangenen Wochenende das erste Ligaspiel unter neuer Flagge gegen die Cavemen aus Villingendorf absolviert. Gebeutelt von vielen Verletzungen seit Saisonbeginn und einer abnehmenden Trainingsbeteiligung, entschieden sich die Trainer der ersten und zweiten Herrenmannschaft, Jan Knebel und Henning Sommerfeld, die beiden Kader zunächst zusammen spielen und trainieren zu lassen, bis sich dieser Umstrukturierungsprozess vollzogen hat und damit mehr auf die Jugendausbildung zu setzen.

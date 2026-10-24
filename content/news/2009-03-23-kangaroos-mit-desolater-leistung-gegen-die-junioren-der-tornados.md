@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit desolater Leistung gegen die Junioren der Tornados"
 date: 2009-03-23
+author: "Michael Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Jugend - 1. Hallenturnier der Wintersaison"
 date: 2018-12-11
+author: "Andrea Klein"
 ---
 
 Am vergangenen Samstag konnte die Jugendabteilung der Brettener Kangaroos zum ersten Mal in drei verschiedenen Altersklassen an einem Indoor Baseball Turnier, dem Nikolaus Cup in Stuttgart, teilnehmen.

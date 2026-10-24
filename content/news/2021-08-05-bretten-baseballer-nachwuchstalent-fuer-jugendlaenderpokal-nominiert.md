@@ -1,6 +1,7 @@
 ---
 title: "Bretten Baseballer Nachwuchstalent für Jugendländerpokal nominiert"
 date: 2021-08-05
+author: "Bryan Schaffer"
 team: "jugend"
 ---
 

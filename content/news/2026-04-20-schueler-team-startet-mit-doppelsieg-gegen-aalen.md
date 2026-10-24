@@ -1,6 +1,7 @@
 ---
 title: "Schüler Team startet mit Doppelsieg gegen Aalen"
 date: 2026-04-20
+author: "Michael Wittemann"
 image: "/images/news/2026/04/whatsapp-image-2026-04-18-at-18-46-39.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Erste Mannschaft überragend gegen Ligakonkurrenz"
 date: 2016-09-16
+author: "Bryan Schaffer"
 ---
 
 Die Kangaroos empfingen am Wochenende den Erstplatzierten der Landesliga und konnten sich nach einem 1:7 Rückstand noch einen 20:9 Erfolg erspielen.

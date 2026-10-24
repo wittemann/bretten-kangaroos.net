@@ -1,6 +1,7 @@
 ---
 title: "Training - Saison Abschluss - Herbstturniere"
 date: 2018-09-10
+author: "Bryan Schaffer"
 ---
 
 **Training**

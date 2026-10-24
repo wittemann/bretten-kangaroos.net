@@ -1,6 +1,7 @@
 ---
 title: "Erster Saisonsieg der Schüler"
 date: 2007-06-19
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

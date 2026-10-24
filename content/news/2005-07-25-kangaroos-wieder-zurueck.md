@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos wieder zurück ?"
 date: 2005-07-25
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

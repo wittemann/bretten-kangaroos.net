@@ -1,6 +1,7 @@
 ---
 title: "Cavemans in Bretten"
 date: 2006-04-15
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

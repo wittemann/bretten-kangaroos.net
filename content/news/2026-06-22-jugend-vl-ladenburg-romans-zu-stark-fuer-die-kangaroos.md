@@ -1,6 +1,7 @@
 ---
 title: "Jugend-VL - Ladenburg Romans zu stark für die Kangaroos"
 date: 2026-06-22
+author: "Markus Rittmann"
 image: "/images/news/2026/06/img-3277.jpg"
 ---
 

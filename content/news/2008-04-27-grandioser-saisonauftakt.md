@@ -1,6 +1,7 @@
 ---
 title: "Grandioser Saisonauftakt"
 date: 2008-04-27
+author: "Bryan Schaffer"
 old_team: "Herren 2"
 ---
 

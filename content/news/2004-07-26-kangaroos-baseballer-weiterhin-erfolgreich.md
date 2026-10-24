@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Baseballer weiterhin erfolgreich"
 date: 2004-07-26
+author: "Michael Wittemann"
 ---
 
 Im Heimspiel gegen die Alfdorf Highlander konnten die Brettener Baseballer bereits ihren fünften Sieg in folge feiern und haben damit alle Möglichkeiten im letzten noch ausstehenden Spiel am 8 August gegen die Heilbronn Pirates die Meisterschaft und damit den Aufstieg perfekt zu machen.

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos am Opening Day gegen die Göppingen Green Sox"
 date: 2009-04-20
+author: "Michael Wittemann"
 ---
 
 Am Sonntag ist es endlich wieder so weit wenn auf dem Baseball Platz in Bretten-Diedelsheim wieder "play ball" heißt und damit die Baseball Saison 2009 offiziell eröffnet wird.\

@@ -1,6 +1,7 @@
 ---
 title: "Slow-Pitch Team zu Gast in Hemsbach"
 date: 2015-09-14
+author: "Michael Wittemann"
 old_team: "Slow Pitch"
 ---
 

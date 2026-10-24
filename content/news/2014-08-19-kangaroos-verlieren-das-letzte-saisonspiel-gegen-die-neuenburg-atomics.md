@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos verlieren das letzte Saisonspiel gegen die Neuenburg Atomics"
 date: 2014-08-19
+author: "Michael Wittemann"
 ---
 
 Das letzte Spiel der Landesliga Saison 2014 bestritten die Baseballer der Bretten Kangaroos gegen den Tabellen letzten aus Neuenburg.\

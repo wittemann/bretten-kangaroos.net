@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Herren Team 2009 wieder in der Verbandsliga"
 date: 2009-01-25
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Neues Slow Pitch Softball Team sucht Verstärkung"
 date: 2015-03-27
+author: "Michael Wittemann"
 old_team: "Slow Pitch"
 ---
 

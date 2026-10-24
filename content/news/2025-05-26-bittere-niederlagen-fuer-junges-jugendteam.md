@@ -1,6 +1,7 @@
 ---
 title: "Bittere Niederlagen für junges Jugendteam"
 date: 2025-05-26
+author: "Markus Rittmann"
 image: "/images/news/2025/05/img-2525-1.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Opening Day Schüler Team | Zweiter Versuch"
 date: 2024-04-24
+author: "Michael Wittemann"
 image: "/images/news/2024/04/spieltag-2-vorbericht.jpg"
 ---
 

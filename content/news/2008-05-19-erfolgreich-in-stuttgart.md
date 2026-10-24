@@ -1,6 +1,7 @@
 ---
 title: "Erfolgreich in Stuttgart"
 date: 2008-05-19
+author: "Martin Wittemann"
 team: "herren"
 ---
 

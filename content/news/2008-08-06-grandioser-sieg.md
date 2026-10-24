@@ -1,6 +1,7 @@
 ---
 title: "Grandioser Sieg"
 date: 2008-08-06
+author: "Bryan Schaffer"
 ---
 
 Am Samstag, den 2.August traf die 2. Herrenmannschaft der Bretten Kangaroos bei einem Heimspiel auf die Heidelberg Hedgehogs.

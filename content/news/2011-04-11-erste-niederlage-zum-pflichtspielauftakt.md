@@ -1,6 +1,7 @@
 ---
 title: "Erste Niederlage zum Pflichtspielauftakt"
 date: 2011-04-11
+author: "Martin Wittemann"
 team: "herren"
 ---
 

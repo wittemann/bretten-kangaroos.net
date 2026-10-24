@@ -1,6 +1,7 @@
 ---
 title: "Schüler Saison Eröffnungsspiel gegen Karlsruhe in Bretten blieb spannend"
 date: 2018-04-17
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

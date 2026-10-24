@@ -1,6 +1,7 @@
 ---
 title: "Drei Mannschaften, drei Niederlagen                 +++Heimspiel 07. Mai 15Uhr+++"
 date: 2017-05-01
+author: "Bryan Schaffer"
 ---
 
 Nach dem gelungenen Saisonauftakt bekamen Brettens Baseballer am vergangenen Wochenende ihren fast schon traditionellen Denkzettel zu Saisonbeginn verpasst. Die erste Mannschaft kassierte eine herbe Schlappe in Schrießheim (15:5), während die zweite Mannschaft sich gegen Ligakonkurrent Karlsruhe trotz Niederlage noch recht wacker hielt (07:16), verloren auch die Schüler ihre beiden Spiele gegen die Tübingen Habichte (0:13 / 2:12).

@@ -1,6 +1,7 @@
 ---
 title: "Baseballer schlagen Regionalligisten"
 date: 2007-05-14
+author: "Bryan Schaffer"
 ---
 
 Die Bretten Kangaroos haben mit ihrem letzten Trainingsspiel die Saisonvorbereitung abgeschlossen und erwarten nun den kommenden Start der Saison in der Verbandsliga mit viel Selbstvertrauen. Die Mannschaft konnte in den vergangenen zwei Jahren das Niveau in der höchsten Klasse Baden-Württembergs miterleben und konnte sich daran anpassen. In diesem Jahr können sich die Kangaroos nun in die obere Hälfte der Ligatabelle kämpfen.

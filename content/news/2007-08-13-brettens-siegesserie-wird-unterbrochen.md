@@ -1,6 +1,7 @@
 ---
 title: "Brettens Siegesserie wird unterbrochen"
 date: 2007-08-13
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

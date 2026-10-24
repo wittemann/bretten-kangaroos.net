@@ -1,6 +1,7 @@
 ---
 title: "Hitzeschlacht mit zwei knappen Niederlagen in Karlsruhe für das Schüler Team"
 date: 2025-06-26
+author: "Michael Wittemann"
 image: "/images/news/2025/06/bild-3.jpg"
 ---
 

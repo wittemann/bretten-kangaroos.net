@@ -1,6 +1,7 @@
 ---
 title: "Zwei Kangaroos-Girls beim ersten U13 Hallenturnier in Herrenberg dabei"
 date: 2025-02-18
+author: "Michael Wittemann"
 image: "/images/news/2025/02/img-3764.jpg"
 ---
 

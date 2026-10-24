@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos in Hochform"
 date: 2006-06-19
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

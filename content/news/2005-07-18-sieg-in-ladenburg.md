@@ -1,6 +1,7 @@
 ---
 title: "Sieg in Ladenburg"
 date: 2005-07-18
+author: "Bryan Schaffer"
 team: "schueler"
 ---
 

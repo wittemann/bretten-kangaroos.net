@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos mit erstem Saisonsieg"
 date: 2010-06-14
+author: "Martin Wittemann"
 team: "herren"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Bretten Kangaroos schlagen Ellwangen Elks"
 date: 2006-05-22
+author: "Bryan Schaffer"
 team: "herren"
 ---
 

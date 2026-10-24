@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos Schüler zeigen starke Moral und verteidigen die Tabellenführung"
 date: 2026-06-22
+author: "Michael Wittemann"
 image: "/images/news/2026/06/whatsapp-image-2026-06-20-at-19-00-58-2.jpg"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kangaroos im Pokal gegen den deutschen Rekord Meister"
 date: 2009-04-14
+author: "Michael Wittemann"
 team: "herren"
 ---
 

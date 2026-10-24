@@ -1,6 +1,7 @@
 ---
 title: "Die Kangaroos feiern den Saisonstart"
 date: 2006-04-24
+author: "Bryan Schaffer"
 ---
 
 Die Baseballer der Bretten Kangaroos haben mit den letzten Spielen am vergangenen Wochenende die Vorbereitungsphase abgeschlossen und freuen sich nun auf die zweite Saison in der Verbandsliga.
