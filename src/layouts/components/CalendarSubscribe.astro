@@ -1,0 +1,93 @@
+---
+// Green "Spielplan im Kalender abonnieren" box after the Spielplan-Saison board:
+// pick a team, then Apple & Outlook (webcal://), Google Kalender or copy the link.
+// The script points the links at the host the page is served from, so the
+// feeds also work on the test subdomain.
+type Props = { teams: { slug: string; name: string }[] };
+
+const { teams } = Astro.props;
+const feeds = [{ slug: "alle", name: "Alle Teams" }, ...teams];
+const host = new URL(Astro.site!).host;
+const feedPath = (slug: string) => `/kalender/${slug}.ics`;
+const googleUrl = (slug: string) =>
+  `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(`webcal://${host}${feedPath(slug)}`)}`;
+---
+
+<section id="abo" class="scroll-mt-24 rounded-[6px] bg-forest p-6 text-white md:p-7" data-subscribe>
+  <div class="flex flex-wrap items-start justify-between gap-7">
+    <div class="flex flex-[1_1_380px] flex-col gap-2">
+      <h2 class="text-[28px] leading-none !text-white">Spielplan im Kalender abonnieren</h2>
+      <p class="text-[#DCE6D4]">
+        Alle Spiele deines Teams landen automatisch in deinem Kalender. Neue Termine, Verschiebungen und Absagen kommen von selbst nach.
+      </p>
+    </div>
+    <div class="flex flex-[1_1_420px] flex-col gap-3">
+      <div role="group" aria-label="Team für das Abo" class="flex flex-wrap gap-1.5">
+        {
+          feeds.map(({ slug, name }, i) => (
+            <button
+              type="button"
+              class="min-h-10 cursor-pointer rounded-full border border-white/40 px-3.5 text-[15px] font-semibold text-white aria-pressed:border-white aria-pressed:bg-white aria-pressed:text-forest"
+              aria-pressed={i === 0 ? "true" : "false"}
+              data-feed={slug}
+            >
+              {name}
+            </button>
+          ))
+        }
+      </div>
+      <div class="flex flex-wrap gap-2.5">
+        <a href={`webcal://${host}${feedPath("alle")}`} class="inline-flex min-h-[46px] items-center rounded-[4px] bg-rust px-4.5 font-semibold text-white hover:bg-rust-dark" data-feed-link="webcal">
+          Apple &amp; Outlook
+        </a>
+        <a href={googleUrl("alle")} target="_blank" rel="noopener" class="inline-flex min-h-[46px] items-center rounded-[4px] bg-white px-4.5 font-semibold text-forest" data-feed-link="google">
+          Google Kalender
+        </a>
+        <button type="button" class="inline-flex min-h-[46px] cursor-pointer items-center rounded-[4px] border border-white/40 px-4.5 font-semibold text-white" data-feed-link="copy">
+          Link kopieren
+        </button>
+      </div>
+      <p class="text-[13px] text-[#C7D8B8]">
+        Die Termine kommen direkt vom Verband (BSM) und werden am Wochenende stündlich aktualisiert. Wie oft dein Kalender nachschaut, entscheidet er selbst – Google kann einige Stunden brauchen.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function init() {
+    const box = document.querySelector<HTMLElement>("[data-subscribe]");
+    if (!box) return;
+    const buttons = box.querySelectorAll<HTMLButtonElement>("[data-feed]");
+    const webcal = box.querySelector<HTMLAnchorElement>('[data-feed-link="webcal"]')!;
+    const google = box.querySelector<HTMLAnchorElement>('[data-feed-link="google"]')!;
+    const copy = box.querySelector<HTMLButtonElement>('[data-feed-link="copy"]')!;
+    let current = "alle";
+
+    const feedUrl = (protocol: string) => `${protocol}//${location.host}/kalender/${current}.ics`;
+    const select = (slug: string) => {
+      current = slug;
+      buttons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.feed === slug)));
+      webcal.href = feedUrl("webcal:");
+      google.href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(feedUrl("webcal:"))}`;
+      copy.textContent = "Link kopieren";
+    };
+
+    buttons.forEach((b) => b.addEventListener("click", () => select(b.dataset.feed!)));
+    copy.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(feedUrl("https:"));
+        copy.textContent = "Link kopiert";
+      } catch {
+        window.prompt("Link zum Kopieren:", feedUrl("https:"));
+      }
+    });
+    // the team filter in the title band picks the same team here
+    document.addEventListener("bsm-filter", (event) => {
+      select((event as CustomEvent<string>).detail || "alle");
+    });
+    select(current);
+  }
+
+  document.addEventListener("astro:page-load", init);
+</script>

@@ -3,14 +3,14 @@
 // highlighted. Uses the first league of the team that has a table.
 import { standingsFor } from "@/lib/bsm";
 
-const { team } = Astro.props;
+const { team, title = "Tabelle" } = Astro.props;
 const league = standingsFor(team).find((l) => l.standings?.length);
 ---
 
 {
   league && (
-    <section aria-labelledby="team-table">
-      <h2 id="team-table" class="mb-3 text-[26px]">Tabelle</h2>
+    <section aria-label={title}>
+      <h2 class="mb-3 text-[26px]">{title}</h2>
       <div class="overflow-x-auto rounded-[6px] border border-line">
         <table class="w-full border-collapse text-[15px]">
           <thead>

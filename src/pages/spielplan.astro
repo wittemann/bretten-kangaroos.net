@@ -1,20 +1,35 @@
 ---
+// Spielplan after the boards: one column while games are coming up
+// (Spielplan-Saison), games plus tables after the season (Spielplan-Clubhaus).
 import Base from "@/layouts/Base.astro";
 import BsmGames from "@/layouts/components/BsmGames.astro";
 import BsmTeamFilter from "@/layouts/components/BsmTeamFilter.astro";
-import TitleBand from "@/components/TitleBand.astro";
+import SpielplanTables from "@/layouts/components/SpielplanTables.astro";
+import { splitGames } from "@/lib/bsm";
+
+const inSeason = splitGames().upcoming.length > 0;
 ---
 
 <Base
   title="Spielplan & Ergebnisse"
-  description="Die nächsten Spiele und die Ergebnisse der Teams der Bretten Kangaroos."
+  description="Die nächsten Spiele und die Ergebnisse der Teams der Bretten Kangaroos – auch als Kalender zum Abonnieren."
 >
-  <TitleBand title="Spielplan & Ergebnisse">
-    <BsmTeamFilter />
-  </TitleBand>
-  <section class="py-12 md:py-16">
+  <div class="page-title-band">
     <div class="container-wide">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <h1>Spielplan &amp; Ergebnisse</h1>
+        <a href="#abo" class="inline-flex min-h-[46px] items-center gap-2.5 rounded-[4px] border-2 border-forest px-5 font-heading text-[18px] font-semibold uppercase tracking-wide text-forest hover:bg-forest hover:text-white">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M3 10h18M8 3v4M16 3v4" /></svg>
+          Spielplan abonnieren
+        </a>
+      </div>
+      <BsmTeamFilter />
+    </div>
+  </div>
+  <div class="container-wide flex flex-wrap gap-12 pb-18 pt-12">
+    <div class="min-w-0 flex-[3_1_560px]">
       <BsmGames />
     </div>
-  </section>
+    {!inSeason && <SpielplanTables />}
+  </div>
 </Base>

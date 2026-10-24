@@ -105,7 +105,7 @@ Needs: WP1.
   - [x] Part 3: text pages (`[regular].astro` with title band, year column, file list), Kontakt page; content of Ballpark, Vereinsgeschichte, Förderverein, BKIL, Downloads, Kontakt, Impressum, Datenschutz copied from the old site (PDFs in `public/files`)
   - [x] Real crest at `public/images/crest.png`
   - [x] Startseite: hero with ballpark photo, last results from BSM, news, Xmas-Ball teaser, team tiles
-  - [ ] News templates, Spielplan restyle, calendar feeds (detailed in "Match the design boards" below)
+  - [x] News templates, Spielplan restyle, calendar feeds (detailed in "Match the design boards" below)
 - [ ] **Match the design boards** — compared every board in [`design/`](design/) with the built pages on 2026-10-24.
       Colours, fonts, header and footer fit everywhere; the page layouts were built from Bookworm defaults instead of
       the boards. Before each item: open the board, build to it — **Sonnet**
@@ -122,10 +122,10 @@ Needs: WP1.
   - [ ] Probetraining (`Probetraining.dc.html`): three steps "Team finden · Kurz Bescheid geben · Vorbeikommen" in the title band,
         one table (Team, Alter, Wann, Wo, Kontakt) with a Winter/Sommer switch that picks the current season by itself, "Noch Fragen?" box with Kontakt button.
         Today: one card per team
-  - [ ] Spielplan offseason (`Spielplan-Clubhaus.dc.html`): two columns – games left, standings of the selected team right with
+  - [x] Spielplan offseason (`Spielplan-Clubhaus.dc.html`): two columns – games left, standings of the selected team right with
         "Alle Tabellen →"; results grouped by month, "Sieg"/"Niederlage" as a text chip instead of the S/N dot, "Spielbericht" link.
         Today one long list of the whole season – show the latest results with "Alle Ergebnisse der Saison →" like `Spielplan-Saison.dc.html`
-  - [ ] Spielplan in season (`Spielplan-Saison.dc.html`): days as green bars ("Heimspieltag am Ballpark"), large start time,
+  - [x] Spielplan in season (`Spielplan-Saison.dc.html`): days as green bars ("Heimspieltag am Ballpark"), large start time,
         "In meinen Kalender" per game, "Spielplan abonnieren" button in the title band and the green subscription box – together with the calendar feeds (WP4)
   - [x] Aktuelles (`Aktuelles.dc.html`): two lead posts with photo side by side, then a compact list (date + team left, title + one-line teaser right),
         numbered pagination, 10 posts per page. Done 2026-10-24
@@ -159,7 +159,10 @@ Needs: WP2, league/team confirmation from my tasks.
 - [x] Standings page per team/league — **Sonnet**
 - [x] Schedule & results (games) page — **Sonnet**
 
-- [ ] Calendar: "In meinen Kalender" per game (.ics + Google link) and subscription feeds per team / all teams, generated at build time (see `design.md`) — **Sonnet**
+- [x] Calendar: "In meinen Kalender" per game (.ics + Google link) and subscription feeds per team / all teams, generated at build time (see `design.md`) — **Sonnet**
+      → `/kalender/<team>.ics`, `/kalender/alle.ics`, `/kalender/spiel/<id>.ics` (`src/lib/calendar.ts`); the season layout was
+      checked with made-up games only, check it again with the first real 2027 dates
+- [ ] After the next deploy: subscribe to one feed on a phone (Apple) and in Google Calendar on `neu.bretten-kangaroos.net` — **Haiku**
 - [ ] Once a year: new league IDs into `src/data/bsm-leagues.json` (see `bsm-api.md`) — **Haiku**
 
 ### WP5 – Sponsors

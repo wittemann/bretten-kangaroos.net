@@ -1,0 +1,41 @@
+---
+// Sidebar of the Spielplan after the season: with "Alle" the place of every
+// team, with a team selected that team's table (switched by BsmTeamFilter).
+import TeamTable from "@/components/TeamTable.astro";
+import { standingsFor, teamName, teams } from "@/lib/bsm";
+
+const placings = standingsFor()
+  .map((league) => ({ league, row: league.standings?.find((r) => r.isUs) }))
+  .filter(({ row }) => row?.rank);
+---
+
+<aside class="flex min-w-0 flex-[2_1_320px] flex-col gap-3">
+  {
+    placings.length > 0 && (
+      <div data-table-team="">
+        <h2 class="mb-3 text-[26px]">Unsere Platzierungen</h2>
+        <ul class="overflow-hidden rounded-[6px] border border-line">
+          {placings.map(({ league, row }) => (
+            <li class="flex items-center gap-3 border-t border-line px-3 py-2.5 first:border-t-0">
+              <span class="w-8 font-heading text-[22px] font-bold text-ink">{row!.rank}.</span>
+              <span class="leading-snug">
+                <strong class="text-ink">{teamName(league)}</strong>
+                <span class="block text-sm">
+                  {[league.label.split(" – ")[1], `${row!.wins} S, ${row!.losses} N`].filter(Boolean).join(" · ")}
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+  {
+    teams.map(({ slug, name }) => (
+      <div data-table-team={slug} hidden>
+        <TeamTable team={slug} title={`Tabelle ${name}`} />
+      </div>
+    ))
+  }
+  <a href="/tabellen" class="inline-flex min-h-11 items-center font-semibold text-primary hover:underline">Alle Tabellen →</a>
+</aside>

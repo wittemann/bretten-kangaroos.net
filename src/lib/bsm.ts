@@ -70,8 +70,9 @@ export const standingsFor = (team?: string) =>
     (l) => config.leagues.find((c) => c.leagueId === l.leagueId)?.standings,
   );
 
-// Upcoming games: still planned and not before today. Everything else
-// (played, cancelled, or planned in the past without a score) is a result.
+// Upcoming games: planned or cancelled, not before today (cancelled ones stay
+// visible, struck through). Everything else (played, forfeits, or planned in
+// the past without a score) is a result.
 // "Now" is the build time – fine with the hourly weekend rebuilds.
 export function splitGames(team?: string, now = new Date()) {
   const startOfToday = berlinDateKey(now);
@@ -79,7 +80,8 @@ export function splitGames(team?: string, now = new Date()) {
     league.games.map((game) => ({ ...game, league })),
   );
   const isUpcoming = (g: Game) =>
-    g.state === "planned" && berlinDateKey(new Date(g.start)) >= startOfToday;
+    ["planned", "canceled", "cancelled"].includes(g.state) &&
+    berlinDateKey(new Date(g.start)) >= startOfToday;
 
   const byStart = (a: Game, b: Game) =>
     Date.parse(a.start) - Date.parse(b.start);

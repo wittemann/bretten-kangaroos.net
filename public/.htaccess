@@ -6,6 +6,9 @@ ErrorDocument 404 /404.html
 # No directory listings
 Options -Indexes
 
+# Calendar feeds and single games (/kalender/*.ics)
+AddType "text/calendar; charset=utf-8" .ics
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
@@ -37,7 +40,7 @@ Options -Indexes
 </IfModule>
 
 <IfModule mod_headers.c>
-  <FilesMatch "\.(html|php)$">
+  <FilesMatch "\.(html|php|ics)$">
     Header set Cache-Control "no-cache"
   </FilesMatch>
 </IfModule>

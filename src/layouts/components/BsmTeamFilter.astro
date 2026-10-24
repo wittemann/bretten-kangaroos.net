@@ -1,6 +1,7 @@
 ---
 // Team filter pills for the Spielplan title band. Hides the games of other
-// teams in the BsmGames list on the same page; without JavaScript all games show.
+// teams in the BsmGames list on the same page and shows the selected team's
+// table in the sidebar; without JavaScript all games show.
 import { teams } from "@/lib/bsm";
 ---
 
@@ -17,29 +18,55 @@ import { teams } from "@/lib/bsm";
 }
 
 <script>
+  // Results show the newest 10 until "Alle Ergebnisse der Saison" is clicked
+  const RESULTS_SHOWN = 10;
+
   // Runs on every page load, also after navigation via the ClientRouter.
   function init() {
     const root = document.querySelector<HTMLElement>("[data-bsm-games]");
-    const buttons = document.querySelectorAll<HTMLButtonElement>("[data-bsm-filter] [data-filter]");
     if (!root) return;
+    const buttons = document.querySelectorAll<HTMLButtonElement>("[data-bsm-filter] [data-filter]");
+    const showAll = root.querySelector<HTMLButtonElement>("[data-show-all]");
+    let team = "";
+    let allResults = false;
+
+    const apply = () => {
+      root.querySelectorAll<HTMLElement>("[data-section]").forEach((section) => {
+        const isResults = section.hasAttribute("data-results");
+        let visible = 0;
+        let matching = 0;
+        section.querySelectorAll<HTMLElement>("[data-team]").forEach((row) => {
+          const matches = !team || row.dataset.team === team;
+          if (matches) matching++;
+          row.hidden = !matches || (isResults && !allResults && matching > RESULTS_SHOWN);
+          if (!row.hidden) visible++;
+        });
+        // day and month groups without a visible game disappear
+        section.querySelectorAll<HTMLElement>("[data-group]").forEach((group) => {
+          group.hidden = !group.querySelector("[data-team]:not([hidden])");
+        });
+        const empty = section.querySelector<HTMLElement>("[data-empty]");
+        if (empty) empty.hidden = visible > 0;
+        if (isResults && showAll) showAll.hidden = allResults || matching <= RESULTS_SHOWN;
+      });
+      document.querySelectorAll<HTMLElement>("[data-table-team]").forEach((table) => {
+        table.hidden = table.dataset.tableTeam !== team;
+      });
+    };
 
     buttons.forEach((button) =>
       button.addEventListener("click", () => {
-        const team = button.dataset.filter;
-        buttons.forEach((b) =>
-          b.setAttribute("aria-pressed", String(b === button)),
-        );
-        root.querySelectorAll<HTMLElement>("[data-section]").forEach((s) => {
-          let visible = 0;
-          s.querySelectorAll<HTMLElement>("[data-team]").forEach((row) => {
-            row.hidden = Boolean(team) && row.dataset.team !== team;
-            if (!row.hidden) visible++;
-          });
-          const empty = s.querySelector<HTMLElement>("[data-empty]");
-          if (empty) empty.hidden = visible > 0;
-        });
+        team = button.dataset.filter ?? "";
+        buttons.forEach((b) => b.setAttribute("aria-pressed", String(b === button)));
+        apply();
+        document.dispatchEvent(new CustomEvent("bsm-filter", { detail: team }));
       }),
     );
+    showAll?.addEventListener("click", () => {
+      allResults = true;
+      apply();
+    });
+    apply();
   }
 
   document.addEventListener("astro:page-load", init);
