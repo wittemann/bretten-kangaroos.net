@@ -44,12 +44,13 @@ const fontsConfig = Object.entries(theme.fonts.font_family)
     };
   });
 
-// "## 1992 – Title" headings become year headings (rendered as a year column, e.g. Vereinsgeschichte)
+// "## 1992 – Title" (or a range, "## 2020–22 – Title") headings become year headings
+// (rendered as a year column, e.g. Vereinsgeschichte)
 function rehypeYearHeadings() {
   const walk = (node) => {
     if (node.type === "element" && node.tagName === "h2") {
       const first = node.children?.[0];
-      const match = first?.type === "text" && first.value.match(/^(\d{4}) [–-] (.*)$/s);
+      const match = first?.type === "text" && first.value.match(/^(\d{4}(?:[–-]\d{2})?) [–-] (.*)$/s);
       if (match) {
         first.value = match[2];
         node.properties = { ...node.properties, className: ["year-heading"], "data-year": match[1] };

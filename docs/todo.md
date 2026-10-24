@@ -62,6 +62,9 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [ ] At home: find `wp-content/uploads` on the backup drive (IONOS FTP backup) and let Claude re-run the migration with
       `--uploads <folder>` – about 1,450 images of older posts (2003–2023) are gone from the live server and are
       missing in the migrated posts, see [`wordpress-migration-report.md`](wordpress-migration-report.md) (→ WP7)
+- [ ] After the uploads re-run: pick one photo per year for the Vereinsgeschichte 2016–2026. Today only 2023–2026 have
+      article photos (BKIL teams, Xmas-Ball 2024, Römercup 2025, Landesliga title 2026); for 2016–2022 look in the restored
+      images or my own photos (Pokalfinale 2016, 25 Jahre 2017, Schüler 2019, Incrediball/Hallentraining 2020–22) (→ WP2)
 - [x] Decide how much moves over → everything (all pages and the complete news archive) (→ WP7)
 - [x] Sponsor list → same as on the current WordPress site, taken over in WP5/WP7 (→ WP5)
 - [x] Impressum and privacy policy → copied from the current WordPress site (→ WP9)
