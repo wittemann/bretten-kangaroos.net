@@ -60,7 +60,8 @@ Unter **Xmas-Ball**:
 ## Weitere Bereiche
 
 - **Sponsoren**: **Name**, **Logo** (Pflicht), **Webseite** (mit `https://`), **Reihenfolge**, **Ausblenden**.
-- **Seiten**: Texte wie Ballpark oder Vereinsgeschichte; **Kurzbeschreibung**, **Bild**, **Dateien**, **Inhalt**.
+- **Seiten**: Texte wie Förderverein oder Downloads; **Kurzbeschreibung**, **Bild**, **Dateien**, **Inhalt**.
+- **Vereinsgeschichte**: **Kapitel** mit **Kapitelzeile** (z. B. „Kapitel 6 · 2016 bis heute“), **Titel** und **Jahren**. Jedes Jahr hat **Jahr**, **Überschrift**, **Text** und optional ein **Foto**. Ist **Meilenstein** an, erscheint das Jahr zusätzlich als Karte oben auf der Seite – mit eigenem kurzem Titel und Satz. Ein neues Jahr am Ende des letzten Kapitels anhängen.
 - **Kontakt**: **Ansprechpartner** mit **Aufgabe**, **Name**, **E-Mail**, **Telefon**.
 
 ## Wenn etwas schiefgeht

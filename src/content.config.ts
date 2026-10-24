@@ -137,6 +137,41 @@ const ballparkCollection = defineCollection({
   }),
 });
 
+// Vereinsgeschichte (.pages.yml: vereinsgeschichte): chapters of years,
+// years marked as milestone also show up as cards at the top
+const historyCollection = defineCollection({
+  loader: glob({ pattern: "vereinsgeschichte.md", base: "content" }),
+  schema: z.object({
+    title: z.string(),
+    description: optionalString,
+    intro: optionalString,
+    chapters: z
+      .array(
+        z.object({
+          label: z.string(),
+          title: z.string(),
+          years: z
+            .array(
+              z.object({
+                // a year or a range like "2020–22"
+                year: z.coerce.string(),
+                title: z.string(),
+                text: z.string(),
+                image: optionalString,
+                image_alt: optionalString,
+                milestone: z.boolean().default(false),
+                // card title, defaults to the year's title
+                milestone_title: optionalString,
+                milestone_text: optionalString,
+              }),
+            )
+            .default([]),
+        }),
+      )
+      .default([]),
+  }),
+});
+
 // Sponsors (.pages.yml: sponsors), shown on /sponsoren and in the footer
 const sponsorsCollection = defineCollection({
   loader: glob({ pattern: "*.md", base: "content/sponsors" }),
@@ -158,5 +193,6 @@ export const collections = {
   pages: pagesCollection,
   kontakt: kontaktCollection,
   ballpark: ballparkCollection,
+  history: historyCollection,
   sponsors: sponsorsCollection,
 };

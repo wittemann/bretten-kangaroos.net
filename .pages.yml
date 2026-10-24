@@ -210,6 +210,41 @@ content:
           - { name: text, label: Erklärung, type: string, description: "eine kurze Zeile" }
       - { name: body, label: Text, type: rich-text, description: "Der erste Absatz wird größer dargestellt" }
 
+  - name: vereinsgeschichte
+    label: Vereinsgeschichte
+    type: file
+    path: content/vereinsgeschichte.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Kurzbeschreibung, type: text, description: "Für Suchmaschinen (eine Zeile)" }
+      - { name: intro, label: Einleitung, type: text, description: "Ein Satz unter dem Titel oben auf der Seite" }
+      - name: chapters
+        label: Kapitel
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label} – {title}"
+        fields:
+          - { name: label, label: Kapitelzeile, type: string, required: true, description: "z. B. „Kapitel 6 · 2016 bis heute“" }
+          - { name: title, label: Titel, type: string, required: true }
+          - name: years
+            label: Jahre
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{year} – {title}"
+            fields:
+              - { name: year, label: Jahr, type: string, required: true, description: "z. B. „2027“ oder „2020–22“" }
+              - { name: title, label: Überschrift, type: string, required: true }
+              - { name: text, label: Text, type: text, required: true }
+              - { name: image, label: Foto, type: image, options: { media: images } }
+              - { name: image_alt, label: Bildbeschreibung, type: string, description: "Was auf dem Foto zu sehen ist" }
+              - { name: milestone, label: Meilenstein, type: boolean, default: false, description: "Erscheint zusätzlich als Karte oben auf der Seite" }
+              - { name: milestone_title, label: Titel der Meilenstein-Karte, type: string, description: "Leer lassen für die Überschrift des Jahres" }
+              - { name: milestone_text, label: Text der Meilenstein-Karte, type: string, description: "Ein kurzer Satz" }
+
   - name: sponsors
     label: Sponsoren
     type: collection

@@ -62,9 +62,9 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [ ] At home: find `wp-content/uploads` on the backup drive (IONOS FTP backup) and let Claude re-run the migration with
       `--uploads <folder>` – about 1,450 images of older posts (2003–2023) are gone from the live server and are
       missing in the migrated posts, see [`wordpress-migration-report.md`](wordpress-migration-report.md) (→ WP7)
-- [ ] After the uploads re-run: pick one photo per year for the Vereinsgeschichte 2016–2026. Today only 2023–2026 have
-      article photos (BKIL teams, Xmas-Ball 2024, Römercup 2025, Landesliga title 2026); for 2016–2022 look in the restored
-      images or my own photos (Pokalfinale 2016, 25 Jahre 2017, Schüler 2019, Incrediball/Hallentraining 2020–22) (→ WP2)
+- [ ] After the uploads re-run: pick photos for the years of the Vereinsgeschichte (Pages CMS: "Foto" per year). Today only
+      2015 has one; article photos exist for 2023–2026 (BKIL teams, Xmas-Ball 2024, Römercup 2025, Landesliga title 2026);
+      for 1988–2022 look in the restored images or my own photos (the board suggests a motif per year) (→ WP2)
 - [x] Decide how much moves over → everything (all pages and the complete news archive) (→ WP7)
 - [x] Sponsor list → same as on the current WordPress site, taken over in WP5/WP7 (→ WP5)
 - [x] Impressum and privacy policy → copied from the current WordPress site (→ WP9)
@@ -148,6 +148,10 @@ Needs: WP1.
         Done 2026-10-24: text pages have an `intro` field (Pages CMS "Einleitung") for the title band; an image alone in its
         paragraph with a title (`![alt](src "Bildunterschrift")`) renders as a photo box with caption on every page;
         closing line "… und weiter bis heute" links to Aktuelles
+  - [x] Vereinsgeschichte, new board `Geschichte-Kombi.dc.html` (milestone cards + chapter accordion). Done 2026-10-24: own
+        page `vereinsgeschichte.astro` and content file `content/vereinsgeschichte.md` (Pages CMS "Vereinsgeschichte") with six
+        chapters, year titles from the board, the full year texts kept; a milestone card jumps to its year and opens the chapter.
+        Years without a photo show no grey placeholder like the board – only 2015 has one so far (see photo task above)
   - [ ] Verein dropdown (`Menu-Desktop.dc.html`): wide panel, links in two columns with descriptions, address box with crest and "Anfahrt →" on the right.
         Today one column. ~~Bug: hover opened it and the click right after closed it again~~ fixed 2026-10-24
   - [ ] Phone menu (`Menu-Handy.dc.html`): crest + name in the menu header instead of "Menü", ages under the team tiles, Verein links in normal text, Instagram/Facebook at the end

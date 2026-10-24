@@ -69,7 +69,8 @@ etc., the long Förderverein slug → `/foerderverein`, `/YYYY/MM/DD/<slug>/` �
 | Teams, Probetraining | – (built from the team files) | `teams/index.astro`, `probetraining.astro` |
 | Spielplan, Tabellen | – (BSM cache) | already built |
 | Sponsoren | `content/sponsors/*.md` | already built |
-| Text pages | `content/pages/<page>.md` (optional "Dateien" list for downloads, PDFs in `public/files`) | `[regular].astro`; `## 1992 – Title` headings render as a year column (Vereinsgeschichte) |
+| Text pages | `content/pages/<page>.md` (optional "Dateien" list for downloads, PDFs in `public/files`) | `[regular].astro`; `## 1992 – Title` headings render as a year column |
+| Vereinsgeschichte | `content/vereinsgeschichte.md`: chapters (label, title) with years (year or range, title, text, photo, milestone + card title/text) | `vereinsgeschichte.astro` after board `Geschichte-Kombi.dc.html`: milestone cards on top linking to their year, chapters as accordion (first one open) |
 | Kontakt | `content/kontakt.md`, contacts as a front matter list | own layout |
 | Xmas-Ball | `content/xmas-ball.md`, `active` switches the page and the homepage teaser on | own layout with the sign-up form |
 

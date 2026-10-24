@@ -1,0 +1,114 @@
+---
+// Vereinsgeschichte (board "Kombination – Meilensteine + Kapitel-Akkordeon"):
+// milestone cards on top, then one collapsible chapter per era with its years.
+import Base from "@/layouts/Base.astro";
+import TitleBand from "@/components/TitleBand.astro";
+import { getEntry } from "astro:content";
+
+const history = (await getEntry("history", "vereinsgeschichte"))!;
+const { title, description, intro, chapters } = history.data;
+
+const yearId = (year: string) => `jahr-${year.replace(/\D+/g, "-")}`;
+const milestones = chapters.flatMap((chapter) => chapter.years.filter((year) => year.milestone));
+// texts may have several paragraphs, separated by a blank line
+const paragraphs = (text: string) => text.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+---
+
+<Base title={title} description={description}>
+  <TitleBand title={title} intro={intro} />
+
+  <div class="container-wide flex flex-col gap-14 pb-[72px] pt-12">
+    {
+      milestones.length > 0 && (
+        <section aria-labelledby="meilensteine" class="flex flex-col gap-5">
+          <h2 id="meilensteine" class="!text-[32px] !leading-[1.1] text-forest">Meilensteine</h2>
+          <div class="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-5">
+            {milestones.map((year) => (
+              <a href={`#${yearId(year.year)}`} class="group flex flex-col overflow-hidden rounded-[6px] border border-line bg-white text-ink hover:border-forest">
+                <div class="flex items-center justify-between gap-3 bg-forest px-5 py-3.5 text-white">
+                  <span class="font-heading text-[40px] font-bold leading-none">{year.year}</span>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" /></svg>
+                </div>
+                <div class="flex flex-col gap-1.5 px-5 pb-[18px] pt-3.5 text-base leading-normal">
+                  <h3 class="!text-[22px] !leading-[1.15] group-hover:text-forest">{year.milestone_title || year.title}</h3>
+                  {year.milestone_text && <p>{year.milestone_text}</p>}
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <section aria-labelledby="jahr-fuer-jahr" class="flex flex-col gap-5">
+      <h2 id="jahr-fuer-jahr" class="!text-[32px] !leading-[1.1] text-forest">Die Geschichte Jahr für Jahr</h2>
+      <div class="flex flex-col gap-3.5">
+        {
+          chapters.map((chapter, index) => (
+            <details class="history-chapter overflow-hidden rounded-lg border border-line" open={index === 0}>
+              <summary class="flex cursor-pointer list-none flex-wrap items-center gap-x-7 gap-y-2 bg-chalk px-6 py-5 hover:bg-[#EFEEE7]">
+                <span class="flex flex-[999_1_360px] flex-col gap-0.5">
+                  <span class="font-heading text-[15px] font-semibold uppercase tracking-[0.08em] text-rust">{chapter.label}</span>
+                  <span class="font-heading text-[32px] font-bold uppercase leading-[1.1] text-forest">{chapter.title}</span>
+                </span>
+                <span class="flex-auto font-heading text-lg font-semibold tracking-[0.04em] text-[#3A3F38]">
+                  {chapter.years.map((year) => year.year).join(" · ")}
+                </span>
+                <svg class="chevron flex-none text-forest transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+              </summary>
+              <div class="flex flex-col px-6 py-2">
+                {chapter.years.map((year) => (
+                  <div id={yearId(year.year)} class="flex scroll-mt-28 flex-wrap gap-x-8 gap-y-5 border-b border-line py-6 last:border-b-0">
+                    {year.image && (
+                      <img src={year.image} alt={year.image_alt ?? ""} class="aspect-[4/3] min-w-0 max-w-[360px] flex-[1_1_280px] rounded-[6px] object-cover" loading="lazy" />
+                    )}
+                    <div class="flex min-w-0 flex-[999_1_380px] flex-col gap-2">
+                      <div class="flex flex-wrap items-center gap-x-3.5 gap-y-2">
+                        <span class="font-heading text-[40px] font-bold leading-none text-forest">{year.year}</span>
+                        {year.milestone && (
+                          <span class="inline-flex items-center gap-1.5 rounded-xl bg-[#FBEBDD] px-2.5 py-[3px] font-heading text-sm font-semibold uppercase tracking-[0.06em] text-[#8A430C]">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z" /></svg>
+                            Meilenstein
+                          </span>
+                        )}
+                      </div>
+                      <h3 class="!text-2xl !leading-[1.15]">{year.title}</h3>
+                      {paragraphs(year.text).map((p) => <p>{p}</p>)}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </details>
+          ))
+        }
+      </div>
+      <p class="text-base">Die jüngste Geschichte steht in <a href="/news" class="text-primary hover:underline">Aktuelles →</a></p>
+    </section>
+  </div>
+</Base>
+
+<style>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary:focus-visible {
+    outline: 3px solid var(--color-rust);
+    outline-offset: -3px;
+  }
+  details[open] .chevron {
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  // A milestone card or a #jahr-… link opens the chapter of that year first
+  function openYear() {
+    const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    const chapter = target?.closest("details");
+    if (!target || !chapter) return;
+    chapter.open = true;
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  window.addEventListener("hashchange", openYear);
+  openYear();
+</script>
