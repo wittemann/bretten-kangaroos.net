@@ -268,3 +268,8 @@ footer p a {
     @apply mb-1 block font-heading text-label font-semibold uppercase tracking-widest text-rust;
   }
 }
+
+/* Ballpark: the first paragraph is the intro */
+.ballpark-text > p:first-child {
+  @apply text-intro text-ink;
+}

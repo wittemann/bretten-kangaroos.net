@@ -135,9 +135,12 @@ Needs: WP1.
         "Zahlen" box, footer with "Zur Teamseite der <Team> →" and share links (WhatsApp, Link kopieren), "Weitere Beiträge" with three posts.
         Done 2026-10-24: the first paragraph is the intro; bold-only paragraphs of the old posts render as headings.
         Image captions are not built – there is no caption field yet
-  - [ ] Ballpark (`Ballpark.dc.html`): title band over the ballpark photo with the address, text plus a facts grid (Kunstrasen, Flutlicht,
+  - [x] Ballpark (`Ballpark.dc.html`): title band over the ballpark photo with the address, text plus a facts grid (Kunstrasen, Flutlicht,
         Dugouts, Tribünen, Verkaufshaus, DBV-tauglich), "Anfahrt" box with a map image (no embedded Google Maps) and "In Karten-App öffnen",
-        "1992 – seit über 30 Jahren" box linking to Vereinsgeschichte. Today: plain text page
+        "1992 – seit über 30 Jahren" box linking to Vereinsgeschichte. Done 2026-10-24: own content file `content/ballpark.md`
+        (Pages CMS "Ballpark", facts editable); the board's Kontakt section is left out, it lives on `/kontakt`.
+        Map picture `public/images/ballpark-map.jpg` stitched from OpenStreetMap tiles (zoom 16) with the credit
+        "© OpenStreetMap-Mitwirkende" in the picture; without `map_image` the box shows the crest
   - [ ] Vereinsgeschichte (`Vereinsgeschichte.dc.html`): close already – add the intro in the title band and the photo box under 1992
   - [ ] Verein dropdown (`Menu-Desktop.dc.html`): wide panel, links in two columns with descriptions, address box with crest and "Anfahrt →" on the right.
         Today one column. ~~Bug: hover opened it and the click right after closed it again~~ fixed 2026-10-24

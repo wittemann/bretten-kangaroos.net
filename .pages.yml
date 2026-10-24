@@ -187,6 +187,28 @@ content:
           - { name: phone, label: Telefon, type: string }
       - { name: body, label: Weiterer Text, type: rich-text }
 
+  - name: ballpark
+    label: Ballpark
+    type: file
+    path: content/ballpark.md
+    fields:
+      - { name: title, label: Titel, type: string, required: true }
+      - { name: description, label: Kurzbeschreibung, type: text, description: "Für Suchmaschinen (eine Zeile)" }
+      - { name: image, label: Foto oben, type: image, options: { media: images } }
+      - { name: map_image, label: Kartenausschnitt, type: image, description: "Bild der Karte – kein eingebettetes Google Maps, damit keine Daten an Dritte gehen", options: { media: images } }
+      - { name: map_link, label: Link für „In Karten-App öffnen“, type: string }
+      - name: facts
+        label: Ausstattung
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: Stichwort, type: string, required: true, description: "z. B. „Flutlicht“" }
+          - { name: text, label: Erklärung, type: string, description: "eine kurze Zeile" }
+      - { name: body, label: Text, type: rich-text, description: "Der erste Absatz wird größer dargestellt" }
+
   - name: sponsors
     label: Sponsoren
     type: collection

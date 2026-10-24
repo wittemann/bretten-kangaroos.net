@@ -1,0 +1,81 @@
+---
+// Ballpark (board "Ballpark"): photo title band with the address, text and
+// facts grid, Anfahrt box with a map picture and a teaser for the club history.
+import Base from "@/layouts/Base.astro";
+import menu from "@/config/menu.json";
+import { getEntry, render } from "astro:content";
+
+const ballpark = (await getEntry("ballpark", "ballpark"))!;
+const { title, description, image, map_image, map_link, facts } = ballpark.data;
+const { Content } = await render(ballpark);
+const { address } = menu;
+---
+
+<Base title={title} description={description} image={image}>
+  <section class="relative bg-forest text-white">
+    {image && <img src={image} alt="" class="absolute inset-0 h-full w-full object-cover object-[center_40%]" fetchpriority="high" />}
+    <div class="relative bg-[rgba(18,32,16,0.6)]">
+      <div class="container-wide flex flex-col gap-3 pb-[72px] pt-16 md:pt-24">
+        <h1 class="text-title-sm !text-white md:text-title">{title}</h1>
+        <p class="text-[19px] text-[#E4EADF]">{address.street} · {address.city}</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-wide flex flex-wrap gap-14 pb-8 pt-14">
+    <div class="flex min-w-0 flex-[3_1_540px] flex-col gap-7">
+      <div class="ballpark-text content">
+        <Content />
+      </div>
+      {
+        facts.length > 0 && (
+          <ul class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-px overflow-hidden rounded-[6px] border border-line bg-line">
+            {facts.map((fact) => (
+              <li class="flex flex-col gap-0.5 bg-white px-5 py-[18px]">
+                <strong class="text-ink">{fact.title}</strong>
+                {fact.text && <span class="text-[15px]">{fact.text}</span>}
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+
+    <aside class="flex min-w-0 flex-[2_1_320px] flex-col gap-3.5" aria-labelledby="ballpark-anfahrt">
+      <h2 id="ballpark-anfahrt" class="!text-[28px]">Anfahrt</h2>
+      {
+        map_image ? (
+          <img src={map_image} alt={`Karte: ${address.name}, ${address.street}, ${address.city}`} class="w-full rounded-[6px] border border-line" loading="lazy" />
+        ) : (
+          <div class="flex h-60 items-center justify-center rounded-[6px] border border-line bg-chalk p-5 text-center">
+            <img src="/images/crest.png" alt="" class="h-24 w-auto opacity-80" loading="lazy" />
+          </div>
+        )
+      }
+      <address class="not-italic leading-normal text-ink">
+        <strong>{address.name}</strong><br />{address.street}<br />{address.city}
+      </address>
+      {
+        map_link && (
+          <a href={map_link} class="btn btn-outline-primary self-start" target="_blank" rel="noopener">
+            In Karten-App öffnen
+          </a>
+        )
+      }
+    </aside>
+  </div>
+
+  <section class="container-wide pb-20 pt-10">
+    <div class="flex flex-wrap items-center gap-8 rounded-[6px] bg-chalk p-8">
+      <span class="font-heading text-[72px] font-bold leading-none text-forest">1992</span>
+      <div class="flex flex-[1_1_380px] flex-col gap-1.5">
+        <h2 class="!text-[26px]">Seit über 30 Jahren Baseball in Bretten</h2>
+        <p>
+          Angefangen mit zwei Handschuhen und einem Schläger aus Philadelphia – im Herbst 1992 schlossen sich die ersten
+          Kangaroos dem VfB Bretten als Abteilung Baseball an.
+        </p>
+      </div>
+      <a href="/vereinsgeschichte" class="font-semibold text-primary hover:underline">Zur Vereinsgeschichte →</a>
+    </div>
+  </section>
+</Base>

@@ -121,6 +121,20 @@ const kontaktCollection = defineCollection({
   }),
 });
 
+// Ballpark page (.pages.yml: ballpark), the address comes from src/config/menu.json
+const ballparkCollection = defineCollection({
+  loader: glob({ pattern: "ballpark.md", base: "content" }),
+  schema: z.object({
+    title: z.string(),
+    description: optionalString,
+    image: optionalString,
+    // a picture of the map, no embedded Google Maps (privacy)
+    map_image: optionalString,
+    map_link: optionalString,
+    facts: z.array(z.object({ title: z.string(), text: optionalString })).default([]),
+  }),
+});
+
 // Sponsors (.pages.yml: sponsors), shown on /sponsoren and in the footer
 const sponsorsCollection = defineCollection({
   loader: glob({ pattern: "*.md", base: "content/sponsors" }),
@@ -141,5 +155,6 @@ export const collections = {
   xmasBall: xmasBallCollection,
   pages: pagesCollection,
   kontakt: kontaktCollection,
+  ballpark: ballparkCollection,
   sponsors: sponsorsCollection,
 };
