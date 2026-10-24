@@ -97,6 +97,14 @@
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-text-dark;
   @apply prose-tr:border-border;
   @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px];
+
+  /* several images in one paragraph (galleries of migrated posts) form a grid */
+  p:has(> img + img) {
+    @apply grid grid-cols-2 gap-3 sm:grid-cols-3;
+    img {
+      @apply m-0 aspect-[4/3] h-full w-full object-cover;
+    }
+  }
 }
 
 /* tab */

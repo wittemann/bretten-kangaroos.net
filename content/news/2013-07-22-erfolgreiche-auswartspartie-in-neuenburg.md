@@ -1,0 +1,10 @@
+---
+title: "Erfolgreiche Auswärtspartie in Neuenburg"
+date: 2013-07-22
+---
+
+Nachdem die Kangaroos ihr letztes Heimspiel klar verloren hatten, wollten sie diese Niederlage beim Tabellenvorletzen wieder gut machen. Diese Aufgabe hatten insgesamt nur neun Spieler, da durch Verletzungen und Abwesenheiten wichtige Stammspieler fehlten. Nichts desto trotz machten sich die Baseballer aus Bretten auf den zweistündigen Weg nach Neuenburg am Rhein, um dort gegen die dritte Mannschaft der Atomics anzutreten.
+
+Bei sehr sonnigem Wetter und hohen Temperature durften die Kangaroos mit der Offensive starten. Dies gelang auch hervorragend indem Christian Pehle als zweiter Schlagmann den Ball aus dem Spielfeld zu einem Homerun schlagen konnte. Durch diesen und noch weitere gute Schläge konnten die Kangaroos mit drei Punkten in Führung gehen, bevor das Heimteam die erste Change bekam zu punkten. Jedoch auch die Atomics konnten gegen den Kangaroos-Werfer Henning Sommerfeld zwei Punkte im ersten Abschnitt erzielen. So knapp ging es insgesamt sechs Innings weiter bis zu einem Spielstand von 5:8. In diesem Spielabschnitt musste sich der Kangaroos-Werfer dem Wetter geschlagen geben und wurden durch Martin Wittemann ersetzt, welcher den sechsten Abschnitt ohne weitere Punkte beenden. Das siebte und an diesem Tag dann auch das letzte Inning sollte das Kangaroos-Inning werden, denn auch der bereits dritte Werfer der Atomics hatte Probleme, die Kangaroos-Offensive zu kontrollieren. So konnten die Brettener in diesem Abschnitt insgesamt neun Punkte erzielen und sich somit einen großen Vorsprung erarbeiten. Somit war klar, dass die Gastgeber mindestens drei Punkte nachlegen mussten, um das Spiel nicht vorzeitig als Verlierer zu beenden. Dies gelang ihnen jedoch nicht und somite feierten die Kangaroos den sechsten Sieg in dieser Saison und konnten damit den dritten Tabellenplatz festigen.
+
+Kommenden Samstag müssen die Kangaroos nach Kehl zu den Mosquitos. Im vorletzten Spiel der Saison wollen die Spieler aus Bretten die Niederlage der Vorrunde wieder gut machen und den siebten Saisonsieg einfahren.

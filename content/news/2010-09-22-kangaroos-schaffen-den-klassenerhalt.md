@@ -1,0 +1,9 @@
+---
+title: "Kangaroos schaffen den Klassenerhalt"
+date: 2010-09-22
+team: "herren"
+---
+
+Am vorletzten Spiel der Kangaroos ging es um alles oder nichts. Vergangenen Sonntag traten die Kangaroos zu ihrem letzten Heimspiel an. Eine spannendere Ausgangssituation war kaum denkbar, denn zu Gast waren die Mosquitos aus Kehl, welche gleich viele Siege wie die Kangaroos auf dem Konto hatten. Der Verlierer der Partie konnte sich sicher sein, den letzten Tabellenplatz zu belegen und ist somit abgestiegen.
+
+Spannend begann auch die Partie. Die Gäste konnten gleich zu Beginn des Spiels drei Punkte erzielen. Jedoch auch die Kangaroos, welche an diesem Tag eine sehr gute Offensivleistung zeigten, konnten mit drei Punkte zurückschlagen. Das Spiel verlief weitestgehend ausgeglichen. Jedes der beiden Teams konnte punkten. Einzig im siebten Spielabschnitt gelang es den Mosquitos sich mit fünf Punkte abzusetzen. Die Baseballer des VfB Bretten schlugen jedoch direkt zurück und erkämpften sich somit eine drei Punkte Führung zu beginn des letzten Spielabschnittes. Letztendlich trennten die Kangaroos noch drei Aus vom Klassenerhalt. Diese angespannte Situation war den Spielen anzumerken. Insgesamt setzten die Brettener in diesem entscheidenden Abschnitt drei Werfer ein, mussten nichts desto trotz vier Punkte des Gegners in Kauf nehmen. Somit war die Führung wieder abgegeben. Aufgrund des Heimrechts der Kangaroos hatten sie  das Recht nachzulegen. Alles was Sie brauchten war ein Punkt für die Verlängerung und zwei Punkte für den Klassenerhalt. Die Spannung war zu spüren. Letztendlich behielten die Kangaroos die Nerven und Tarik Murtaza konnte einen Schlag Richtung left field erzielen und es somit Andreas Bjelicic ermöglichen, den benötigten Punkt zu erzielen. Der Klassenerhalt war damit, ein Spiel vor Saisonende, geschafft!

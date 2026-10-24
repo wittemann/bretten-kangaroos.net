@@ -8,7 +8,8 @@
     "bsm": "node scripts/fetch-bsm.mjs",
     "preview": "astro preview",
     "format": "prettier -w .",
-    "check": "astro check"
+    "check": "astro check",
+    "migrate": "node scripts/migrate-wordpress.mjs"
   },
   "dependencies": {
     "@astrojs/check": "0.9.9",
@@ -32,11 +33,13 @@
     "@tailwindcss/vite": "4.3.3",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.2.3",
+    "fast-xml-parser": "5.11.2",
     "prettier": "3.9.10",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.8.1",
     "sharp": "0.35.5",
     "tailwindcss": "4.3.3",
+    "turndown": "7.2.4",
     "typescript": "6.0.3"
   },
   "private": true

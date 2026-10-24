@@ -1,0 +1,12 @@
+---
+title: "Verteidigung patzt gegen Liga-Konkurrent"
+date: 2013-04-23
+---
+
+Ladenburg weist Bretten in die Schranken
+
+Bretten. (ts) Bei der  ersten Begegnung in der neuen Saison versuchten Brettens Baseballer vergeblich sich gegen die angriffstarken Romans aus Ladenburg durchzusetzen. Am vergangenen Sonntag bestritten die Landesliga-Meister 2012 ihr erstes Auswärtsspiel gegen eine aus den Klubs Heidelberg, Schwetzingen und Ladenburg neu fusionierte Mannschaft aus erfahrenen Spielern, um am Ende auf ihre Schwächen in der Abwehr aufmerksam gemacht zu werden. Zu dieser vierstündigen Achterbahn-Partie reisten die Kangaroos in Unterbesetzung und scheiterten relativ knapp durch die Unfähigkeit der Innenfeldspieler und der Werfer den taktisch überlegenen Angriffen der „Römer“ standzuhalten.
+
+Während der ersten drei, von neun gespielten, Durchgängen erzielten die Brettener zunächst eine Führung von drei Punkten die zum Ende des dritten Innings auf einen Spielstand von 6:3 zugunsten der Ladenburger gewendet wurde. Im vierten Durchgang verließ Martin Wittemann den Werferhügel und ein erneuter Punktgewinn zu einer 11:3 Führung der Romans unterstrich die taktisch optimal ausgeführten Angriffe des Gegners, welche die Brettener Abwehr fast mühelos durchbrachen. In den folgenden zwei Innings lief dann der Brettener Angriff um die Murtaza-Brüder, der an diesem Tag von Steffen Groß und Thomas Springer erfolgreich unterstützt werden konnte, zu Hochtouren an. Mit einer Wirkung von dreizehn Punkten hätten diese beiden Durchgänge, die entscheidende Wendung bringen sollen. Die Brettener Abwehr im Innenfeld versagte jedoch kontinuierlich und die Werfer erlaubten zu vielen Schlägern auf punktreiche Positionen vorzurücken. Selbst der eingewechselte Werfer Finn Bohnstedt, der sein Debüt in der ersten Herrenmannschaft antrat, richtete gegen die durchsetzungsfähigen Gegner nichts mehr aus.
+
+Gegen Ende der Partie am Anfang des achten Durchgangs und einem Spielstand von 20:16 für Ladenburg waren alle Möglichkeiten noch offen, aber die Kangaroos ließen einfach mehr Punkt zu als ihr Angriff ausgleichen konnte. So endete das erste Saisonspiel gegen die vielleicht einzigen Konkurrenten der Liga mit einer 26:19 Niederlage. Die Villingendorf Cavemen, die von Bretten auch nicht unterschätzt werden dürfen, treten am Sonntag, 28. April um 15 Uhr auf dem Kangaroo-Field in Diedelsheim zum ersten Heimspiel gegen unsere heimischen Baseballer an, eine spannende Begegnung ist somit vorprogrammiert.

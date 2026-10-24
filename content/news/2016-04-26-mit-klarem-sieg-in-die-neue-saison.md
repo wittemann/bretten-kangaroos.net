@@ -1,0 +1,6 @@
+---
+title: "Mit klarem Sieg in die neue Saison"
+date: 2016-04-26
+---
+
+Am Sonntag eröffneten die Bretten Kangaroos die Landesligasaison 2016 mit einem deutlichen 22:9 Sieg gegen die Hedhgehogs. Im Meisterschaftsspiel der vergangenen Saison an Heidelberg gescheitert, waren die Brettener entsprechend motiviert gestartet und erspielten sich im ersten Durchgang bereits einen 9:2 Vorsprung. Während Spielertrainer Henning Sommerfeld keine Ablösung auf dem Werferhügel benötigte und das Spiel vorzeitig durch eine Gnadenregel beenden konnte, setzten die gegnerischen Werfer an diesem Tag dem Brettener Angriff nicht viel entgegen. Der Punktevorsprung wurde stetig ausgebaut und die Defensive unterstütze Henning Sommerfeld fast fehlerfrei, somit konnte bereits früh ein Zeichen in der startenden Saison gesetzt werden. Auch die zweite Mannschaft der Kangaroos zeigte am Wochenende in ihrem ersten Bezirksligaspiel, dass sie sich trotz vielen Anfängern durchaus in der Liga behaupten kann. Für einen Sieg gegen die Karlsruhe Cougars reichte es zwar nicht, mit dem Endstand von 16:09 zeigte das Team um Jan Knebel jedoch, dass es offensiv agieren kann und Punkte erzielt. Die Defensivleistung ist zwar noch von vielen „Walks“ geprägt, dies stellt in dieser Liga jedoch auch die Regel dar und somit war Jan Knebel mit der Feuertaufe seiner zweiten Mannschaft durchaus zufrieden.

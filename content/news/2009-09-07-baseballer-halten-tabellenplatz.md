@@ -1,0 +1,6 @@
+---
+title: "Baseballer halten Tabellenplatz"
+date: 2009-09-07
+---
+
+Gegen Ende der Saison trafen die Kangaroos und  die Sindelfinger Squirrels aufeinander, beide Teams hatten Aussichten auf den vierten Platz in der Verbandsliga Baden-Württemberg. Die Begegnung begann relativ verhalten, Sindelfingen startete keinen Angriff, während Bretten kleinere Punkterfolge verbuchen konnte. Raphael Zippenfenig erwischte einen guten Start auf dem Werferhügel und erlaubte es an diesem Tag nicht, dass die Gegner entscheidende Treffer landen konnten. Gegen Mitte der Partie begann die Offensive der Kangaroos mit Osmanis ?Manni? Raudette-Segura, der an diesem Tag vier von fünf Begegnungen mit dem Werfer für sich entscheiden konnte, so langsam Druck zu machen. Bei sechs von neun gespielten ?Innings? kamen die Squirrels beim Punktestand von 6:8 bis auf zwei Punkte an die Gastgeber heran als es einen Werferwechsel gab: Henning Sommerfeld betrat das Feld und gab das Spiel nicht mehr aus der Hand. Brettens Schlagmänner erhöhten dann die Führung auf 10:6 und erlaubten es durch ihre Verteidigung, die sich zur Zeit kaum noch Fehler leistet, die Partie sicher zu ihren Gunsten zu beenden. Das letzte Heimspiel der Saison, bevor es zum Pokalfinale in Stuttgart gegen den deutschen Meister geht, findet am Sonntag, 20. September, in Diedelsheim auf dem Hartplatz statt.
