@@ -602,7 +602,8 @@ function writeRedirects() {
       .replace(/\/$/, "")
       .replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
       .replace(/[^\x20-\x7e]+/g, "[^/]*");
-    return `RedirectMatch 301 "^${pattern}/?$" "${url}"`;
+    // Apache adds the trailing slash to a page's folder, so point there directly
+    return `RedirectMatch 301 "^${pattern}/?$" "${url}/"`;
   };
   const lines = [
     begin,
@@ -617,8 +618,8 @@ function writeRedirects() {
     ]
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([oldPath, url]) => rule(oldPath, url)),
-    'RedirectMatch 301 "^/category/" "/news"',
-    'RedirectMatch 301 "^/wp-content/uploads/" "/news"',
+    'RedirectMatch 301 "^/category/" "/news/"',
+    'RedirectMatch 301 "^/wp-content/uploads/" "/news/"',
     end,
   ];
   const htaccess = readFileSync(HTACCESS_PATH, "utf8");
