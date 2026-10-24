@@ -2,6 +2,7 @@
 title: "Zweiter Sieg für das Schüler Team in Ladenburg"
 date: 2024-05-13
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2024/05/xdhle5524.jpg"
 ---
 

@@ -2,6 +2,7 @@
 title: "Jugend Trainingsspiel vs. Saarlouis Hornets"
 date: 2025-07-22
 author: "Markus Rittmann"
+team: "jugend"
 image: "/images/news/2025/07/img-5403.jpg"
 ---
 

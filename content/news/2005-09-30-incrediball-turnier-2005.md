@@ -2,6 +2,7 @@
 title: "Incrediball Turnier 2005"
 date: 2005-09-30
 author: "Martin Wittemann"
+old_team: "Incrediball"
 ---
 
 Am 24. September trugen die Bretten Kangaroos zum zweiten Mal ein Turnier aus an dem jedermann teilnehmen konnte. Das Baseballturnier wurde mit fünfzehn gemeldeten Teams ein voller Erfolg und die Kangaroos freuen sich darauf dieses sportliche Ereignis zu einer Tradition werden zu lassen.

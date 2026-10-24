@@ -60,6 +60,24 @@ const OLD_TEAM_BY_CATEGORY = {
   "softball-juniors": "Softball-Juniors",
   incrediball: "Incrediball",
 };
+// Most posts since 2019 are only in "Allgemein"; their team comes from a
+// keyword in the title instead. A title naming several teams stays club news.
+// Old teams are checked first, so "Herren 2" doesn't count as the Herren.
+const OLD_TEAM_BY_TITLE = [
+  [/herren 2|kangaroos ii\b/i, "Herren 2"],
+  [/slow[ -]?pitch/i, "Slow Pitch"],
+  [/incrediball/i, "Incrediball"],
+];
+const TEAM_BY_TITLE = [
+  [/\bherren\b/i, "herren"],
+  // not the Jugendabteilung or -versammlung, which concern the whole club
+  [/\bjugend(?!abteilung|arbeit|versammlung|wart|leit)|\bu-?1[56]\b/i, "jugend"],
+  [/sch(ü|ue)ler|\bu-?1[0-2]\b/i, "schueler"],
+  [/\bt-ball/i, "t-ball"],
+  [/softball/i, "softball"],
+];
+// Until the girls' team started, softball meant the Slow Pitch team
+const SOFTBALL_SINCE = "2019";
 
 // Old pages that moved (docs/wordpress-inventory.md); the rest keep their URL
 const PAGE_REDIRECTS = {
@@ -265,13 +283,24 @@ function toSlug(text, maxLength = 70) {
   return slug.slice(0, maxLength).replace(/-[^-]*$/, "");
 }
 
-function teamFields(categories) {
+function teamFields(categories, title, date) {
   // A post of several current teams is club news, the select takes only one
   const teams = [...new Set(categories.map((c) => TEAM_BY_CATEGORY[c]).filter(Boolean))];
   if (teams.length === 1) return { team: teams[0] };
   if (teams.length > 1) return {};
   const oldTeam = categories.map((c) => OLD_TEAM_BY_CATEGORY[c]).find(Boolean);
-  return oldTeam ? { old_team: oldTeam } : {};
+  if (oldTeam) return { old_team: oldTeam };
+  return teamFromTitle(title, date);
+}
+
+function teamFromTitle(title, date) {
+  const oldTeam = OLD_TEAM_BY_TITLE.find(([pattern]) => pattern.test(title))?.[1];
+  if (oldTeam) return { old_team: oldTeam };
+  const teams = TEAM_BY_TITLE.filter(([pattern]) => pattern.test(title));
+  if (teams.length !== 1) return {};
+  const team = teams[0][1];
+  if (team === "softball" && date < SOFTBALL_SINCE) return { old_team: "Slow Pitch" };
+  return { team };
 }
 
 function frontMatter(post, image) {
@@ -279,7 +308,7 @@ function frontMatter(post, image) {
     title: post.title,
     date: post.date,
     ...(post.author ? { author: post.author } : {}),
-    ...teamFields(post.categories),
+    ...teamFields(post.categories, post.title, post.date),
     ...(image ? { image } : {}),
   };
   const lines = Object.entries(fields).map(([key, value]) =>

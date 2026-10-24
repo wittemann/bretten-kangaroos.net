@@ -2,6 +2,7 @@
 title: "Grandioser Saisonabschluss der Schülermannschaft"
 date: 2018-09-18
 author: "Andrea Klein"
+team: "schueler"
 ---
 
 Zum Saisonabschluss am vergangenen Sonntag, hieß die Schülermannschaft der Kangaroos die Hawks aus Tübingen zum finalen Double Header für diese Saison im Ball Park Bretten willkommen.

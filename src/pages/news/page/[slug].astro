@@ -1,5 +1,7 @@
 ---
 import Posts from "@/components/Posts.astro";
+import NewsFilter from "@/components/NewsFilter.astro";
+import TitleBand from "@/components/TitleBand.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import Pagination from "@/layouts/components/Pagination.astro";
@@ -32,6 +34,9 @@ const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
 ---
 
 <Base title="Aktuelles">
+  <TitleBand title="Aktuelles">
+    <NewsFilter />
+  </TitleBand>
   <section class="section">
     <div class="container">
       <Posts className="mb-16" posts={currentPosts} />

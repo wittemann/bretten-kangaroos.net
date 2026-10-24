@@ -2,6 +2,7 @@
 title: "Saisonauftakt der SG Kangaroos/Racoons Jugend"
 date: 2024-05-06
 author: "Michael Wittemann"
+team: "jugend"
 image: "/images/news/2024/05/bild-1.jpg"
 ---
 

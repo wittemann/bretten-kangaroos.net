@@ -2,6 +2,7 @@
 title: "Schülermannschaft bestritt letztes Hinrundenspiel gegen Stuttgart"
 date: 2017-05-22
 author: "Bryan Schaffer"
+team: "schueler"
 ---
 
 Am Samstag trafen die Schüler der Bretten Kangaroos auf die Stuttgart Reds und konnten sich wieder spielerisch und technisch weiterentwickeln. Da die gegnerischen Mannschaften z.T. auf jahrelange Spielerfahrung zurückgreifen können und die kleinen Kangaroos durch wenige Monate Training zum zusammenzufinden praktisch ins "kalte Wasser" geworfen wurden, kann man noch keine Siege erwarten. Zumal mit dem deutschen Meister ein professioneller Gegner auftrat, der von einem großen Trainingskader unterstützt wird. Doch  eine stetige Weiterentwicklung der Schülermannschaft ist wahrnehmbar und könnte durch vermehrtes Einzeltraining in den kommenden Monaten bald auch in sportliche Erfolge münden. Dazu werden aber noch Spieler aus den Herrenmannschaften benötigt, die bereit sind ihr Wissen weiterzutragen, bis jetzt hat sich nur einer der "alten Hasen" dazu bereit erklärt die Trainer Bryan Schaffer, Andreas Bjelicic und Co-Trainer Orcan Kapici zu unterstützen. In der Rückrunde können die Schüler dann beweisen, dass ihre Erfahrungswerte zu einem erfolgreicheren Spiel verhelfen können, man darf also gespannt sein.

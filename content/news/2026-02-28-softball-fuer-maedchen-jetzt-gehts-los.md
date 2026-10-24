@@ -2,6 +2,7 @@
 title: "🥎 Softball für Mädchen – Jetzt geht’s los!"
 date: 2026-02-28
 author: "Michael Wittemann"
+team: "softball"
 image: "/images/news/2026/02/bild.png"
 ---
 

@@ -3,6 +3,7 @@ import Base from "@/layouts/Base.astro";
 import TeamSwitcher from "@/components/TeamSwitcher.astro";
 import TitleBand from "@/components/TitleBand.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -19,6 +20,17 @@ const facts = [
   ages && { label: "Alter", value: ages },
   league && { label: "Liga", value: league },
 ].filter(Boolean) as { label: string; value: string }[];
+
+// "Aus dem Team": the latest posts tagged with this team
+const teamPosts = sortByDate(
+  (await getSinglePage("news")).filter((post) => post.data.team === team.id),
+).slice(0, 3);
+const longDate = new Intl.DateTimeFormat("de-DE", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
 ---
 
 <Base title={title} description={`${title} der Bretten Kangaroos`}>
@@ -34,6 +46,28 @@ const facts = [
         {
           !hasBody && !image && (
             <p class="text-intro">Mehr Infos zum Team folgen in Kürze.</p>
+          )
+        }
+        {
+          teamPosts.length > 0 && (
+            <section class="mt-12" aria-labelledby="team-news">
+              <div class="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+                <h2 id="team-news">Aus dem Team</h2>
+                <a href={`/news/team/${team.id}`} class="font-semibold text-primary hover:underline">
+                  Alle {title}-Beiträge →
+                </a>
+              </div>
+              <ul class="divide-y divide-line border-y border-line">
+                {teamPosts.map((post) => (
+                  <li>
+                    <a href={`/news/${post.id}`} class="group flex flex-col gap-1 py-4">
+                      <span class="text-sm">{longDate.format(post.data.date)}</span>
+                      <span class="font-semibold leading-snug text-ink group-hover:text-primary">{post.data.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
           )
         }
       </div>

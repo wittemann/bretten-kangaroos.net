@@ -2,6 +2,7 @@
 title: "Neues T-Ball Team startet mit dem Training"
 date: 2015-05-19
 author: "Martin Wittemann"
+team: "t-ball"
 ---
 
 Unter der Leitung des ehemaligen Herren Coaches Bryan Schaffer möchten die Kangaroos wieder ein T-Ball Team ins Leben rufen. T-Ball ist für Jungen und Mädchen im Alter von 4 bis 8 Jahren gedacht und soll die Kinder auf spielerische Art an den Baseball und Softball Sport heranführen.\

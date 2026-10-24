@@ -2,6 +2,7 @@
 title: "Erster Doppelerfolg für die Kangaroos Schüler gegen Heidelberg"
 date: 2024-06-23
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2024/06/team-2.jpg"
 ---
 

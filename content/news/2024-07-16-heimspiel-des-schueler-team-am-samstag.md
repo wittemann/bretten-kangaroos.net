@@ -2,6 +2,7 @@
 title: "Heimspiel des Schüler Team am Samstag"
 date: 2024-07-16
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2024/07/spieltag-10-vorbericht.jpg"
 ---
 

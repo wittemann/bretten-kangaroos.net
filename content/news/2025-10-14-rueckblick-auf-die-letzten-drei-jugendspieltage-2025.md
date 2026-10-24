@@ -2,6 +2,7 @@
 title: "Rückblick auf die letzten drei Jugendspieltage 2025"
 date: 2025-10-14
 author: "Markus Rittmann"
+team: "jugend"
 image: "/images/news/2025/10/img-7009.jpg"
 ---
 

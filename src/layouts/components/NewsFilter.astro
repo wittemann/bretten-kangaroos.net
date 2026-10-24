@@ -1,0 +1,21 @@
+---
+// Pill links under the Aktuelles title: all posts, one team, or club news.
+import { newsFilters } from "@/lib/teams";
+
+const { current } = Astro.props;
+---
+
+<nav aria-label="Nach Team filtern" class="mt-6 flex flex-wrap gap-2">
+  <a href="/news" aria-current={current ? undefined : "page"} class="pill">Alle</a>
+  {
+    newsFilters.map((filter) => (
+      <a
+        href={`/news/team/${filter.slug}`}
+        aria-current={filter.slug === current ? "page" : undefined}
+        class="pill"
+      >
+        {filter.name}
+      </a>
+    ))
+  }
+</nav>

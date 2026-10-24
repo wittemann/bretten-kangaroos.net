@@ -2,6 +2,7 @@
 title: "Schüler-Kangaroos holen Auswärtssieg in Remchingen – trotz kleinem Kader ein starker Teamauftritt"
 date: 2026-05-04
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2026/05/whatsapp-image-2026-05-03-at-16-33-12.jpg"
 ---
 

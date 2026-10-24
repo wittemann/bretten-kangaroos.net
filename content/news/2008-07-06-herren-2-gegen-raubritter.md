@@ -2,6 +2,7 @@
 title: "Herren 2 gegen Raubritter"
 date: 2008-07-06
 author: "Bryan Schaffer"
+old_team: "Herren 2"
 ---
 
 Am Samstag den 28. Juni spielte die 2. Herrenmannschaft der Bretten Kangaroos gegen die Schriesheimer Raubritter.

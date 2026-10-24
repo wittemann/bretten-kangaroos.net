@@ -2,6 +2,7 @@
 title: "Schüler Team holt zwei weitere Siege in Remchingen"
 date: 2024-07-08
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2024/07/bericht-team.jpg"
 ---
 

@@ -2,6 +2,7 @@
 title: "Opening Day: Schüler starten in die neue Saison"
 date: 2026-04-14
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2026/04/spieltag-1-vorbericht.jpg"
 ---
 

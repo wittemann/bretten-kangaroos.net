@@ -2,6 +2,7 @@
 title: "U13‑Softballauswahl: Lara schafft den Sprung in den Kader!"
 date: 2026-05-06
 author: "Michael Wittemann"
+team: "softball"
 image: "/images/news/2026/05/whatsapp-image-2026-05-02-at-11-54-30.jpg"
 ---
 

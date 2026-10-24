@@ -2,6 +2,7 @@
 title: "Kimi Rittmann aus unserem Schüler Team fährt zur Deutschen Meisterschaft"
 date: 2024-06-14
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2024/06/u10.jpg"
 ---
 

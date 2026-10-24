@@ -21,3 +21,14 @@ export const teamNames: Record<TeamSlug, string> = {
 // Label shown on a post: the current team, or the name of a team that no longer exists
 export const postTeamLabel = (data: { team?: TeamSlug; old_team?: string }) =>
   data.team ? teamNames[data.team] : data.old_team || undefined;
+
+// Filters on Aktuelles: each team, then "Verein" for posts without any team
+export const newsFilters = [
+  ...teamSlugs.map((slug) => ({ slug, name: teamNames[slug] })),
+  { slug: "verein", name: "Verein" },
+];
+
+export const matchesNewsFilter = (
+  data: { team?: TeamSlug; old_team?: string },
+  filter: string,
+) => (filter === "verein" ? !data.team && !data.old_team : data.team === filter);

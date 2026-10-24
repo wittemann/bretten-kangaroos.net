@@ -2,6 +2,7 @@
 title: "Leider nichts zu holen für die Schüler beim Auswärtsspiel in Schriesheim"
 date: 2024-07-14
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2024/07/leyh1843.jpg"
 ---
 

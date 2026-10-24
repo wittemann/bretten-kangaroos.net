@@ -2,6 +2,7 @@
 title: "Incrediballturnier 2007"
 date: 2007-09-23
 author: "Martin Wittemann"
+old_team: "Incrediball"
 ---
 
 Wenn die Saison für die Teams der Kangaroos im Ligabetrieb zu Ende geht, geht es für die Freizeittems erst los. Vergangenen Samstag war wieder das Incrediball Turnier für Freizeitmannschaften auf dem Feld der Kangaroos. Dieses slowpitch Softball Turnier wurde inzwischen schon zum vierten Male ausgetragen und erfreut sich immer noch großer Beliebtheit.Angetreten sind dieses Jahr elf Teams, davon einige schon das vierte mal dabei, andere das erste Mal. Für die meisten der Teams hieß dies jedoch um 9 Uhr morgens das erste Spiel bestreiten. Auf insgesamt drei Feldern wurde in der Vorrunde um die vorderen Plätze in den drei Gruppen gekämpft.Bei einer Spieldauer von ca. einer Stunde konnten die Vorrundenspiele bis um 14 Uhr abgeschlossen werden und damit standen acht Teams fest, die ins Viertelfinale einzogen. Für die verbleibenden drei Teams war der Tag jedoch noch nicht zu ende. Sie durften in einer Trostrunde noch die hinteren Tabellenplätze ausspielen.

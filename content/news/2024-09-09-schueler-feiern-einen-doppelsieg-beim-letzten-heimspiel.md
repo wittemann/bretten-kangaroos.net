@@ -2,6 +2,7 @@
 title: "Schüler feiern einen Doppelsieg beim letzten Heimspiel"
 date: 2024-09-09
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2024/09/img-3271.jpg"
 ---
 

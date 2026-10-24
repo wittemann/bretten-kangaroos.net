@@ -2,6 +2,7 @@
 title: "Little League Seniors (U16) Gamedays/Tryout und Baseball Flohmarkt in Bretten"
 date: 2025-03-04
 author: "Markus Rittmann"
+team: "jugend"
 image: "/images/news/2025/03/chrome-nm4r87ipx8.png"
 ---
 

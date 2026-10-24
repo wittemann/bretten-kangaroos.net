@@ -1,0 +1,46 @@
+---
+// Aktuelles filtered by team: /news/team/<team>, /news/team/<team>/page/<n>
+import Posts from "@/components/Posts.astro";
+import NewsFilter from "@/components/NewsFilter.astro";
+import TitleBand from "@/components/TitleBand.astro";
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import Pagination from "@/layouts/components/Pagination.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { matchesNewsFilter, newsFilters } from "@/lib/teams";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+
+export async function getStaticPaths() {
+  const posts = sortByDate(await getSinglePage("news"));
+  return newsFilters.flatMap((filter) => {
+    const filtered = posts.filter((post) => matchesNewsFilter(post.data, filter.slug));
+    const totalPages = Math.max(1, Math.ceil(filtered.length / config.settings.pagination));
+    return Array.from({ length: totalPages }, (_, i) => ({
+      params: { team: filter.slug, page: i === 0 ? undefined : `page/${i + 1}` },
+      props: { filter, posts: filtered, currentPage: i + 1, totalPages },
+    }));
+  });
+}
+
+const { filter, posts, currentPage, totalPages } = Astro.props;
+const start = (currentPage - 1) * config.settings.pagination;
+const currentPosts = posts.slice(start, start + config.settings.pagination);
+---
+
+<Base title={`Aktuelles · ${filter.name}`}>
+  <TitleBand title="Aktuelles">
+    <NewsFilter current={filter.slug} />
+  </TitleBand>
+  <section class="section">
+    <div class="container">
+      {
+        currentPosts.length > 0 ? (
+          <Posts posts={currentPosts} className="mb-16" />
+        ) : (
+          <p class="text-intro">Noch keine Beiträge.</p>
+        )
+      }
+      <Pagination section={`news/team/${filter.slug}`} currentPage={currentPage} totalPages={totalPages} />
+    </div>
+  </section>
+</Base>

@@ -2,6 +2,7 @@
 title: "Trainingsspiele und Trainingswochenende: Die Saisonvorbereitung der Bretten Kangaroos Schüler läuft auf Hochtouren!"
 date: 2025-04-14
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2025/04/whatsapp-bild-2025-04-05-um-18-27-21-c424c74d.jpg"
 ---
 

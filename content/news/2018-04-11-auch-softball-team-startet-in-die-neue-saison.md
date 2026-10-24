@@ -2,6 +2,7 @@
 title: "Auch Softball Team startet in die neue Saison"
 date: 2018-04-11
 author: "Michael Wittemann"
+old_team: "Slow Pitch"
 ---
 
 Auch das Softball Team der Kangaroos ist in die Vorbereitung für die Saison gestartet.

@@ -2,6 +2,7 @@
 title: "Kangaroos Schüler Mannschaft mit stolzem Saisonabschluss"
 date: 2019-10-04
 author: "Bryan Schaffer"
+team: "schueler"
 ---
 
 Am vergangenen Sonntag fand in Mannheim das letzte Doubleheader der Bretten Kangaroos Schüler gegen den Mannheim Tornados statt. Perfekter konnte das Wetter nicht sein. Bei strahlender Sonne und 25 Grad war die optimale Bedingung für einen schönen Baseball Tag vorgegeben.

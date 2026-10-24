@@ -2,6 +2,7 @@
 title: "Jugendmannschaft eröffnet die Baseballsaison 2015"
 date: 2015-02-09
 author: "Bryan Schaffer"
+team: "jugend"
 ---
 
 Das Jugendteam der Kangaroos startete am 24. Januar in die neue Baseballsaison. Bereits zum 5. Mal veranstalteten die Ulm Falcons die Baden-Württembergische Hallenmeisterschaft. Hierbei wurde in 8 Leistungsklassen der jeweilige Sieger ausgespielt.

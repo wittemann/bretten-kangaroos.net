@@ -2,6 +2,7 @@
 title: "Herren 2 gegen Kehl und Schriesheim"
 date: 2008-05-25
 author: "Bryan Schaffer"
+old_team: "Herren 2"
 ---
 
 Kehl:

@@ -14,7 +14,7 @@ Kurzanleitung zum Pflegen der Vereinswebseite mit **Pages CMS**. Du brauchst kei
 2. Ausfüllen:
    - **Titel** (Pflicht)
    - **Datum** (Pflicht)
-   - **Team**: Herren, Jugend, Schüler, T-Ball oder Softball. Bei Vereinsnews leer lassen, dann erscheint der Beitrag nur unter „Alle“.
+   - **Team**: Herren, Jugend, Schüler, T-Ball oder Softball. Bei Vereinsnews leer lassen, dann erscheint der Beitrag unter „Alle“ und „Verein“.
    - **Früheres Team**: nur für alte Beiträge von Teams, die es nicht mehr gibt, sonst leer lassen.
    - **Bild**: siehe unten.
    - **Zahlen** (optional): kleiner Kasten unter dem Bild. Mit **Add an entry** jeweils eine **Zahl** und eine **Beschriftung** eintragen, z. B. „12“ und „Siege“.

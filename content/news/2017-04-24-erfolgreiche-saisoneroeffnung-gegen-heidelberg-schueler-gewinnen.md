@@ -2,6 +2,7 @@
 title: "Erfolgreiche Saisoneröffnung gegen Heidelberg - Schüler gewinnen gegen Mannheim"
 date: 2017-04-24
 author: "Bryan Schaffer"
+team: "schueler"
 ---
 
 Das erste Baseballwochenende der aktuellen Saison war für die Kangaroos ein Erfolg auf der ganzen Linie. Neben einem gelungenen Auftakt in der Landesliga gegen den schwierigen Gegner Heidelberg mit einem deutlichen 9:4 sorgte auch die Schülermannschaft der Brettener für ein letztes gelungenes Trainingsspiel vor dem Saisonauftakt in Diedelsheim am kommenden Sonntagmorgen.

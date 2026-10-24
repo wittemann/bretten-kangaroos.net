@@ -2,6 +2,7 @@
 title: "Nachlese: Jugend-Team mit Sieg und Niederlage beim Double Header in Ladenburg"
 date: 2025-07-15
 author: "Markus Rittmann"
+team: "jugend"
 image: "/images/news/2025/07/img-3744.jpg"
 ---
 

@@ -2,6 +2,7 @@
 title: "Kangaroos-Jugend mit Sieg und Niederlage bei den Freiburg Knights"
 date: 2025-08-05
 author: "Markus Rittmann"
+team: "jugend"
 image: "/images/news/2025/08/2025-07-26-18-26-34-000.jpg"
 ---
 

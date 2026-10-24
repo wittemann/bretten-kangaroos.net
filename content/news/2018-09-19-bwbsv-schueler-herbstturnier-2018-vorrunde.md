@@ -2,6 +2,7 @@
 title: "BWBSV Schüler Herbstturnier 2018 - Vorrunde"
 date: 2018-09-19
 author: "Andrea Klein"
+team: "schueler"
 ---
 
 Am kommenden Samstag, 22.09.2018, richten die Brettener Kangaroos im BallPark in Bretten Diedelsheim, die Vorrunde des BWBSV Schüler Herbsturniers aus.

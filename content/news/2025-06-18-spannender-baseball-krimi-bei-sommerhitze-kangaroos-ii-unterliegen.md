@@ -2,6 +2,7 @@
 title: "Spannender Baseball-Krimi bei Sommerhitze: Kangaroos II unterliegen knapp der SG Ladenburg/Mannheim"
 date: 2025-06-18
 author: "Jens-Uwe Otte"
+old_team: "Herren 2"
 image: "/images/news/2025/06/herren-2-14-06-2025-202.jpg"
 ---
 

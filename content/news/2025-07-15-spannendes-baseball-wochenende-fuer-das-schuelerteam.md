@@ -2,6 +2,7 @@
 title: "Spannendes Baseball-Wochenende für das Schülerteam"
 date: 2025-07-15
 author: "Michael Wittemann"
+team: "schueler"
 image: "/images/news/2025/07/img-20250715-wa0004.jpg"
 ---
 
