@@ -5,10 +5,18 @@ const indexPageLink = currentPage === 2;
 const hasPrevPage = currentPage > 1;
 const hasNextPage = totalPages > currentPage;
 
-let pageList = [];
-for (let i = 1; i <= totalPages; i++) {
-  pageList.push(i);
-}
+// First, last and the pages around the current one; "gap" marks skipped pages.
+// Neighbours of the current page are hidden on phones to keep the row narrow.
+const shown = [...new Set([1, currentPage - 1, currentPage, currentPage + 1, totalPages])]
+  .filter((page) => page >= 1 && page <= totalPages)
+  .sort((a, b) => a - b);
+let pageList: (number | "gap")[] = [];
+shown.forEach((page, i) => {
+  if (i > 0 && page - shown[i - 1] > 1) pageList.push("gap");
+  pageList.push(page);
+});
+const isNeighbour = (page: number) =>
+  Math.abs(page - currentPage) === 1 && page !== 1 && page !== totalPages;
 ---
 
 {
@@ -59,8 +67,12 @@ for (let i = 1; i <= totalPages; i++) {
       )}
 
       {/* page index */}
-      {pageList.map((pagination, i) =>
-        pagination === currentPage ? (
+      {pageList.map((pagination) =>
+        pagination === "gap" ? (
+          <span class="h-10 w-6 leading-10 font-semibold text-dark" aria-hidden="true">
+            …
+          </span>
+        ) : pagination === currentPage ? (
           <span
             aria-current="page"
             class={`border border-primary bg-primary rounded-md h-10 w-10 leading-[35px] font-semibold text-white`}
@@ -70,12 +82,11 @@ for (let i = 1; i <= totalPages; i++) {
         ) : (
           <a
             href={
-              i === 0
+              pagination === 1
                 ? `${section ? "/" + section : "/"}`
                 : `${section ? "/" + section : ""}/page/${pagination}`
             }
-            aria-current="page"
-            class={`border border-primary hover:bg-primary hover:text-white rounded-md h-10 w-10 leading-[36px] font-semibold text-dark flex items-center justify-center transition duration-200`}
+            class={`${isNeighbour(pagination) ? "hidden sm:flex" : "flex"} border border-primary hover:bg-primary hover:text-white rounded-md h-10 w-10 leading-[36px] font-semibold text-dark items-center justify-center transition duration-200`}
           >
             {pagination}
           </a>
