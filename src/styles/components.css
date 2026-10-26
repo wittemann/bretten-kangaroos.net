@@ -93,6 +93,17 @@
   @apply prose-tr:border-border;
   @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px];
 
+  /* on phones, wide tables scroll sideways instead of widening the page */
+  @media (max-width: 639px) {
+    table {
+      @apply block overflow-x-auto;
+    }
+    th,
+    td {
+      @apply px-2 py-3;
+    }
+  }
+
   /* several images in one paragraph (galleries of migrated posts) form a grid */
   p:has(> img + img) {
     @apply grid grid-cols-2 gap-3 sm:grid-cols-3;

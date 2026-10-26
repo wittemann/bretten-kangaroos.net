@@ -422,6 +422,9 @@ function createTurndown() {
 
 function rewriteLink(href, service) {
   href = decodeEntities(href.trim());
+  // Links pasted from GMX/web.de webmail point at their dereferrer, which only works inside the mailbox
+  const deref = href.match(/^https?:\/\/deref-[^/]+\/.*[?&]redirectUrl=([^&]+)/i);
+  if (deref) href = decodeURIComponent(deref[1]);
   if (/^(mailto:|tel:)/i.test(href)) return href;
   if (!/^https?:\/\//i.test(href)) {
     if (!href.startsWith("/")) return null; // relative links of the very old site

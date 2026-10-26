@@ -13,7 +13,9 @@ on:
   schedule:
     # GitHub cron runs in UTC; 4–19 UTC covers 6–20 Europe/Berlin in summer
     # and winter. The first step drops runs outside that window.
-    - cron: "0 4-19 * * 6,0"
+    # Minute 23 instead of 0: GitHub drops many scheduled runs at the full hour
+    # (only 4 of 16 ran per weekend day in October 2026).
+    - cron: "23 4-19 * * 6,0"
 
 # One deploy at a time; a newer run waits instead of uploading in parallel
 concurrency:
