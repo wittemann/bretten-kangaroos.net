@@ -1,0 +1,62 @@
+# One-off check (manual run): are there web server access logs on the IONOS
+# webspace that the deploy user can read? Prints only folder/file names,
+# sizes and dates plus one sample line with IP addresses masked – the repo is
+# public, so the run log is too. Delete this workflow once we know.
+
+name: List IONOS logs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List log folders via SFTP
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          LFTP_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+          lftp_run() {
+            lftp --env-password -u "$DEPLOY_USER" "sftp://$DEPLOY_HOST" -e "
+              set net:max-retries 3;
+              set net:timeout 30;
+              set sftp:connect-program 'ssh -a -x -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$HOME/.ssh/known_hosts';
+              $1
+              bye"
+          }
+
+          echo "== Top level of the SFTP home (folder names only)"
+          lftp_run "cls -1 -F /;" || true
+
+          for dir in /logs /log /logfiles /access_logs; do
+            echo "== $dir"
+            lftp_run "cls -l --sort=date $dir/;" 2>/dev/null | head -40 || echo "(not there)"
+          done
+
+          # One line of the newest log, IPs masked, to see the format.
+          newest=$(lftp_run "cls -1 --sort=date /logs/;" 2>/dev/null | grep -iE 'access' | head -1 || true)
+          if [ -n "$newest" ]; then
+            echo "== Sample line from $newest (IPs masked)"
+            lftp_run "get '$newest' -o sample.log;" >/dev/null 2>&1 || true
+            if [ -f sample.log ]; then
+              case "$newest" in *.gz) zcat sample.log ;; *) cat sample.log ;; esac \
+                | head -1 \
+                | sed -E 's/^[^ ]+/<client>/; s/[0-9]{1,3}(\.[0-9]{1,3}){3}/<ipv4>/g'
+              echo "lines in file: $(case "$newest" in *.gz) zcat sample.log ;; *) cat sample.log ;; esac | wc -l)"
+              rm -f sample.log
+            fi
+          else
+            echo "== No access log file found in /logs"
+          fi
