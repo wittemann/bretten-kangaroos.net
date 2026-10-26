@@ -261,6 +261,7 @@ Needs: everything above, privacy policy review + DNS plan from my tasks.
 - [x] Usage statistics, 2026-10-26: `npm run stats` (local only) reads the IONOS access logs over a separate SFTP
       user (host/user in `.env`, password in the Keychain as `kangaroos-stats-sftp`), keeps anonymous counts in the
       git-ignored `stats/` and writes `stats/dashboard/*.json` for the claude.ai dashboard
-      [Kangaroos Website-Statistik](https://claude.ai/artifact/TUBXWB2RZ5ghWYbqjsYXdr) – to refresh it, run the script and
-      ask Claude to upload the two files again. IONOS keeps about 8 weeks of logs. Privacy policy has a "Zugriffsstatistik" section
+      [Kangaroos Website-Statistik](https://claude.ai/artifact/TUBXWB2RZ5ghWYbqjsYXdr). A Claude desktop scheduled task
+      ("kangaroos-stats-refresh", Mondays 7:00, runs only while the app is open) runs the script and uploads the two files.
+      IONOS keeps about 8 weeks of logs. Privacy policy has a "Zugriffsstatistik" section
 - [ ] Re-run the final check right before the DNS switch (after the final WordPress export) — **Sonnet**
