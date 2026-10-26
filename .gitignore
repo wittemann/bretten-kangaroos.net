@@ -23,3 +23,6 @@ server/config.php
 private/
 signup-config.php
 .claude/settings.local.json
+
+# Usage statistics: anonymous counts, built locally (scripts/log-stats.mjs)
+stats/

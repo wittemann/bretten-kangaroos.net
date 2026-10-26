@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "format": "prettier -w .",
     "check": "astro check",
-    "migrate": "node scripts/migrate-wordpress.mjs"
+    "migrate": "node scripts/migrate-wordpress.mjs",
+    "stats": "node scripts/log-stats.mjs"
   },
   "dependencies": {
     "@astrojs/check": "0.9.9",
@@ -38,6 +39,7 @@
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.8.1",
     "sharp": "0.35.5",
+    "ssh2-sftp-client": "11.0.0",
     "tailwindcss": "4.3.3",
     "turndown": "7.2.4",
     "typescript": "6.0.3"

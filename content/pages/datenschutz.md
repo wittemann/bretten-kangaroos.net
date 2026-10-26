@@ -22,7 +22,7 @@ Andere Daten erfasst der Webserver automatisch beim Besuch der Website. Das sind
 
 #### Wofür nutzen wir Ihre Daten?
 
-Die technischen Daten werden erhoben, um eine fehlerfreie und sichere Bereitstellung der Website zu gewährleisten. Daten aus dem Anmeldeformular nutzen wir ausschließlich, um Ihre Turnieranmeldung zu bearbeiten.
+Die technischen Daten werden erhoben, um eine fehlerfreie und sichere Bereitstellung der Website zu gewährleisten; zusammengefasst und anonym nutzen wir sie außerdem für eine Zugriffsstatistik. Daten aus dem Anmeldeformular nutzen wir ausschließlich, um Ihre Turnieranmeldung zu bearbeiten.
 
 #### Welche Rechte haben Sie bezüglich Ihrer Daten?
 
@@ -30,9 +30,9 @@ Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger
 
 Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
 
-### Keine Cookies, keine Analyse, keine Drittanbieter
+### Keine Cookies, kein Tracking, keine Drittanbieter
 
-Diese Website setzt keine Cookies und verwendet keine Analyse- oder Tracking-Werkzeuge. Sie bindet keine Inhalte von Drittanbietern ein: Schriftarten, Bilder und Karten liegen auf unserem eigenen Webspace, es gibt keine eingebetteten Videos, Karten oder Social-Media-Funktionen. Beim Besuch unserer Seiten baut Ihr Browser daher nur eine Verbindung zu unserem Webserver auf.
+Diese Website setzt keine Cookies und bindet keine Analyse- oder Tracking-Werkzeuge ein. Eine anonyme Zugriffsstatistik erstellen wir nur aus den Server-Logfiles (siehe „Zugriffsstatistik“). Sie bindet keine Inhalte von Drittanbietern ein: Schriftarten, Bilder und Karten liegen auf unserem eigenen Webspace, es gibt keine eingebetteten Videos, Karten oder Social-Media-Funktionen. Beim Besuch unserer Seiten baut Ihr Browser daher nur eine Verbindung zu unserem Webserver auf.
 
 ## 2. Hosting
 
@@ -46,7 +46,11 @@ Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. W
 
 #### Server-Logfiles
 
-Beim Aufruf unserer Seiten erfasst der Webserver von IONOS automatisch Informationen, die Ihr Browser übermittelt: IP-Adresse, Datum und Uhrzeit der Anfrage, aufgerufene Seite, Browsertyp und -version, verwendetes Betriebssystem und die zuvor besuchte Seite (Referrer-URL). Diese Daten werden nicht mit anderen Datenquellen zusammengeführt und nicht für Auswertungen des Nutzerverhaltens verwendet. Die Erfassung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO; wir haben ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Sicherheit unserer Website. Wie lange IONOS die Logfiles speichert, ergibt sich aus der Datenschutzerklärung von IONOS.
+Beim Aufruf unserer Seiten erfasst der Webserver von IONOS automatisch Informationen, die Ihr Browser übermittelt: IP-Adresse, Datum und Uhrzeit der Anfrage, aufgerufene Seite, Browsertyp und -version, verwendetes Betriebssystem und die zuvor besuchte Seite (Referrer-URL). Diese Daten werden nicht mit anderen Datenquellen zusammengeführt. Die Erfassung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO; wir haben ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Sicherheit unserer Website. Wie lange IONOS die Logfiles speichert, ergibt sich aus der Datenschutzerklärung von IONOS.
+
+#### Zugriffsstatistik
+
+Um zu erfahren, welche Inhalte unserer Website genutzt werden, werten wir die Server-Logfiles gelegentlich zu einer anonymen Statistik aus: Seitenaufrufe je Seite und Tag, ungefähre Zahl der Besucher pro Tag, Herkunft der Aufrufe (z. B. Suchmaschine), Gerätetyp (Handy oder Computer) und Uhrzeit. Bei der Auswertung werden IP-Adressen und Browserkennungen nur kurzzeitig im Arbeitsspeicher verarbeitet und nicht gespeichert; das Ergebnis enthält ausschließlich zusammengefasste Zahlen, die keinen Rückschluss auf einzelne Personen zulassen. Es werden keine Cookies gesetzt und keine Nutzerprofile gebildet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; wir haben ein berechtigtes Interesse daran, unser Angebot für Mitglieder, Interessierte und Gäste zu verbessern.
 
 #### Auftragsverarbeitung
 

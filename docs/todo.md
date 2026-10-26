@@ -254,4 +254,9 @@ Needs: everything above, privacy policy review + DNS plan from my tasks.
   - sign-up form: test submission "TEST Final-Check" sent OK; bad token, too-fast and the config file (404) checked
   - deploy schedule: GitHub ran only 4 of the 16 hourly runs per weekend day → cron moved from minute 0 to 23,
     check the run count after the next weekend
+- [x] Usage statistics, 2026-10-26: `npm run stats` (local only) reads the IONOS access logs over a separate SFTP
+      user (host/user in `.env`, password in the Keychain as `kangaroos-stats-sftp`), keeps anonymous counts in the
+      git-ignored `stats/` and writes `stats/dashboard/*.json` for the claude.ai dashboard
+      [Kangaroos Website-Statistik](https://claude.ai/artifact/GEP5VNTki7Fdt8m5yw5k5m) – to refresh it, run the script and
+      ask Claude to upload the two files again. IONOS keeps about 8 weeks of logs. Privacy policy has a "Zugriffsstatistik" section
 - [ ] Re-run the final check right before the DNS switch (after the final WordPress export) — **Sonnet**
