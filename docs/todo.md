@@ -75,7 +75,8 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] Check that the data processing agreement (AVV) with IONOS is in place → set up 2026-10-26 – the privacy policy says so. Contracts from
       19.07.2022 on have it in the IONOS AGB; older ones: IONOS account → Menü → "Mein Konto" → tile
       "Datenschutz & Privatsphäre" → AVV "Weitere Informationen", conclude it online (free). Save the PDF for the club (→ WP9)
-- [ ] Decide who deletes the sign-up mails in the `xmasball@` mailbox three months after each tournament (→ WP8)
+- [ ] Decide who deletes the sign-up mails in the `xmasball@` mailbox three months after each tournament – the
+      Reminders workflow opens an issue when it's due (→ WP8)
 - [ ] Legal responsibility stays with the club: have someone from the club read the new text once (→ WP9)
 - [ ] Switch the domain in the IONOS dashboard (one click, no plan needed) (→ WP9). For the sign-up form:
       point `bretten-kangaroos.net` at the same `DEPLOY_PATH` folder as `neu.` – `signup.php` needs `private/`
@@ -194,7 +195,9 @@ Needs: WP2, league/team confirmation from my tasks.
       checked with made-up games only, check it again with the first real 2027 dates
 - [x] Feeds checked live 2026-10-26: all five load as `text/calendar`, valid line endings/folding, 50 games, unique UIDs
 - [ ] Subscribe to one feed on a phone (Apple) and in Google Calendar on `neu.bretten-kangaroos.net` – needs a real phone, see my tasks
-- [ ] Once a year: new league IDs into `src/data/bsm-leagues.json` (see `bsm-api.md`) — **Haiku**
+- [ ] Once a year: new league IDs into `src/data/bsm-leagues.json` (see `bsm-api.md`) — **Haiku**. From March on the
+      Reminders workflow (`.github/workflows/reminders.yml`, Mondays) opens an issue and the BSM fetch warns while the file
+      still has last year's season
 
 ### WP5 – Sponsors
 Needs: WP1 (sponsor fields), WP2. Can run in parallel with WP4.
@@ -237,7 +240,8 @@ Needs: WP2 + WP3, mailbox + PHP version from my tasks. Sends mail only, no list 
   - SMTP password in a config file outside the web root / not in Git
   - send plain-text mails or escape everything with `htmlspecialchars()`
 - [x] Make sure the deploy (WP3) uploads the PHP script but never the SMTP config — **Sonnet**
-- [ ] Reminder: update PHPMailer once or twice a year — **Haiku**
+- [x] PHPMailer updates: Dependabot opens a pull request for new versions (`.github/dependabot.yml`, checked monthly);
+      merging it deploys the update
 
 ### WP9 – Go-live
 Needs: everything above, privacy policy review + DNS plan from my tasks.

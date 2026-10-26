@@ -1,0 +1,29 @@
+# Opens an issue for recurring chores: new BSM league IDs each season and
+# deleting the Xmas-Ball sign-up mails, see scripts/reminders.mjs.
+name: Reminders
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Mondays 7:41 UTC, off the full hour (GitHub drops many runs there)
+    - cron: "41 7 * * 1"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  reminders:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Open due reminders
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/reminders.mjs

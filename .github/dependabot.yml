@@ -1,0 +1,8 @@
+# PHPMailer for the sign-up form (server/composer.json): a pull request when a
+# new version is out. Merging it deploys the update.
+version: 2
+updates:
+  - package-ecosystem: composer
+    directory: /server
+    schedule:
+      interval: monthly

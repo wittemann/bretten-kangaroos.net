@@ -41,6 +41,7 @@ const RATED_STATES = new Set([
 ]);
 
 const config = readConfig();
+warnOnOldSeason();
 const oldCache = readJson(CACHE_PATH);
 const oldLeagues = new Map(
   (oldCache?.leagues ?? []).map((league) => [league.leagueId, league]),
@@ -373,6 +374,18 @@ function readConfig() {
     process.exit(1);
   }
   return config;
+}
+
+// From March on the new season's leagues exist; scripts/reminders.mjs also
+// opens an issue for it
+function warnOnOldSeason() {
+  const now = new Date();
+  if (now.getFullYear() > config.season && now.getMonth() >= 2) {
+    console.warn(
+      `::warning::src/data/bsm-leagues.json still has season ${config.season} – ` +
+        `add the ${now.getFullYear()} league IDs (docs/bsm-api.md)`,
+    );
+  }
 }
 
 function readJson(url) {
