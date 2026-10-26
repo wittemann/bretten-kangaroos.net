@@ -43,7 +43,6 @@ Things only I can do. The work package each one unblocks is in brackets.
 
 - [x] Sitemap → start from the structure of the current WordPress site, Claude proposes it in WP1 (→ WP1)
 - [x] Review the proposed sitemap: what still makes sense, what goes, what's missing (→ WP1)
-- [ ] Decide who writes content, make sure they have GitHub accounts and invite them to Pages CMS (→ WP1, go-live)
 - [x] Decide the deploy route → GitHub Action via SFTP/SSH (→ WP3)
 - [x] Create an SFTP user in IONOS and store `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_PASSWORD`, `DEPLOY_PATH`, `DEPLOY_KNOWN_HOSTS` as GitHub repo secrets (→ WP3)
 - [x] Set up a test subdomain (`neu.bretten-kangaroos.net`) pointing at the `DEPLOY_PATH` folder and run the first deploy (→ WP3)
@@ -78,7 +77,7 @@ Things only I can do. The work package each one unblocks is in brackets.
       "Datenschutz & Privatsphäre" → AVV "Weitere Informationen", conclude it online (free). Save the PDF for the club (→ WP9)
 - [ ] Decide who deletes the sign-up mails in the `xmasball@` mailbox three months after each tournament (→ WP8)
 - [ ] Legal responsibility stays with the club: have someone from the club read the new text once (→ WP9)
-- [ ] Plan the domain/DNS switch from the old site to the new one (→ WP9). For the sign-up form:
+- [ ] Switch the domain in the IONOS dashboard (one click, no plan needed) (→ WP9). For the sign-up form:
       point `bretten-kangaroos.net` at the same `DEPLOY_PATH` folder as `neu.` – `signup.php` needs `private/`
       one level above the web folder (otherwise upload `private/` next to the new folder too); leave the MX records
       alone so the `xmasball@` mailbox keeps working. Form, token and the redirect after sending use relative paths only
@@ -90,7 +89,8 @@ Things only I can do. The work package each one unblocks is in brackets.
       every form load instead of at random, so the text can promise it (→ WP9)
 - [ ] Team photos and badges: upload a photo per team and set `badge` (e.g. "Landesliga-Meister 2026") in Pages CMS – the
       team pages show them under the title (→ WP2)
-- [ ] Writers: get GitHub accounts, invite them to Pages CMS, hand out [`anleitung-redaktion.md`](anleitung-redaktion.md) (→ WP1)
+- [ ] After go-live: pick the writers, get them GitHub accounts, invite them to Pages CMS, hand out
+      [`anleitung-redaktion.md`](anleitung-redaktion.md) (→ WP1)
 - [x] For the tournament form: create the `xmasball@bretten-kangaroos.net` mailbox (→ WP8)
 - [x] For the tournament form: set PHP 8.3+ in the IONOS control panel → runs on 8.4 (→ WP8)
 
@@ -150,7 +150,7 @@ Needs: WP1.
         then the image with caption; body headings in the section style (today they render as small bold text), green quote box,
         "Zahlen" box, footer with "Zur Teamseite der <Team> →" and share links (WhatsApp, Link kopieren), "Weitere Beiträge" with three posts.
         Done 2026-10-24: the first paragraph is the intro; bold-only paragraphs of the old posts render as headings.
-        Image captions are not built – there is no caption field yet
+        Image captions left out – not needed, decided 2026-10-26
   - [x] Ballpark (`Ballpark.dc.html`): title band over the ballpark photo with the address, text plus a facts grid (Kunstrasen, Flutlicht,
         Dugouts, Tribünen, Verkaufshaus, DBV-tauglich), "Anfahrt" box with a map image (no embedded Google Maps) and "In Karten-App öffnen",
         "1992 – seit über 30 Jahren" box linking to Vereinsgeschichte. Done 2026-10-24: own content file `content/ballpark.md`
@@ -257,6 +257,6 @@ Needs: everything above, privacy policy review + DNS plan from my tasks.
 - [x] Usage statistics, 2026-10-26: `npm run stats` (local only) reads the IONOS access logs over a separate SFTP
       user (host/user in `.env`, password in the Keychain as `kangaroos-stats-sftp`), keeps anonymous counts in the
       git-ignored `stats/` and writes `stats/dashboard/*.json` for the claude.ai dashboard
-      [Kangaroos Website-Statistik](https://claude.ai/artifact/GEP5VNTki7Fdt8m5yw5k5m) – to refresh it, run the script and
+      [Kangaroos Website-Statistik](https://claude.ai/artifact/TUBXWB2RZ5ghWYbqjsYXdr) – to refresh it, run the script and
       ask Claude to upload the two files again. IONOS keeps about 8 weeks of logs. Privacy policy has a "Zugriffsstatistik" section
 - [ ] Re-run the final check right before the DNS switch (after the final WordPress export) — **Sonnet**
