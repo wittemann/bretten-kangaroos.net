@@ -51,6 +51,7 @@ if (!is_string($config['hmac_secret'] ?? null) || strlen($config['hmac_secret'])
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
 if ($method === 'GET' && isset($_GET['token'])) {
+    deleteExpiredHits($privateDir . '/ratelimit', (int) ($config['rate_limit_window'] ?? 3600));
     header('Content-Type: application/json; charset=utf-8');
     echo json_encode(['token' => createToken($config['hmac_secret'])]);
     exit;
@@ -251,16 +252,23 @@ function rateLimitAllows(string $dir, string $key, int $max, int $window): bool
     flock($fh, LOCK_UN);
     fclose($fh);
 
-    // Clean up old files now and then.
-    if (random_int(1, 50) === 1) {
-        foreach (glob($dir . '/ip-*.json') ?: [] as $old) {
-            if (filemtime($old) < $now - $window) {
-                @unlink($old);
-            }
-        }
-    }
+    deleteExpiredHits($dir, $window);
 
     return $allowed;
+}
+
+/**
+ * Deletes per-IP files whose last hit is older than the window. Runs on every
+ * form load and POST, so the privacy policy can promise the deletion.
+ */
+function deleteExpiredHits(string $dir, int $window): void
+{
+    $cutoff = time() - $window;
+    foreach (glob($dir . '/ip-*.json') ?: [] as $old) {
+        if (filemtime($old) < $cutoff) {
+            @unlink($old);
+        }
+    }
 }
 
 /** Single-line text: trimmed, no control characters (so no CR/LF either), length-limited. */

@@ -68,8 +68,16 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] Decide how much moves over → everything (all pages and the complete news archive) (→ WP7)
 - [x] Sponsor list → same as on the current WordPress site, taken over in WP5/WP7 (→ WP5)
 - [x] Impressum and privacy policy → copied from the current WordPress site (→ WP9)
-- [ ] Review the privacy policy before go-live: the new site no longer uses WordPress plugins/cookies, but adds
-      BSM data, hosting via IONOS only and the PHP sign-up form – the text has to match. Legal responsibility stays with the club (→ WP9)
+- [x] Review the privacy policy before go-live → rewritten 2026-10-26 from [`datenschutz-review.md`](datenschutz-review.md):
+      VfB Bretten e.V. responsible (department has no legal capacity of its own), Bryan Schaffer as Kangaroos contact;
+      cookies/Google Fonts/analysis/consent passages removed; new sections for server logs, sign-up form
+      (mails deleted 3 months after the tournament), abuse protection, BSM data, links. Impressum: § 5 DDG instead of TMG (→ WP9)
+- [ ] Get the VfB board's OK that the privacy policy names VfB Bretten e.V. as responsible and Bryan Schaffer as contact (→ WP9)
+- [x] Check that the data processing agreement (AVV) with IONOS is in place → set up 2026-10-26 – the privacy policy says so. Contracts from
+      19.07.2022 on have it in the IONOS AGB; older ones: IONOS account → Menü → "Mein Konto" → tile
+      "Datenschutz & Privatsphäre" → AVV "Weitere Informationen", conclude it online (free). Save the PDF for the club (→ WP9)
+- [ ] Decide who deletes the sign-up mails in the `xmasball@` mailbox three months after each tournament (→ WP8)
+- [ ] Legal responsibility stays with the club: have someone from the club read the new text once (→ WP9)
 - [ ] Plan the domain/DNS switch from the old site to the new one (→ WP9). For the sign-up form:
       point `bretten-kangaroos.net` at the same `DEPLOY_PATH` folder as `neu.` – `signup.php` needs `private/`
       one level above the web folder (otherwise upload `private/` next to the new folder too); leave the MX records
@@ -77,10 +85,9 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] Check that the test sign-up "TEST Final-Check – bitte ignorieren" from 2026-10-26 arrived in the
       `xmasball@bretten-kangaroos.net` mailbox → arrived (→ WP8, WP9)
 - [ ] Subscribe to one calendar feed on the phone and in Google Calendar, e.g. `webcal://neu.bretten-kangaroos.net/kalender/alle.ics` (→ WP4)
-- [ ] Privacy policy, decisions from [`datenschutz-review.md`](datenschutz-review.md) (→ WP9):
-      responsible party (person or club, same as Impressum); IONOS data-processing agreement signed; storage
-      period of IONOS logs and of the sign-up mails; which outdated passages go (Google Fonts, analysis tools,
-      consent/cookie wording, "Kunden"); add sections for logs and sign-up form; privacy notice with link at the form
+- [x] Privacy policy, decisions from [`datenschutz-review.md`](datenschutz-review.md) → decided 2026-10-26, see above;
+      the form already had its privacy notice with link; the rate limit now deletes expired hashed-IP entries on
+      every form load instead of at random, so the text can promise it (→ WP9)
 - [ ] Team photos and badges: upload a photo per team and set `badge` (e.g. "Landesliga-Meister 2026") in Pages CMS – the
       team pages show them under the title (→ WP2)
 - [ ] Writers: get GitHub accounts, invite them to Pages CMS, hand out [`anleitung-redaktion.md`](anleitung-redaktion.md) (→ WP1)

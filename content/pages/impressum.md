@@ -2,7 +2,7 @@
 title: Impressum
 ---
 
-## Angaben gemäß § 5 TMG
+## Angaben gemäß § 5 DDG
 
 VfB Bretten e.V. 1908  
 Willi-Hesselbacher-Weg 3  
@@ -17,7 +17,7 @@ Telefon: 07252 2307
 Telefax: 07252 5802879  
 E-Mail: info@vfb-bretten.de
 
-## Redaktionell verantwortlich
+## Redaktionell verantwortlich nach § 18 Abs. 2 MStV
 
 Marco Kremser
 

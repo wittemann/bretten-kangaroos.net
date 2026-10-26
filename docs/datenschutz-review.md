@@ -1,5 +1,7 @@
 # Datenschutzerklärung: Prüfliste für den Verein
 
+> **Umgesetzt am 26.10.2026** in `content/pages/datenschutz.md`. Offen bleiben nur die Punkte in `todo.md` (OK des VfB-Vorstands, Löschung der Anmelde-Mails); AVV mit IONOS am 26.10.2026 abgeschlossen.
+
 Grundlage ist `content/pages/datenschutz.md` (vom alten WordPress-Auftritt kopiert, Texte von e-recht24).
 Diese Liste ändert nichts am Text. Sie zeigt, was zur neuen Seite nicht mehr passt und was fehlt.
 Die Verantwortung für die Erklärung liegt beim Verein; die Formulierungsvorschläge sind nur Entwürfe.
