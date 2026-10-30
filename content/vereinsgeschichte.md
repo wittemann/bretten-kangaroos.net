@@ -67,6 +67,8 @@ chapters:
     years:
       - year: "2004"
         title: Aufstieg in die Verbandsliga
+        image: /images/news/2004/08/cimg2400.jpg
+        image_alt: Die Kangaroos-Herren stellen sich als Landesligameister 2004 zur Siegerehrung auf
         milestone: true
         milestone_text: Unter Andreas Bjelicic geht es eine Liga höher.
         text: Die Kangaroos haben ein Damen, eine Schüler , eine Junioren und eine Herren Mannschaft am Spielbetrieb angemeldet. Das Herren Team feiert den bis dato größten Erfolg und steigt unter Trainer Andreas Bjelicic in die Verbandsliga Baden-Württemberg auf. Ebenfalls wird zu Beginn dieses Jahres die elektronische Anzeigetafel in Betrieb genommen. Zum ersten mal wir in eigener Regie ein Hallen Baseball Turnier mit großem Erfolg durchgeführt, in dem die Kangaroos Junioren den 1. Platz belegten. Zum Ende des Jahres veranstalten die Kangaroos noch ein Baseball Freizeitturnier.
@@ -84,6 +86,8 @@ chapters:
         text: "Die Herren haben sich den Wiederaufstieg in die nächsthöhere Liga zum Ziel gesetzt und dies auch trotz des zweiten Tabellenplatzes erreicht. Das zweite Herrenteam trat in der Bezirksliga an und konnte mit vier Siegen die Vorsaison toppen und formte sich immer mehr zu einem Team. Mit nur einem Sieg gingen die Schüler aus der Saison. Im Bereich Softball tat sich einiges. Die Damen traten nach einigen Jahren der Abstinenz wieder im Ligabetrieb des BWBSV in der Landesliga an, wobei sie die Juniorinnen unterstützten und selbst noch in der Juniorinnenliga ihr Bestes gaben.\_Last but not least, die jüngsten der Softballerinnen, die 9-14 Jahre alten Girls, nahmen an der ersten Baden-Württembergischen Softball-Jugend-Liga teil, welche in Turnierform ausgetragen wurde."
       - year: "2009"
         title: Im Pokalfinale
+        image: /images/news/2009/10/teamfoto.jpg
+        image_alt: Teamfoto der Kangaroos mit Medaillen und Pokal beim Pokalfinale 2009
         milestone: true
         milestone_title: Pokalfinale
         milestone_text: Nach Siegen über zwei Zweitligisten erstmals im Finale, gegen Heidenheim.
