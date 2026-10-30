@@ -143,6 +143,8 @@ chapters:
         text: "Am 5. März wird der Förderverein Bretten Kangaroos e.V. gegründet, sein erster Vorsitzender ist Robin Hinze. Bei den Herren gibt es wieder zwei Mannschaften, beide spielen in der Bezirksliga. Im Mai übernehmen drei echte Urgesteine die erste Mannschaft: Andreas Bjelicic, Bryan Schaffer und Jens-Uwe Otte. Ein 20:10 gegen Reutlingen wird ihr einziger Saisonsieg. Der Nachwuchs wächst weiter: Das T-Ball-Team kommt auf zehn Kinder, die jüngsten Schüler spielen erstmals in der U10-Coach-Pitch-Liga, und mit Emilia und Ida stehen zwei Spielerinnen bei der Deutschen Softball-U16-Meisterschaft auf dem Feld. In der Halle gewinnen die Schüler den Römercup mit einem 27:12 im Finale gegen Mannheim. Zum zweiten Xmas-Ball kommen 20 Nachwuchsteams, und KraichgauTV berichtet. Außerdem ist der Förderverein zum ersten Mal mit einem eigenen Stand auf dem Diedelsheimer Weihnachtsmarkt vertreten."
       - year: "2026"
         title: Landesligameister
+        image: /images/news/2026/10/whatsapp-image-2026-10-04-at-17-02-50-4.jpg
+        image_alt: Die Schüler der Kangaroos jubeln als Landesligameister 2026 auf dem Ballpark
         milestone: true
         milestone_title: Schüler-Meister
         milestone_text: Die Schüler werden Landesligameister – mit 19 Siegen aus 24 Spielen.
