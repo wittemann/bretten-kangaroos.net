@@ -12,6 +12,10 @@ AddType "text/calendar; charset=utf-8" .ics
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # www goes to the main address, in one hop with HTTPS
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
   # Always HTTPS
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

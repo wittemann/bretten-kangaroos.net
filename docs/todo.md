@@ -57,10 +57,14 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] Take a fresh WordPress export (Tools → Export → All content) for the migration →
       `~/Downloads/bretten-kangaroos.WordPress.2026-10-23.xml` (531 posts, 14 pages, 792 media; 8 stray control
       characters make it invalid XML, the converter has to strip them) (→ WP7)
-- [ ] Right before the DNS switch: stop editing WordPress, take a final export, let Claude re-run the migration (→ WP7, WP9)
-- [ ] At home: find `wp-content/uploads` on the backup drive (IONOS FTP backup) and let Claude re-run the migration with
-      `--uploads <folder>` – about 1,450 images of older posts (2003–2023) are gone from the live server and are
-      missing in the migrated posts, see [`wordpress-migration-report.md`](wordpress-migration-report.md) (→ WP7)
+- [x] Right before the DNS switch: stop editing WordPress, take a final export, let Claude re-run the migration →
+      not needed: off season, nothing changed since the 2026-10-23 export (→ WP7, WP9)
+- [x] At home: find `wp-content/uploads` on the backup drive (IONOS FTP backup) and let Claude re-run the migration with
+      `--uploads <folder>` → done 2026-10-30 from `/Volumes/Backup/Martin/Ionos FTP/2026-10-16/wordpress/wp-content/uploads`
+      (plus `MV.jpg` from `Alt/Kangaroos/2018-02`, intact copies of five damaged pictures from `Alt/Kangaroos/alt/bilder`
+      and the `Spiel*.jpg` of 2016/05 under their `-1280x…` names). 9 files are still missing, see
+      [`wordpress-migration-report.md`](wordpress-migration-report.md): 4 old `../bilder/` links and one broken link
+      (the pictures exist on the drive, the script doesn't map those links), 2 pictures damaged in every backup, 2 not on the drive (→ WP7)
 - [ ] After the uploads re-run: pick photos for the years of the Vereinsgeschichte (Pages CMS: "Foto" per year). Today only
       2015 has one; article photos exist for 2023–2026 (BKIL teams, Xmas-Ball 2024, Römercup 2025, Landesliga title 2026);
       for 1988–2022 look in the restored images or my own photos (the board suggests a motif per year) (→ WP2)
@@ -71,20 +75,20 @@ Things only I can do. The work package each one unblocks is in brackets.
       VfB Bretten e.V. responsible (department has no legal capacity of its own), Bryan Schaffer as Kangaroos contact;
       cookies/Google Fonts/analysis/consent passages removed; new sections for server logs, sign-up form
       (mails deleted 3 months after the tournament), abuse protection, BSM data, links. Impressum: § 5 DDG instead of TMG (→ WP9)
-- [ ] Get the VfB board's OK that the privacy policy names VfB Bretten e.V. as responsible and Bryan Schaffer as contact (→ WP9)
+- [ ] Tell the VfB office (info@vfb-bretten.de) and Bryan that the privacy policy now names VfB Bretten e.V. as responsible
+      (the old one named Bryan personally) and Bryan as contact – a courtesy, the Impressum already named the VfB (→ WP9)
 - [x] Check that the data processing agreement (AVV) with IONOS is in place → set up 2026-10-26 – the privacy policy says so. Contracts from
       19.07.2022 on have it in the IONOS AGB; older ones: IONOS account → Menü → "Mein Konto" → tile
       "Datenschutz & Privatsphäre" → AVV "Weitere Informationen", conclude it online (free). Save the PDF for the club (→ WP9)
 - [ ] Decide who deletes the sign-up mails in the `xmasball@` mailbox three months after each tournament – the
       Reminders workflow opens an issue when it's due (→ WP8)
-- [ ] Legal responsibility stays with the club: have someone from the club read the new text once (→ WP9)
-- [ ] Switch the domain in the IONOS dashboard (one click, no plan needed) (→ WP9). For the sign-up form:
-      point `bretten-kangaroos.net` at the same `DEPLOY_PATH` folder as `neu.` – `signup.php` needs `private/`
-      one level above the web folder (otherwise upload `private/` next to the new folder too); leave the MX records
-      alone so the `xmasball@` mailbox keeps working. Form, token and the redirect after sending use relative paths only
+- [x] Legal responsibility stays with the club: have someone from the club read the new text once → read by me (→ WP9)
+- [x] Switch the domain in the IONOS dashboard → live 2026-10-30. Point it at the web folder inside `/kangaroos2026`
+      (the same as `neu.`), not at `/kangaroos2026` itself – that one only holds the web folder and `private/`, and
+      IONOS shows its parking page (403) for it. MX records untouched (→ WP9)
 - [x] Check that the test sign-up "TEST Final-Check – bitte ignorieren" from 2026-10-26 arrived in the
       `xmasball@bretten-kangaroos.net` mailbox → arrived (→ WP8, WP9)
-- [ ] Subscribe to one calendar feed on the phone and in Google Calendar, e.g. `webcal://neu.bretten-kangaroos.net/kalender/alle.ics` (→ WP4)
+- [ ] Subscribe to one calendar feed on the phone and in Google Calendar, e.g. `webcal://bretten-kangaroos.net/kalender/alle.ics` (→ WP4)
 - [x] Privacy policy, decisions from [`datenschutz-review.md`](datenschutz-review.md) → decided 2026-10-26, see above;
       the form already had its privacy notice with link; the rate limit now deletes expired hashed-IP entries on
       every form load instead of at random, so the text can promise it (→ WP9)
@@ -194,7 +198,7 @@ Needs: WP2, league/team confirmation from my tasks.
       → `/kalender/<team>.ics`, `/kalender/alle.ics`, `/kalender/spiel/<id>.ics` (`src/lib/calendar.ts`); the season layout was
       checked with made-up games only, check it again with the first real 2027 dates
 - [x] Feeds checked live 2026-10-26: all five load as `text/calendar`, valid line endings/folding, 50 games, unique UIDs
-- [ ] Subscribe to one feed on a phone (Apple) and in Google Calendar on `neu.bretten-kangaroos.net` – needs a real phone, see my tasks
+- [ ] Subscribe to one feed on a phone (Apple) and in Google Calendar on `bretten-kangaroos.net` – needs a real phone, see my tasks
 - [ ] Once a year: new league IDs into `src/data/bsm-leagues.json` (see `bsm-api.md`) — **Haiku**. From March on the
       Reminders workflow (`.github/workflows/reminders.yml`, Mondays) opens an issue and the BSM fetch warns while the file
       still has last year's season
@@ -264,4 +268,8 @@ Needs: everything above, privacy policy review + DNS plan from my tasks.
       [Kangaroos Website-Statistik](https://claude.ai/artifact/TUBXWB2RZ5ghWYbqjsYXdr). A Claude desktop scheduled task
       ("kangaroos-stats-refresh", Mondays 7:00, runs only while the app is open) runs the script and uploads the two files.
       IONOS keeps about 8 weeks of logs. Privacy policy has a "Zugriffsstatistik" section
-- [ ] Re-run the final check right before the DNS switch (after the final WordPress export) — **Sonnet**
+- [x] Check the live site after the domain switch — 2026-10-30: all pages, homepage assets and the restored images answer 200,
+      `http://` → `https://`, all 542 old permalink redirects (incl. the 7 emoji slugs) go to the right page, category and
+      upload links go to `/news/`, the sign-up form gets its token (config found in `private/`, not reachable from the web),
+      calendar feeds and sitemap use the main domain. `www.` served a second copy → now redirects to the main address
+- [x] **Go-live 2026-10-30** – `bretten-kangaroos.net` serves the new site
