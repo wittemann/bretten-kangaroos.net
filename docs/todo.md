@@ -95,8 +95,10 @@ Things only I can do. The work package each one unblocks is in brackets.
       every form load instead of at random, so the text can promise it (→ WP9)
 - [ ] Team photos and badges: upload a photo per team and set `badge` (e.g. "Landesliga-Meister 2026") in Pages CMS – the
       team pages show them under the title (→ WP2)
-- [ ] After go-live: pick the writers, get them GitHub accounts, invite them to Pages CMS, hand out
-      [`anleitung-redaktion.md`](anleitung-redaktion.md) (→ WP1)
+- [x] After go-live: pick the writers and hand out [`anleitung-redaktion.md`](anleitung-redaktion.md) → mail with the
+      link sent 2026-10-30 to Michael Wittemann, Robin Hinze and Chris Pehle (→ WP1)
+- [ ] Invite each writer to the repo once they send their GitHub user name (Settings → Collaborators, role "Write");
+      they log in at app.pagescms.org afterwards (→ WP1)
 - [x] For the tournament form: create the `xmasball@bretten-kangaroos.net` mailbox (→ WP8)
 - [x] For the tournament form: set PHP 8.3+ in the IONOS control panel → runs on 8.4 (→ WP8)
 
