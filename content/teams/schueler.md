@@ -3,6 +3,8 @@ title: Schüler
 order: 30
 ages: 8 bis 12 Jahre
 league: Baden-Württembergischer Verband (BWBSV)
+badge: Landesliga-Meister 2026
+image: /images/news/2026/10/whatsapp-image-2026-10-04-at-17-02-50-4.jpg
 training:
   - season: Sommer
     days: Mittwoch & Freitag

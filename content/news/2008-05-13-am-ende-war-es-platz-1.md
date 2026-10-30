@@ -3,7 +3,7 @@ title: "Am Ende war es Platz 1"
 date: 2008-05-13
 author: "Martin Wittemann"
 team: "herren"
-image: "/images/news/2008/05/100-0098.jpg"
+image: "/images/news/2008/05/100-0168.jpg"
 ---
 
 Das spielfreie Pfingstwochenende wollte die Kangaroos Herrenmannschaft nutzen, um sich weiter zu entwickeln und an ihrer Form zu arbeiten. Zu diesem Zweck begaben sich die insgesamt 11 Spieler am frühen Samstag morgen auf den Weg nach Ingolstadt, wo das alljährliche Pfingstturnier der dort heimischen Schanzer veranstaltet wurde. Die Konkurrenz in der Vorrundengruppe der Brettener war mit den Gastgebern und den Wild Farmers aus Dohren mit zwei Teams aus der zweiten Bundesliga besetzt. Die vierte Mannschaft in der Kangaroos Gruppe waren die Ulm-Falcons, welche in der Verbandsliga spielen. Somit waren die Kanganroos nicht gerade als Favorit in das Turnier gestartet.
@@ -14,6 +14,7 @@ Am Pfingstmontag stand nur noch das Finale auf dem Spielplan der Kangaroos. Gegn
 
 Ein abschließendes Highlight was das Teamfoto mit dem Team Japan, welches leider in der zweiten Vorrundengruppe gesetzt war.
 
+![](/images/news/2008/05/100-0098.jpg)
 ![](/images/news/2008/05/100-0105.jpg)
 ![](/images/news/2008/05/100-0106.jpg)
 ![](/images/news/2008/05/100-0107.jpg)

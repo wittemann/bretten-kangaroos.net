@@ -14,6 +14,7 @@ Der Trainer Tilo Steinke war voll und ganz zufrieden mit seiner Mannschaft und a
 
 Sieg oder Niederlage stehen beim T-Ball jedoch nicht im Vordergrund, sondern der Spaß am Sport. Die Kleinen sollen langsam an den Sport herangeführt werden und keinesfalls Angst davor haben, auf dem Platz zu stehen. Das Turnier zeigte allen, dass die Kinder sehr begeistert vom Baseball sind und auch weiterhin dabei bleiben werden. Die Bretten Kangaroos brauchen sich um ihren Nachwuchs keine Sorgen zu machen.
 
+![](/images/news/2007/07/cimg6326.jpg)
 ![](/images/news/2007/07/cimg6281.jpg)
 ![](/images/news/2007/07/cimg6286.jpg)
 ![](/images/news/2007/07/cimg6290.jpg)

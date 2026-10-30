@@ -332,6 +332,15 @@ function prepareHtml(post) {
       .join(""),
   );
 
+  // Images of the very old site (/bilder/) were imported into the uploads
+  // folder of the post's month; line breaks inside a src are typos
+  const month = post.date.slice(0, 7).replace("-", "/");
+  html = html.replace(/(<img\b[^>]*?\ssrc=["'])([^"']+)(["'])/gi, (_, start, src, end) => {
+    src = src.replace(/\s*\n\s*/g, "");
+    const old = src.replace(OWN_HOSTS, "").match(/^(?:\.\.)?\/bilder\/([^/]+)$/);
+    return start + (old ? `/wp-content/uploads/${month}/${old[1]}` : src) + end;
+  });
+
   // Flash and iframe videos → a link to the video
   html = html.replace(
     /<object[\s\S]*?<\/object>|<iframe[\s\S]*?<\/iframe>|<embed[^>]*>/gi,

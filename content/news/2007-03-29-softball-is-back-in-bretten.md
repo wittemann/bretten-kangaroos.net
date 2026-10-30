@@ -21,3 +21,5 @@ Damen (ab 18 Jahre): 19:30-21:00 Uhr (ab 24.04.2007)
 Wer Lust hat sich das ganze mal anzuscheun, kann gerne zu einem Probetraining vorbeikommen. Einfach anmelden unter: bretten@softballgirls.de oder Tel: 07252/972272
 
 Mehr Infos auch im Netz unter: [http://www.softballgirls.de](http://www.softballgirls.de)
+
+![](/images/news/2007/03/training-kang.jpg)

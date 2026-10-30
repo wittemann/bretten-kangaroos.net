@@ -513,7 +513,7 @@
     "884": {
       "file": "content/news/2007-03-29-softball-is-back-in-bretten.md",
       "oldPath": "/2007/03/29/import104/",
-      "hash": "ee888aa0fbe776942425a3263556702ae21c7083f8323e031a3a2ca01669cd3e"
+      "hash": "b068ba357bb01b72cfe47a22cb670c49f81c34a7f2c8cfe5179f7fc9795524c8"
     },
     "885": {
       "file": "content/news/2007-05-07-spektakulaere-aufholjagd-der-2-herrenmannschaft.md",
@@ -588,7 +588,7 @@
     "910": {
       "file": "content/news/2007-07-09-erfolgreiches-t-ball-turnier-in-bretten.md",
       "oldPath": "/2007/07/09/import119/",
-      "hash": "e456153eacfa4de64e5934463cf205969c3ffc0ce403875fa13a970d9324388b"
+      "hash": "bc32b15860fcea0c4a8a18dd8aee94fab6296700647be88701d0a26a532e6d28"
     },
     "911": {
       "file": "content/news/2007-07-11-knappe-partie-in-schwetzingen.md",
@@ -633,7 +633,7 @@
     "932": {
       "file": "content/news/2007-09-18-whitecastle-cup-2007.md",
       "oldPath": "/2007/09/18/import128/",
-      "hash": "f35fd795504398048b40c4328794c7210dcfbbda58cc61b1a04df65538c08ba5"
+      "hash": "e92a66ea819352f8e87639e23209601f9aed1ec8623df8fab5a4de59bbc0268b"
     },
     "948": {
       "file": "content/news/2007-09-23-incrediballturnier-2007.md",
@@ -748,7 +748,7 @@
     "1179": {
       "file": "content/news/2008-05-13-am-ende-war-es-platz-1.md",
       "oldPath": "/2008/05/13/import151/",
-      "hash": "5d762d80b17ec3df6e73bbb9aab930686ac219796bfb0474accef936530d9d39"
+      "hash": "245478fb494ba5a3d17ee823a324006ac03db45df57c9e781b287af31d649fa6"
     },
     "1180": {
       "file": "content/news/2008-05-19-erfolgreich-in-stuttgart.md",
@@ -2660,7 +2660,6 @@
     "../bilder/CIMG0998.JPG": null,
     "../bilder/CIMG6326.JPG": null,
     "../bilder/training-kang.jpg": null,
-    "/\nwp-content/uploads/2006/04/DSC01560.JPG": null,
     "/bilder/100_0168.JPG": null,
     "/wp-content/uploads/2003/09/P9200003.jpg": "/images/news/2003/09/p9200003.jpg",
     "/wp-content/uploads/2003/09/P9200015.jpg": "/images/news/2003/09/p9200015.jpg",
@@ -3192,6 +3191,7 @@
     "/wp-content/uploads/2006/04/DSC01557.JPG": "/images/news/2006/04/dsc01557.jpg",
     "/wp-content/uploads/2006/04/DSC01558.JPG": "/images/news/2006/04/dsc01558.jpg",
     "/wp-content/uploads/2006/04/DSC01559.JPG": "/images/news/2006/04/dsc01559.jpg",
+    "/wp-content/uploads/2006/04/DSC01560.JPG": null,
     "/wp-content/uploads/2006/04/DSC01561.JPG": "/images/news/2006/04/dsc01561.jpg",
     "/wp-content/uploads/2006/04/DSC01562.JPG": "/images/news/2006/04/dsc01562.jpg",
     "/wp-content/uploads/2006/04/DSC01563.JPG": "/images/news/2006/04/dsc01563.jpg",
