@@ -3,6 +3,7 @@ title: "Herren 2 gegen Kehl und Schriesheim"
 date: 2008-05-25
 author: "Bryan Schaffer"
 old_team: "Herren 2"
+image: "/images/news/2008/05/img-4178.jpg"
 ---
 
 Kehl:
@@ -26,3 +27,16 @@ Im fünften Inning konnten die Brettener noch 4 Punkte ergattern was letztlich z
 
 Am 1.06.08 findet das nächste Heimspiel der 2-ten Herrenmanschaft gegen die Piraten aus Heilbronn statt. Wir hoffen auf die Unterstützung vieler Fans, und werden euch hoffentlich ein spannendes Spiel bieten. Bis dahin werden wir weiter an unseren Schwächen arbeiten,\
 bis bald die 2. Mannschaft.
+
+![](/images/news/2008/05/img-4189.jpg)
+![](/images/news/2008/05/img-4192.jpg)
+![](/images/news/2008/05/img-4195.jpg)
+![](/images/news/2008/05/img-4199.jpg)
+![](/images/news/2008/05/img-4202.jpg)
+![](/images/news/2008/05/img-4206.jpg)
+![](/images/news/2008/05/img-4209.jpg)
+![](/images/news/2008/05/img-4230.jpg)
+![](/images/news/2008/05/img-4233.jpg)
+![](/images/news/2008/05/img-4286.jpg)
+![](/images/news/2008/05/img-4317.jpg)
+![](/images/news/2008/05/img-4331.jpg)

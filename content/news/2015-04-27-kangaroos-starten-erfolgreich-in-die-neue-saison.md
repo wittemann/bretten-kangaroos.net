@@ -3,6 +3,7 @@ title: "Kangaroos starten erfolgreich in die neue Saison"
 date: 2015-04-27
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2015/04/img-0751.jpg"
 ---
 
 Am Sonntag waren die Stuttgart Reds-3 zu Gast auf dem Kangaroos Field in Bretten-Diedelsheim, zum ersten Spiel der Baseball-Landesliga-Saison 2015. Die Brettener Baseballer um das neue Trainergespann Gottselig/Lauvai hatten sich viel vorgenommen und wurden auch durch die zahlreichen Zuschauen zusätzlich motiviert.
@@ -16,3 +17,11 @@ Besonders zufrieden zeigen sich die Trainer mit der Leistung von Henning Sommerf
 Weiter geht es für das Team bereits am 1 Mai mit der zweiten Runde des BWBSV-Pokals, Auswärts beim Ligakonkurrenten aus Villingendorf und bereits am Tage darauf wird die zweite Mannschaft der **Heidelberg Hedgehogs zu einem weiteren Heimspiel in Bretten-Diedelsheim erwartet**.
 
 Das Team aus Heidelberg gilt als einer der Favoriten auf den Titel und daher wird sich hier bereits früh in der Saison zeigen, wo die Kangaroos stehen. Zu diesem wichtigen Heimspiel sind wieder alle Baseball-Fans recht herzlich eingeladen. **Spielbeginn ist am 2. Mai um 15:00 Uhr in Bretten-Diedelsheim.**
+
+![IMG_0753](/images/news/2015/04/img-0753.jpg)
+![IMG_0756](/images/news/2015/04/img-0756.jpg)
+![IMG_0749](/images/news/2015/04/img-0749.jpg)
+![IMG_0758](/images/news/2015/04/img-0758.jpg)
+![IMG_0752](/images/news/2015/04/img-0752.jpg)
+![IMG_0757](/images/news/2015/04/img-0757.jpg)
+![IMG_0754](/images/news/2015/04/img-0754.jpg)

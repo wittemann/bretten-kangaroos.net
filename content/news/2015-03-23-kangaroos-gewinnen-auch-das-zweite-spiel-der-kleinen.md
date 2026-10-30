@@ -3,6 +3,7 @@ title: "Kangaroos gewinnen auch das zweite Spiel der kleinen Vorbereitungsserie 
 date: 2015-03-23
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2015/03/dsc-0079.jpg"
 ---
 
 Vergangenen Samstag revanchierte sich das Kangaroos Herren Team für den Besuch der Cannibals vor einer Woche in Bretten und reiste Ihrerseits zu einem weiteren Vorbereitungsspiel nach Worms.\
@@ -10,3 +11,9 @@ In dieser Begegnung zeigten sich die eingesetzten Werfer Martin Wittemann, Bernd
 Der Kangaroos Angriff zeige sich mit 18 erzielten Runs wieder in einer guten Frühform und so ging auch das zweite Spiel gegen Worms mit 18 zu 4 an das Team der Kangaroos.
 
 Die nächste Begegnung in der Vorbereitung, auf die am 26 April beginnende Landesliga Saison, findet am **kommenden Sonntag um 12:00 gegen Schwäbisch Hall in Diedelsheim statt** (MW).
+
+![DSC_0094](/images/news/2015/03/dsc-0094.jpg)
+![DSC_0045](/images/news/2015/03/dsc-0045.jpg)
+![DSC_0053](/images/news/2015/03/dsc-0053.jpg)
+![DSC_0071](/images/news/2015/03/dsc-0071.jpg)
+![DSC_0070](/images/news/2015/03/dsc-0070.jpg)

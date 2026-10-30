@@ -3,6 +3,7 @@ title: "Unglaubliche Siegesserie der Kangaroos"
 date: 2006-08-28
 author: "Bryan Schaffer"
 team: "herren"
+image: "/images/news/2006/08/cimg8398.jpg"
 ---
 
 Nach dem letzten Sieg in Ladenburg haben die Kangaroos ihre Einstellung zum Spiel gewaltig geändert und so wurde gebannt auf das Heimspiel vor einer Woche geschaut.
@@ -14,3 +15,13 @@ Das Spiel wurde in der Defensive von Werfer Matthias Hennrich geleitet. Den Kang
 Am vergangenen Sonntag stand das vorletzte Spiel auf dem Plan, die Herrenberg Wanderers luden Bretten an einem verregneten Wochenende ein. Trainer Bjelicic motivierte die Mannschaft vor dem Spiel mit der Aussage, dass ein Sieg den Abstieg höchstwahrscheinlich verhindern wird. Herrenberg, die offensiv stärkste Mannschaft der Verbandsliga erwischte einen schlechten Tag und die Kangaroos begannen mit einem starken Angriff. Die Schlagmänner leisteten in wichtigen Situationen alle ihr bestes und so stand es bereits im vierten von sieben gespielten Durchgängen 7:3 für Bretten. Die Wanderers konnten nur in einem Inning Punkte erzielen, als im Innfield einige Fehler passierten konnte Herrenberg fünf Punkte erreichen. Werfer Henning Sommerfeld, der wieder zu einem sehr wertvollen Spieler wurde, sorgte dafür, dass die Wanderes keinen erfolgreichen Angriff starten konnten und beherrschte die Begegnung defensiv. Als im siebten Inning die Brettener einen sagenhaften Angriff begannen, der auf acht Punkte ausgebaut werden konnte gewannen die Kangaroos durch die Zehn-Punkte Regel ein vorbildliches Spiel.
 
 Am nächsten Wochenende findet das alljährliche Jedermann-Turnier statt und erst Ende September können die Brettener im Spiel gegen Freiburg den Ligaerhalt sichern.
+
+![](/images/news/2006/08/cimg8404.jpg)
+![](/images/news/2006/08/cimg8405.jpg)
+![](/images/news/2006/08/cimg8414.jpg)
+![](/images/news/2006/08/cimg8417.jpg)
+![](/images/news/2006/08/cimg8431.jpg)
+![](/images/news/2006/08/cimg8432.jpg)
+![](/images/news/2006/08/cimg8457.jpg)
+![](/images/news/2006/08/cimg8462.jpg)
+![](/images/news/2006/08/cimg8472.jpg)

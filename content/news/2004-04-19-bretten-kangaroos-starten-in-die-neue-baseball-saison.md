@@ -2,6 +2,7 @@
 title: "Bretten Kangaroos starten in die neue Baseball Saison"
 date: 2004-04-19
 author: "Michael Wittemann"
+image: "/images/news/2004/04/bill01.jpg"
 ---
 
 Nach dem Ende der Vorbereitungsphase starten die Baseballer der Bretten Kangaroos am kommenden Sonntag in die Baseballsaison 2004.
@@ -29,3 +30,9 @@ Selbstverständlich wird auch für das Leibliche Wohl wie immer bestens gesorgt 
 Bereits am Samstag beginnt die Saison für unsere Softball Damen mit einem Heimspiel gegen die Ladenburg Romans um 15:00 auf unserem Feld in Diedelsheim.
 
 Am selben Tag startet auch unser Nachwuchs in die Saison. Die Junioren sowie das neue Schüler Team treten bei den Romans in Ladenburg an.
+
+![](/images/news/2004/04/david01.jpg)
+![](/images/news/2004/04/david02.jpg)
+![](/images/news/2004/04/martin01.jpg)
+![](/images/news/2004/04/steal01.jpg)
+![](/images/news/2004/04/team01.jpg)

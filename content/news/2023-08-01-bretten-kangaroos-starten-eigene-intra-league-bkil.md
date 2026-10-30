@@ -2,6 +2,7 @@
 title: "Bretten Kangaroos starten eigene Intra League (BKIL)"
 date: 2023-08-01
 author: "Michael Wittemann"
+image: "/images/news/2023/08/bad-news-kangaroos.png"
 ---
 
 # Bretten Kangaroos starten eigene Intra League (BKIL)
@@ -11,6 +12,8 @@ Mit dem Ziel den Wettkampf orientierten Baseballsport im Verein weiter voranzubr
 Die Teams bestehen aus aktiven Spielern der 1. Mannschaft sowie „ready now“ Nachwuchsspielern, die an das Niveau im Erwachsenenbereich herangeführt werden sollen. Ergänzt werden die Teams durch erfahrene, ehemalige Spieler, die ihre sportliche Karriere aus familiären oder beruflichen Gründen beenden mussten.
 
 Die neuen BKIL-Teams sind die **Bad News Kangaroos** und die **BK Sluggers**.
+
+![BK Sluggers](/images/news/2023/08/bk-sluggers.png)
 
 Das erste BKIL-Spiel findet am **13\. August um 15:00 Uhr** auf den Kangaroos Field statt. Zuschauer und Fans sind dazu herzlich eingeladen, kommt vorbei und genießt einen gemütlichen Kangaroos Baseball Nachmittag.
 

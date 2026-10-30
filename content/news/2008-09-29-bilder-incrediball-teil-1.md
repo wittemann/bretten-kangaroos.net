@@ -3,6 +3,7 @@ title: "Bilder Incrediball Teil 1"
 date: 2008-09-29
 author: "Bryan Schaffer"
 old_team: "Incrediball"
+image: "/images/news/2008/09/img-0744.jpg"
 ---
 
 Am vergangenen Samstag fand das 5. Incrediball Turnier der Bretten Kangaroos statt.
@@ -24,3 +25,23 @@ Hier die Platzierungen:\
 6\. Wild Beasts\
 7\. Wild Dogs\
 8\. Bretten BaseBusters
+
+![](/images/news/2008/09/img-0745.jpg)
+![](/images/news/2008/09/img-0746.jpg)
+![](/images/news/2008/09/img-0747.jpg)
+![](/images/news/2008/09/img-0748.jpg)
+![](/images/news/2008/09/img-0749.jpg)
+![](/images/news/2008/09/img-0750.jpg)
+![](/images/news/2008/09/img-0751.jpg)
+![](/images/news/2008/09/img-0752.jpg)
+![](/images/news/2008/09/img-0753.jpg)
+![](/images/news/2008/09/img-0754.jpg)
+![](/images/news/2008/09/img-0755.jpg)
+![](/images/news/2008/09/img-0756.jpg)
+![](/images/news/2008/09/img-0757.jpg)
+![](/images/news/2008/09/img-0758.jpg)
+![](/images/news/2008/09/img-0759.jpg)
+![](/images/news/2008/09/img-0760.jpg)
+![](/images/news/2008/09/img-0763.jpg)
+![](/images/news/2008/09/img-0764.jpg)
+![](/images/news/2008/09/img-0765.jpg)

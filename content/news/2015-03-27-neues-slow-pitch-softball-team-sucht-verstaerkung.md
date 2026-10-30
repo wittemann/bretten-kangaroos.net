@@ -3,6 +3,7 @@ title: "Neues Slow Pitch Softball Team sucht Verstärkung"
 date: 2015-03-27
 author: "Michael Wittemann"
 old_team: "Slow Pitch"
+image: "/images/news/2015/03/slowpitch2.jpg"
 ---
 
 Softball ist eine Variante von Baseball und eine der beliebtesten Breitensportarten in den USA und erfreut sich auch in Deutschland immer größerer Beliebtheit.\

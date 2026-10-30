@@ -3,6 +3,7 @@ title: "Kangaroos starten ins Spring Training"
 date: 2015-03-16
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2015/03/img-7088.jpg"
 ---
 
 Mit dem ersten Vorbereitungsspiel gegen die Worms Cannibals startete die Herren Mannschaft am vergangenen Sonntag auf dem Kangaroos Field in die heiße Phase der Vorbereitung auf die Baseball Saison in der Landesliga.
@@ -12,3 +13,9 @@ Viel wichtiger ist für das neue Trainer Duo Bernd Gottselig und Isaia Lauvai wi
 Die nächste Möglichkeit dazu gibt es bereits am kommenden Samstags wenn es zum Trainingsspiel nach Worms geht. Weitere Gegner in der Saisonvorbereitung werden Schwäbisch Hall, Karlsruhe und Freiberg sein.\
 Danach sollte die Mannschaft, die im Vergleich zum Vorjahr keine Abgänge zu verzeichnen hat, gut auf die am 26 April beginnende Saison vorbereitet sein. Zum traditionellen Opening Day erwarten die Kangaroos dann die dritte Mannschaft der Stuttgart Reds.\
 Wenn du selbst einmal gerne Baseball spielen möchtest, ist jetzt der perfekte Zeitpunkt um mit diesem faszinierenden Sport zu beginnen. Dazu sind alle interessierten Sportler zu einem Probetraining eingeladen. Kommt dazu einfach Dienstags (19:00) oder Freitags (18:30) zum Training auf dem Baseball Feld in Diedelsheim vorbei. (MW)
+
+![IMG_7098](/images/news/2015/03/img-7098.jpg)
+![IMG_7132](/images/news/2015/03/img-7132.jpg)
+![IMG_7128](/images/news/2015/03/img-7128.jpg)
+![IMG_7110](/images/news/2015/03/img-7110.jpg)
+![IMG_7122](/images/news/2015/03/img-7122.jpg)

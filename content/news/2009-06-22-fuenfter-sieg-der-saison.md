@@ -2,6 +2,7 @@
 title: "Fünfter Sieg der Saison"
 date: 2009-06-22
 author: "Martin Wittemann"
+image: "/images/news/2009/06/rimg0401.jpg"
 ---
 
 Am vergangenen Spieltag der Kangaroos fand ein Duell statt, auf das die Mannschaft schon die ganze Saison gewartet hatte. Es ging gegen die Mohawks aus Nagold, welche die Kangaroos durch drei Siege in der letzten Saison auf den zweiten Tabellenplatz schickten. Daher war ein Sieg für das Team von Jens-Uwe Otte Pflicht. Um so ärgerlicher war es, dass wieder einige Schlüsselspieler nicht dabei sein konnte.
@@ -11,3 +12,10 @@ Jedoch nicht nur den Kangaroos ging es wohl so. In Nagold traf man auf eine star
 Auch das zweite Herrenteam der Kangaroos konnte dieses Wochenende einen Sieg feiern. Sie besiegten die Braves aus Schwetzingen klar mit 28:16 und befinden sich damit auf dem dritten Tabellenplatz. Das dritte erfolgreiche Team des Wochenendes war das Damenteam der Kangaroos. Sie konnten sich knapp mit 19:17 gegen Freiburg durchsetzen.
 
 Am kommenden Sonntag, den 28.06.2009, wird um 15:00 Uhr das letzte Spiel der Verbandsliga-Vorrunde stattfinden. Die Gegner sind aus Kehl und derzeit auf dem vorletzten Tabellenplatz. Jedoch gilt es auch diesen Gegner nicht zu unterschätzen. Dazu möchten wir natürlich wieder alle Fans herzlich einladen.
+
+![](/images/news/2009/06/rimg0405.jpg)
+![](/images/news/2009/06/rimg0408.jpg)
+![](/images/news/2009/06/rimg0414.jpg)
+![](/images/news/2009/06/rimg0419.jpg)
+![](/images/news/2009/06/rimg0429.jpg)
+![](/images/news/2009/06/rimg0433.jpg)

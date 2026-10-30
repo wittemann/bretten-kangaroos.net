@@ -3,6 +3,7 @@ title: "Schüler folgen dem Kurs der ersten Herrenmannschaft"
 date: 2008-04-29
 author: "Bryan Schaffer"
 team: "schueler"
+image: "/images/news/2008/04/img-2043.jpg"
 ---
 
 Im ersten Saisonspiel der kleinen Kangaroos, den Schülern, begrüßten wir die Gammertingen Royals.\
@@ -15,3 +16,23 @@ Im letzten Inning wurde Adrian Götter auf den Pitchermount geschickt. Obwohl er
 
 Es spielten:\
 Elijah Zippenfenig(P,1st), Mico Maier(C), Talitha Zippenfenig(1st,2nd), Fabio Bona(2nd), Marcus Schmidt(3rd), Christian Schmidt(SS), Fabian Schneider(LF,CF), Adrian Götter( CF,P), Maximilian Zink(RF), Robin Alfeo(RF,LF), Justin Schneider(RF), Jonas Luft(OF)
+
+![](/images/news/2008/04/img-2047.jpg)
+![](/images/news/2008/04/img-2065.jpg)
+![](/images/news/2008/04/img-2072.jpg)
+![](/images/news/2008/04/img-2077.jpg)
+![](/images/news/2008/04/img-2078.jpg)
+![](/images/news/2008/04/img-2082.jpg)
+![](/images/news/2008/04/img-2084.jpg)
+![](/images/news/2008/04/img-2107.jpg)
+![](/images/news/2008/04/img-2115.jpg)
+![](/images/news/2008/04/img-2136.jpg)
+![](/images/news/2008/04/img-2146.jpg)
+![](/images/news/2008/04/img-2158.jpg)
+![](/images/news/2008/04/img-2182.jpg)
+![](/images/news/2008/04/img-2189.jpg)
+![](/images/news/2008/04/img-2196.jpg)
+![](/images/news/2008/04/img-2222.jpg)
+![](/images/news/2008/04/img-2251.jpg)
+![](/images/news/2008/04/img-2291.jpg)
+![](/images/news/2008/04/img-2232.jpg)

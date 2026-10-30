@@ -3,6 +3,7 @@ title: "Bretten Kangaroos schlagen Kehl Mosquitos"
 date: 2005-08-29
 author: "Bryan Schaffer"
 team: "herren"
+image: "/images/news/2005/08/bkvskm-013.jpg"
 ---
 
 Am Wochenende bestritten die Herren der Bretten Kangaroos in Kehl ein sehr erfolgreiches Spiel gegen die dortige Baseballmannschaft der Mosquitos.
@@ -18,3 +19,22 @@ Der Brettener Angriff konnte konstant seinen Punktevorsprung ausbauen und wurde 
 Die Verteidigung der Kangaroos war ein weiteres Mal in guter Verfassung und konnte außer ein paar Fehlern jegliche Gefahr von Seiten des Kehler Angriffes gekonnt abwehren.
 
 Die Kangaroos ließen während dieser Begegnung ihrem Gegner kaum eine Chance, sie konnten in jedem Inning mindestens zwei Punkte erzielen und erreichten im siebten Inning eine Führung von zehn Punkten, was einen Regel greifen ließ, die das Spiel vorzeitig beendete. Die Kangaroos gewannen diese wichtige Begegnung mit 15:5 Runs und verteidigen im Moment den sechsten Tabellenplatz in der Verbandsliga mit der Hoffnung in den letzten zwei Spielen noch einen weiteren Platz zu steigen.
+
+![](/images/news/2005/08/bkvskm-016.jpg)
+![](/images/news/2005/08/bkvskm-025.jpg)
+![](/images/news/2005/08/bkvskm-031.jpg)
+![](/images/news/2005/08/bkvskm-039.jpg)
+![](/images/news/2005/08/bkvskm-055.jpg)
+![](/images/news/2005/08/bkvskm-059.jpg)
+![](/images/news/2005/08/bkvskm-061.jpg)
+![](/images/news/2005/08/bkvskm-064.jpg)
+![](/images/news/2005/08/bkvskm-070.jpg)
+![](/images/news/2005/08/bkvskm-079.jpg)
+![](/images/news/2005/08/bkvskm-081.jpg)
+![](/images/news/2005/08/bkvskm-084.jpg)
+![](/images/news/2005/08/bkvskm-094.jpg)
+![](/images/news/2005/08/bkvskm-101.jpg)
+![](/images/news/2005/08/bkvskm-108.jpg)
+![](/images/news/2005/08/bkvskm-119.jpg)
+![](/images/news/2005/08/bkvskm-129.jpg)
+![](/images/news/2005/08/bkvskm-142.jpg)

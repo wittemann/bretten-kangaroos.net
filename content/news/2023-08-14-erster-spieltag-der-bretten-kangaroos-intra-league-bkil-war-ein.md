@@ -21,6 +21,12 @@ Weitere Spieltage werden daher auf jeden Fall folgen, diese geben wir rechtzeiti
 
 ## BK-Sluggers
 
+![](/images/news/2023/08/bk-sluggers-team.png)
+
 ## Bad News Kangaroos
 
+![](/images/news/2023/08/bad-newsnkangaroos-team.png)
+
 ## Game Time!
+
+![](/images/news/2023/08/bkil-game-time.png)

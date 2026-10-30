@@ -3,6 +3,7 @@ title: "Erstes Turnier für den Nachwuchs"
 date: 2010-06-22
 author: "Bryan Schaffer"
 team: "t-ball"
+image: "/images/news/2010/06/img-8254.jpg"
 ---
 
 Am vergangenen Sonntag fuhren die Kleinsten der Bretten Kangaroos zu den Atomics nach Neuenburg. Nach einer Autobahnvollsperrung und ca. dreieinhalb Stunden Anfahrt erreichte man doch noch das Feld der Atomics.

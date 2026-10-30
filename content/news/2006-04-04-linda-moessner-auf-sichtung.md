@@ -3,6 +3,7 @@ title: "Linda Mößner auf Sichtung!"
 date: 2006-04-04
 author: "Bryan Schaffer"
 team: "jugend"
+image: "/images/news/2006/04/bild037.jpg"
 ---
 
 Sichtung am 04.03.06 in Karlsruhe / Rintheim
@@ -30,3 +31,6 @@ Ich will mich bei den beiden Trainerinnen bedanken und freue mich schon auf den 
 Lehrgang.
 
 Bericht geschrieben von Linda Mößner Jugendspielerin der Bretten Kangaroos.
+
+![](/images/news/2006/04/11-06-05-bretten-028.jpg)
+![](/images/news/2006/04/bretten-ka-01-06-05-032.jpg)

@@ -2,6 +2,7 @@
 title: "Eishockeycup war ein großer Erfolg"
 date: 2008-12-31
 author: "Bryan Schaffer"
+image: "/images/news/2008/12/eis-1.jpg"
 ---
 
 Spiel, Spaß und blaue Flecken für den ?Guten Zweck?
@@ -16,3 +17,13 @@ Versicherung Christian Ebser Bretten für die American Wilddogs aus Pforzheim, s
 Restaurante-Bistro Altes Rathaus für ihr eigenes Team ?Altes Rathaus Pinguins?. Die Sponsorengelder der einzelnen Mannschaften flossen direkt in den Spendentopf.\
 Fleißig beim Spenden sammeln waren auch die Brettener Woche Weihnachtsengel begleitet von Oberbürgermeister Paul Metzger, MdL Joachim Kössler und Stadtrat Michael Nöltner die die Passanten mit ihren Spendendosen um Unterstützung für die gute Sache baten.\
 Moderiert wurden die Spiele, wie auch im letzten Jahr, von Radiomoderator Christian Krack. Für den musikalischen Schwung sorgte die Band ?Acoustic Experience?, die bei nass-kaltem Wetter den Zuschauern und Spielern kräftig einheitzte.
+
+![](/images/news/2008/12/eis-2.jpg)
+![](/images/news/2008/12/eis-3.jpg)
+![](/images/news/2008/12/eis-4.jpg)
+![](/images/news/2008/12/eis-5.jpg)
+![](/images/news/2008/12/eis-6.jpg)
+![](/images/news/2008/12/eis-7.jpg)
+![](/images/news/2008/12/eis-8.jpg)
+![](/images/news/2008/12/eis-9.jpg)
+![](/images/news/2008/12/hockey.jpg)

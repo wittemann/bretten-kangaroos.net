@@ -16,7 +16,7 @@ Der Gewinner dieser Meisterschaft fährt nächstes Jahr dann zum Europaweit grö
 
 Wir wünschen dem Team und vor allem auch Kimi viel Spaß und viel Erfolg im Team der Nordbaden Titans.
 
-Da die Auswahlmannschaft rein auf Ehrenamtlichkeit beruht freut sich das Team gerne über eine Spende über [https://gofund.me/6de03302](https://deref-web.de/mail/client/dJwTvQdHO_M/dereferrer/?redirectUrl=https%3A%2F%2Fgofund.me%2F6de03302)
+Da die Auswahlmannschaft rein auf Ehrenamtlichkeit beruht freut sich das Team gerne über eine Spende über [https://gofund.me/6de03302](https://gofund.me/6de03302)
 
 ![](/images/news/2024/06/xtdde1936.jpg)
 

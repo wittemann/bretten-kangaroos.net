@@ -3,6 +3,7 @@ title: "2 x 2 Homeruns = Sieg"
 date: 2008-05-25
 author: "Martin Wittemann"
 team: "herren"
+image: "/images/news/2008/05/img-4631.jpg"
 ---
 
 Am vergangenen Sonntag war, nach zwei Auswärtsspielen, endlich wieder ein Heimspiel der Kangaroos. Leider war zu Beginn der Spielvorbereitung nicht das schönste Baseball-Wetter, was sich aber bis Spielbeginn noch änderte. So konnte pünktlich um 16 Uhr das Spiel gegen den Gast aus Villingendorf begonnen werden.
@@ -16,3 +17,23 @@ Villingendorf,0,4,0,1,0,0,1,-,-,6,8,6\
 Bretten,0,0,7,5,4,2,-,-,-,18,17,4
 
 Aufgrund der geringen Ligastärke von nur 5 Teams haben die Kangaroos nun schon gegen jeden Gegner gespielt. Das nächste Spiel wird am 08.06.2008 um 15:00 Uhr in Karlsruhe stattfinden. Dies ist das zweite von drei Begegnungen gegen die Cougars.
+
+![](/images/news/2008/05/img-4642.jpg)
+![](/images/news/2008/05/img-4652.jpg)
+![](/images/news/2008/05/img-4656.jpg)
+![](/images/news/2008/05/img-4660.jpg)
+![](/images/news/2008/05/img-4663.jpg)
+![](/images/news/2008/05/img-4665.jpg)
+![](/images/news/2008/05/img-4681.jpg)
+![](/images/news/2008/05/img-4687.jpg)
+![](/images/news/2008/05/img-4693.jpg)
+![](/images/news/2008/05/img-4712.jpg)
+![](/images/news/2008/05/img-4717.jpg)
+![](/images/news/2008/05/img-4743.jpg)
+![](/images/news/2008/05/img-4745.jpg)
+![](/images/news/2008/05/img-4748.jpg)
+![](/images/news/2008/05/img-4763.jpg)
+![](/images/news/2008/05/img-4764.jpg)
+![](/images/news/2008/05/v-u-v-171.jpg)
+![](/images/news/2008/05/v-u-v-300.jpg)
+![](/images/news/2008/05/v-u-v-317.jpg)

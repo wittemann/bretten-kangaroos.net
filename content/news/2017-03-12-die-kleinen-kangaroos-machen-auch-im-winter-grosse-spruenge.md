@@ -2,6 +2,7 @@
 title: "Die kleinen Kangaroos machen auch im Winter große Sprünge"
 date: 2017-03-12
 author: "Michael Wittemann"
+image: "/images/news/2017/03/kinder-1.jpg"
 ---
 
 Wer denkt Baseball wird nur im Sommer gespielt, der liegt falsch! Vor allem der Kangaroos Nachwuchs war auch über die Wintermonate sehr aktiv.
@@ -31,3 +32,12 @@ Die aktuellen Trainingszeiten sind hier zu finden: [LINK](/probetraining)
 Die entsprechenden Ansprechpartner hier: [LINK](/kontakt)
 
 Zum Abschluss noch ein paar Fotos der Winter-Aktivitäten:
+
+![](/images/news/2017/03/kinder-2.jpg)
+![](/images/news/2017/03/kinder-3.png)
+![](/images/news/2017/03/kinder-4.jpg)
+![](/images/news/2017/03/kinder-5.jpg)
+![](/images/news/2017/03/kinder-6.jpg)
+![](/images/news/2017/03/kinder-7.jpg)
+![](/images/news/2017/03/kinder-8.jpg)
+![](/images/news/2017/03/kinder-9.jpg)

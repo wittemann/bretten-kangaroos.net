@@ -3,6 +3,7 @@ title: "Vorbereitung gegen die Schriesheim Raubritter"
 date: 2008-03-30
 author: "Martin Wittemann"
 team: "herren"
+image: "/images/news/2008/03/img-1415.jpg"
 ---
 
 Am vergangenen Samstag stand erneut ein Vorbereitungsspiel der ersten Herren-Mannschaft der Kangaroos auf dem dicht gedrängten Vorbereitungsplan. Um genau zu sein waren es sogar zwei Spiele, ein so genannter Double-Header. Dabei handelte es sich um ein 7-Inning- und ein 5-Inning-Spiel.
@@ -21,3 +22,23 @@ Leider hatte das Spiel auch einen negativen Höhepunkt. Ein Spieler der Raubritt
 Das nächste Spiel im Vorbereitungsplan ist kommenden Samstag gegen die ehemaligen Liga-Konkurrenten aus Heidelberg. Dort wird sich zeigen, wie sich die Kangaroos gegen eine über die letzten Jahre hinweg offensiv sehr starke Mannschaft aus Heidelberg schlagen wird.
 
 Danke an Frank Schöner für die tollen Bilder!
+
+![](/images/news/2008/03/img-1416.jpg)
+![](/images/news/2008/03/img-1419.jpg)
+![](/images/news/2008/03/img-1424.jpg)
+![](/images/news/2008/03/img-1431.jpg)
+![](/images/news/2008/03/img-1437.jpg)
+![](/images/news/2008/03/img-1439.jpg)
+![](/images/news/2008/03/img-1441.jpg)
+![](/images/news/2008/03/img-1450.jpg)
+![](/images/news/2008/03/img-1466.jpg)
+![](/images/news/2008/03/img-1467.jpg)
+![](/images/news/2008/03/img-1468.jpg)
+![](/images/news/2008/03/img-1469.jpg)
+![](/images/news/2008/03/img-1479.jpg)
+![](/images/news/2008/03/img-1481.jpg)
+![](/images/news/2008/03/img-1488.jpg)
+![](/images/news/2008/03/img-1498.jpg)
+![](/images/news/2008/03/img-1508.jpg)
+![](/images/news/2008/03/img-1517.jpg)
+![](/images/news/2008/03/img-1526.jpg)

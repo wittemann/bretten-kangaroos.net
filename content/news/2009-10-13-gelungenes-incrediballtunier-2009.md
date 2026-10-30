@@ -3,6 +3,7 @@ title: "Gelungenes Incrediballtunier 2009"
 date: 2009-10-13
 author: "Bryan Schaffer"
 old_team: "Incrediball"
+image: "/images/news/2009/10/freizeitturnier-siegerbild-09.jpg"
 ---
 
 Freizeitmannschaften kämpften um Baseballpokal

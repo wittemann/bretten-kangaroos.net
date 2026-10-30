@@ -3,6 +3,7 @@ title: "Kangaroos Jugend trainiert ab November in der Halle"
 date: 2018-10-15
 author: "Andrea Klein"
 team: "jugend"
+image: "/images/news/2018/10/whatsapp-image-2018-10-03-at-14-23-08.jpg"
 ---
 
 Nach der Saison ist vor dem Winter...

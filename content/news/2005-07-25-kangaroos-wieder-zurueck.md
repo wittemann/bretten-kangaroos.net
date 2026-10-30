@@ -3,6 +3,7 @@ title: "Kangaroos wieder zurück ?"
 date: 2005-07-25
 author: "Bryan Schaffer"
 team: "herren"
+image: "/images/news/2005/07/cimg4080.jpg"
 ---
 
 Am Wochenende war es endlich soweit, die Herrenmannschaft der Bretten Kangaroos fanden in einer außergewöhnlich erfolgreichen Begegnung gegen die Baseballer der Heidelberg Hedghehogs zu Ihrer alten Form zurück.
@@ -20,3 +21,9 @@ Dann endlich im sechsten Inning gelang den Kangaroos der Durchbruch als die Star
 Mit gekonnter Verteidigung von allen Kangaroos konnte der aufkommende Gegner jedoch soweit im Zaum gehalten werden, dass noch ein Endstand von 13:8 für Bretten erreicht werden konnte und der Tag in einem wohl verdienten Sieg feiernd beendet wurde.
 
 Das nächste Heimspiel der Kangaroos findet am Sonntag, den 07.08 um 16 Uhr auf dem Hartplatz in Diedelsheim statt, für Verpflegung ist gesorgt alle Zuschauer sind herzlich willkommen.
+
+![](/images/news/2005/07/cimg4103.jpg)
+![](/images/news/2005/07/cimg4105.jpg)
+![](/images/news/2005/07/cimg4106.jpg)
+![](/images/news/2005/07/cimg4107.jpg)
+![](/images/news/2005/07/cimg4109.jpg)

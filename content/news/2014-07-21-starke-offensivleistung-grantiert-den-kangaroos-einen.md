@@ -3,7 +3,10 @@ title: "Christian Pehle schlägt zwei Home Runs beim Sieg gegen Karlsruhe"
 date: 2014-07-21
 author: "Bryan Schaffer"
 team: "herren"
+image: "/images/news/2014/07/30467-116957514999635-2954898-n.jpg"
 ---
+
+![IMG_9970](/images/news/2014/07/img-9970.jpg)
 
 In der Baseball Landesliga empfingen die Bretten Kangaroos nach einer drei wöchigen Spielpause am Sonntag das Team der Karlsruhe Cougars-2.
 
@@ -18,5 +21,7 @@ Im 4 und 5 Durchgang konnten die Cougars jeweils einen weiteren Punkt erzielen b
 Im weiteren Verlauf passierte nicht mehr viel und das Team aus Bretten brachte das Spiel sicher über die Runden und gewann am Ende verdient mit 13 zu 4. Damit konnte man sich für die Niederlage im Hinspiel revanchieren und gleichzeitig den dritten Platz in der Tabelle festigen.
 
 Trainer Michael Wittemann meinte zum Sieg:“ Ich bin mit der Leistung der Mannschaft heute sehr zufrieden die Verteidigung stand, abgesehen von ein paar kleinen Unsicherheiten, sehr sicher und vor allem Offensive konnten wir heute nicht zuletzt dank der drei Homeruns überzeugen.“
+
+![IMG_9970](/images/news/2014/07/img-9970.jpg)
 
 Nun steht für das Team eine Serie von drei Auswärtsspielen an bevor es am 17 August das letzte Heimspiel der Saison 2014 gegen Neuenburg in Bretten geben wird (MW).

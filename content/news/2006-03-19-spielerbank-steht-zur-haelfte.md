@@ -2,6 +2,7 @@
 title: "Spielerbank steht zur Hälfte !!!"
 date: 2006-03-19
 author: "Bryan Schaffer"
+image: "/images/news/2006/03/dsc01355.jpg"
 ---
 
 Der Arbeitseinsatz am Samstag 18.03.06 begann um 8.00 Uhr. Wir mussten so früh beginnen,\
@@ -29,3 +30,35 @@ Danke.
 
 Nächster Arbeitseinsatz ist am Samstag 25.03.06. Beginn 09.30 Uhr\
 Ziel : Beide Spielerbereiche, (Bänke) fertig zu bekommen.
+
+![](/images/news/2006/03/dsc01356.jpg)
+![](/images/news/2006/03/dsc01357.jpg)
+![](/images/news/2006/03/dsc01358.jpg)
+![](/images/news/2006/03/dsc01359.jpg)
+![](/images/news/2006/03/dsc01360.jpg)
+![](/images/news/2006/03/dsc01361.jpg)
+![](/images/news/2006/03/dsc01362.jpg)
+![](/images/news/2006/03/dsc01363.jpg)
+![](/images/news/2006/03/dsc01364.jpg)
+![](/images/news/2006/03/dsc01365.jpg)
+![](/images/news/2006/03/dsc01366.jpg)
+![](/images/news/2006/03/dsc01367.jpg)
+![](/images/news/2006/03/dsc01368.jpg)
+![](/images/news/2006/03/dsc01369.jpg)
+![](/images/news/2006/03/dsc01370.jpg)
+![](/images/news/2006/03/dsc01371.jpg)
+![](/images/news/2006/03/dsc01372.jpg)
+![](/images/news/2006/03/dsc01373.jpg)
+![](/images/news/2006/03/dsc01374.jpg)
+![](/images/news/2006/03/dsc01375.jpg)
+![](/images/news/2006/03/dsc01376.jpg)
+![](/images/news/2006/03/dsc01377.jpg)
+![](/images/news/2006/03/dsc01378.jpg)
+![](/images/news/2006/03/dsc01379.jpg)
+![](/images/news/2006/03/dsc01380.jpg)
+![](/images/news/2006/03/dsc01381.jpg)
+![](/images/news/2006/03/dsc01382.jpg)
+![](/images/news/2006/03/dsc01383.jpg)
+![](/images/news/2006/03/dsc01384.jpg)
+![](/images/news/2006/03/dsc01385.jpg)
+![](/images/news/2006/03/dsc01386.jpg)

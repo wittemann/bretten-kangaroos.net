@@ -3,6 +3,7 @@ title: "Bretten Kangaroos schlagen Ellwangen Elks"
 date: 2006-05-22
 author: "Bryan Schaffer"
 team: "herren"
+image: "/images/news/2006/05/cimg5234.jpg"
 ---
 
 Am Sonntag machte sich die erste Herrenmannschaft der Kangaroos auf die Reise nach dem entlegenen Ellwangen um ihre vierte Begegnung der Saison anzutreten.
@@ -24,3 +25,13 @@ Zum Ende der Begegnung stand es 9:6 für Bretten als Werfer Hennrich eingewechse
 Die zweite Herrenmannschaft hatte dieses Wochenende leider nicht so viel Glück und verlor ihr Spiel in Kehl mit 12:1 Punkt gegen die Mosquitos.
 
 Es bleibt zu hoffen, dass die Kangaroos nun ihre Pechsträhne überwunden haben und im nächsten Spiel gegen Freiburg am 28.5 auf dem heimischen Kangaroos-Field in Diedelsheim an ihren Erfolg anknüpfen.
+
+![](/images/news/2006/05/cimg5235.jpg)
+![](/images/news/2006/05/cimg5240.jpg)
+![](/images/news/2006/05/cimg5241.jpg)
+![](/images/news/2006/05/cimg5242.jpg)
+![](/images/news/2006/05/cimg5245.jpg)
+![](/images/news/2006/05/cimg5251.jpg)
+![](/images/news/2006/05/cimg5254.jpg)
+![](/images/news/2006/05/cimg5259.jpg)
+![](/images/news/2006/05/cimg5262.jpg)

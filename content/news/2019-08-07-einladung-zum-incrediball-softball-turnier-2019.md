@@ -18,7 +18,7 @@ Ihr benötigt wie immer nichts weiter als Sportbekleidung (am besten eine lange
 Für das leibliche Wohl und Musik ist wie immer bestens gesorgt!\
 Habt Ihr wieder Lust bekommen?
 
-Dann füllt schnell das Anmeldeformular aus. Für Fragen, könnt Ihr uns auch gerne schreiben unter: [abteilungsleitung@bretten-kangaroos.com](mailto:abteilungsleitung@bretten-kangaroos.com)
+Dann füllt schnell das [Anmeldeformular](/files/news/2019/08/anmeldung-incrediball-turnier-2019.pdf) aus. Für Fragen, könnt Ihr uns auch gerne schreiben unter: [abteilungsleitung@bretten-kangaroos.com](mailto:abteilungsleitung@bretten-kangaroos.com)
 
 Nach Eingang der Anmeldung bekommt Ihr eine genaue Regelbeschreibung (stark vereinfacht für das Turnier), Tipps und Termine für die Vorbereitung. Außerdem habt ihr die Möglichkeit auf dem Baseballfeld unter Anleitung für das Turnier zu trainieren. Euren Trainingstermin könnt Ihr nach der Anmeldung planen.
 

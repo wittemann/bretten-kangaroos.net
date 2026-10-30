@@ -2,6 +2,7 @@
 title: "Kangaroos sind weiterhin ungeschlagen Tabellenführer"
 date: 2015-06-01
 author: "Michael Wittemann"
+image: "/images/news/2015/06/heilbronn-1.jpg"
 ---
 
 Am Sonntag war der Tabellenzweite, die Heilbronn Pirates zu Gast in Bretten-Diedelsheim zum Spitzenspiel der Baseball Landesliga Baden-Württemberg.
@@ -19,3 +20,7 @@ Neben dem Sieg der Mannschaft gab es für einen glücklichen Fan noch einen weit
 Mit nun vier4 Siegen bei keiner Niederlage steht das Team um die beiden Trainer Gottselig/Lauvai weiterhin an der Spitze der Tabelle. **Der nächste Gegner, am 6. Juni um 15:00 Uhr in Bretten-Diedelsheim, werden die Villingendorf Caveman sein.** Diese sind aktuell mit zwei Siegen und einer Niederlage auf dem zweiten Tabellenplatz.
 
 Zu diesem Spiel möchten die Kangaroos wieder alle Fans recht herzlich einladen um den amerikanischen Baseball Flair in Bretten-Diedelsheim zu erleben. (MW)
+
+![Heilbronn-2](/images/news/2015/06/heilbronn-2.jpg)
+![Heilbronn-4](/images/news/2015/06/heilbronn-4.jpg)
+![Heilbronn-3](/images/news/2015/06/heilbronn-3.jpg)

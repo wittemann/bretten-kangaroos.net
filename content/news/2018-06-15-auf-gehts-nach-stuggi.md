@@ -2,6 +2,7 @@
 title: "Auf geht's nach Stuggi"
 date: 2018-06-15
 author: "Andrea Klein"
+image: "/images/news/2018/06/img-17611.jpg"
 ---
 
 Am 8. Spieltag der Landesliga 2 ging es zum Tabellenführer den Reds nach Stuttgart.

@@ -2,6 +2,7 @@
 title: "Begeisterung im Schulprojekt"
 date: 2007-08-17
 author: "Bryan Schaffer"
+image: "/images/news/2007/08/bild-1.jpg"
 ---
 
 Bevor die Sommerferien begannen, hieß es auf der
@@ -15,3 +16,5 @@ Geräteturnen bis zum Innlineskating alles angeboten.Die Begeisterung war den Ki
 bereitgestellt wurde. Die Schüler und Schülerinnen, interessierten sich sehr
 
 über das Vereinsgeschehen und wann die Trainingszeiten sind. Die Bretter Baseballer freuen sich über Jugendliche die nach solchenSchulprojekten mehr Interesse am Baseballsport bekommen und diesenSport nun näher bei den Kangaroos kennen lernen wollen. Bedanken wollen sich die Bretten Kangaroos recht herzlich bei Frau Heidemarie Krattz für die Einladung zum Schulprojekt und freuen sich schon jetzt auf ein baldiges wieder sehen auf der Kraichgauschule in Gondelsheim.
+
+![](/images/news/2007/08/bild-2.jpg)

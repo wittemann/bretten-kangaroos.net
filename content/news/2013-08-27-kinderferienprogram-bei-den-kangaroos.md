@@ -2,6 +2,7 @@
 title: "Kinderferienprogram bei den Kangaroos"
 date: 2013-08-27
 author: "Michael Wittemann"
+image: "/images/news/2013/08/image.jpg"
 ---
 
 Am Freitag den 23 August waren 11 neugierige Kinder beim Ferienprogramm der Kangaroos um die Sportart Baseball etwas näher kennen zu lernen.\
@@ -9,3 +10,7 @@ Nach einer kurzen Einführung der Trainer in die Geschichte und Herkunft des Bas
 Das Erlernte wurde dann am Ende des Programms noch in einem kurzen Baseball Spiel umgesetzt. Alle Kinder waren mit großem Einsatz und Spaß bei der Sache und so waren die 4 Stunden auch sehr schnell vorbei.\
 An dieser Stelle auch nochmal vielen Dank an alle Kids die da waren, wir hoffen das es euch so viel Spaß gemacht hat wie den Trainern, und wir würden uns sehr freuen wenn wir euch beim Jugend Training wieder sehen würden.\
 Das nächste Training findet am 3 September um 17:30 auf dem Kangaroos Field statt.
+
+![image](/images/news/2013/08/image1.jpg)
+![image](/images/news/2013/08/image2.jpg)
+![image](/images/news/2013/08/image3.jpg)

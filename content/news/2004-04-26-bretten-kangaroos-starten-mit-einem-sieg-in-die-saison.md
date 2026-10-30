@@ -2,6 +2,7 @@
 title: "Bretten Kangaroos starten mit einem Sieg in die Saison"
 date: 2004-04-26
 author: "Michael Wittemann"
+image: "/images/news/2004/04/pict0509.jpg"
 ---
 
 Zum Auftakt der Baseball Saison 2004 warf der Vortand unseres Hauptvereins VFB Bretten Herr Glaser einen gekonnten „first pitch“ mit dem traditionell in eine neue Saison gestartet wird. Nachdem dann das Kangaroos Team 2004 den zahlreich erschienen Fans vorgestellt wurde ging es auch schon Los. Mit einem schönen „double play“ (zwei aus in einem Spielzug) durch David Opatic und Bill Butler zeigten die Kangaroos dem Gegner aus Aalen auch gleich wer Herr im Hause ist.
@@ -15,3 +16,29 @@ Bereits Tags zuvor konnten die Softball Damen den ersten Sieg verbuchen, da der 
 Das nächste Heimspiel der Herren findet am 9 Mai um 15:00 gegen Freiberg auf unserem Feld in Diedelsheim statt.
 
 Bereits eine Woche zuvor am 1 Mai treten die Softball Damen im Badischen Pokal an und am 2 Mai um 11:00 Spielen unsere kleinsten, die Schüler gegen Schriesheim. Zu diesen Spielen möchten wir natürlich alle unsere Fans recht herzlich einladen.
+
+![](/images/news/2004/04/pict0512.jpg)
+![](/images/news/2004/04/pict0516.jpg)
+![](/images/news/2004/04/pict0525.jpg)
+![](/images/news/2004/04/pict0526.jpg)
+![](/images/news/2004/04/pict0530.jpg)
+![](/images/news/2004/04/pict0532.jpg)
+![](/images/news/2004/04/pict0538.jpg)
+![](/images/news/2004/04/pict0539.jpg)
+![](/images/news/2004/04/pict0543.jpg)
+![](/images/news/2004/04/pict0549.jpg)
+![](/images/news/2004/04/pict0552.jpg)
+![](/images/news/2004/04/pict0561.jpg)
+![](/images/news/2004/04/pict0564.jpg)
+![](/images/news/2004/04/pict0566.jpg)
+![](/images/news/2004/04/pict0567.jpg)
+![](/images/news/2004/04/pict0571.jpg)
+![](/images/news/2004/04/pict0575.jpg)
+![](/images/news/2004/04/pict0579.jpg)
+![](/images/news/2004/04/pict0581.jpg)
+![](/images/news/2004/04/pict0583.jpg)
+![](/images/news/2004/04/pict0587.jpg)
+![](/images/news/2004/04/pict0596.jpg)
+![](/images/news/2004/04/pict0597.jpg)
+![](/images/news/2004/04/pict0603.jpg)
+![](/images/news/2004/04/pict0606.jpg)

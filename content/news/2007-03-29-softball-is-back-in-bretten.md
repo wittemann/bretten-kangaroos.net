@@ -3,6 +3,7 @@ title: "Softball is Back in Bretten"
 date: 2007-03-29
 author: "Bryan Schaffer"
 old_team: "Damen"
+image: "/images/news/2007/03/training-kang.jpg"
 ---
 
 Das Warten hat ein Ende. 2007 starten die Kangaroos in allen Bereichen durch. Der "Softball" kommt zurück auf das Feld der Träume in Bretten/Diedelsheim. Ab diesem Jahr bieten die Bretten Kangaroos kleinen und großen Mädchen die Möglichkeit Softball zu lernen und zu spielen. Ob Werfen, Schlagen, Fangen oder Laufen, alles wird gemacht.

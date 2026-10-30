@@ -3,6 +3,7 @@ title: "Vorbereitungsphase endet mit Tuniersieg"
 date: 2010-04-12
 author: "Bryan Schaffer"
 team: "herren"
+image: "/images/news/2010/04/schreise.jpg"
 ---
 
 1\. Platz: **Bretten Kangaroos**

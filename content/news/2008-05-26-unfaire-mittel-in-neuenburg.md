@@ -3,6 +3,7 @@ title: "Unfaire Mittel in Neuenburg"
 date: 2008-05-26
 author: "Bryan Schaffer"
 old_team: "Damen"
+image: "/images/news/2008/05/img-4964.jpg"
 ---
 
 Am Sonntag, den 25.05.08 begaben sich die Damen der Kangaroos auf den langen Weg zu den Neuenburg Atomics, um ihr zweites Auswärtsspiel zu bestreiten. Mit einer guten Besetzung und viel Motivation wurde der erste Sieg der Saison angestrebt.
@@ -22,3 +23,23 @@ Somit bleibt das Softballteam der Bretten Kangaroos weiterhin auf dem letzten Ta
 !!BOXSCORE!!\
 Neuenburg,10,0,3,0,3,-,-,-,-,16,6,2\
 Bretten,1,0,4,1,0,-,-,-,-,6,2,7
+
+![](/images/news/2008/05/img-4924.jpg)
+![](/images/news/2008/05/img-4927.jpg)
+![](/images/news/2008/05/img-4933.jpg)
+![](/images/news/2008/05/img-4952.jpg)
+![](/images/news/2008/05/img-4934.jpg)
+![](/images/news/2008/05/img-4937.jpg)
+![](/images/news/2008/05/img-4954.jpg)
+![](/images/news/2008/05/img-4965.jpg)
+![](/images/news/2008/05/img-4988.jpg)
+![](/images/news/2008/05/img-4967.jpg)
+![](/images/news/2008/05/img-5056.jpg)
+![](/images/news/2008/05/img-5001.jpg)
+![](/images/news/2008/05/img-5059.jpg)
+![](/images/news/2008/05/img-5041.jpg)
+![](/images/news/2008/05/img-5055.jpg)
+![](/images/news/2008/05/img-5069.jpg)
+![](/images/news/2008/05/img-4966.jpg)
+![](/images/news/2008/05/img-5025.jpg)
+![](/images/news/2008/05/img-4999.jpg)

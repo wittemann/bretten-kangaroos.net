@@ -3,6 +3,7 @@ title: "Kangaroos gewinnen ihr letzten Saisonspiel in Freiburg"
 date: 2013-09-17
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2013/09/img-31391.jpg"
 ---
 
 Das letzte Saisonspiel der Kangaroos Baseball Mannschaft fand vergangenes Wochenende in Freiburg gegen die Knights statt. Mit gerade 9 Spielern, also ohne die Möglichkeit auszuwechseln, trat das Team um Coach Bryan Schaffer die Reise nach Freiburg an. Da das Heimspiel gegen Freiburg deutlich gewonnen werden konnte rechnete sich das Team dennoch gute Chancen auf einen Sieg aus.\

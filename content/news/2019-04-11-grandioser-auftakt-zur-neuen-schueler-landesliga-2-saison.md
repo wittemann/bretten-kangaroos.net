@@ -3,6 +3,7 @@ title: "Grandioser Auftakt zur neuen Schüler Landesliga 2 Saison"
 date: 2019-04-11
 author: "Bryan Schaffer"
 team: "schueler"
+image: "/images/news/2019/04/b60a1a71-2aaf-4a31-89bf-40e773cef200.jpg"
 ---
 
 Am 7.04. war es dann endlich soweit und die Schüler Landesliga 2 hatte ihren Opening Day.

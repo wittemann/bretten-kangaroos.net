@@ -2,6 +2,7 @@
 title: "Sturm zerstört Baseballplatz!"
 date: 2006-04-01
 author: "Bryan Schaffer"
+image: "/images/news/2006/04/dsc01466.jpg"
 ---
 
 Beim Arbeitseinsatz am 01.04.06 gab es einiges zu tun !
@@ -49,3 +50,16 @@ Keine Sorge um den Verein und Platz! Der Anfang war nur ein Aprilscherz, wir wer
 am Ligabetrieb teilnehmen.
 
 Noch eins, Sponsoren können wir jederzeit gebrauchen, also meldet euch!!!!
+
+![](/images/news/2006/04/dsc01467.jpg)
+![](/images/news/2006/04/dsc01468.jpg)
+![](/images/news/2006/04/dsc01469.jpg)
+![](/images/news/2006/04/dsc01470.jpg)
+![](/images/news/2006/04/dsc01471.jpg)
+![](/images/news/2006/04/dsc01472.jpg)
+![](/images/news/2006/04/dsc01473.jpg)
+![](/images/news/2006/04/dsc01474.jpg)
+![](/images/news/2006/04/dsc01475.jpg)
+![](/images/news/2006/04/dsc01476.jpg)
+![](/images/news/2006/04/dsc01477.jpg)
+![](/images/news/2006/04/dsc01478.jpg)

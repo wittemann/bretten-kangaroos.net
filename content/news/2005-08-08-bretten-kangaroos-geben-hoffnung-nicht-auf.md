@@ -3,6 +3,7 @@ title: "Bretten Kangaroos geben Hoffnung nicht auf"
 date: 2005-08-08
 author: "Bryan Schaffer"
 team: "herren"
+image: "/images/news/2005/08/cimg4277.jpg"
 ---
 
 Am Sonntag trafen die Kangaroos auf den drittplazierten der Verbandsliga, der höchsten Liga in Baden-Württemberg. Trainer Andreas Bjelicic, der darauf hoffte, dass seine Mannschaft ihre Probleme beim Angriff in den Griff bekommt, trainierte bewusst die Defensive damit die Offensive sich im Spielgeschehen frei entfalten kann.
@@ -22,3 +23,9 @@ Die Spieler lassen sich jedoch durch diese eher erfolglose Saison nicht aus der 
 Das Team hält weiterhin zusammen und versucht gemeinsam die Probleme, die beim Schlagen liegen in den Griff zu bekommen.
 
 Der Fokus der Mannschaft wird auf nächstes Jahr gesetzt, da die wichtigen Angriffsspieler und der Werfer Henning Sommerfeld immer noch verletzt sind.
+
+![](/images/news/2005/08/cimg4287.jpg)
+![](/images/news/2005/08/cimg4291.jpg)
+![](/images/news/2005/08/cimg4293.jpg)
+![](/images/news/2005/08/cimg4301.jpg)
+![](/images/news/2005/08/cimg4309.jpg)

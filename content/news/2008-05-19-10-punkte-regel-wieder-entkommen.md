@@ -3,6 +3,7 @@ title: "10-Punkte-Regel wieder entkommen"
 date: 2008-05-19
 author: "Bryan Schaffer"
 old_team: "Damen"
+image: "/images/news/2008/05/hd-1805-2.jpg"
 ---
 
 Am Sonntag, den 18.05.08 hatten die Damen der Kangaroos ihr 3. Saisonspiel, diesmal gegen die 2. Mannschaft der Heidelberg Hedgehogs.\
@@ -23,3 +24,18 @@ Dies verdanken die Damen auch ihren Zuschauern, welche bis zur letzen Minute zu 
 !!BOXSCORE!!\
 Bretten,1,0,3,0,2,2,2,-,-,10,3,17\
 Heidelberg,4,0,6,1,3,2,0,-,-,16,7,1
+
+![](/images/news/2008/05/hd-1805-1.jpg)
+![](/images/news/2008/05/hd-1805-3.jpg)
+![](/images/news/2008/05/hd-1805-5.jpg)
+![](/images/news/2008/05/hd-1805-4.jpg)
+![](/images/news/2008/05/hd-1805-6.jpg)
+![](/images/news/2008/05/hd-1805-7.jpg)
+![](/images/news/2008/05/hd-1805-8.jpg)
+![](/images/news/2008/05/hd-1805-9.jpg)
+![](/images/news/2008/05/hd-1805-10.jpg)
+![](/images/news/2008/05/hd-1805-12.jpg)
+![](/images/news/2008/05/hd-1805-11.jpg)
+![](/images/news/2008/05/hd-1805-13.jpg)
+![](/images/news/2008/05/hd-1805-14.jpg)
+![](/images/news/2008/05/hd-1805-15.jpg)

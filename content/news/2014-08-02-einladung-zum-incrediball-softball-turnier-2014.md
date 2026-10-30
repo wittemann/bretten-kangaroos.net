@@ -17,7 +17,7 @@ Ihr benötigt wie immer nichts weiter außer Sportbekleidung (am Besten lange Sp
 Für das leibliche Wohl ist wie immer bestens gesorgt!
 
 Habt Ihr wieder Lust bekommen?\
-Dann füllt schnell das beiliegende Anmeldung-Formular aus.
+Dann füllt schnell das beiliegende [Anmeldung-Formular](/files/news/2014/08/anmeldung-incrediball-2014.pdf) aus.
 
 Nach Eingang der Anmeldung bekommt Ihr dann eine genaue Regelbeschreibung (stark vereinfacht für das Turnier), Tipps und Termine für die Vorbereitung. Außerdem habt ihr die Möglichkeit auf dem Hartplatz unter Anleitung für das Turnier zu trainieren. Der Trainingsbeginn kann der 01.09. sein.
 

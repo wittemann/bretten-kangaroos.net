@@ -3,6 +3,7 @@ title: "Tübingen und Bretten siegen beim Indoor Cup"
 date: 2004-01-12
 author: "Martin Wittemann"
 team: "jugend"
+image: "/images/news/2004/01/cimg0219.jpg"
 ---
 
 Am letzten Samstag veranstaltete die Baseball Abteilung des VFB Bretten, die Bretten Kangaroos, ein Baseball Hallenturnier für Schüler (6- 11 Jahre) und Jugend (12-15 Jahre) Mannschaften. Dazu kamen Teams aus ganz Baden-Württemberg in die Halle Im Grüner um den Sieger zu ermitteln.
@@ -22,3 +23,17 @@ Im Finale boten beide Teams ein gutes und schnelles Spiel, welches an Spannung k
 Dies ist ein schöner Erfolg für unser Jugend Team und war gleichzeitig auch ein schöner Abschluss des Turniers.
 
 Bei der Anschließenden Siegerehrung, zu der auch Oberbürgermeister Paul Metzger, sowie der Vorstand des VFB Bretten Hartmut Glaser anwesend waren, würden alle Teams mit Urkunden und die ersten drei Teams mit Pokalen ausgezeichnet.
+
+![](/images/news/2004/01/cimg0238.jpg)
+![](/images/news/2004/01/cimg0252.jpg)
+![](/images/news/2004/01/cimg0299.jpg)
+![](/images/news/2004/01/cimg0313.jpg)
+![](/images/news/2004/01/cimg0314.jpg)
+![](/images/news/2004/01/cimg0330.jpg)
+![](/images/news/2004/01/cimg0349.jpg)
+![](/images/news/2004/01/cimg0356.jpg)
+![](/images/news/2004/01/cimg0359.jpg)
+![](/images/news/2004/01/cimg0430.jpg)
+![](/images/news/2004/01/cimg0442.jpg)
+![](/images/news/2004/01/cimg0451.jpg)
+![](/images/news/2004/01/cimg0469.jpg)

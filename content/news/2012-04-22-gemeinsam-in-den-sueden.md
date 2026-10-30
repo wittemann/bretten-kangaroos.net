@@ -2,6 +2,7 @@
 title: "Gemeinsam in den Süden"
 date: 2012-04-22
 author: "Bryan Schaffer"
+image: "/images/news/2012/04/teamfotos-4.jpg"
 ---
 
 Am vergangenen Samstag stand für die beiden Teams der Kangaroos eine weite Fahrt in den Süden an. Während das Jungendteam bereits ihr zweites Spiel der Saison bestritt, wollte die Herrenmannschaft bei den Neuenburg-Atomics mit einem Sieg in die Saison starten.
@@ -15,3 +16,7 @@ Pitcher Martin Wittemann hatte zusammen mit seinem Catcher Christian Pehle die S
 Zum Saisoneröffnungsspiel nächsten Sonntag um 15Uhr in Bretten werden die Cavemans aus Villingendorf erwartet. Bekannt aus vielen Begegnungen in den letzten Jahren stellt sich das  Team um Coach Schaffer auf einen weitaus offensiveren Gegner ein, was ein spannendes Spiel erwarten lässt. Alle Spieler erhoffen sich zahlreiche Fans und bestes Baseballwetter. Für kalte Getränke und leckere Snacks ist wie immer gesorgt.
 
 1-2-3 KANGAROOS
+
+![](/images/news/2012/04/teamfotos-5.jpg)
+![](/images/news/2012/04/teamfotos-6.jpg)
+![](/images/news/2012/04/image.jpg)

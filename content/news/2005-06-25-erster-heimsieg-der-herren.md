@@ -3,6 +3,7 @@ title: "Erster Heimsieg der Herren"
 date: 2005-06-25
 author: "Bryan Schaffer"
 team: "herren"
+image: "/images/news/2005/06/cimg3930.jpg"
 ---
 
 Am vergangenen Sonntag war es endlich soweit, die Baseballer aus Bretten haben die Last der letzten vier verlorenen Spiele zum Saisonbeginn abgelegt und starten ihren Angriff auf die oberen Ränge der Tabelle in der Verbandsliga.
@@ -22,3 +23,9 @@ Im vierten von neun Innings schlugen die Kangaroos erneut zu. Angeführt von Mic
 Als zum Ende des Spiels auf der Anzeigetafel ein Punktestand von 17:10 für Bretten zu sehen war, konnte man sichtlich die Erleichterung der Spieler sehen, die nun erwartungsvoll nach vorne blicken zur nächsten Herausforderung, gegen die Kehl Mosqitos am Sonntag um 15 Uhr im Diedelsheimer Baseball-Stadion.
 
 Die Juniorenmannschaft, die am gleichen Tag ein Spiel gegen die Neuenburg Atomics austrug, hatte leider nicht soviel Glück wie die Herren. Sie verloren dieses Spiel aufgrund abwesender Mitspieler mit 17 : 11 Punkten.
+
+![](/images/news/2005/06/cimg3922.jpg)
+![](/images/news/2005/06/cimg3933.jpg)
+![](/images/news/2005/06/cimg3954.jpg)
+![](/images/news/2005/06/cimg3921.jpg)
+![](/images/news/2005/06/cimg3932.jpg)

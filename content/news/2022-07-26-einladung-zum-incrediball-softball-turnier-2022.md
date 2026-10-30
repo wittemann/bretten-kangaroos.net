@@ -19,7 +19,7 @@ Für das leibliche Wohl und Musik ist wie immer bestens gesorgt!
 
 **Habt Ihr wieder Lust bekommen?**
 
-Dann füllt schnell das Anmeldeformular aus (Anmeldeformular herunterladen). Für Fragen, könnt Ihr uns auch gerne schreiben unter:
+Dann füllt schnell das Anmeldeformular aus ([Anmeldeformular herunterladen](/files/news/2022/07/anmeldung-incrediballturnier-2022.pdf)). Für Fragen, könnt Ihr uns auch gerne schreiben unter:
 
 abteilungsleitung@bretten-kangaroos.com
 
@@ -43,4 +43,4 @@ Wir freuen uns auf Euch! Eure Bretten - Kangaroos
 
 **Incrediball Regelwerk 2022**
 
-Spielregeln herunterladen
+[Spielregeln herunterladen](/files/news/2022/07/incrediballregeln-2022.pdf)

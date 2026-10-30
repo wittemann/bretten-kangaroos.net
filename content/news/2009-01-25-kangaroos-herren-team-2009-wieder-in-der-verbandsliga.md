@@ -3,6 +3,7 @@ title: "Kangaroos Herren Team 2009 wieder in der Verbandsliga"
 date: 2009-01-25
 author: "Martin Wittemann"
 team: "herren"
+image: "/images/news/2009/01/gruppe-herren.jpg"
 ---
 
 Nach dem das Baseball Herren Team der Kangaroos mit dem zweiten Platz in der Landesliga 2008 den angestrebten direkten Wiederaufstieg verpasst hatte, kam kurz vor Weihnachten die gute Nachricht das, dass Team nun in 2009 doch wieder in Baden-Württembergs höchster Baseball Liga antreten darf.\

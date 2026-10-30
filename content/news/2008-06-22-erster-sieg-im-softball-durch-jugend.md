@@ -3,6 +3,7 @@ title: "Erster Sieg im Softball durch Jugend"
 date: 2008-06-22
 author: "Bryan Schaffer"
 team: "jugend"
+image: "/images/news/2008/06/dsc-0018.jpg"
 ---
 
 Die Bretten Kangaroos starteten in die Saison mit drei neuen Softballteams. Zum einen das Damenteam, das sich gut in der Landesliga etabliert hat, die Juniorinnen, die mit Karlsruhe und Herrenberg zwei Bundesligavereine keine einfaches Los haben und die Jugend, die ebenfalls gegen Herrenberg und Mannheim antreten.
@@ -18,3 +19,13 @@ Es spielten:\
 Talitha Zippenfennig (2B), Natascha Power (P), Jasmin Rotzinger (3B), Nina von Bronewski (C,P), Tamara Kopf (1B), Svenja Römer (SS), Annika Frank-Meurren (CF), Mara Rabettlat (CF), Mithra-Larissa Schank (3B), Willhof Samira (3B, SS, 1B), Katharina Schreiner (LF), Nikita König (LF), Lisa Schmidt (DP), Ronja Kemer (DP), Celia Waldmann (RF), Tabea Rabettlat (RF), Veronica Wörner (CF)
 
 Das nächste Spiel der Brettener Jugend findet am 13.Juli in Mannheim statt. Die Softball-Jugend trainiert dienstags ab 17 Uhr und donnerstags ab 17:30Uhr auf dem Hartplatz in Diedeslheim. Mehr Informationen gibt es im Internet unter: www.bretten-kangaroos.com oder Telefon: 07252/972272
+
+![](/images/news/2008/06/dsc-0020.jpg)
+![](/images/news/2008/06/dsc-0021.jpg)
+![](/images/news/2008/06/dsc-0022.jpg)
+![](/images/news/2008/06/dsc-0025.jpg)
+![](/images/news/2008/06/dsc-0026.jpg)
+![](/images/news/2008/06/dsc-0027.jpg)
+![](/images/news/2008/06/dsc-0029.jpg)
+![](/images/news/2008/06/dsc-0031.jpg)
+![](/images/news/2008/06/dsc-0028.jpg)

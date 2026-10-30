@@ -3,6 +3,7 @@ title: "Kangaroos mit desolater Leistung gegen die Junioren der Tornados"
 date: 2009-03-23
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2009/03/2009-03-22-bb-gg-mannheim-junioren-005.jpg"
 ---
 
 Nach der guten Leistung gegen Cougars letzte Woche zeigte sich das Kangaroos Team gegen die Junioren der Mannheim Tornados von seiner schlechten Seite.
@@ -14,3 +15,5 @@ Im weiteren Verlauf der Partie konnten die jungen Mannheimer Ihr Punktekonto auf
 In diesem Spiel offenbarten sich einige schwächen in allen Mannschaftsteilen, die es in den nächsten Wochen der Vorbereitung, durch konzentriertes Training, abzustellen gilt.
 
 Die nächste Gelegenheit es besser zu machen hat das Team bereits am kommenden Sonntag um 14:00 auf dem Kangraoos Field beim nächsten Vorbreitungsspiel gegen die Knights aus Freiburg.
+
+![](/images/news/2009/03/2009-03-22-bb-gg-mannheim-junioren-017.jpg)

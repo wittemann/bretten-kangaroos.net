@@ -17,7 +17,7 @@ Ihr benötigt wie immer nichts weiter außer Sportbekleidung (am Besten lange Sp
 
 Für das leibliche Wohl ist wie immer bestens gesorgt!
 
-Habt Ihr wieder Lust bekommen? Dann füllt schnell das beiliegende Anmeldeformular aus.
+Habt Ihr wieder Lust bekommen? Dann füllt schnell das beiliegende [Anmeldeformular](/files/news/2013/08/anmeldung-incrediball-2013.doc) aus.
 
 Nach Eingang der Anmeldung bekommt Ihr dann eine genaue Regelbeschreibung (stark vereinfacht für das Turnier), Tipps und Termine für die Vorbereitung. Außerdem habt ihr die Möglichkeit auf dem Hartplatz unter Anleitung für das Turnier zu trainieren. Der Trainingsbeginn kann der 26.08. sein.
 

@@ -2,6 +2,7 @@
 title: "Präsenz am Familiensporttag in Bretten"
 date: 2017-07-30
 author: "Bryan Schaffer"
+image: "/images/news/2017/07/img-0760.jpg"
 ---
 
 Am Sonntag, den 23.07.2017, fand in Verbindung mit der 1250 Jahre Bretten ein Familiensporttag statt, bei dem viele Vereine aus Bretten und Umgebung für Familien viele interessante Tätigkeiten angeboten haben. Die Bretten Kangaroos Baseballer waren natürlich auch am Start mit einem riesigen aufblasbaren Schlagtunnel sowie Wurfstation. Hier konnten die Familien, vor allem die Kids, ihre Wurfgeschwindigkeit testen und Schlagfähigkeiten beweisen. Zudem konnten die Kinder verschiedene Bilder mit Baseball Motiv anmalen.

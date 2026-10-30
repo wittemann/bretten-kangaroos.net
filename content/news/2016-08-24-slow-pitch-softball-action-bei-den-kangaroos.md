@@ -3,6 +3,7 @@ title: "Slow-Pitch Softball Action bei den Kangaroos"
 date: 2016-08-24
 author: "Michael Wittemann"
 old_team: "Slow Pitch"
+image: "/images/news/2016/08/spielplan.jpg"
 ---
 
 Am Sonntag den 28. August findet bei den Bretten Kangaroos ein Spieltag der Rhein-Neckar Slow-Pitch Softball Liga ([RNSSL](http://rhein-neckar.slowpitch.de/)) statt.

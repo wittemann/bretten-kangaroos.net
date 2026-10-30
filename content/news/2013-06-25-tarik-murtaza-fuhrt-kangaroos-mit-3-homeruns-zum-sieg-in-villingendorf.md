@@ -2,6 +2,7 @@
 title: "Tarik Murtaza führt Kangaroos mit 3 Homeruns zum Sieg in Villingendorf"
 date: 2013-06-25
 author: "Martin Wittemann"
+image: "/images/news/2013/06/img-85762.jpg"
 ---
 
 Nach zwei Niederlagen in Folge war das Baseball-Team der Kangaroos hoch motiviert diese negative Serie beim Auswärtsspiel in Villingendorf zu beenden. Da das Team um das Trainergespannt Schaffer und Wittemann, bedingt durch Verletzungen und studienbedingte Ausfällen, nicht in Bestbesetzung antreten konnte, war es bereits im Vorfeld klar, dass es ein schweres Spiel werden würde.

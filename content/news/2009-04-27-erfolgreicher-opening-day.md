@@ -3,6 +3,7 @@ title: "Erfolgreicher Opening Day"
 date: 2009-04-27
 author: "Martin Wittemann"
 team: "herren"
+image: "/images/news/2009/04/rimg0205.jpg"
 ---
 
 Die Voraussetzungen waren getroffen, die Mannschaft gut vorbereitet und das Wetter hervorragend. So starteten die Kangaroos ihr erstes Ligaspiel vor heimischem Publikum. Zu Gast waren die Green Sox aus Göppingen, welche vorige Saison aus der Regionalliga abgestiegen sind.
@@ -12,3 +13,16 @@ Aufgrund der Tatsache, dass in der vergangenen Saison die beiden Teams noch zwei
 Nach einem spannenden Spiel gingen die Kangaroos als Sieger vom Platz. Trainer Michael Wittemann war vollkommen mit der Leistung der Mannschaft zu frieden. Er ist sich sicher, dass das Team in den kommenden Spielen auf diese Leistung aufbauen kann und somit einen guten Start in die Saison schaffen wird.
 
 Am kommenden Wochenende müssen die Kangaroos gleich zwei mal antreten. Am 1. Mai spielen sie im BWBSV Pokal in Dornstadt. Am darauf folgenden Sonntag steht dann das nächste Ligaspiel gegen die Ulm Falcons an. Beginn wird wieder um 15:00 Uhr sein. Wir hoffen dass die gezeigte Leistung Lust auf mehr gemacht hat und dass wir wieder zahlreiche Zuschauer auf dem Feld begrüßen dürfen.
+
+![](/images/news/2009/04/rimg0210.jpg)
+![](/images/news/2009/04/rimg0212.jpg)
+![](/images/news/2009/04/rimg0213.jpg)
+![](/images/news/2009/04/rimg0218.jpg)
+![](/images/news/2009/04/rimg0226.jpg)
+![](/images/news/2009/04/rimg0227.jpg)
+![](/images/news/2009/04/n1193440409-30304804-4798450-jpg.jpg)
+![](/images/news/2009/04/n1193440409-30304805-5832294-jpg.jpg)
+![](/images/news/2009/04/n1193440409-30304807-1365008-jpg.jpg)
+![](/images/news/2009/04/n1193440409-30304808-6945045-jpg.jpg)
+![](/images/news/2009/04/n1193440409-30304809-2019561-jpg.jpg)
+![](/images/news/2009/04/n26698146115.jpg)

@@ -2,6 +2,7 @@
 title: "Whitecastle Cup 2007"
 date: 2007-09-18
 author: "Martin Wittemann"
+image: "/images/news/2007/09/cimg0927.jpg"
 ---
 
 Es ist schon zur Tradition geworden, dass die Kangaroos nach ihrer Saison zum Saisonabschluss nach Franken zum Whitecastlecup fahren. Auch dieses Jahr konnten wieder 11 Kangaroos in Franken angetroffen werden um die Saison gebührend ausklingen zu lassen.\
@@ -19,3 +20,14 @@ Trotz der langen Nacht war der großteils der Kangaroos am nächsten Morgen um 8
 Mit diesem Sieg hatten sich die Kangaroos auf den zweiten Platz in der Gruppe geschoben und damit für das Spiel um Platz drei qualifiziert. In diesem Spiel mussten sie gegen den Ausrichter des Turnier, die Unterwumbach Rats antreten. Auch hier konnten die Kangaroos klar zeigen dass die die bessere Mannschaft waren und gewannen auch dieses Spiel mit einem klaren 9:1 und sicherten sich zumindest den dritten Platz.
 
 Das Finale bestritten die Laufer Wölfe und die Gundelfingen Moskitos. Bei diesem sehr offensiv geprägten Spiel konnten sich die Moskitos klar durchsetzen und holten somit in ihrer 16ten Turnierteilnahme der Wanderpokal nach Gundelfingen.
+
+![](/images/news/2007/09/cimg0931.jpg)
+![](/images/news/2007/09/cimg0932.jpg)
+![](/images/news/2007/09/cimg0998.jpg)
+![](/images/news/2007/09/cimg0935.jpg)
+![](/images/news/2007/09/cimg0936.jpg)
+![](/images/news/2007/09/cimg0949.jpg)
+![](/images/news/2007/09/cimg0964.jpg)
+![](/images/news/2007/09/cimg0968.jpg)
+![](/images/news/2007/09/cimg0971.jpg)
+![](/images/news/2007/09/cimg1014.jpg)

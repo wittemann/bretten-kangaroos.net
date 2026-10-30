@@ -3,7 +3,10 @@ title: "Dritter Spieltag der Schülerlandesliga 2"
 date: 2018-04-30
 author: "Andrea Klein"
 team: "schueler"
+image: "/images/news/2018/04/dsc04094.jpg"
 ---
+
+![](/images/news/2018/04/dsc04092.jpg)
 
 Am Samstag, ging es zum dritten Spieltag der Schülerlandesliga 2, für den Nachwuchs der Brettener Kangaroos zu den Titelverteidigern nach Stuttgart.
 
@@ -21,3 +24,5 @@ Auf geht's zum vierten Spieltag am kommenden 1. Mai zu unseren badischen Nachbar
 
 Man of the Match\
 Tyrese Kapici
+
+![](/images/news/2018/04/dsc04205.jpg)

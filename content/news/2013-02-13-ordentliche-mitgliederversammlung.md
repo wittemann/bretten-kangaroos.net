@@ -2,6 +2,7 @@
 title: "Ordentliche Mitgliederversammlung"
 date: 2013-02-13
 author: "Bryan Schaffer"
+image: "/images/news/2013/02/image.jpg"
 ---
 
 Liebe Kangaroos,

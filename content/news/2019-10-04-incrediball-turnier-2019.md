@@ -3,6 +3,7 @@ title: "Incrediball Turnier 2019"
 date: 2019-10-04
 author: "Bryan Schaffer"
 old_team: "Incrediball"
+image: "/images/news/2019/10/71566871-2875696449125714-7439974244005445632-n-1.jpg"
 ---
 
 Am vergangenen Samstag haben die Bretten Kangaroos ihr geliebtes Incrediball Turnier veranstaltet. Das Incrediball Turnier ist ein Slow pitch Softball Turnier für alle Personen die nicht in ein Baseball oder Softball Mannschaft gemeldet sind.
@@ -18,3 +19,6 @@ Trotz eine kontinuierliche Verbesserung der Burgwächter haben die Wilddogs in d
 Das Finalspiel Rebels gegen B-Ballers war unglaublich spannend. Beide Mannschaften konnten über die ersten 4 Innings den anderen zu 0 Punkten halten obwohl die Bases immer wieder besetzt waren. Im 5. Inning konnte die Brettheimer 1 Punkt erzielen und den Rebels wieder Punkte verhindern. Somit stand es Anfang der letzten Inning 1:0 für die B-Baller. Die Brettener konnten noch 1 Punkt erzielen und somit mussten die Rebels mindestens 2 Punkte erzielen um zumindest ein weiteres Inning zu ermöglichen. Doch so weit kam es nicht. Die Bruchsal Rebels konnten 3 Punkte erzielen und haben somit das spannendste Incrediball Turnier Finale aller Zeiten gewonnen.
 
 Wir bedanken uns bei allen Teilnehmern und allen Helfern und freuen uns schon auf das nächste Incrediball Turnier in 2020.
+
+![](/images/news/2019/10/71544911-2874835699211789-3936028645620973568-n.jpg)
+![](/images/news/2019/10/71536838-2874835622545130-2351697329901273088-n.jpg)

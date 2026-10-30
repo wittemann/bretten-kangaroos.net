@@ -3,6 +3,7 @@ title: "Incrediballturnier 2007"
 date: 2007-09-23
 author: "Martin Wittemann"
 old_team: "Incrediball"
+image: "/images/news/2007/09/img-9720.jpg"
 ---
 
 Wenn die Saison für die Teams der Kangaroos im Ligabetrieb zu Ende geht, geht es für die Freizeittems erst los. Vergangenen Samstag war wieder das Incrediball Turnier für Freizeitmannschaften auf dem Feld der Kangaroos. Dieses slowpitch Softball Turnier wurde inzwischen schon zum vierten Male ausgetragen und erfreut sich immer noch großer Beliebtheit.Angetreten sind dieses Jahr elf Teams, davon einige schon das vierte mal dabei, andere das erste Mal. Für die meisten der Teams hieß dies jedoch um 9 Uhr morgens das erste Spiel bestreiten. Auf insgesamt drei Feldern wurde in der Vorrunde um die vorderen Plätze in den drei Gruppen gekämpft.Bei einer Spieldauer von ca. einer Stunde konnten die Vorrundenspiele bis um 14 Uhr abgeschlossen werden und damit standen acht Teams fest, die ins Viertelfinale einzogen. Für die verbleibenden drei Teams war der Tag jedoch noch nicht zu ende. Sie durften in einer Trostrunde noch die hinteren Tabellenplätze ausspielen.
@@ -12,3 +13,18 @@ In den Viertelfinalbegegnungen trafen die erwartet starken Teams aufeinander und
 Somit standen die Halbfinale fest. Die Bjelis AllStars mussten gegen die Sportskannonen antreten und konnten sich in diesem Spiel durchsetzen. Die Wilddogs scheiterten an den Taz Devlis und qualifizierten sich somit nur für das so genannte kleine Finale. Dieses konnten sie jedoch gegen die Sportskannonen für sich entscheiden.
 
 Im Finale trafen die Taz Devils auf die Bjelis AllStars. Die offensiv sehr starken AllStars konnten sich auch noch im letzten Spiel durchsetzen und konnten somit nach 2005 das zweite mal den Titel an sich reißen.
+
+![](/images/news/2007/09/img-9708.jpg)
+![](/images/news/2007/09/p1040654.jpg)
+![](/images/news/2007/09/p1040704.jpg)
+![](/images/news/2007/09/p5171490.jpg)
+![](/images/news/2007/09/p5171492.jpg)
+![](/images/news/2007/09/p5171500.jpg)
+![](/images/news/2007/09/p5171502.jpg)
+![](/images/news/2007/09/img-0191.jpg)
+![](/images/news/2007/09/img-0212.jpg)
+![](/images/news/2007/09/img-0245.jpg)
+![](/images/news/2007/09/img-0446.jpg)
+![](/images/news/2007/09/img-0512.jpg)
+![](/images/news/2007/09/img-0546.jpg)
+![](/images/news/2007/09/img-0731.jpg)

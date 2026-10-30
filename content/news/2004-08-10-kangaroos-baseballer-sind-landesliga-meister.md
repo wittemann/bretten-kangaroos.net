@@ -3,6 +3,7 @@ title: "Kangaroos Baseballer sind Landesliga Meister"
 date: 2004-08-10
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2004/08/cimg2319.jpg"
 ---
 
 In einem spannenden und an Dramatik nicht zu überbietenden Spiel besiegten die Kangaroos Baseballer im letzten und alles entscheidenden Saisonspiel die Heilbronn Pirates mit 5 zu 4.
@@ -25,3 +26,28 @@ Somit musste nun die Offensive der Kangaroos am Ende des 9. Innings versuchen, e
 Der Jubel bei der Mannschaft und den Fans kannte danach keine Grenzen und es wurde bis spät in den Morgen, der bis dato größte Erfolg in der Vereinsgeschichte der Kangaroos, gefeiert.
 
 Das gesammte Kangaroos Team möchte sich auf diesem Wege für die tolle Unterstützung wärend der gesammten Saison und vor allem beim letzten Spiel bedanken und hofft im nächsten Jahr in der Verbandsliga noch mehr Baseballfans begrüßen zu dürfen.
+
+![](/images/news/2004/08/cimg2323.jpg)
+![](/images/news/2004/08/cimg2334.jpg)
+![](/images/news/2004/08/cimg2335.jpg)
+![](/images/news/2004/08/cimg2341.jpg)
+![](/images/news/2004/08/cimg2342.jpg)
+![](/images/news/2004/08/cimg2348.jpg)
+![](/images/news/2004/08/cimg2360.jpg)
+![](/images/news/2004/08/cimg2365.jpg)
+![](/images/news/2004/08/cimg2384.jpg)
+![](/images/news/2004/08/cimg2397.jpg)
+![](/images/news/2004/08/cimg2400.jpg)
+![](/images/news/2004/08/cimg2401.jpg)
+![](/images/news/2004/08/cimg2407.jpg)
+![](/images/news/2004/08/cimg2408.jpg)
+![](/images/news/2004/08/cimg2409.jpg)
+![](/images/news/2004/08/cimg2410.jpg)
+![](/images/news/2004/08/cimg2414.jpg)
+![](/images/news/2004/08/cimg2419.jpg)
+![](/images/news/2004/08/cimg2422.jpg)
+![](/images/news/2004/08/cimg2427.jpg)
+![](/images/news/2004/08/cimg2428.jpg)
+![](/images/news/2004/08/cimg2436.jpg)
+![](/images/news/2004/08/cimg2437.jpg)
+![](/images/news/2004/08/cimg2448.jpg)

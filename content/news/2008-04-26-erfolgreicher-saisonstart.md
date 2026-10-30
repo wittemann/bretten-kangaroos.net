@@ -3,6 +3,7 @@ title: "Erfolgreicher Saisonstart"
 date: 2008-04-26
 author: "Martin Wittemann"
 team: "herren"
+image: "/images/news/2008/04/img-1857.jpg"
 ---
 
 Zur Saisoneröffnung am Samstag, den 26.4.2008 waren erneut die Cougars aus Karlsruhe zu Gast, jedoch mit der zweiten Mannschaft, die vergangene Saison aus der Bezirksliga in die Landesliga aufstieg. Bei besten Baseball-Wetter konnte das Spiel pünktlich um 15:00 Uhr beginnen.
@@ -19,3 +20,23 @@ Karlsruhe,0,0,0,0,-,-,-,-,-,0,3,3\
 Bretten,10,0,2,8,-,-,-,-,-,20,14,1
 
 Das nächste Spiel der Kangaroos findet am kommenden Sonntag, den 4.5.2008 in Nagold statt. Dort wird sich zeigen, wie sich die Kangaroos gegen die Mohawks aus Nagold schlagen, welche den Aufstieg und somit die Meisterschaft in den Landesliga als Ziel haben \[[Bericht der Mohawks](http://www.nagold-mohawks.de/playball/index.php?option=com_content&task=view&id=31&Itemid=1)\].
+
+![](/images/news/2008/04/img-1855.jpg)
+![](/images/news/2008/04/img-1821.jpg)
+![](/images/news/2008/04/img-1865.jpg)
+![](/images/news/2008/04/img-1869.jpg)
+![](/images/news/2008/04/img-1883.jpg)
+![](/images/news/2008/04/img-1897.jpg)
+![](/images/news/2008/04/img-1907.jpg)
+![](/images/news/2008/04/img-1912.jpg)
+![](/images/news/2008/04/img-1913.jpg)
+![](/images/news/2008/04/img-1925.jpg)
+![](/images/news/2008/04/img-1941.jpg)
+![](/images/news/2008/04/img-1962.jpg)
+![](/images/news/2008/04/img-1977.jpg)
+![](/images/news/2008/04/img-1986.jpg)
+![](/images/news/2008/04/img-1988.jpg)
+![](/images/news/2008/04/img-1990.jpg)
+![](/images/news/2008/04/img-1991.jpg)
+![](/images/news/2008/04/img-2018.jpg)
+![](/images/news/2008/04/img-2032.jpg)

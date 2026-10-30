@@ -2,6 +2,7 @@
 title: "Saisonabschluss der Baseballer"
 date: 2005-09-19
 author: "Bryan Schaffer"
+image: "/images/news/2005/09/cimg4466.jpg"
 ---
 
 Mit dem zweiten Incrediball-Turnier, einem sportlichen Ereignis bei dem die Türen der Bretten Kangaroos für Jedermann geöffnet sind, möchte die Abteilung für Baseball im VfB Bretten sich aus der Saison 2005 verabschieden.
@@ -27,3 +28,16 @@ im zweiten Inning von sieben gespielten Innings der Punktestand bei 2:2 stand re
 Daraus wurde jedoch nichts, da die Pirates jedes folgende Inning ihren Punktestand konstant ausbauen konnten und die Kangaroos mit einer 9:3 Niederlage vom Platz schickten.
 
 So musste man auch dieses Jahr ohne Wanderpokal nach Bretten zurückkehren, aber die Brettener geben die Hoffnung nicht auf, nächstes Jahr das erste Mal gegen eine Bundesligamannschaft zu siegen.
+
+![](/images/news/2005/09/cimg4472.jpg)
+![](/images/news/2005/09/cimg4481.jpg)
+![](/images/news/2005/09/cimg4489.jpg)
+![](/images/news/2005/09/cimg4502.jpg)
+![](/images/news/2005/09/cimg4509.jpg)
+![](/images/news/2005/09/cimg4522.jpg)
+![](/images/news/2005/09/cimg4530.jpg)
+![](/images/news/2005/09/cimg4537.jpg)
+![](/images/news/2005/09/cimg4563.jpg)
+![](/images/news/2005/09/cimg4578.jpg)
+![](/images/news/2005/09/cimg4593.jpg)
+![](/images/news/2005/09/cimg4600.jpg)

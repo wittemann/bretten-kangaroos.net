@@ -2,6 +2,7 @@
 title: "Baseball Pokalfinale Baden-Württemberg"
 date: 2009-10-03
 author: "Bryan Schaffer"
+image: "/images/news/2009/10/foto-mc.jpg"
 ---
 
 **Gut ausgerüstet** durch ihren neuen Sponsor Mc Donald´s in Bretten können die Kangaroos am Samstag ihr bisher wichtigstes Spiel gegen den deutschen Meister 2009 antreten.

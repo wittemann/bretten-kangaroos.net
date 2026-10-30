@@ -2,6 +2,7 @@
 title: "Die Kangaroos feiern den Saisonstart"
 date: 2006-04-24
 author: "Bryan Schaffer"
+image: "/images/news/2006/04/cimg5146.jpg"
 ---
 
 Die Baseballer der Bretten Kangaroos haben mit den letzten Spielen am vergangenen Wochenende die Vorbereitungsphase abgeschlossen und freuen sich nun auf die zweite Saison in der Verbandsliga.
@@ -25,3 +26,20 @@ Die Verteidigung im Innenfeld war zu Beginn auch nicht optimal konzentriert und 
 Trainer Andreas Bjelicic war mit dem abschließenden Ergebnis von 7:7 und der Leistung seines Teams zufrieden und blickt der kommenden Saison zuversichtlich entgegen.
 
 Am 1.Mai findet noch eine besondere Begegnung auf dem Hartplatz in Diedelsheim statt, der Rekordmeister aus Mannheim, die Tornados treten in einem Pokalspiel gegen unsere heimischen Baseballer an. Die Kangaroos werden ihr Bestes geben um den „FC Bayern München" des deutschen Baseballs einen gebührenden Empfang zu bereiten.
+
+![](/images/news/2006/04/cimg5148.jpg)
+![](/images/news/2006/04/cimg5150.jpg)
+![](/images/news/2006/04/cimg5164.jpg)
+![](/images/news/2006/04/cimg5171.jpg)
+![](/images/news/2006/04/cimg5174.jpg)
+![](/images/news/2006/04/cimg5181.jpg)
+![](/images/news/2006/04/cimg5189.jpg)
+![](/images/news/2006/04/cimg5191.jpg)
+![](/images/news/2006/04/cimg5201.jpg)
+![](/images/news/2006/04/cimg5203.jpg)
+![](/images/news/2006/04/cimg5213.jpg)
+![](/images/news/2006/04/cimg5219.jpg)
+![](/images/news/2006/04/cimg5224.jpg)
+![](/images/news/2006/04/cimg5227.jpg)
+![](/images/news/2006/04/cimg5229.jpg)
+![](/images/news/2006/04/img-0042.jpg)

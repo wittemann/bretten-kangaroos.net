@@ -3,6 +3,7 @@ title: "Kangaroos trotz starker Offensive nicht belohnt"
 date: 2011-04-18
 author: "Martin Wittemann"
 team: "herren"
+image: "/images/news/2011/04/bericht.jpg"
 ---
 
 Am vergangenen Sonntag startete in Bretten die Baseball-Verbandsliga-Saison 2011. Zum ersten Saisonspiel waren die Royals aus Gammertingen zu Gast, welche sich letzte Saison in der oberen Tabellenregion befanden. Somit war klar, dass dies erneut eine schwere Aufgabe für die Brettener werden würde.

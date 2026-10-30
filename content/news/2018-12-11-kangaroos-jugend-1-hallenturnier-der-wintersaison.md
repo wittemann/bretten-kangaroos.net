@@ -3,6 +3,7 @@ title: "Kangaroos Jugend - 1. Hallenturnier der Wintersaison"
 date: 2018-12-11
 author: "Andrea Klein"
 team: "jugend"
+image: "/images/news/2018/12/index.jpg"
 ---
 
 Am vergangenen Samstag konnte die Jugendabteilung der Brettener Kangaroos zum ersten Mal in drei verschiedenen Altersklassen an einem Indoor Baseball Turnier, dem Nikolaus Cup in Stuttgart, teilnehmen.
@@ -18,6 +19,8 @@ Die T-Baller waren krankheitsbedingt nur mit 2 Spielern vertreten, doch durch di
 Die Jugendmannschaft trat mit 4 eigenen Spielern und 2 aus Schriesheim an. Dies war das erste Hallenturnier der neugeformten Jugendmannschaft der Kangaroos.\
 Ein hochmotiviertes Team, bestehend aus Neueinsteigern und 'alten Hasen'.\
 Krankheitsbedingt geschwächt und mit noch wenig Erfahrung als Team in der Halle gelang den Kangaroos aber ein hervorragender 8. Platz.
+
+![](/images/news/2018/12/index-1.jpg)
 
 Du möchtest auch einmal den Sport Baseball näher kennenlernen? Die Kangaroos freuen sich über jeden der vorbeischauen möchte und auch einmal selbst versuchen möchte einen Homerun zu schlagen.
 

@@ -3,6 +3,7 @@ title: "Walk-Off 2RBI Double von Isaia Lauvai bring den Sieg im 10 Inning"
 date: 2015-05-04
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2015/05/boxscore-hd-heim.jpg"
 ---
 
 Nachdem das für Freitag angesetzte Pokalspiel in Villingendorf dem schlechten Wetter zum Opfer fiel, konnten sich die Kangaroos voll auf das erwartet schwere Spiel am Samstag in Bretten-Diedelsheim gegen die Heidelberg Hedgehogs-2 vorbereiten.
@@ -20,3 +21,7 @@ Besonders hervorzuheben ist auch die wieder sehr gute Leistung von Pitcher Henni
 Mit diesem wichtigen Heimsieg haben die Kangaroos nun eine Bilanz von zwei Siegen bei keiner Niederlage und sind damit Tabellenführer der Landesliga.
 
 Am kommenden Wochenende ist die Mannschaft spielfrei. Weiter geht es am 14. Mai mit dem ausgefallenen Pokalspiel in Villingendorf und am **17\. Mai um 15:00 Uhr mit dem nächsten Heimspiel gegen die Freiberg Brewers**. Dazu möchten die Bretten Kangaroos bereits jetzt alles Fans und Freunde des Baseballs wieder recht herzlich einladen (MW).
+
+![DSC_0228](/images/news/2015/05/dsc-0228.jpg)
+![DSC_0189](/images/news/2015/05/dsc-0189.jpg)
+![DSC_0263](/images/news/2015/05/dsc-0263.jpg)

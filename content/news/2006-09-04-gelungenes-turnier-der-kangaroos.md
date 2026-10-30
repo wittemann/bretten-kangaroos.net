@@ -2,6 +2,7 @@
 title: "Gelungenes Turnier der Kangaroos"
 date: 2006-09-04
 author: "Bryan Schaffer"
+image: "/images/news/2006/09/incrediball06-1.jpg"
 ---
 
 Am vergangenen Samstag fand das alljährliche Turnier der Bretten Kangaroos statt, bei dem sich alle Begeisterten für den Sport in einem Wettbewerb mit zwölf Mannschaften beweisen konnten. Da das Wetter gegen alle Erwartungen sehr gut mitspielte, konnten pünktlich um neun Uhr die ersten Spiele um den Gruppensieg beginnen. Auch wenn  mancherorts sehr ehrgeizig gespielt wurde, sah man allen Beteiligten den Spielspaß deutlich an. Die Spiele waren dieses Jahr deutlich spannender als in den Jahren zuvor, da die unterschiedlichen Stärken der Mannschaften fast auf gleichem Niveau waren.
@@ -11,3 +12,23 @@ Gespielt wurde auf drei Spielfeldern, wobei eines davon ein kleines Wiesenfeld w
 Am Sonntag fand das Turnier des Fun-Teams der Kangaroos statt. Diese Mannschaft spielt fast die gleiche Spielversion wie im Incrediball-Turnier und ist ein gemischtes Team aus Frauen und Männern. Die Teilnehmer waren Mannschaften aus Karlsruhe, Göppingen, Reutlingen und natürlich Bretten. Im ersten Spiel konnten die Brettener gegen den erfahrenen Werfer aus Karlsruhe leider nicht viel ausrichten und verloren mit 18:3 Punkten. Danach gewannen die Reutlinger gegen Göppingen und auch Karlsruhe nutzte seine Chancen Göppingen aus dem Turnier zu werfen.
 
 Das Letzte Spiel fand zwischen Bretten und Reutlingen statt und ging mit knappen 12:9 Punkten für Reutlingen aus.
+
+![](/images/news/2006/09/incrediball06-2.jpg)
+![](/images/news/2006/09/incrediball06-3.jpg)
+![](/images/news/2006/09/incrediball06-4.jpg)
+![](/images/news/2006/09/incrediball06-5.jpg)
+![](/images/news/2006/09/incrediball06-6.jpg)
+![](/images/news/2006/09/incrediball06-7.jpg)
+![](/images/news/2006/09/incrediball06-8.jpg)
+![](/images/news/2006/09/incrediball06-9.jpg)
+![](/images/news/2006/09/incrediball06-10.jpg)
+![](/images/news/2006/09/incrediball06-11.jpg)
+![](/images/news/2006/09/incrediball06-12.jpg)
+![](/images/news/2006/09/incrediball06-13.jpg)
+![](/images/news/2006/09/incrediball06-14.jpg)
+![](/images/news/2006/09/incrediball06-15.jpg)
+![](/images/news/2006/09/incrediball06-16.jpg)
+![](/images/news/2006/09/incrediball06-17.jpg)
+![](/images/news/2006/09/incrediball06-18.jpg)
+![](/images/news/2006/09/incrediball06-19.jpg)
+![](/images/news/2006/09/incrediball06-20.jpg)

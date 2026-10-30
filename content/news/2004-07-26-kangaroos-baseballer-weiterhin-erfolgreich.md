@@ -2,6 +2,7 @@
 title: "Kangaroos Baseballer weiterhin erfolgreich"
 date: 2004-07-26
 author: "Michael Wittemann"
+image: "/images/news/2004/07/cimg2211.jpg"
 ---
 
 Im Heimspiel gegen die Alfdorf Highlander konnten die Brettener Baseballer bereits ihren fünften Sieg in folge feiern und haben damit alle Möglichkeiten im letzten noch ausstehenden Spiel am 8 August gegen die Heilbronn Pirates die Meisterschaft und damit den Aufstieg perfekt zu machen.
@@ -13,3 +14,24 @@ Die Mannschaft hat nun zwei Wochen Zeit sich auf das letzte Saisonspiel gegen di
 Zu diesem wahrscheinlich alles Entscheidenten Spiel möchten wir alle Fans noch einmal recht herzlich einladen und bitten die Mannschaft zu unterstützen. Für das Leibliche Wohl wird wie immer bestens gesorgt werden.
 
 Ebenso im Einsatz waren am Wochenende unsere Damen, die allerdings gegen den Meister in ihrer Liga, die Heilbronn Outsides beim 31 zu 0 keine Chance hatten. Ebenso unterlegen waren die Junioren mit 16 zu 0 in Karlsruhe und die Schüler mit 14 zu 7 ebenfalls gegen Karlsruhe.
+
+![](/images/news/2004/07/cimg2213.jpg)
+![](/images/news/2004/07/cimg2216.jpg)
+![](/images/news/2004/07/cimg2218.jpg)
+![](/images/news/2004/07/cimg2219.jpg)
+![](/images/news/2004/07/cimg2221.jpg)
+![](/images/news/2004/07/cimg2223.jpg)
+![](/images/news/2004/07/cimg2228.jpg)
+![](/images/news/2004/07/cimg2230.jpg)
+![](/images/news/2004/07/cimg2234.jpg)
+![](/images/news/2004/07/cimg2235.jpg)
+![](/images/news/2004/07/cimg2237.jpg)
+![](/images/news/2004/07/pict1.jpg)
+![](/images/news/2004/07/pict4.jpg)
+![](/images/news/2004/07/pict3.jpg)
+![](/images/news/2004/07/pict2.jpg)
+![](/images/news/2004/07/pict5.jpg)
+![](/images/news/2004/07/pict6.jpg)
+![](/images/news/2004/07/pict7.jpg)
+![](/images/news/2004/07/pict8.jpg)
+![](/images/news/2004/07/pcit8.jpg)

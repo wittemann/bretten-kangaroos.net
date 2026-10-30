@@ -3,6 +3,7 @@ title: "Aufholjagt nach unglücklichem Start"
 date: 2008-05-05
 author: "Bryan Schaffer"
 old_team: "Damen"
+image: "/images/news/2008/05/img-3190.jpg"
 ---
 
 Bei strahlendem Sonnenschein spielten am Sonntag die Damen der Bretten Kangaroos gegen die Softballmannschaft der Freiburg Knights.\
@@ -17,3 +18,23 @@ Ein weiteres Mal können die Damen der Kangaroos dann zeigen, dass sie trotz der
 !!BOXSCORE!!\
 Freiburg,6,4,7,2,1,0,3,-,-,23,12,3\
 Bretten,1,1,6,0,4,2,4,-,-,18,9,5
+
+![](/images/news/2008/05/img-3203.jpg)
+![](/images/news/2008/05/img-3207.jpg)
+![](/images/news/2008/05/img-3225.jpg)
+![](/images/news/2008/05/img-3238.jpg)
+![](/images/news/2008/05/img-3244.jpg)
+![](/images/news/2008/05/img-3249.jpg)
+![](/images/news/2008/05/img-3261.jpg)
+![](/images/news/2008/05/img-3268.jpg)
+![](/images/news/2008/05/img-3279.jpg)
+![](/images/news/2008/05/img-3286.jpg)
+![](/images/news/2008/05/img-3310.jpg)
+![](/images/news/2008/05/img-3314.jpg)
+![](/images/news/2008/05/img-3326.jpg)
+![](/images/news/2008/05/img-3331.jpg)
+![](/images/news/2008/05/img-3358.jpg)
+![](/images/news/2008/05/img-3372.jpg)
+![](/images/news/2008/05/img-3380.jpg)
+![](/images/news/2008/05/img-3387.jpg)
+![](/images/news/2008/05/ulla.jpg)

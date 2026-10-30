@@ -3,6 +3,7 @@ title: "Kangaroos Herren belegen beim Turnier in Weißenburg den zweiten Platz"
 date: 2003-09-24
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2003/09/p9200003.jpg"
 ---
 
 Zwar reiste das Team um coach Andi B. als Titelverteidiger nach Bayern aber doch sollte an diesem Wochenende vor allem der Spaß im Vordergrund stehen.
@@ -22,3 +23,15 @@ Am Sonntag ging es dann im Halbfinale gegen des lenzjährigen Finalgegner die Au
 Somit stand die zweite Finalteilnahme bei der zweiten Teilnahme am Whitecastle Cup fest. Der Gegner waren die Heubach Hunters die, wie sich später herausstellte, allerdings mit einigen Spielern aus der 1 Baseball Bundesliga verstärkt waren. Nichts desto trotz gingen die Kangaroos im ersten inning schnell mit 3 : 0 in Führung. Im Laufe des Spiel konnten die Hunters sich allerdings eine 4 : 3 Führung erarbeiten. Mit der letzten Schlagchance der Kangaroos konnten das Team durch schöne hits der gesamten lineup den Spies noch einmal drehen und mit 5 : 4 in Führung gehen. Diese wurde allerdings leider nicht gehalten und die Hunters erzielten beim Nachschlagen die nötigen zwei Punkte zum 6 : 5 Sieg.
 
 Damit konnte zwar der im letzten Jahr gewonnene Titel nicht verteidigt werden, aber der Whitecastle Cup war wieder ein schöner Abschluss dieser so erfolgreichen Saison des Kangaroos Teams. Es zeigte sich wieder einmal das wir ein Mannschaft mit guter Kameradschaft und super Teamgeist sind von der man auch in der nächsten Saison einiges erwarten kann.
+
+![](/images/news/2003/09/p9200015.jpg)
+![](/images/news/2003/09/p9200023.jpg)
+![](/images/news/2003/09/p9200025.jpg)
+![](/images/news/2003/09/p9200057.jpg)
+![](/images/news/2003/09/p9200059.jpg)
+![](/images/news/2003/09/p9200067.jpg)
+![](/images/news/2003/09/p9210095.jpg)
+![](/images/news/2003/09/p9210100.jpg)
+![](/images/news/2003/09/p9210101.jpg)
+![](/images/news/2003/09/p9210103.jpg)
+![](/images/news/2003/09/p9210107.jpg)

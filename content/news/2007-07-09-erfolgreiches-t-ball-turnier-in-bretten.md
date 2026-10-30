@@ -3,6 +3,7 @@ title: "Erfolgreiches T-Ball Turnier in Bretten"
 date: 2007-07-09
 author: "Bryan Schaffer"
 team: "t-ball"
+image: "/images/news/2007/07/cimg6326.jpg"
 ---
 
 Am Samstag den 7.07.07 fand auf dem Baseballplatz in Bretten ein T-Ball Turnier statt. Nachdem die Kleinsten der Bretten Kangaroos bereits an 2 Turnieren teilgenommen hatten, freute man sich sehr auf das dritte Turnier auf heimischem "Rasen".
@@ -12,3 +13,14 @@ Gegen 11 Uhr hatten sich dann auch alle Mannschaften (Schriesheim Raubritters, N
 Der Trainer Tilo Steinke war voll und ganz zufrieden mit seiner Mannschaft und auch mit dem Ablauf des ganzen Turniers, welches ohne das tatkräftige Mitwirken der Eltern, nicht so perfekt über die Bühne gegangen wäre.
 
 Sieg oder Niederlage stehen beim T-Ball jedoch nicht im Vordergrund, sondern der Spaß am Sport. Die Kleinen sollen langsam an den Sport herangeführt werden und keinesfalls Angst davor haben, auf dem Platz zu stehen. Das Turnier zeigte allen, dass die Kinder sehr begeistert vom Baseball sind und auch weiterhin dabei bleiben werden. Die Bretten Kangaroos brauchen sich um ihren Nachwuchs keine Sorgen zu machen.
+
+![](/images/news/2007/07/cimg6281.jpg)
+![](/images/news/2007/07/cimg6286.jpg)
+![](/images/news/2007/07/cimg6290.jpg)
+![](/images/news/2007/07/cimg6297.jpg)
+![](/images/news/2007/07/cimg6299.jpg)
+![](/images/news/2007/07/cimg6301.jpg)
+![](/images/news/2007/07/cimg6302.jpg)
+![](/images/news/2007/07/cimg6319.jpg)
+![](/images/news/2007/07/cimg6322.jpg)
+![](/images/news/2007/07/cimg6278.jpg)

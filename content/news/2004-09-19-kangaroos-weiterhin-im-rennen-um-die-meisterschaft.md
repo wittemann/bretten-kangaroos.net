@@ -3,6 +3,7 @@ title: "Kangaroos weiterhin im Rennen um die Meisterschaft"
 date: 2004-09-19
 author: "Michael Wittemann"
 team: "herren"
+image: "/images/news/2004/09/cimg2147.jpg"
 ---
 
 Zu ihrem letzten Auswärtsspiel der Saison 2004 reisten die Kangaroos Herren am Sonntag nach Schwäbisch Hall um dort gegen die Renegades anzutreten. Obwohl das Vorspiel in Bretten mit 25 zu 10 gewonnen werden konnte und sich Haller Baseballer auf dem vorletzten Tabellenplatz befinden sollte man sie nicht unterschätzen, da sie schon seit Jahren eine sehr gefährliche offensiv Mannschaft sind.
@@ -16,3 +17,16 @@ Es wollte allerdings bei den Spielern der Kangaroos keine rechte Freude über di
 Doch nun heißt es dieses Spiel abzuhaken und sich auf die noch ausstehen letzten zwei Begegnungen zu konzentrieren.
 
 Das vorletzte Spiel der Saison findet am Sonntag um 15:00 auf unserem Feld in Diedelsheim gegen die Alfdorf Highlanders statt. Die Alfdorfer Baseballer sind sehr schwer einzuschätzen, da sie zwar das Vorspiel gegen Bretten klar mit 17 zu 1 verloren haben, auf der anderen Seite allerdings gegen Teams wie Heilbronn und Freiberg achtbare Ergebnisse erzielen konnten. Auf jeden Fall wird die Mannschaft um Coach Bjelicic den Gegner nicht unterschätzen und versuchen mit einem Sieg einen weiteren Schritt in Richtung Meisterschaft zu unternehmen.
+
+![](/images/news/2004/09/cimg2150.jpg)
+![](/images/news/2004/09/cimg2155.jpg)
+![](/images/news/2004/09/cimg2158.jpg)
+![](/images/news/2004/09/cimg2161.jpg)
+![](/images/news/2004/09/cimg2164.jpg)
+![](/images/news/2004/09/cimg2178.jpg)
+![](/images/news/2004/09/cimg2179.jpg)
+![](/images/news/2004/09/cimg2185.jpg)
+![](/images/news/2004/09/cimg2193.jpg)
+![](/images/news/2004/09/cimg2198.jpg)
+![](/images/news/2004/09/cimg2205.jpg)
+![](/images/news/2004/09/cimg2206.jpg)

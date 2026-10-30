@@ -3,6 +3,7 @@ title: "Schüler Saison Eröffnungsspiel gegen Karlsruhe in Bretten blieb spanne
 date: 2018-04-17
 author: "Bryan Schaffer"
 team: "schueler"
+image: "/images/news/2018/04/img-9870.jpg"
 ---
 
 Take me out to the Ballgame.......
@@ -67,3 +68,9 @@ Cedric Rittmann
 #38       Cedric Ritmann (MVP)\
 #97       Julian Bischoff\
 #99       Michael Duttenhofer
+
+![](/images/news/2018/04/img-9852.jpg)
+![](/images/news/2018/04/img-9901.jpg)
+![](/images/news/2018/04/img-9878.jpg)
+![](/images/news/2018/04/img-9891.jpg)
+![](/images/news/2018/04/img-9895.jpg)
