@@ -88,7 +88,7 @@ Things only I can do. The work package each one unblocks is in brackets.
       IONOS shows its parking page (403) for it. MX records untouched (→ WP9)
 - [x] Check that the test sign-up "TEST Final-Check – bitte ignorieren" from 2026-10-26 arrived in the
       `xmasball@bretten-kangaroos.net` mailbox → arrived (→ WP8, WP9)
-- [ ] Subscribe to one calendar feed on the phone and in Google Calendar, e.g. `webcal://bretten-kangaroos.net/kalender/alle.ics` (→ WP4)
+- [x] Subscribe to one calendar feed on the phone and in Google Calendar, e.g. `webcal://bretten-kangaroos.net/kalender/alle.ics` → works, tested 2026-10-30 (→ WP4)
 - [x] Privacy policy, decisions from [`datenschutz-review.md`](datenschutz-review.md) → decided 2026-10-26, see above;
       the form already had its privacy notice with link; the rate limit now deletes expired hashed-IP entries on
       every form load instead of at random, so the text can promise it (→ WP9)
@@ -198,7 +198,7 @@ Needs: WP2, league/team confirmation from my tasks.
       → `/kalender/<team>.ics`, `/kalender/alle.ics`, `/kalender/spiel/<id>.ics` (`src/lib/calendar.ts`); the season layout was
       checked with made-up games only, check it again with the first real 2027 dates
 - [x] Feeds checked live 2026-10-26: all five load as `text/calendar`, valid line endings/folding, 50 games, unique UIDs
-- [ ] Subscribe to one feed on a phone (Apple) and in Google Calendar on `bretten-kangaroos.net` – needs a real phone, see my tasks
+- [x] Subscribe to one feed on a phone (Apple) and in Google Calendar on `bretten-kangaroos.net` → works, tested 2026-10-30
 - [ ] Once a year: new league IDs into `src/data/bsm-leagues.json` (see `bsm-api.md`) — **Haiku**. From March on the
       Reminders workflow (`.github/workflows/reminders.yml`, Mondays) opens an issue and the BSM fetch warns while the file
       still has last year's season
