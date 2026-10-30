@@ -60,7 +60,7 @@ const paragraphs = (text: string) => text.split(/\n\s*\n/).map((p) => p.trim()).
                 {chapter.years.map((year) => (
                   <div id={yearId(year.year)} class="flex scroll-mt-28 flex-wrap gap-x-8 gap-y-5 border-b border-line py-6 last:border-b-0">
                     {year.image && (
-                      <img src={year.image} alt={year.image_alt ?? ""} class="aspect-[4/3] min-w-0 max-w-[360px] flex-[1_1_280px] rounded-[6px] object-cover" loading="lazy" />
+                      <img src={year.image} alt={year.image_alt ?? ""} class="h-auto min-w-0 max-w-[360px] flex-[1_1_280px] self-start rounded-[6px]" loading="lazy" />
                     )}
                     <div class="flex min-w-0 flex-[999_1_380px] flex-col gap-2">
                       <div class="flex flex-wrap items-center gap-x-3.5 gap-y-2">
