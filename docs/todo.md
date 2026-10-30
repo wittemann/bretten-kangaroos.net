@@ -62,9 +62,10 @@ Things only I can do. The work package each one unblocks is in brackets.
 - [x] At home: find `wp-content/uploads` on the backup drive (IONOS FTP backup) and let Claude re-run the migration with
       `--uploads <folder>` → done 2026-10-30 from `/Volumes/Backup/Martin/Ionos FTP/2026-10-16/wordpress/wp-content/uploads`
       (plus `MV.jpg` from `Alt/Kangaroos/2018-02`, intact copies of five damaged pictures from `Alt/Kangaroos/alt/bilder`
-      and the `Spiel*.jpg` of 2016/05 under their `-1280x…` names). 9 files are still missing, see
-      [`wordpress-migration-report.md`](wordpress-migration-report.md): 4 old `../bilder/` links and one broken link
-      (the pictures exist on the drive, the script doesn't map those links), 2 pictures damaged in every backup, 2 not on the drive (→ WP7)
+      and the `Spiel*.jpg` of 2016/05 under their `-1280x…` names). The script now maps the
+      very old site's `../bilder/` links too (4 more posts fixed). 5 files stay missing, see
+      [`wordpress-migration-report.md`](wordpress-migration-report.md): `2006/04/DSC01560.JPG` (on the drive, skipped),
+      2 pictures damaged in every backup, 2 not on the drive (→ WP7)
 - [ ] After the uploads re-run: pick photos for the years of the Vereinsgeschichte (Pages CMS: "Foto" per year). Today only
       2015 has one; article photos exist for 2023–2026 (BKIL teams, Xmas-Ball 2024, Römercup 2025, Landesliga title 2026);
       for 1988–2022 look in the restored images or my own photos (the board suggests a motif per year) (→ WP2)
