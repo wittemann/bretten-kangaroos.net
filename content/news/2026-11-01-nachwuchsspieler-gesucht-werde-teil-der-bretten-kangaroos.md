@@ -1,6 +1,7 @@
 ---
 title: Nachwuchsspieler gesucht – Werde Teil der Bretten Kangaroos!
 date: 2026-11-01
+author: Michael Wittemann
 image: /images/Spieler_Gesucht_2027.jpeg
 draft: false
 ---
