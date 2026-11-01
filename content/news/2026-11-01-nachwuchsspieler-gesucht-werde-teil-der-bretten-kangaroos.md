@@ -1,10 +1,10 @@
 ---
-title: "Nachwuchsspieler gesucht – Werde Teil der Bretten Kangaroos!"
+title: Nachwuchsspieler gesucht – Werde Teil der Bretten Kangaroos!
 date: 2026-11-01
-draft: true
+image: /images/Spieler_Gesucht_2027.jpeg
+draft: false
 ---
-
-Werfen, Schlagen, Rennen – und gemeinsam als Team Erfolge feiern! Die Bretten Kangaroos suchen neue Spielerinnen und Spieler für ihre Nachwuchsmannschaften. Kinder und Jugendliche zwischen 4 und 16 Jahren sind herzlich eingeladen, den Baseballsport kennenzulernen und selbst zum Schläger zu greifen.
+Werfen, Schlagen, Rennen – und gemeinsam als Team Erfolge feiern! Die Bretten Kangaroos suchen neue Spielerinnen und Spieler für ihre Nachwuchsmannschaften. Kinder und Jugendliche zwischen 4 und 15 Jahren sind herzlich eingeladen, den Baseballsport kennenzulernen und selbst zum Schläger zu greifen.
 
 Ob sportlicher Anfänger oder bereits begeisterter Baseballfan: Bei den Kangaroos ist jeder willkommen. Vorkenntnisse sind nicht erforderlich, die benötigte Ausrüstung wird vom Verein gestellt und das Probetraining ist selbstverständlich kostenlos.
 
@@ -28,7 +28,7 @@ Hier lernen unsere jüngsten Kangaroos den Baseballsport auf spielerische Weise 
 
 In der Schülermannschaft werden die grundlegenden Baseballtechniken weiterentwickelt. Neben abwechslungsreichen Trainingseinheiten sammeln die Kinder erste Erfahrungen in Ligaspielen und lernen, gemeinsam als Team auf dem Spielfeld zu bestehen.
 
-### Jugend (13–16 Jahre)
+### Jugend (13–15 Jahre)
 
 In der Jugendmannschaft wird bereits richtiges Baseball mit Pitching gespielt. Die Jugendlichen verbessern ihre technischen und taktischen Fähigkeiten und treten in Ligaspielen gegen andere Vereine an. Auch Neueinsteiger sind herzlich willkommen.
 
