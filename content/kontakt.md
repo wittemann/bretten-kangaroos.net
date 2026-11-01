@@ -10,4 +10,7 @@ contacts:
   - role: Pressewart
     name: Marco Kremser
     email: pressewart@bretten-kangaroos.com
+  - role: Webmaster
+    name: Martin Wittemann
+    email: webmaster@bretten-kangaroos.com
 ---
