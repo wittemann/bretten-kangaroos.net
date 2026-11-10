@@ -127,7 +127,7 @@ Needs: WP1.
 - [x] Apply the design from [`design.md`](design.md) to the Bookworm theme (colours, fonts, header/menus, footer, page templates) — **Sonnet**
   - [x] Part 1: brand tokens (`theme.json`, type scale, Barlow/Barlow Condensed via Astro Font API), header (pinstripe, Verein dropdown, phone full-screen menu), footer, shared `.page-title-band` style
   - [x] Part 3: text pages (`[regular].astro` with title band, year column, file list), Kontakt page; content of Ballpark, Vereinsgeschichte, Förderverein, BKIL, Downloads, Kontakt, Impressum, Datenschutz copied from the old site (PDFs in `public/files`)
-  - [x] Real crest at `public/images/crest.png`
+  - [x] Real crest at `public/images/crest.svg` (vector, PNG copy for favicon fallback)
   - [x] Startseite: hero with ballpark photo, last results from BSM, news, Xmas-Ball teaser, team tiles
   - [x] News templates, Spielplan restyle, calendar feeds (detailed in "Match the design boards" below)
 - [x] **Match the design boards** — compared every board in [`design/`](design/) with the built pages on 2026-10-24.

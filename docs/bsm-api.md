@@ -252,7 +252,7 @@ Not hotlinked: showing logos straight from the BSM server would send visitors' I
 - **Logos:** `fetch-bsm.mjs` downloads the `logo_url` of every club in a table row (two for an SG), shrinks it to a
   64×64 WebP in `public/images/bsm-logos/<clubId>.webp` and lists it in `logos` of the cache
   (`{ "<clubId>": { file, source } }`). A logo is downloaded again only when its BSM URL changes (it carries a timestamp);
-  a failed download keeps the old file. Our own row shows `public/images/crest.png`. The deploy Action commits the logo
+  a failed download keeps the old file. Our own row shows `public/images/crest.svg`. The deploy Action commits the logo
   folder together with the cache.
 - **Form** is computed from all games of the league (the table only has the streak), per league entry: the last five
   results (`W`/`L`/`T`, oldest first) of all rated games (`played`, `forfeit`, `no_show`, `manually_valued`), so it

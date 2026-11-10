@@ -62,7 +62,7 @@ const logos = ((cache as { logos?: Record<string, { file: string }> }).logos ??
 // Self-hosted logos of a table row (two for an SG); our own row uses the crest
 export const rowLogos = (row: StandingRow) =>
   row.isUs
-    ? ["/images/crest.png"]
+    ? ["/images/crest.svg"]
     : (row.clubIds ?? []).flatMap((id) => logos[id]?.file ?? []);
 
 // "Herren – Bezirksliga" → "Herren"
