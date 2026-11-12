@@ -15,9 +15,8 @@ training:
     time: 17:30 – 19:00 Uhr
     place: Stadtparkhalle
 coaches:
-  - name: Michael Wittemann
-    role: USA Baseball Coach-C, Scorer-B, Trainer-C
-  - name: Klemens Schoch
+  - name: Martin Wittemann
+  - name: Andreas Ochmann
 email: coach-schueler@bretten-kangaroos.com
 ---
 

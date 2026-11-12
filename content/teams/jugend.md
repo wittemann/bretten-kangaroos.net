@@ -13,18 +13,9 @@ training:
     time: 17:30 – 19:00 Uhr
     place: Stadtparkhalle
 coaches:
-  - name: Markus Rittmann
-    role: Headcoach, Trainer-C, USA Baseball Coach-B
-  - name: Peter Schumann
-    role: Assistant Coach, Trainer-C
-  - name: William Montero
-    role: Assistant Coach
-  - name: Marco Münster
-    role: Erweitertes Trainerteam
-  - name: Markus Göbel
-    role: Erweitertes Trainerteam
-  - name: Andreas Bjelicic
-    role: Erweitertes Trainerteam, Trainer-C
+  - name: Michael Wittemann
+    role: USA Baseball Coach-C, Scorer-B, Trainer-C
+  - name: Klemens Schoch
 email: coach-jugend@bretten-kangaroos.com
 ---
 
