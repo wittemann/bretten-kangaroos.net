@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-24T18:53:44.100Z",
+  "builtAt": "2026-11-12T18:19:18.336Z",
   "season": 2026,
   "leagues": [
     {
@@ -7,7 +7,7 @@
       "name": "Bezirksliga Herren",
       "label": "Herren – Bezirksliga",
       "team": "herren",
-      "fetchedAt": "2026-10-24T18:53:43.870Z",
+      "fetchedAt": "2026-11-12T18:19:16.994Z",
       "standings": [
         {
           "rank": 1,
@@ -154,7 +154,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63282/combined_scoresheets/Spiel-13-punkt-001.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63282/combined_scoresheets/Spiel-13-punkt-001"
         },
         {
           "id": 63291,
@@ -182,7 +182,7 @@
           "isUs": true,
           "isHome": true,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63291/combined_scoresheets/Spiel-13-punkt-010.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63291/combined_scoresheets/Spiel-13-punkt-010"
         },
         {
           "id": 63292,
@@ -210,7 +210,7 @@
           "isUs": true,
           "isHome": true,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63292/combined_scoresheets/Spiel-13-punkt-011.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63292/combined_scoresheets/Spiel-13-punkt-011"
         },
         {
           "id": 63285,
@@ -238,7 +238,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63285/combined_scoresheets/Spiel-13-punkt-004.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63285/combined_scoresheets/Spiel-13-punkt-004"
         },
         {
           "id": 63295,
@@ -266,7 +266,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63295/combined_scoresheets/Spiel-13-punkt-014.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63295/combined_scoresheets/Spiel-13-punkt-014"
         },
         {
           "id": 63297,
@@ -294,7 +294,7 @@
           "isUs": true,
           "isHome": true,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63297/combined_scoresheets/Spiel-13-punkt-016.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63297/combined_scoresheets/Spiel-13-punkt-016"
         },
         {
           "id": 63298,
@@ -322,7 +322,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63298/combined_scoresheets/Spiel-13-punkt-017.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63298/combined_scoresheets/Spiel-13-punkt-017"
         },
         {
           "id": 63300,
@@ -350,7 +350,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63300/combined_scoresheets/Spiel-13-punkt-019.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63300/combined_scoresheets/Spiel-13-punkt-019"
         }
       ]
     },
@@ -359,7 +359,7 @@
       "name": "Baseball Pokal",
       "label": "Herren – Pokal",
       "team": "herren",
-      "fetchedAt": "2026-10-24T18:53:43.753Z",
+      "fetchedAt": "2026-11-12T18:19:17.219Z",
       "standings": null,
       "games": [
         {
@@ -388,7 +388,7 @@
           "isUs": true,
           "isHome": true,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/62955/combined_scoresheets/Spiel-99-008.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/62955/combined_scoresheets/Spiel-99-008"
         }
       ]
     },
@@ -397,7 +397,7 @@
       "name": "Jugend Verbandsliga",
       "label": "Jugend – Verbandsliga",
       "team": "jugend",
-      "fetchedAt": "2026-10-24T18:53:43.902Z",
+      "fetchedAt": "2026-11-12T18:19:17.268Z",
       "standings": [
         {
           "rank": 1,
@@ -519,7 +519,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63422/combined_scoresheets/Spiel-21-punkt-001.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63422/combined_scoresheets/Spiel-21-punkt-001"
         },
         {
           "id": 63432,
@@ -547,7 +547,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63432/combined_scoresheets/Spiel-21-punkt-011.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63432/combined_scoresheets/Spiel-21-punkt-011"
         },
         {
           "id": 63438,
@@ -575,7 +575,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63438/combined_scoresheets/Spiel-21-punkt-017.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63438/combined_scoresheets/Spiel-21-punkt-017"
         },
         {
           "id": 63425,
@@ -603,7 +603,7 @@
           "isUs": true,
           "isHome": true,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63425/combined_scoresheets/Spiel-21-punkt-004.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63425/combined_scoresheets/Spiel-21-punkt-004"
         },
         {
           "id": 63427,
@@ -631,7 +631,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63427/combined_scoresheets/Spiel-21-punkt-006.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63427/combined_scoresheets/Spiel-21-punkt-006"
         },
         {
           "id": 63429,
@@ -659,7 +659,7 @@
           "isUs": true,
           "isHome": true,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63429/combined_scoresheets/Spiel-21-punkt-008.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63429/combined_scoresheets/Spiel-21-punkt-008"
         },
         {
           "id": 63436,
@@ -687,7 +687,7 @@
           "isUs": true,
           "isHome": true,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63436/combined_scoresheets/Spiel-21-punkt-015.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63436/combined_scoresheets/Spiel-21-punkt-015"
         },
         {
           "id": 63439,
@@ -715,7 +715,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63439/combined_scoresheets/Spiel-21-punkt-018.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63439/combined_scoresheets/Spiel-21-punkt-018"
         },
         {
           "id": 63434,
@@ -743,7 +743,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63434/combined_scoresheets/Spiel-21-punkt-013.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63434/combined_scoresheets/Spiel-21-punkt-013"
         }
       ]
     },
@@ -752,7 +752,7 @@
       "name": "Schüler Landesliga",
       "label": "Schüler – Landesliga",
       "team": "schueler",
-      "fetchedAt": "2026-10-24T18:53:43.919Z",
+      "fetchedAt": "2026-11-12T18:19:17.780Z",
       "standings": [
         {
           "rank": 1,
@@ -898,7 +898,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63601/combined_scoresheets/Spiel-26-punkt-002-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63601/combined_scoresheets/Spiel-26-punkt-002-1"
         },
         {
           "id": 63602,
@@ -926,7 +926,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63602/combined_scoresheets/Spiel-26-punkt-002-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63602/combined_scoresheets/Spiel-26-punkt-002-2"
         },
         {
           "id": 63605,
@@ -954,7 +954,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63605/combined_scoresheets/Spiel-26-punkt-004-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63605/combined_scoresheets/Spiel-26-punkt-004-1"
         },
         {
           "id": 63606,
@@ -982,7 +982,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63606/combined_scoresheets/Spiel-26-punkt-004-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63606/combined_scoresheets/Spiel-26-punkt-004-2"
         },
         {
           "id": 63607,
@@ -1010,7 +1010,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63607/combined_scoresheets/Spiel-26-punkt-005-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63607/combined_scoresheets/Spiel-26-punkt-005-1"
         },
         {
           "id": 63608,
@@ -1038,7 +1038,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63608/combined_scoresheets/Spiel-26-punkt-005-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63608/combined_scoresheets/Spiel-26-punkt-005-2"
         },
         {
           "id": 63613,
@@ -1066,7 +1066,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63613/combined_scoresheets/Spiel-26-punkt-008-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63613/combined_scoresheets/Spiel-26-punkt-008-1"
         },
         {
           "id": 63614,
@@ -1094,7 +1094,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63614/combined_scoresheets/Spiel-26-punkt-008-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63614/combined_scoresheets/Spiel-26-punkt-008-2"
         },
         {
           "id": 63623,
@@ -1122,7 +1122,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63623/combined_scoresheets/Spiel-26-punkt-013-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63623/combined_scoresheets/Spiel-26-punkt-013-1"
         },
         {
           "id": 63624,
@@ -1150,7 +1150,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63624/combined_scoresheets/Spiel-26-punkt-013-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63624/combined_scoresheets/Spiel-26-punkt-013-2"
         },
         {
           "id": 63637,
@@ -1178,7 +1178,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63637/combined_scoresheets/Spiel-26-punkt-020-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63637/combined_scoresheets/Spiel-26-punkt-020-1"
         },
         {
           "id": 63638,
@@ -1206,7 +1206,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63638/combined_scoresheets/Spiel-26-punkt-020-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63638/combined_scoresheets/Spiel-26-punkt-020-2"
         },
         {
           "id": 63643,
@@ -1234,7 +1234,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63643/combined_scoresheets/Spiel-26-punkt-023-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63643/combined_scoresheets/Spiel-26-punkt-023-1"
         },
         {
           "id": 63644,
@@ -1262,7 +1262,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63644/combined_scoresheets/Spiel-26-punkt-023-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63644/combined_scoresheets/Spiel-26-punkt-023-2"
         },
         {
           "id": 63647,
@@ -1346,7 +1346,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63651/combined_scoresheets/Spiel-26-punkt-027-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63651/combined_scoresheets/Spiel-26-punkt-027-1"
         },
         {
           "id": 63652,
@@ -1374,7 +1374,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63652/combined_scoresheets/Spiel-26-punkt-027-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63652/combined_scoresheets/Spiel-26-punkt-027-2"
         },
         {
           "id": 63657,
@@ -1402,7 +1402,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63657/combined_scoresheets/Spiel-26-punkt-030-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63657/combined_scoresheets/Spiel-26-punkt-030-1"
         },
         {
           "id": 63658,
@@ -1430,7 +1430,7 @@
           "isUs": true,
           "isHome": true,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63658/combined_scoresheets/Spiel-26-punkt-030-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63658/combined_scoresheets/Spiel-26-punkt-030-2"
         },
         {
           "id": 63641,
@@ -1458,7 +1458,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63641/combined_scoresheets/Spiel-26-punkt-022-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63641/combined_scoresheets/Spiel-26-punkt-022-1"
         },
         {
           "id": 63642,
@@ -1486,7 +1486,7 @@
           "isUs": true,
           "isHome": false,
           "result": "W",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63642/combined_scoresheets/Spiel-26-punkt-022-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63642/combined_scoresheets/Spiel-26-punkt-022-2"
         },
         {
           "id": 63617,
@@ -1514,7 +1514,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63617/combined_scoresheets/Spiel-26-punkt-010-1.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63617/combined_scoresheets/Spiel-26-punkt-010-1"
         },
         {
           "id": 63618,
@@ -1542,7 +1542,7 @@
           "isUs": true,
           "isHome": false,
           "result": "L",
-          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63618/combined_scoresheets/Spiel-26-punkt-010-2.pdf"
+          "scoresheetUrl": "https://bsm.baseball-softball.de/matches/63618/combined_scoresheets/Spiel-26-punkt-010-2"
         }
       ]
     },
@@ -1551,7 +1551,7 @@
       "name": "T-Ball",
       "label": "T-Ball",
       "team": "t-ball",
-      "fetchedAt": "2026-10-24T18:53:44.100Z",
+      "fetchedAt": "2026-11-12T18:19:18.335Z",
       "standings": [
         {
           "rank": 1,
