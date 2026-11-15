@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 }
 
 const { team } = Astro.props;
-const { title, ages, league, image, badge, training, coaches, email } =
+const { title, ages, league, image, badge, training, coaches, email, teamplaner } =
   team.data;
 const { Content } = await render(team);
 const hasBody = Boolean(team.body?.trim());
@@ -168,6 +168,20 @@ const longDate = new Intl.DateTimeFormat("de-DE", {
           Probetraining anfragen
         </a>
       </div>
+      {
+        teamplaner && (
+          <div class="flex flex-col gap-3 rounded-[6px] border border-line p-6">
+            <h2 class="text-[28px] leading-none">Zu- und Absagen</h2>
+            <p>
+              Eltern sagen ihre Kinder für Spiele und Trainings im Teamplaner zu oder ab – über den persönlichen Link aus
+              der Mail der Coaches.
+            </p>
+            <a href="https://team.bretten-kangaroos.net/link" class="btn btn-outline-primary self-start">
+              Link verloren? Neu anfordern
+            </a>
+          </div>
+        )
+      }
       <TeamTable team={team.id} />
       <TeamGames team={team.id} title={title} />
     </aside>

@@ -18,6 +18,7 @@ coaches:
   - name: Martin Wittemann
   - name: Andreas Ochmann
 email: coach-schueler@bretten-kangaroos.com
+teamplaner: true
 ---
 
 Das Schüler Team besteht aus Jungs und Mädchen im Alter von 8–12 Jahren und nimmt am offiziellen Spielbetrieb des Baden-Württembergischen Verbandes (BWBSV) teil.

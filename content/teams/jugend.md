@@ -17,6 +17,7 @@ coaches:
     role: USA Baseball Coach-C, Scorer-B, Trainer-C
   - name: Klemens Schoch
 email: coach-jugend@bretten-kangaroos.com
+teamplaner: true
 ---
 
 Das U15-Jugendteam der Bretten Kangaroos tritt in der Saison 2026 in der Jugend-Verbandsliga des Baden-Württembergischen Baseball- und Softballverbands an.

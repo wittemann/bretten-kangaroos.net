@@ -109,6 +109,11 @@ content:
           - { name: name, label: Name, type: string, required: true }
           - { name: role, label: Aufgabe, type: string, description: "z. B. „Headcoach“" }
       - { name: email, label: Kontakt-E-Mail, type: string, pattern: { regex: "^$|^[^@\\s]+@[^@\\s]+$", message: "Bitte eine gültige E-Mail-Adresse angeben" } }
+      - name: teamplaner
+        label: Teamplaner
+        type: boolean
+        default: false
+        description: "Wenn an: Kasten „Zu- und Absagen“ mit Link zum Teamplaner (team.bretten-kangaroos.net) auf der Teamseite"
       - { name: body, label: Text, type: rich-text }
 
   - name: xmas_ball

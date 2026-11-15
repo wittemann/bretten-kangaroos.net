@@ -62,6 +62,7 @@ const teamsCollection = defineCollection({
       .array(z.object({ name: z.string(), role: optionalString }))
       .default([]),
     email: optionalEmail,
+    teamplaner: z.boolean().default(false),
   }),
 });
 
