@@ -660,7 +660,14 @@ function writeRedirects() {
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([oldPath, url]) => rule(oldPath, url)),
     'RedirectMatch 301 "^/category/" "/news/"',
-    'RedirectMatch 301 "^/wp-content/uploads/" "/news/"',
+    '# Old image addresses: gone (a redirect to a page would serve HTML to <img> embeds)',
+    'RedirectMatch 410 "^/wp-content/uploads/"',
+    '# Old feeds, archive pages, events and authors',
+    'RedirectMatch 301 "^/(.+/)?feed/?$" "/feed.xml"',
+    'RedirectMatch 301 "^/page/(\\d+)/?$" "/news/page/$1/"',
+    'RedirectMatch 301 "^/event/" "/spielplan/"',
+    'RedirectMatch 301 "^/author/" "/news/"',
+    'RedirectMatch 301 "^/training/?$" "/probetraining/"',
     end,
   ];
   const htaccess = readFileSync(HTACCESS_PATH, "utf8");

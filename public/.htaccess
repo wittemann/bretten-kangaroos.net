@@ -602,5 +602,12 @@ RedirectMatch 301 "^/2026/10/12/bretten-kangaroos-u12-holen-die-landesliga-meist
 RedirectMatch 301 "^/2026/10/14/bretten-kangaroos-laden-zum-3-christmas-ball-ein/?$" "/news/2026-10-14-bretten-kangaroos-laden-zum-3-christmas-ball-ein/"
 RedirectMatch 301 "^/2026/10/18/kangaroos-drehen-das-spiel-im-fuenften-inning-1914-gegen-die-stuttgart-reds/?$" "/news/2026-10-18-kangaroos-drehen-das-spiel-im-fuenften-inning-1914-gegen-die/"
 RedirectMatch 301 "^/category/" "/news/"
-RedirectMatch 301 "^/wp-content/uploads/" "/news/"
+# Old image addresses: gone (a redirect to a page would serve HTML to <img> embeds)
+RedirectMatch 410 "^/wp-content/uploads/"
+# Old feeds, archive pages, events and authors
+RedirectMatch 301 "^/(.+/)?feed/?$" "/feed.xml"
+RedirectMatch 301 "^/page/(\d+)/?$" "/news/page/$1/"
+RedirectMatch 301 "^/event/" "/spielplan/"
+RedirectMatch 301 "^/author/" "/news/"
+RedirectMatch 301 "^/training/?$" "/probetraining/"
 # END WordPress redirects
