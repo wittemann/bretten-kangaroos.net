@@ -21,7 +21,10 @@ const KEYCHAIN_SERVICE = "kangaroos-stats-sftp";
 const LOG_DIR = "/logs";
 const OUT_FILE = "stats/usage.json";
 
-const SITES = { "bretten-kangaroos.net": "alt", "www.bretten-kangaroos.net": "alt", "neu.bretten-kangaroos.net": "neu" };
+const HOSTS = new Set(["bretten-kangaroos.net", "www.bretten-kangaroos.net", "neu.bretten-kangaroos.net"]);
+// The domain moved from the old WordPress site to this one on 2026-10-30; count
+// from the first full day after that, so no old-site traffic is mixed in.
+const FIRST_DAY = "2026-10-31";
 
 const BOT_AGENT =
   /bot|crawl|spider|slurp|scan|preview|monitor|fetch|http-client|headless|lighthouse|curl|wget|python|go-http|java\/|okhttp|axios|node|php|ruby|perl|wordpress|feed|rss|facebookexternalhit|whatsapp|telegram|discord|skype|embedly|bingpreview|semrush|ahrefs|mj12|dotbot|petal|bytespider|gptbot|claude|anthropic|perplexity|ccbot|dataforseo|censys|zgrab|masscan|nmap|nikto|sqlmap/i;
@@ -74,8 +77,8 @@ async function list(sftp) {
   }
 }
 
-// Old WordPress paths and new paths into the same German sections.
-function section(site, path) {
+// Paths into German sections (old WordPress links are redirected, not counted).
+function section(path) {
   const p = path.toLowerCase();
   if (p === "/" || p === "/index.html") return "Startseite";
   if (/^\/(news|aktuelles|\d{4}\/\d{2}\/\d{2}|category)(\/|$)/.test(p)) return "News";
@@ -117,11 +120,11 @@ function aggregate(lines, stats, salt) {
       continue;
     }
     const [, ip, dd, mon, yyyy, hh, method, rawPath, status, vhost, referer, agent] = m;
-    const site = SITES[vhost.toLowerCase()];
-    if (!site) continue;
+    if (!HOSTS.has(vhost.toLowerCase())) continue;
     const day = `${yyyy}-${String(MONTHS[mon]).padStart(2, "0")}-${dd}`;
+    if (day < FIRST_DAY) continue;
     const path = rawPath.split("?")[0].split("#")[0];
-    const s = stats.sites[site];
+    const s = stats.site;
 
     if (method === "POST" && path === "/signup.php") {
       inc(s.signups, day);
@@ -156,14 +159,14 @@ function aggregate(lines, stats, salt) {
 
     const date = new Date(`${day}T00:00:00`);
     inc(s.pageviews, day);
-    inc(s.sections, section(site, path));
+    inc(s.sections, section(path));
     inc(s.pages, decodeURIComponent(path.replace(/\/$/, "") || "/"));
     inc(s.devices, device(agent));
     inc(s.hourByWeekday, `${(date.getDay() + 6) % 7}-${Number(hh)}`); // 0 = Monday
     const source = referrerSource(referer, vhost);
     if (source) inc(s.sources, source);
 
-    const visitor = createHash("sha256").update(salt + ip + agent + day + site).digest("base64");
+    const visitor = createHash("sha256").update(salt + ip + agent + day).digest("base64");
     if (!stats.seen.has(visitor)) {
       stats.seen.add(visitor);
       inc(s.visitors, day);
@@ -180,11 +183,11 @@ const top = (obj, n) =>
 
 async function collect(sftp) {
   const salt = randomBytes(32).toString("hex");
-  const emptySite = () => ({
+  const site = {
     pageviews: {}, visitors: {}, botRequests: {}, sections: {}, pages: {}, devices: {}, sources: {},
     hourByWeekday: {}, calendar: {}, downloads: {}, notFound: {}, signups: {},
-  });
-  const stats = { unparsed: 0, seen: new Set(), sites: { alt: emptySite(), neu: emptySite() } };
+  };
+  const stats = { unparsed: 0, seen: new Set(), site };
 
   const files = (await sftp.list(LOG_DIR)).filter((f) => f.type === "-" && /^access\.log\.\d/.test(f.name));
   for (const f of files) {
@@ -195,57 +198,53 @@ async function collect(sftp) {
   }
   console.log();
 
-  const days = Object.keys({ ...stats.sites.alt.pageviews, ...stats.sites.neu.pageviews }).sort();
+  const days = Object.keys(site.pageviews).sort();
   const out = {
     generatedAt: new Date().toISOString(),
     period: { from: days[0], to: days.at(-1) },
     note: "Anonyme Zählung aus den IONOS-Zugriffsprotokollen, Bots herausgefiltert. Keine IP-Adressen gespeichert.",
-    sites: {},
+    site: {
+      ...site,
+      pages: top(site.pages, 40),
+      downloads: top(site.downloads, 20),
+      notFound: top(site.notFound, 30),
+    },
   };
-  for (const [name, s] of Object.entries(stats.sites)) {
-    out.sites[name] = {
-      ...s,
-      pages: top(s.pages, 40),
-      downloads: top(s.downloads, 20),
-      notFound: top(s.notFound, 30),
-    };
-  }
   mkdirSync("stats/dashboard", { recursive: true });
   writeFileSync(OUT_FILE, JSON.stringify(out, null, 1));
   writeDashboardFiles(out);
   console.log(`Written ${OUT_FILE}: ${out.period.from} – ${out.period.to}, ${stats.unparsed} unparsed lines`);
 }
 
-// Flat row files for the claude.ai dashboard: one per day and site, and one
-// row per breakdown value (dimension = Bereich, Seite, Quelle, …).
+// Flat row files for the claude.ai dashboard: one per day, and one row per
+// breakdown value (dimension = Bereich, Seite, Quelle, …).
 function writeDashboardFiles(out) {
+  const s = out.site;
   const daily = [];
   const breakdown = [];
-  for (const [site, s] of Object.entries(out.sites)) {
-    const days = new Set([...Object.keys(s.pageviews), ...Object.keys(s.visitors), ...Object.keys(s.botRequests)]);
-    for (const day of [...days].sort()) {
-      daily.push({
-        day, site,
-        pageviews: s.pageviews[day] ?? 0,
-        visitors: s.visitors[day] ?? 0,
-        botRequests: s.botRequests[day] ?? 0,
-        signups: s.signups[day] ?? 0,
-      });
-    }
-    const add = (dimension, obj) => {
-      for (const [key, views] of Object.entries(obj)) breakdown.push({ site, dimension, key, views });
-    };
-    add("Bereich", s.sections);
-    add("Seite", s.pages);
-    add("Quelle", s.sources);
-    add("Gerät", s.devices);
-    add("Stunde", s.hourByWeekday); // key "<weekday 0=Mo>-<hour>"
-    add("Download", s.downloads);
-    add("Nicht gefunden", s.notFound);
-    const feeds = {};
-    for (const [feed, perDay] of Object.entries(s.calendar)) feeds[feed] = Object.values(perDay).reduce((a, b) => a + b, 0);
-    add("Kalender", feeds);
+  const days = new Set([...Object.keys(s.pageviews), ...Object.keys(s.visitors), ...Object.keys(s.botRequests)]);
+  for (const day of [...days].sort()) {
+    daily.push({
+      day,
+      pageviews: s.pageviews[day] ?? 0,
+      visitors: s.visitors[day] ?? 0,
+      botRequests: s.botRequests[day] ?? 0,
+      signups: s.signups[day] ?? 0,
+    });
   }
+  const add = (dimension, obj) => {
+    for (const [key, views] of Object.entries(obj)) breakdown.push({ dimension, key, views });
+  };
+  add("Bereich", s.sections);
+  add("Seite", s.pages);
+  add("Quelle", s.sources);
+  add("Gerät", s.devices);
+  add("Stunde", s.hourByWeekday); // key "<weekday 0=Mo>-<hour>"
+  add("Download", s.downloads);
+  add("Nicht gefunden", s.notFound);
+  const feeds = {};
+  for (const [feed, perDay] of Object.entries(s.calendar)) feeds[feed] = Object.values(perDay).reduce((a, b) => a + b, 0);
+  add("Kalender", feeds);
   writeFileSync("stats/dashboard/daily.json", JSON.stringify(daily));
   writeFileSync("stats/dashboard/breakdown.json", JSON.stringify(breakdown));
 }
