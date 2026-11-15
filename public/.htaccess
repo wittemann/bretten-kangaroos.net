@@ -3,11 +3,17 @@
 # Error pages
 ErrorDocument 404 /404.html
 
-# No directory listings
-Options -Indexes
+# No directory listings, no content negotiation (MultiViews would answer
+# /feed/ with feed.xml as a 404 before the redirect to /feed.xml applies)
+Options -Indexes -MultiViews
 
 # Calendar feeds and single games (/kalender/*.ics)
 AddType "text/calendar; charset=utf-8" .ics
+
+# News feed
+<Files "feed.xml">
+  ForceType "application/rss+xml; charset=utf-8"
+</Files>
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
