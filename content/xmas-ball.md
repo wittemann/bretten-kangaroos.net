@@ -9,6 +9,7 @@ categories:
   - name: T-Ball
     years: 2018 und jünger
     fee: 50 €, bei drei Mannschaften 40 €
+    full: true
   - name: Schüler
     years: 2014 und jünger
     fee: 50 €, bei drei Mannschaften 40 €

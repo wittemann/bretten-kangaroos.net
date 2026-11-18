@@ -143,6 +143,7 @@ content:
           - { name: name, label: Kategorie, type: string, required: true, description: "z. B. „T-Ball“" }
           - { name: years, label: Jahrgang, type: string, description: "z. B. „2018 und jünger“" }
           - { name: fee, label: Startgebühr, type: string, description: "z. B. „50 €, bei drei Mannschaften 40 €“" }
+          - { name: full, label: Ausgebucht, type: boolean, default: false, description: "Wenn an: keine Anmeldung mehr für diese Kategorie, das Formular zeigt stattdessen einen Hinweis" }
       - { name: image, label: Bild, type: image, options: { media: images } }
       - { name: body, label: Infos, type: rich-text }
 

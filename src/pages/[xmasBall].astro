@@ -73,7 +73,10 @@ const facts = [
                 <tbody>
                   {categories.map((category) => (
                     <tr class="border-t border-line">
-                      <td class="py-3 pr-4 font-semibold text-ink">{category.name}</td>
+                      <td class="py-3 pr-4 font-semibold text-ink">
+                        {category.name}
+                        {category.full && <span class="font-normal"> (ausgebucht)</span>}
+                      </td>
                       <td class="py-3 pr-4">{category.years}</td>
                       <td class="py-3">{category.fee}</td>
                     </tr>
@@ -90,5 +93,7 @@ const facts = [
       </div>
     </div>
   </section>
-  <TournamentSignup categories={categories.map((category) => category.name)} />
+  <TournamentSignup
+    categories={categories.map(({ name, full }) => ({ name, full }))}
+  />
 </Base>

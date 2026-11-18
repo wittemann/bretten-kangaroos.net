@@ -3,8 +3,9 @@
 // (public/signup.php), which sends a mail via SMTP and redirects back here
 // (?signup=<status>#signup). Visitor-facing texts are German.
 interface Props {
-  // category names from content/xmas-ball.md, 0–2 teams each
-  categories: string[];
+  // categories from content/xmas-ball.md, 0–2 teams each; full ones only
+  // show a notice
+  categories: { name: string; full: boolean }[];
 }
 const { categories } = Astro.props;
 const teamCounts = [0, 1, 2];
@@ -84,25 +85,35 @@ const messages: Record<string, { type: string; text: string }> = {
         </div>
 
         {
-          categories.map((category) => (
-            <fieldset>
-              <legend class="font-semibold">Mannschaften {category} *</legend>
-              <div class="flex flex-wrap gap-x-6">
-                {teamCounts.map((count) => (
-                  <label class="inline-flex items-center gap-2 !leading-normal">
-                    <input
-                      type="radio"
-                      class="form-radio !mb-0 text-primary"
-                      name={`teams[${category}]`}
-                      value={count}
-                      checked={count === 0}
-                    />
-                    {count}× {category}
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-          ))
+          categories.map(({ name: category, full }) =>
+            full ? (
+              <fieldset>
+                <legend class="font-semibold">Mannschaften {category}</legend>
+                <p class="my-0">
+                  {category} ist schon voll – wir nehmen keine weiteren {category}-Mannschaften
+                  mehr an.
+                </p>
+              </fieldset>
+            ) : (
+              <fieldset>
+                <legend class="font-semibold">Mannschaften {category} *</legend>
+                <div class="flex flex-wrap gap-x-6">
+                  {teamCounts.map((count) => (
+                    <label class="inline-flex items-center gap-2 !leading-normal">
+                      <input
+                        type="radio"
+                        class="form-radio !mb-0 text-primary"
+                        name={`teams[${category}]`}
+                        value={count}
+                        checked={count === 0}
+                      />
+                      {count}× {category}
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            ),
+          )
         }
 
         <!-- Honeypot: invisible to humans, bots fill it in. -->

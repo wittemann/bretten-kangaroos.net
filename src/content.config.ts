@@ -84,6 +84,8 @@ const xmasBallCollection = defineCollection({
           name: z.string().max(40),
           years: optionalString,
           fee: optionalString,
+          // no more teams accepted; the form shows a notice instead of a choice
+          full: z.boolean().default(false),
         }),
       )
       .max(10)
