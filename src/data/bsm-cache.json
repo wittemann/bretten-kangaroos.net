@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-12T18:19:18.336Z",
+  "builtAt": "2026-11-18T16:10:43.377Z",
   "season": 2026,
   "leagues": [
     {
@@ -7,7 +7,7 @@
       "name": "Bezirksliga Herren",
       "label": "Herren – Bezirksliga",
       "team": "herren",
-      "fetchedAt": "2026-11-12T18:19:16.994Z",
+      "fetchedAt": "2026-11-18T16:10:41.847Z",
       "standings": [
         {
           "rank": 1,
@@ -359,7 +359,7 @@
       "name": "Baseball Pokal",
       "label": "Herren – Pokal",
       "team": "herren",
-      "fetchedAt": "2026-11-12T18:19:17.219Z",
+      "fetchedAt": "2026-11-18T16:10:42.213Z",
       "standings": null,
       "games": [
         {
@@ -397,7 +397,7 @@
       "name": "Jugend Verbandsliga",
       "label": "Jugend – Verbandsliga",
       "team": "jugend",
-      "fetchedAt": "2026-11-12T18:19:17.268Z",
+      "fetchedAt": "2026-11-18T16:10:42.316Z",
       "standings": [
         {
           "rank": 1,
@@ -752,7 +752,7 @@
       "name": "Schüler Landesliga",
       "label": "Schüler – Landesliga",
       "team": "schueler",
-      "fetchedAt": "2026-11-12T18:19:17.780Z",
+      "fetchedAt": "2026-11-18T16:10:42.647Z",
       "standings": [
         {
           "rank": 1,
@@ -1551,7 +1551,7 @@
       "name": "T-Ball",
       "label": "T-Ball",
       "team": "t-ball",
-      "fetchedAt": "2026-11-12T18:19:18.335Z",
+      "fetchedAt": "2026-11-18T16:10:43.377Z",
       "standings": [
         {
           "rank": 1,
@@ -2142,7 +2142,7 @@
     },
     "404": {
       "file": "/images/bsm-logos/404.webp",
-      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/404/thumb/RoyalsLogoFinal.png?1709819032"
+      "source": "https://bsm.baseball-softball.de/system/clubs/logos/000/000/404/thumb/Royalslogo.png?1794986158"
     },
     "406": {
       "file": "/images/bsm-logos/406.webp",
