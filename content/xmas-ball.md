@@ -16,6 +16,7 @@ categories:
   - name: Jugend
     years: 2011 und jünger
     fee: 50 €, bei drei Mannschaften 40 €
+    full: true
 ---
 
 ## Das Event
