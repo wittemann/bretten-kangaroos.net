@@ -1,11 +1,13 @@
 ---
-title: "Kangaroos-Schüler feiern ihre Meisterschaft beim Bowling"
+title: Kangaroos-Schüler feiern ihre Meisterschaft beim Bowling
 date: 2026-11-23
-author: "Michael Wittemann"
-team: "schueler"
+author: Michael Wittemann
+team: schueler
+image: /images/WhatsApp Image 2026-11-22 at 14.23.17 (1).jpeg
+stats:
+  - {}
 draft: false
 ---
-
 **Nach einer erfolgreichen Baseballsaison 2026 gab es für die Schüler der Bretten Kangaroos noch einmal einen besonderen Grund zum Feiern. Die frischgebackenen Landesligameister trafen sich im K15 Bowling in Bruchsal, um gemeinsam mit ihren Coaches den Meistertitel und den Abschluss einer unvergesslichen Saison zu feiern.**
 
 ## Bowling statt Baseball
@@ -46,6 +48,6 @@ Für unsere Nachwuchsmannschaften suchen wir neue Spielerinnen und Spieler. Mäd
 
 **Jetzt kostenloses Probetraining vereinbaren:**
 
-https://bretten-kangaroos.net/probetraining
+[https://bretten-kangaroos.net/probetraining](https://bretten-kangaroos.net/probetraining)
 
 **Werde Teil der Kangaroos – wir freuen uns auf dich!**
