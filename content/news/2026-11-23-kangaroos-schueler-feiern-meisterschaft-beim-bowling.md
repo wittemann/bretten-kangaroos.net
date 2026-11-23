@@ -4,6 +4,13 @@ date: 2026-11-23
 author: Michael Wittemann
 team: schueler
 image: /images/WhatsApp Image 2026-11-22 at 14.23.17 (1).jpeg
+gallery:
+  - /images/WhatsApp Image 2026-11-22 at 13.17.57.jpeg
+  - /images/WhatsApp Image 2026-11-22 at 21.01.46.jpeg
+  - /images/WhatsApp Image 2026-11-22 at 15.03.36 (1).jpeg
+  - /images/WhatsApp Image 2026-11-22 at 15.08.25.jpeg
+  - /images/WhatsApp Image 2026-11-22 at 15.03.36.jpeg
+  - /images/WhatsApp Image 2026-11-22 at 13.17.57 (1).jpeg
 draft: false
 ---
 **Nach einer erfolgreichen Baseballsaison 2026 gab es für die Schüler der Bretten Kangaroos noch einmal einen besonderen Grund zum Feiern. Die frischgebackenen Landesligameister trafen sich im K15 Bowling in Bruchsal, um gemeinsam mit ihren Coaches den Meistertitel und den Abschluss einer unvergesslichen Saison zu feiern.**
