@@ -76,6 +76,7 @@ etc., the long Förderverein slug → `/foerderverein`, `/YYYY/MM/DD/<slug>/` �
 
 News details:
 - Quotes (`>`) render as the green quote box.
+- An optional "Galerie" field (image list, `multiple`) renders a grid after the text; the pictures join the lightbox.
 - An optional "Zahlen" list field (number + label) renders the stats box after the image – no shortcodes in the body.
 - The team select in `.pages.yml` must offer all teams (Schüler and T-Ball are missing today).
 - Posts of teams that no longer exist have no `team` (they show under "Alle") but an optional `old_team` label, see

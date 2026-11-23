@@ -1,7 +1,7 @@
 ---
 // News post after the board (docs/design/News-Artikel.dc.html): back link,
 // team chip, date, author, title and the first paragraph as intro above the
-// image, then the text, "Zahlen" box, team link, share links, more posts.
+// image, then the text, gallery, "Zahlen" box, team link, share links, more posts.
 // A click on a picture shows it large (Lightbox).
 import Lightbox from "@/components/Lightbox.astro";
 import { postTeamLabel } from "@/lib/teams";
@@ -16,7 +16,7 @@ type Props = {
 
 const { post, morePosts } = Astro.props;
 const { Content } = await render(post);
-const { title, image, date, author, team, stats } = post.data;
+const { title, image, gallery, date, author, team, stats } = post.data;
 const teamLabel = postTeamLabel(post.data);
 
 // The first block becomes the intro when it is a plain text paragraph (not an
@@ -80,6 +80,27 @@ const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(`${title} ${pageUr
     <div class:list={["content post-body", lead && "has-lead"]}>
       <Content />
     </div>
+
+    {
+      gallery.length > 0 && (
+        <section class="mt-10" aria-label="Bildergalerie">
+          <ul class="grid grid-cols-2 gap-2 sm:grid-cols-3">
+            {gallery.map((picture, i) => (
+              <li>
+                <Image
+                  src={picture}
+                  alt={`Bild ${i + 1} von ${gallery.length}`}
+                  width={480}
+                  height={360}
+                  class="block aspect-[4/3] h-auto w-full rounded-[4px] object-cover"
+                  data-full={picture}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
 
     <div class="mt-10 flex flex-wrap justify-between gap-3 border-t border-line pt-5 text-[15px]">
       {

@@ -16,8 +16,9 @@ Kurzanleitung zum Pflegen der Vereinswebseite mit **Pages CMS**. Du brauchst kei
    - **Datum** (Pflicht)
    - **Team**: Herren, Jugend, Schüler, T-Ball oder Softball. Bei Vereinsnews leer lassen, dann erscheint der Beitrag unter „Alle“ und „Verein“.
    - **Früheres Team**: nur für alte Beiträge von Teams, die es nicht mehr gibt, sonst leer lassen.
-   - **Bild**: siehe unten.
-   - **Zahlen** (optional): kleiner Kasten unter dem Bild. Mit **Add an entry** jeweils eine **Zahl** und eine **Beschriftung** eintragen, z. B. „12“ und „Siege“.
+   - **Titelbild**: großes Bild über dem Text, auch auf der Kachel in der Übersicht und beim Teilen (z. B. WhatsApp). Siehe unten.
+   - **Galerie** (optional): weitere Bilder, sie erscheinen als Raster unter dem Text und lassen sich groß anklicken. In der Medienauswahl kannst du mehrere Bilder auf einmal hochladen und auswählen.
+   - **Zahlen** (optional): Kennzahlen, die groß in einem Kasten über dem Text erscheinen, z. B. Endstand, Hits oder Strikeouts. Mit **Add an entry** jeweils eine **Zahl** und eine **Beschriftung** eintragen, z. B. „12“ und „Siege“.
    - **Entwurf**: Haken setzen, solange der Beitrag nicht erscheinen soll.
    - **Inhalt**: der Text. Überschriften, Fettdruck, Listen und Links gehen über die Symbole oberhalb des Textfelds.
 3. Oben rechts auf **Save** klicken.

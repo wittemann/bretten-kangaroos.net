@@ -33,6 +33,12 @@ const newsCollection = defineCollection({
     // name of a team that no longer exists (old posts), shown as a label
     old_team: optionalString,
     image: optionalString,
+    // more pictures, shown as a grid after the text (Pages CMS may save null or "" entries)
+    gallery: z
+      .array(z.string().nullable())
+      .nullable()
+      .default([])
+      .transform((images) => (images ?? []).filter((image): image is string => !!image)),
     stats: z.array(z.object({ value: z.string(), label: z.string() })).default([]),
     draft: z.boolean().default(false),
   }),

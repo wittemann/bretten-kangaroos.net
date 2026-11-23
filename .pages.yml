@@ -53,11 +53,16 @@ content:
         label: Früheres Team
         type: string
         description: "Nur für alte Beiträge von Teams, die es nicht mehr gibt (z. B. Herren 2, Damen)"
-      - { name: image, label: Bild, type: image, options: { media: images } }
+      - { name: image, label: Titelbild, type: image, description: "Großes Bild über dem Text, auch in der Übersicht und beim Teilen", options: { media: images } }
+      - name: gallery
+        label: Galerie
+        type: image
+        description: "Weitere Bilder, erscheinen als Bildergalerie unter dem Text. Mehrere auf einmal auswählen oder hochladen."
+        options: { media: images, multiple: { max: 40 } }
       - name: stats
         label: Zahlen
         type: object
-        description: "Optionaler Kasten unter dem Bild, z. B. „12 – Siege“"
+        description: "Optional: Kennzahlen, die groß in einem Kasten über dem Text erscheinen – z. B. Endstand, Hits oder Strikeouts. Pro Eintrag eine Zahl (z. B. „12:4“) und eine Beschriftung (z. B. „Endstand“)."
         list:
           collapsible:
             collapsed: true
