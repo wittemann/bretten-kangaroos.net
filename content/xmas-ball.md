@@ -4,7 +4,8 @@ active: true
 date: 2026-12-12
 place: Hallensportanlage „Im Grüner“ (Bretten)
 deadline: 2026-11-22
-teaser: Die Bretten Kangaroos laden zum dritten Xmas-Ball Hallenturnier ein – dieses Jahr erstmals mit einer Jugend-Kategorie. Meldet jetzt eure Teams an!
+teaser: Die Bretten Kangaroos laden zum dritten Xmas-Ball Hallenturnier ein –
+  dieses Jahr erstmals mit einer Jugend-Kategorie. Meldet jetzt eure Teams an!
 categories:
   - name: T-Ball
     years: 2018 und jünger
@@ -13,12 +14,12 @@ categories:
   - name: Schüler
     years: 2014 und jünger
     fee: 50 €, bei drei Mannschaften 40 €
+    full: true
   - name: Jugend
     years: 2011 und jünger
     fee: 50 €, bei drei Mannschaften 40 €
     full: true
 ---
-
 ## Das Event
 
 Die Bretten Kangaroos laden bereits jetzt herzlich zum dritten **Xmas-Ball Hallenturnier** ein. Dieses Jahr erstmals mit einer Jugend-Kategorie.
